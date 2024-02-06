@@ -1,0 +1,2065 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" 
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <link rel="stylesheet" type="text/css" href="absolute-value.css">
+    <script src="function.js"></script>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,
+                100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" 
+        rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,
+                    400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,
+                    800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,
+                    300;1,400;1,500;1,700;1,900&display=swap" 
+                rel="stylesheet">  
+                <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;
+0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,
+100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,
+wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" 
+rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Karma:wght@300;400;500;600;700&family=Lato:wght@100&family=Poppins:ital,
+wght@0,100;0,200;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,700;1,800;1,900&family=Raleway:ital,wght@0,
+100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,
+100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" 
+rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Karma:wght@300;400;500;600&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;
+1,100;1,300;1,400;1,700;1,900&family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;
+1,600;1,700;1,800;1,900;1,1000&family=Poppins:ital,wght@0,100;0,200;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;
+1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;
+1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" 
+rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Karma:wght@300;400;500;600&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;
+        1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,700;1,800;1,900&family=Raleway:ital,
+        wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,
+        500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" 
+        rel="stylesheet">
+</head>
+    <body>
+        <div class="question-part" id="questionContent1" data-question-id="absolute1">
+            <h1 class="title">Digital SAT Math</h1>
+            <h2 class="subtitle">Absolute Values</h2>
+            <div class="question-list">
+                <div class="number-bar">
+                    <span>1</span>
+                </div>
+                <p class="question">
+                    What are the two possible values of \(x\) in the following equation: \(|2x - 5| = 11\)?
+                </p>
+                <div class="option-1-container">
+                    <button class="option-1">A</button><p class="choice-1">\(8,-3\)
+                    </p>
+                </div>
+                <div class="option-2-container">
+                    <button class="option-2">B</button><p class="choice-2">\(-3,-5\)
+                    </p>
+                </div>
+                <div class="option-3-container">
+                    <button class="option-3">C</button><p class="choice-3">\(3,2\)
+                    </p>
+                </div>
+                <div class="option-4-container">
+                    <button class="option-4">D</button><p class="choice-4">\(-8,3\)
+                    </p>
+                </div>
+            </div>
+            <button id="button-show-explanation1" class="button-show-explanation" onclick="toggleExplanation(currentQuestionIndex)">Show Explanation</button>
+            <div id="explanation1" class="explanation">
+                <p class="explanation-paragraph">Consider both cases when the expression inside the absolute value is positive and when it is negative. <br>
+                    1. When \(2x - 5\) is positive:
+                       \(2x - 5 = 11\) <br>
+                       Solve for \(x\): <br>
+                       \(2x = 16\) <br>
+                       \(x = 8\) <br>
+                    2. When \(2x - 5\) is negative: <br>
+                       \(-(2x - 5) = 11\) <br>
+                       Solve for \(x\): <br>
+                       \(-2x + 5 = 11\) <br>
+                       \(-2x = 6\) <br>
+                       \(x = -3\) <br>
+                    Therefore, the correct values of \(x\) are \(8\) and \(-3\). <br>
+                    So, the correct answer is A.
+                </p>
+            </div>
+        </div>
+
+        <div class="question-part" id="questionContent2" data-question-id="absolute2">
+            <h1 class="title">Digital SAT Math</h1>
+            <h2 class="subtitle">Absolute Values</h2>
+            <div class="question-list">
+                <div class="number-bar">
+                    <span>2</span>
+                </div>
+                <p class="question">
+                    What is the solution set for the equation \(|3x + 2| < 8\) in terms of real numbers?
+                </p>
+                <div class="option-1-container">
+                    <button class="option-1">A</button><p class="choice-1">\(x \in \left(-\infty, -\frac{10}{3}\right) \cup (2, \infty)\)
+                    </p>
+                </div>
+                <div class="option-2-container">
+                    <button class="option-2">B</button><p class="choice-2">\(x \in \left(-\infty, -2\right) \cup \left(-\frac{10}{3}, 2\right)\)
+                    </p>
+                </div>
+                <div class="option-3-container">
+                    <button class="option-3">C</button><p class="choice-3">\(x \in \left(-2, -\frac{10}{3}\right) \cup (2, \infty)\)
+                    </p>
+                </div>
+                <div class="option-4-container">
+                    <button class="option-4">D</button><p class="choice-4">\(x \in \left(-\infty, -2\right) \cup (2, \infty)\)
+                    </p>
+                </div>
+            </div>
+            <button id="button-show-explanation2" class="button-show-explanation" onclick="toggleExplanation(currentQuestionIndex)">Show Explanation</button>
+            <div id="explanation2" class="explanation">
+                <p class="explanation-paragraph">Consider both cases when the expression inside the absolute value is positive and when it is negative. <br>
+                    1. When \(3x + 2\) is positive: <br>
+                       \(3x + 2 < 8\) <br>
+                       Solve for \(x\): <br>
+                       \(3x < 6\) <br>
+                       \(x < 2\) <br>                    
+                    2. When \(3x + 2\) is negative: <br>
+                       \(-(3x + 2) < 8\) <br>
+                       Solve for \(x\): <br>
+                       \(-3x - 2 < 8\) <br>
+                       \(-3x < 10\) <br>
+                       \(x > -\frac{10}{3}\) <br>
+                    Therefore, the correct answer is \(x \in \left(-\infty, -\frac{10}{3}\right) \cup (2, \infty)\).
+                </p>
+            </div>
+        </div>
+
+        <div class="question-part" id="questionContent3" data-question-id="absolute3">
+            <h1 class="title">Digital SAT Math</h1>
+            <h2 class="subtitle">Absolute Values</h2>
+            <div class="question-list">
+                <div class="number-bar">
+                    <span>3</span>
+                </div>
+                <p class="question">
+                    What are the absolute value of the inequality \(|4-3x| \geq 5\)?
+                </p>
+                <div class="option-1-container">
+                    <button class="option-1">A</button><p class="choice-1">\(x \leq -\frac{1}{3}\)
+                    </p>
+                </div>
+                <div class="option-2-container">
+                    <button class="option-2">B</button><p class="choice-2">\(x \geq -\frac{1}{3}\)
+                    </p>
+                </div>
+                <div class="option-3-container">
+                    <button class="option-3">C</button><p class="choice-3">\(x \leq -\frac{1}{3}\) or \(x \geq 3\)
+                    </p>
+                </div>
+                <div class="option-4-container">
+                    <button class="option-4">D</button><p class="choice-4">\(x \leq 3\) or \(x \geq -\frac{1}{3}\)
+                    </p>
+                </div>
+            </div>
+            <button id="button-show-explanation3" class="button-show-explanation" onclick="toggleExplanation(currentQuestionIndex)">Show Explanation</button>
+            <div id="explanation3" class="explanation">
+                <p class="explanation-paragraph">Consider both cases when the expression inside the absolute value is positive and when it is negative. <br>
+                    1. When \(4 - 3x\) is positive: <br>
+                       \(4 - 3x \geq 5\) <br>
+                       Solve for \(x\): <br>
+                       \(-3x \geq 1\) <br>
+                       \(x \leq -\frac{1}{3}\) <br>
+                    
+                    2. When \(4 - 3x\) is negative: <br>
+                       \(-(4 - 3x) \geq 5\) <br>
+                       Solve for \(x\): <br>
+                       \(3x - 4 \geq 5\) <br>
+                       \(3x \geq 9\) <br>
+                       \(x \geq 3\) <br>
+                    Therefore, the solution is \(x \leq -\frac{1}{3}\) or \(x \geq 3\). <br>
+                    So, the correct answer is C.
+                </p>
+            </div>
+        </div>
+
+        <div class="question-part" id="questionContent4" data-question-id="absolute4">
+            <h1 class="title">Digital SAT Math</h1>
+            <h2 class="subtitle">Absolute Values</h2>
+            <div class="question-list">
+                <div class="number-bar">
+                    <span>4</span>
+                </div>
+                <p class="question">
+                    What is the values of \(x\) for which \( |x^2 - 9| > 0 \)?
+                </p>
+                <div class="option-1-container">
+                    <button class="option-1">A</button><p class="choice-1">\(-3, 3\)
+                    </p>
+                </div>
+                <div class="option-2-container">
+                    <button class="option-2">B</button><p class="choice-2">\(-3, 4\)
+                    </p>
+                </div>
+                <div class="option-3-container">
+                    <button class="option-3">C</button><p class="choice-3">\(-5, 3\)
+                    </p>
+                </div>
+                <div class="option-4-container">
+                    <button class="option-4">D</button><p class="choice-4">\(3, 6\)
+                    </p>
+                </div>
+            </div>
+            <button id="button-show-explanation4" class="button-show-explanation" onclick="toggleExplanation(currentQuestionIndex)">Show Explanation</button>
+            <div id="explanation4" class="explanation">
+                <p class="explanation-paragraph">The inequality \( |x^2 - 9| > 0 \) is always true for all real values of \(x\) except where \(x^2 - 9 = 0\). <br>
+                    So, the solution set is all real numbers except \(x = 3\) and \(x = -3\). <br>
+                    In interval notation, the correct answer is A.
+                </p>
+            </div>
+        </div>
+
+        <div class="question-part" id="questionContent5" data-question-id="absolute5">
+            <h1 class="title">Digital SAT Math</h1>
+            <h2 class="subtitle">Absolute Values</h2>
+            <div class="question-list">
+                <div class="number-bar">
+                    <span>5</span>
+                </div>
+                <p class="question">
+                    The solution set of the compound inequality \( |2x - 3| < 4 \) is expressed in interval notation as:
+                </p>
+                <div class="option-1-container">
+                    <button class="option-1">A</button><p class="choice-1">\(x \in \left(-\frac{1}{2}, \frac{7}{2}\right)\)
+                    </p>
+                </div>
+                <div class="option-2-container">
+                    <button class="option-2">B</button><p class="choice-2">\(x \in \left(-\frac{1}{2}, \frac{3}{2}\right)\)
+                    </p>
+                </div>
+                <div class="option-3-container">
+                    <button class="option-3">C</button><p class="choice-3">\(x \in \left(-\infty, \frac{7}{2}\right)\)
+                    </p>
+                </div>
+                <div class="option-4-container">
+                    <button class="option-4">D</button><p class="choice-4">\(x \in \left(-\infty, \frac{3}{2}\right)\)
+                    </p>
+                </div>
+            </div>
+            <button id="button-show-explanation5" class="button-show-explanation" onclick="toggleExplanation(currentQuestionIndex)">Show Explanation</button>
+            <div id="explanation5" class="explanation">
+                <p class="explanation-paragraph">To solve \( |2x - 3| < 4 \), we consider two cases: <br>
+                    Case 1: When \(2x - 3\) is non-negative: <br>
+                    \( 2x - 3 < 4 \implies 2x < 7 \implies x < \frac{7}{2} \) <br>                    
+                    Case 2: When \(2x - 3\) is negative: <br>
+                    \( -(2x - 3) < 4 \implies 2x - 3 > -4 \implies 2x > -1 \implies x > -\frac{1}{2} \) <br>                    
+                    So, the solution set is \( x \in \left(-\frac{1}{2}, \frac{7}{2}\right) \), and the correct answer is A.
+                </p>
+            </div>
+        </div>
+
+        <div class="question-part" id="questionContent6" data-question-id="absolute6">
+            <h1 class="title">Digital SAT Math</h1>
+            <h2 class="subtitle">Absolute Values</h2>
+            <div class="question-list">
+                <div class="number-bar">
+                    <span>6</span>
+                </div>
+                <p class="question">
+                    What is the solution set for the equation \( |x^2 - 25| = 0 \) in terms of real numbers?
+                </p>
+                <div class="option-1-container">
+                    <button class="option-1">A</button><p class="choice-1">\(x = 5\)
+                    </p>
+                </div>
+                <div class="option-2-container">
+                    <button class="option-2">B</button><p class="choice-2">\(x = -5\)
+                    </p>
+                </div>
+                <div class="option-3-container">
+                    <button class="option-3">C</button><p class="choice-3">\(x = -5, 5\)
+                    </p>
+                </div>
+                <div class="option-4-container">
+                    <button class="option-4">D</button><p class="choice-4">No solution
+                    </p>
+                </div>
+            </div>
+            <button id="button-show-explanation6" class="button-show-explanation" onclick="toggleExplanation(currentQuestionIndex)">Show Explanation</button>
+            <div id="explanation6" class="explanation">
+                <p class="explanation-paragraph">To find the solution set for \( |x^2 - 25| = 0 \), we consider two cases: <br>
+                    Case 1: \( x^2 - 25 = 0 \) <br>
+                    \( x^2 = 25 \) <br>
+                    \( x = \pm 5 \) <br>                    
+                    Case 2: \( -(x^2 - 25) = 0 \) <br>
+                    \( -x^2 + 25 = 0 \) <br>
+                    \( x^2 = 25 \) <br>
+                    \( x = \pm 5 \) <br>                    
+                    Therefore, the solutions are \(x = -5\) and \(x = 5\). <br>
+                    So, the correct answer is C. 
+                </p>
+            </div>
+        </div>
+
+        <div class="question-part" id="questionContent7" data-question-id="absolute7">
+            <h1 class="title">Digital SAT Math</h1>
+            <h2 class="subtitle">Absolute Values</h2>
+            <div class="question-list">
+                <div class="number-bar">
+                    <span>7</span>
+                </div>
+                <p class="question">
+                    Determine the value of \(x\) in \( |x + 128| = |x - 256| \).
+                </p>
+            </div>
+            <div class="input-button">
+                <input class="input-answer" type="text"> 
+            </div>
+            <button id="button-show-explanation7" class="button-show-explanation" onclick="toggleExplanation(currentQuestionIndex)">Show Explanation</button>
+            <div id="explanation7" class="explanation">
+                <p class="explanation-paragraph">We consider two cases: <br>
+                    Case 1: When \( x + 128 \geq 0 \) (i.e., \( x \geq -128 \)): <br>
+                    \( x + 128 = x - 256 \) <br>                    
+                    Case 2: When \( x + 128 < 0 \) (i.e., \( x < -128 \)): <br>
+                    \( -(x + 128) = x - 256 \) <br>                    
+                    Solving Case 1: <br>
+                    \( x + 128 = x - 256 \) <br>
+                    \( 128 = -256 \) (No solution) <br>                    
+                    Solving Case 2: <br>
+                    \( -x - 128 = x - 256 \) <br>
+                    \( 2x = 128 \) <br>
+                    \( x = 64 \) <br>                    
+                    Therefore, the solution to the equation \( |x + 128| = |x - 256| \) is \( x = 64 \).
+                </p>
+            </div>
+        </div>
+
+        <div class="question-part" id="questionContent8" data-question-id="absolute8">
+            <h1 class="title">Digital SAT Math</h1>
+            <h2 class="subtitle">Absolute Values</h2>
+            <div class="question-list">
+                <div class="number-bar">
+                    <span>8</span>
+                </div>
+                <p class="question">
+                    Among the following, which absolute value is farthest from its opposite?
+                </p>
+                <div class="option-1-container">
+                    <button class="option-1">A</button><p class="choice-1">\( |10| \)
+                    </p>
+                </div>
+                <div class="option-2-container">
+                    <button class="option-2">B</button><p class="choice-2">\( |-5| \)
+                    </p>
+                </div>
+                <div class="option-3-container">
+                    <button class="option-3">C</button><p class="choice-3">\( |0| \)
+                    </p>
+                </div>
+                <div class="option-4-container">
+                    <button class="option-4">D</button><p class="choice-4">\( |5| \)
+                    </p>
+                </div>
+            </div>
+            <button id="button-show-explanation8" class="button-show-explanation" onclick="toggleExplanation(currentQuestionIndex)">Show Explanation</button>
+            <div id="explanation8" class="explanation">
+                <p class="explanation-paragraph">In this question, we're looking for the absolute value that is farthest from its opposite, considering the symmetry around zero on the number line. <br>
+                    \(|10| = 10\) Opposite: \(|-10| = 10\) <br>
+                    \(|-5| = 5\) Opposite: \(|5| = 5\) <br>
+                    \(|0| = 0\) Opposite: \(|0| = 0\) <br>
+                    \(|5| = 5\) Opposite: \(|-5| = 5\) <br>
+                    The absolute value that is farthest from its opposite is \( |10| \), which corresponds to option A.
+                </p>
+            </div>
+        </div>
+
+        <div class="question-part" id="questionContent9" data-question-id="absolute9">
+            <h1 class="title">Digital SAT Math</h1>
+            <h2 class="subtitle">Absolute Values</h2>
+            <div class="question-list">
+                <div class="number-bar">
+                    <span>9</span>
+                </div>
+                <p class="question">
+                    What is the result of evaluating the expression \( ||3^3 - 2^4| - 1| \)?
+                </p>
+                <div class="option-1-container">
+                    <button class="option-1">A</button><p class="choice-1">\(9\)
+                    </p>
+                </div>
+                <div class="option-2-container">
+                    <button class="option-2">B</button><p class="choice-2">\(10\)
+                    </p>
+                </div>
+                <div class="option-3-container">
+                    <button class="option-3">C</button><p class="choice-3">\(11\)
+                    </p>
+                </div>
+                <div class="option-4-container">
+                    <button class="option-4">D</button><p class="choice-4">\(12\)
+                    </p>
+                </div>
+            </div>
+            <button id="button-show-explanation9" class="button-show-explanation" onclick="toggleExplanation(currentQuestionIndex)">Show Explanation</button>
+            <div id="explanation9" class="explanation">
+                <p class="explanation-paragraph">To evaluate \( ||3^3 - 2^4| - 1| \), we follow these steps: <br>
+                    Step 1: Calculate the expression inside the innermost absolute value: <br>
+                    \( |3^3 - 2^4| = |27 - 16| = |11| = 11 \) <br>                    
+                    Step 2: Substitute the result back into the original expression: <br>
+                    \( ||11 - 1| = |10| = 10 \) <br>                    
+                    Therefore, the correct answer is B.
+                </p>
+            </div>
+        </div>
+
+        <div class="question-part" id="questionContent10" data-question-id="absolute10">
+            <h1 class="title">Digital SAT Math</h1>
+            <h2 class="subtitle">Absolute Values</h2>
+            <div class="question-list">
+                <div class="number-bar">
+                    <span>10</span>
+                </div>
+                <p class="question">
+                    What is the values of \(x\) for which \( |5x + 1| = 2|2x - 3|\)?
+                </p>
+                <div class="option-1-container">
+                    <button class="option-1">A</button><p class="choice-1">\( x = -7 \)
+                    </p>
+                </div>
+                <div class="option-2-container">
+                    <button class="option-2">B</button><p class="choice-2">\( x = \frac{5}{9} \)
+                    </p>
+                </div>
+                <div class="option-3-container">
+                    <button class="option-3">C</button><p class="choice-3">\( x = 7 \)
+                    </p>
+                </div>
+                <div class="option-4-container">
+                    <button class="option-4">D</button><p class="choice-4">\( x = -\frac{5}{9} \)
+                    </p>
+                </div>
+            </div>
+            <button id="button-show-explanation10" class="button-show-explanation" onclick="toggleExplanation(currentQuestionIndex)">Show Explanation</button>
+            <div id="explanation10" class="explanation">
+                <p class="explanation-paragraph">We'll consider two cases based on the sign of the expressions inside the absolute values. <br>
+                    <strong>Case 1:</strong> When \(5x + 1\) and \(2(2x - 3)\) are both non-negative: <br>
+                    \( 5x + 1 = 2(2x - 3) \) <br>
+                    Solving for \(x\): <br>
+                    \( 5x + 1 = 4x - 6 \) <br>
+                    \( x = -7 \) <br>                    
+                    <strong>Case 2:</strong> When \(5x + 1\) and \(2(2x - 3)\) are both negative: <br>
+                    \( -(5x + 1) = 2(2x - 3) \) <br>
+                    Solving for \(x\): <br>
+                    \( -5x - 1 = 4x - 6 \) <br>
+                    \( 9x = 5 \) <br>
+                    \( x = \frac{5}{9} \) <br>                    
+                    Therefore, the values of \(x\) for which \(|5x + 1| = 2|2x - 3|\) are \(x = -7\) and \(x = \frac{5}{9}\). <br>
+                    So, the correct answer are A and B.
+                </p>
+            </div>
+        </div>
+
+        <div class="question-part" id="questionContent11" data-question-id="absolute11">
+            <h1 class="title">Digital SAT Math</h1>
+            <h2 class="subtitle">Absolute Values</h2>
+            <div class="question-list">
+                <div class="number-bar">
+                    <span>11</span>
+                </div>
+                <p class="question">
+                    Which of the following equations has two real solutions?
+                </p>
+                <div class="option-1-container">
+                    <button class="option-1">A</button><p class="choice-1">\( |x| = 5 \)
+                    </p>
+                </div>
+                <div class="option-2-container">
+                    <button class="option-2">B</button><p class="choice-2">\( |x| = -5 \)
+                    </p>
+                </div>
+                <div class="option-3-container">
+                    <button class="option-3">C</button><p class="choice-3">\( |x| = x \)
+                    </p>
+                </div>
+                <div class="option-4-container">
+                    <button class="option-4">D</button><p class="choice-4">\( |x| = -x \)
+                    </p>
+                </div>
+                <div class="option-5-container">
+                    <button class="option-5">E</button><p class="choice-5">\( |x| = 0 \)
+                    </p>
+                </div>
+            </div>
+            <button id="button-show-explanation11" class="button-show-explanation" onclick="toggleExplanation(currentQuestionIndex)">Show Explanation</button>
+            <div id="explanation11" class="explanation">
+                <p class="explanation-paragraph">Let's analyze each option: <br>
+                    A: \( |x| = 5 \): <br>
+                       - This equation has two real solutions: \( x = 5 \) and \( x = -5 \). <br>                    
+                    B: \( |x| = -5 \): <br>
+                       - This equation has no real solutions, as the absolute value is always non-negative. <br>                    
+                    C: \( |x| = x \): <br>
+                       - This equation has two real solutions: \( x = 0 \) and \( x = 1 \). <br>                    
+                    D: \( |x| = -x \): <br>
+                       - This equation has one real solution: \( x = 0 \). <br>                    
+                    E: \( |x| = 0 \): <br>
+                       - This equation has one real solution: \( x = 0 \). <br>                    
+                    Therefore, the equation from the given options that has two real solutions is A.
+                </p>
+            </div>
+        </div>
+
+        <div class="question-part" id="questionContent12" data-question-id="absolute12">
+            <h1 class="title">Digital SAT Math</h1>
+            <h2 class="subtitle">Absolute Values</h2>
+            <div class="question-list">
+                <div class="number-bar">
+                    <span>12</span>
+                </div>
+                <p class="question">
+                    Which of the following represents the solution set of the inequality \( |2x - 1| + |x + 3| > 7 \) ?
+                </p>
+                <div class="option-1-container">
+                    <button class="option-1">A</button><p class="choice-1">\( x < -1 \) or \( x < -8 \) 
+                    </p>
+                </div>
+                <div class="option-2-container">
+                    <button class="option-2">B</button><p class="choice-2">\( x > \frac{5}{4} \) or \( x < -11 \) 
+                    </p>
+                </div>
+                <div class="option-3-container">
+                    <button class="option-3">C</button><p class="choice-3">\( x > 12 \) or \( x < -5 \) 
+                    </p>
+                </div>
+                <div class="option-4-container">
+                    <button class="option-4">D</button><p class="choice-4">\( x < -3 \) or \( x > \frac{5}{3} \) 
+                    </p>
+                </div>
+            </div>
+            <button id="button-show-explanation12" class="button-show-explanation" onclick="toggleExplanation(currentQuestionIndex)">Show Explanation</button>
+            <div id="explanation12" class="explanation">
+                <p class="explanation-paragraph">Let's consider different cases based on the sign of the expressions inside the absolute values: <br>
+                    Case 1: Both expressions are non-negative: <br>
+                    \( 2x - 1 + x + 3 > 7 \) <br>
+                    \( 3x + 2 > 7 \) <br>
+                    \( 3x > 5 \) <br>
+                    \( x > \frac{5}{3} \) <br>                    
+                    Case 2: Both expressions are negative: <br>
+                    \( -(2x - 1) - (x + 3) > 7 \) <br>
+                    \( -3x - 2 > 7 \) <br>
+                    \( -3x > 9 \) <br>
+                    \( x < -3 \) <br>                    
+                    The combined solution is \( x < -3 \) or \( x > \frac{5}{3} \). <br>
+                    Therefore, the correct answer is D.
+                </p>
+            </div>
+        </div>
+
+        <div class="question-part" id="questionContent13" data-question-id="absolute13">
+            <h1 class="title">Digital SAT Math</h1>
+            <h2 class="subtitle">Absolute Values</h2>
+            <div class="question-list">
+                <div class="number-bar">
+                    <span>13</span>
+                </div>
+                <p class="question">
+                    The distance between two points on a coordinate plane is equal to the absolute value of the difference of their x-coordinates. 
+                    Which of the following equations represents the distance between the points \((a, b)\) and \((c, d)\)?
+                </p>
+                <div class="option-1-container">
+                    <button class="option-1">A</button><p class="choice-1">\( |a - c| \)
+                    </p>
+                </div>
+                <div class="option-2-container">
+                    <button class="option-2">B</button><p class="choice-2">\( |b - d| \)
+                    </p>
+                </div>
+                <div class="option-3-container">
+                    <button class="option-3">C</button><p class="choice-3">\( |(a, b) - (c, d)| \)
+                    </p>
+                </div>
+                <div class="option-4-container">
+                    <button class="option-4">D</button><p class="choice-4">\( |a + c - b - d| \)
+                    </p>
+                </div>
+                <div class="option-5-container">
+                    <button class="option-5">E</button><p class="choice-5">\( |a^2 + b^2 - c^2 - d^2| \)
+                    </p>
+                </div>
+            </div>
+            <button id="button-show-explanation13" class="button-show-explanation" onclick="toggleExplanation(currentQuestionIndex)">Show Explanation</button>
+            <div id="explanation13" class="explanation">
+                <p class="explanation-paragraph">The distance between two points \((a, b)\) and \((c, d)\) on a coordinate plane is given by the formula: <br>
+                    <strong>Distance \(= \sqrt{(c - a)^2 + (d - b)^2} \)</strong><br>                    
+                    Now, let's see which of the given options represents the distance: <br>                    
+                    A) \( |a - c| \) <br>
+                    This represents the absolute difference of the \(x\)-coordinates, which is correct. Keep it. <br>                    
+                    B) \( |b - d| \) <br>
+                    This represents the absolute difference of the \(y\)-coordinates, not the distance. Eliminate it. <br>
+                    C) \( |(a, b) - (c, d)| \) <br>
+                    This notation is not meaningful in the context of distance. Eliminate it. <br>                    
+                    D) \( |a + c - b - d| \) <br>
+                    This does not represent the distance between the points. Eliminate it. <br>                    
+                    E) \( |a^2 + b^2 - c^2 - d^2| \) <br>
+                    This is not the correct formula for the distance between two points. Eliminate it. <br>                    
+                    Therefore, the correct answer is A.
+                </p>
+            </div>
+        </div>
+
+        <div class="question-part" id="questionContent14" data-question-id="absolute14">
+            <h1 class="title">Digital SAT Math</h1>
+            <h2 class="subtitle">Absolute Values</h2>
+            <div class="question-list">
+                <div class="number-bar">
+                    <span>14</span>
+                </div>
+                <p class="question">
+                    What is the minimum value of \( |2x - 1| + |3x + 4| \) ?
+                </p>
+                <div class="option-1-container">
+                    <button class="option-1">A</button><p class="choice-1">\( 5x + 3 \)
+                    </p>
+                </div>
+                <div class="option-2-container">
+                    <button class="option-2">B</button><p class="choice-2">\( -5x - 3 \)
+                    </p>
+                </div>
+                <div class="option-3-container">
+                    <button class="option-3">C</button><p class="choice-3">\( -x - 5 \)
+                    </p>
+                </div>
+                <div class="option-4-container">
+                    <button class="option-4">D</button><p class="choice-4">\( x + 3 \)
+                    </p>
+                </div>
+                <div class="option-5-container">
+                    <button class="option-5">E</button><p class="choice-5">\(0\)
+                    </p>
+                </div>
+            </div>
+            <button id="button-show-explanation14" class="button-show-explanation" onclick="toggleExplanation(currentQuestionIndex)">Show Explanation</button>
+            <div id="explanation14" class="explanation">
+                <p class="explanation-paragraph">Let's consider different cases based on the sign of \(2x - 1\) and \(3x + 4\). <br>
+                    Case 1: Both expressions are non-negative: <br>
+                    \( 2x - 1 + (3x + 4) = 5x + 3 \) <br>                    
+                    Case 2: Both expressions are negative: <br>
+                    \( -(2x - 1) - (3x + 4) = -5x - 3 \) <br>                    
+                    Case 3: \(2x - 1\) is non-negative and \(3x + 4\) is negative: <br>
+                    \( 2x - 1 - (3x + 4) = -x - 5 \) <br>                    
+                    Case 4: \(2x - 1\) is negative and \(3x + 4\) is non-negative: <br>
+                    \( -(2x - 1) + (3x + 4) = x + 3 \) <br>                    
+                    Now, we need to find the minimum value among these cases. <br>
+                    The minimum value occurs when \( x = -3 \), and the minimum value is \( (-3) + 3 = 0 \). <br>                    
+                    Therefore, the correct answer is E.
+                </p>
+            </div>
+        </div>
+
+        <div class="question-part" id="questionContent15" data-question-id="absolute15">
+            <h1 class="title">Digital SAT Math</h1>
+            <h2 class="subtitle">Absolute Values</h2>
+            <div class="question-list">
+                <div class="number-bar">
+                    <span>15</span>
+                </div>
+                <p class="question">
+                    What is the solution of \(x\) in the equation \( |x + 1| = |x - 4| \) ?
+                </p>
+                <div class="option-1-container">
+                    <button class="option-1">A</button><p class="choice-1">\( x = -1 \)
+                    </p>
+                </div>
+                <div class="option-2-container">
+                    <button class="option-2">B</button><p class="choice-2">\( x = \frac{3}{2} \)
+                    </p>
+                </div>
+                <div class="option-3-container">
+                    <button class="option-3">C</button><p class="choice-3">\( x = 4 \)
+                    </p>
+                </div>
+                <div class="option-4-container">
+                    <button class="option-4">D</button><p class="choice-4">No solution
+                    </p>
+                </div>
+            </div>
+            <button id="button-show-explanation15" class="button-show-explanation" onclick="toggleExplanation(currentQuestionIndex)">Show Explanation</button>
+            <div id="explanation15" class="explanation">
+                <p class="explanation-paragraph">To solve the equation \( |x + 1| = |x - 4| \), we'll consider the cases where \( x + 1 \) is non-negative and where it is negative. <br>
+                    Case 1: \( x + 1 \) is non-negative (\( x + 1 \geq 0 \)): <br>
+                    In this case, the equation simplifies to \( x + 1 = x - 4 \). Solving for \( x \): <br>
+                    \( 1 = -4 \) <br>
+                    This case does not yield a valid solution. <br>                    
+                    Case 2: \( x + 1 \) is negative (\( x + 1 < 0 \)): <br>
+                    In this case, the equation simplifies to \( -(x + 1) = x - 4 \). Solving for \( x \): <br>
+                    \( -x - 1 = x - 4 \) <br>
+                    Combine like terms: <br>
+                    \( -1 = 2x - 4 \) <br>
+                    Add 4 to both sides: <br>
+                    \( 3 = 2x \) <br>
+                    Divide by 2: <br>
+                    \( x = \frac{3}{2} \) <br>                    
+                    Therefore, the correct answer is B.
+                </p>
+            </div>
+        </div>
+
+        <div class="question-part" id="questionContent16" data-question-id="absolute16">
+            <h1 class="title">Digital SAT Math</h1>
+            <h2 class="subtitle">Absolute Values</h2>
+            <div class="question-list">
+                <div class="number-bar">
+                    <span>16</span>
+                </div>
+                <p class="question">
+                    Which of the following is a possible value of \(x\) for the equation \(|3x-4|=|2x+5|\)?
+                </p>
+                <div class="option-1-container">
+                    <button class="option-1">A</button><p class="choice-1">\(-\frac{1}{5}\)
+                    </p>
+                </div>
+                <div class="option-2-container">
+                    <button class="option-2">B</button><p class="choice-2">\(2\)
+                    </p>
+                </div>
+                <div class="option-3-container">
+                    <button class="option-3">C</button><p class="choice-3">\(-9\)
+                    </p>
+                </div>
+                <div class="option-4-container">
+                    <button class="option-4">D</button><p class="choice-4">\(9\)
+                    </p>
+                </div>
+            </div>
+            <button id="button-show-explanation16" class="button-show-explanation" onclick="toggleExplanation(currentQuestionIndex)">Show Explanation</button>
+            <div id="explanation16" class="explanation">
+                <p class="explanation-paragraph">Let's solve the equation \(|3x-4|=|2x+5|\) to determine the value of \(x\). <br>
+                    At first, separate the equation into \(2\) possible cases. <br>
+                    \(3x-4=2x+5\) <br>
+                    \(3x-4=-(2x+5)\) <br>
+                    Now, solve the equation for \(x\): <br>
+                    \(3x-4=2x+5 \Rightarrow x=9\) <br>
+                    \(3x-4=-(2x+5) \Rightarrow x=-\frac{1}{5}\) <br>
+                    The equation has \(2\) solutions, one is \(9\) and another one is \(-\frac{1}{5}\). <br>
+                    Therefore the correct answer is both A and D.
+                </p>
+            </div>
+        </div>
+
+        <div class="question-part" id="questionContent17" data-question-id="absolute17">
+            <h1 class="title">Digital SAT Math</h1>
+            <h2 class="subtitle">Absolute Values</h2>
+            <div class="question-list">
+                <div class="number-bar">
+                    <span>17</span>
+                </div>
+                <p class="question">
+                    What is the solution set for \( |3x^2 - 234| = 0 \)?
+                </p>
+                <div class="option-1-container">
+                    <button class="option-1">A</button><p class="choice-1">\( x = \sqrt{66} \)
+                    </p>
+                </div>
+                <div class="option-2-container">
+                    <button class="option-2">B</button><p class="choice-2">\( x = -\sqrt{45} \)
+                    </p>
+                </div>
+                <div class="option-3-container">
+                    <button class="option-3">C</button><p class="choice-3">\( x = 0 \)
+                    </p>
+                </div>
+                <div class="option-4-container">
+                    <button class="option-4">D</button><p class="choice-4">\( x = \pm \sqrt{78} \)
+                    </p>
+                </div>
+            </div>
+            <button id="button-show-explanation17" class="button-show-explanation" onclick="toggleExplanation(currentQuestionIndex)">Show Explanation</button>
+            <div id="explanation17" class="explanation">
+                <p class="explanation-paragraph">To determine the solution set for \( |3x^2 - 234| = 0 \), we set the expression inside the absolute value equal to zero and solve for \( x \): <br>
+                    \(3x^2 - 234 = 0\) <br>                    
+                    Now, solve for \( x \): <br>                    
+                    \(3x^2 = 234\) <br>                    
+                    Divide by 3: <br>                    
+                    \(x^2 = 78\) <br>                    
+                    Take the square root of both sides: <br>                    
+                    \(x = \pm \sqrt{78}\) <br>                    
+                    Therefore, the correct answer is D.
+                </p>
+            </div>
+        </div>
+
+        <div class="question-part" id="questionContent18" data-question-id="absolute18">
+            <h1 class="title">Digital SAT Math</h1>
+            <h2 class="subtitle">Absolute Values</h2>
+            <div class="question-list">
+                <div class="number-bar">
+                    <span>18</span>
+                </div>
+                <p class="question">
+                    What is the value of \(x\) in the equation \( |2x - 1| = \frac{1}{2} \)?
+                </p>
+                <div class="option-1-container">
+                    <button class="option-1">A</button><p class="choice-1">\(\frac{3}{4}, \frac{4}{3}\)
+                    </p>
+                </div>
+                <div class="option-2-container">
+                    <button class="option-2">B</button><p class="choice-2">\(\frac{2}{6}, \frac{3}{7}\)
+                    </p>
+                </div>
+                <div class="option-3-container">
+                    <button class="option-3">C</button><p class="choice-3">\(\frac{3}{4}, \frac{1}{4}\)
+                    </p>
+                </div>
+                <div class="option-4-container">
+                    <button class="option-4">D</button><p class="choice-4">\(\frac{7}{4}, \frac{5}{3}\)
+                    </p>
+                </div>
+            </div>
+            <button id="button-show-explanation18" class="button-show-explanation" onclick="toggleExplanation(currentQuestionIndex)">Show Explanation</button>
+            <div id="explanation18" class="explanation">
+                <p class="explanation-paragraph">To solve the equation \( |2x - 1| = \frac{1}{2} \), we'll consider the cases where \( 2x - 1 \) is non-negative and where it is negative. <br>
+                    Case 1: \( 2x - 1 \geq 0 \): <br>
+                    In this case, the equation simplifies to \( 2x - 1 = \frac{1}{2} \). Solving for \( x \): <br>
+                    \(2x = \frac{3}{2} \quad \Rightarrow \quad x = \frac{3}{4}\) <br>                    
+                    Case 2: \( 2x - 1 < 0 \): <br>
+                    In this case, the equation simplifies to \( -(2x - 1) = \frac{1}{2} \). Solving for \( x \): <br>
+                    \(-2x + 1 = \frac{1}{2} \quad \Rightarrow \quad -2x = -\frac{1}{2} \quad \Rightarrow \quad x = \frac{1}{4}\) <br>                    
+                    So, the solution set of \(x\) is \((\frac{3}{4}\), \(\frac{1}{4})\). <br>
+                    Therefore, the correct answer is C.
+                </p>
+            </div>
+        </div>
+
+        <div class="question-part" id="questionContent19" data-question-id="absolute19">
+            <h1 class="title">Digital SAT Math</h1>
+            <h2 class="subtitle">Absolute Values</h2>
+            <div class="question-list">
+                <div class="number-bar">
+                    <span>19</span>
+                </div>
+                <p class="question">
+                    Which of the following inequalities has infinitely many solutions?
+                </p>
+                <div class="option-1-container">
+                    <button class="option-1">A</button><p class="choice-1">\( |x| < 0 \)
+                    </p>
+                </div>
+                <div class="option-2-container">
+                    <button class="option-2">B</button><p class="choice-2">\( |x| > 0 \)
+                    </p>
+                </div>
+                <div class="option-3-container">
+                    <button class="option-3">C</button><p class="choice-3">\( |x| \leq 0 \)
+                    </p>
+                </div>
+                <div class="option-4-container">
+                    <button class="option-4">D</button><p class="choice-4">\( |x| \geq 0 \)
+                    </p>
+                </div>
+                <div class="option-5-container">
+                    <button class="option-5">E</button><p class="choice-5">\( |x| = 0 \)
+                    </p>
+                </div>
+            </div>
+            <button id="button-show-explanation19" class="button-show-explanation" onclick="toggleExplanation(currentQuestionIndex)">Show Explanation</button>
+            <div id="explanation19" class="explanation">
+                <p class="explanation-paragraph">An inequality with infinitely many solutions typically involves a range of values. <br> 
+                    Let's analyze the options: <br>
+                    A) \(|x| < 0\) <br>
+                    This is not possible since the absolute value of any real number is non-negative. This inequality has no solution. <br>
+                    B) \(|x| > 0\) <br>
+                    This is true for all real numbers \(x\) except \(x = 0\). It includes infinitely many values. This is a correct choice. <br>
+                    C) \(|x| \leq 0\) <br>
+                    The absolute value of any real number is non-negative, so \(|x|\) is always greater than or equal to \(0\). <br>
+                    This inequality is true for all real numbers, but it doesn't include strictly greater values. <br>
+                    So, it's not the best choice for infinitely many solutions. <br>                    
+                    D) \(|x| \geq 0\) <br>
+                    This is true for all real numbers. It includes infinitely many values. This is a correct choice. <br>                    
+                    E) \(|x| = 0\) <br>
+                    This is true only when \(x = 0\). It has only one solution. <br>                    
+                    Therefore, the correct choices are B) \(|x| > 0\) and D) \(|x| \geq 0\), as they represent inequalities with infinitely many solutions.
+                </p>
+            </div>
+        </div>
+
+        <div class="question-part" id="questionContent20" data-question-id="absolute20">
+            <h1 class="title">Digital SAT Math</h1>
+            <h2 class="subtitle">Absolute Values</h2>
+            <div class="question-list">
+                <div class="number-bar">
+                    <span>20</span>
+                </div>
+                <p class="question">
+                    Find the values of \(x\) for which \(∣x^2−6x+8∣=0\).
+                </p>
+                <div class="input-button">
+                    <input class="input-answer" type="text"> 
+                </div>
+            </div>
+            <button id="button-show-explanation20" class="button-show-explanation" onclick="toggleExplanation(currentQuestionIndex)">Show Explanation</button>
+            <div id="explanation20" class="explanation">
+                <p class="explanation-paragraph">To find the values of \(x\) for which \(|x^2 - 6x + 8| = 0\), 
+                    we consider that the absolute value of any real number is always non-negative. <br>
+                    Therefore, for the expression inside the absolute value bars, \(|x^2 - 6x + 8|\), to be equal to \(0\), the expression inside must be \(0\). <br>
+                    So, we set \(x^2 - 6x + 8\) equal to \(0\) and solve for \(x\): <br>
+                    \(x^2 - 6x + 8 = 0\) <br>                    
+                    Now, we factor the quadratic equation: <br>                    
+                    \((x - 4)(x - 2) = 0\) <br>                    
+                    Setting each factor equal to zero gives two possible values for \(x\): <br>                    
+                    1. \(x - 4 = 0\) \(\implies x = 4\) <br>
+                    2. \(x - 2 = 0\) \(\implies x = 2\) <br>                    
+                    Therefore, the values of \(x\) for which \(|x^2 - 6x + 8| = 0\) are \(4\) and \(2\).
+                </p>
+            </div>
+        </div>
+
+        <div class="question-part" id="questionContent21" data-question-id="absolute21">
+            <h1 class="title">Digital SAT Math</h1>
+            <h2 class="subtitle">Absolute Values</h2>
+            <div class="question-list">
+                <div class="number-bar">
+                    <span>21</span>
+                </div>
+                <p class="question">
+                    Which of the following represents the solution set for \(|4x + 3| \leq 2|x - 1|\)?
+                </p>
+                <div class="option-1-container">
+                    <button class="option-1">A</button><p class="choice-1">\((-\infty, -\frac{5}{2})\)
+                    </p>
+                </div>
+                <div class="option-2-container">
+                    <button class="option-2">B</button><p class="choice-2">\((-\frac{1}{6}, \infty)\)
+                    </p>
+                </div>
+                <div class="option-3-container">
+                    <button class="option-3">C</button><p class="choice-3">\((\frac{4}{7}, -\frac{13}{4})\)
+                    </p>
+                </div>
+                <div class="option-4-container">
+                    <button class="option-4">D</button><p class="choice-4">\((-\frac{5}{2}, -\frac{1}{6})\)
+                    </p>
+                </div>
+            </div>
+            <button id="button-show-explanation21" class="button-show-explanation" onclick="toggleExplanation(currentQuestionIndex)">Show Explanation</button>
+            <div id="explanation21" class="explanation">
+                <p class="explanation-paragraph">We need to consider two cases: when \(4x + 3\) is nonnegative and when it is negative. <br>
+                        Case 1: When \(4x + 3\) is nonnegative \((4x + 3 \geq 0)\): <br>
+                            \(4x + 3 \leq 2(x - 1)\) <br>
+                            \(4x + 3 \leq 2x - 2\) <br>
+                            \(2x \geq -5\) <br>
+                            \(x \geq -\frac{5}{2}\) <br>
+                    
+                        Case 2: When \(4x + 3\) is negative \((4x + 3 < 0)\): <br>
+                            \(-(4x + 3) \leq 2(x - 1)\) <br>
+                            \(-4x - 3 \leq 2x - 2\) <br>
+                            \(-6x \leq 1\) <br>
+                            \(x \geq -\frac{1}{6}\) <br>                    
+                    Therefore, the correct solution is \((-\frac{5}{2}, -\frac{1}{6})\), which corresponds to option D.
+                </p>
+            </div>
+        </div>
+
+        <div class="question-part" id="questionContent22" data-question-id="absolute22">
+            <h1 class="title">Digital SAT Math</h1>
+            <h2 class="subtitle">Absolute Values</h2>
+            <div class="question-list">
+                <div class="number-bar">
+                    <span>22</span>
+                </div>
+                <p class="question">
+                    Which of the following expressions is equivalent to \(|x - 2| + |x + 3|\)?
+                </p>
+                <div class="option-1-container">
+                    <button class="option-1">A</button><p class="choice-1">\(|x - 2 + x + 3|\)
+                    </p>
+                </div>
+                <div class="option-2-container">
+                    <button class="option-2">B</button><p class="choice-2">\(|-x + 2 + x + 3|\)
+                    </p>
+                </div>
+                <div class="option-3-container">
+                    <button class="option-3">C</button><p class="choice-3">\(|x - 2 - x - 3|\)
+                    </p>
+                </div>
+                <div class="option-4-container">
+                    <button class="option-4">D</button><p class="choice-4">\(|x + 2| + |x - 3|\)
+                    </p>
+                </div>
+                <div class="option-5-container">
+                    <button class="option-5">E</button><p class="choice-5">\(|x + 2 + x - 3|\)
+                    </p>
+                </div>
+            </div>
+            <button id="button-show-explanation22" class="button-show-explanation" onclick="toggleExplanation(currentQuestionIndex)">Show Explanation</button>
+            <div id="explanation22" class="explanation">
+                <p class="explanation-paragraph">To determine which expression is equivalent to \( |x - 2| + |x + 3| \), let's simplify each option: <br>
+                    A) \( |x - 2 + x + 3| \) simplifies to \( |2x + 1| \) <br>
+                    B) \( |-x + 2 + x + 3| \) simplifies to \( |5| \) <br>
+                    C) \( |x - 2 - x - 3| \) simplifies to \( |-5| \) <br>
+                    D) \( |x + 2| + |x - 3| \) remains unchanged. <br>
+                    E) \( |x + 2 + x - 3| \) simplifies to \( |2x - 1| \) <br>                    
+                    So, the correct option is D.
+                </p>
+            </div>
+        </div>
+
+        <div class="question-part" id="questionContent23" data-question-id="absolute23">
+            <h1 class="title">Digital SAT Math</h1>
+            <h2 class="subtitle">Absolute Values</h2>
+            <div class="question-list">
+                <div class="number-bar">
+                    <span>23</span>
+                </div>
+                <p class="question">
+                    What is the values of \(x\) for which \( |x^2 - 5x + 6| \geq 0 \)?
+                </p>
+                <div class="option-1-container">
+                    <button class="option-1">A</button><p class="choice-1">\(x \in \mathbb{R}\)
+                    </p>
+                </div>
+                <div class="option-2-container">
+                    <button class="option-2">B</button><p class="choice-2">\(x \in \mathbb{Z}\)
+                    </p>
+                </div>
+                <div class="option-3-container">
+                    <button class="option-3">C</button><p class="choice-3">\(x \in \mathbb{Q}\)
+                    </p>
+                </div>
+                <div class="option-4-container">
+                    <button class="option-4">D</button><p class="choice-4">\(x \in \varnothing\) (empty set)
+                    </p>
+                </div>
+            </div>
+            <button id="button-show-explanation23" class="button-show-explanation" onclick="toggleExplanation(currentQuestionIndex)">Show Explanation</button>
+            <div id="explanation23" class="explanation">
+                <p class="explanation-paragraph">The absolute value of any real number is always greater than or equal to zero. <br> 
+                    Therefore, the inequality \( |x^2 - 5x + 6| \geq 0 \) holds for all real values of \( x \). <br>
+                    In mathematical notation, this can be expressed as \( x \in \mathbb{R} \), indicating that \( x \) belongs to the set of real numbers. <br>
+                    Therefore, the correct answer is A.
+                </p>
+            </div>
+        </div>
+
+        <div class="question-part" id="questionContent24" data-question-id="absolute24">
+            <h1 class="title">Digital SAT Math</h1>
+            <h2 class="subtitle">Absolute Values</h2>
+            <div class="question-list">
+                <div class="number-bar">
+                    <span>24</span>
+                </div>
+                <p class="question">
+                    What is the solution of \(x\) in the equation \(|3x - 2| = 5x - 1\)?
+                </p>
+                <div class="option-1-container">
+                    <button class="option-1">A</button><p class="choice-1">\(x = -\frac{1}{2}\)
+                    </p>
+                </div>
+                <div class="option-2-container">
+                    <button class="option-2">B</button><p class="choice-2">\(x = \frac{3}{8}\)
+                    </p>
+                </div>
+                <div class="option-3-container">
+                    <button class="option-3">C</button><p class="choice-3">\(x = -\frac{3}{8}\)
+                    </p>
+                </div>
+                <div class="option-4-container">
+                    <button class="option-4">D</button><p class="choice-4">\(x = \frac{1}{2}\)
+                    </p>
+                </div>
+            </div>
+            <button id="button-show-explanation24" class="button-show-explanation" onclick="toggleExplanation(currentQuestionIndex)">Show Explanation</button>
+            <div id="explanation24" class="explanation">
+                <p class="explanation-paragraph">Consider both cases when the expression inside the absolute value is positive and when it is negative. <br>
+                    1. When \(3x - 2\) is positive: <br>
+                       \(3x - 2 = 5x - 1\) <br>
+                       Solve for \(x\): <br>
+                       \(2x = -1\) <br>
+                       \(x = -\frac{1}{2}\) <br>                    
+                    2. When \(3x - 2\) is negative: <br>
+                       \(-(3x - 2) = 5x - 1\) <br>
+                       Solve for \(x\): <br>
+                       \(2 - 3x = 5x - 1\) <br>
+                       \(8x = 3\) <br>
+                       \(x = \frac{3}{8}\) <br>                    
+                    Therefore, the correct answers are (A) \(x = -\frac{1}{2}\) and (B) \(x = \frac{3}{8}\).
+                </p>
+            </div>
+        </div>
+
+        <div class="question-part" id="questionContent25" data-question-id="absolute25">
+            <h1 class="title">Digital SAT Math</h1>
+            <h2 class="subtitle">Absolute Values</h2>
+            <div class="question-list">
+                <div class="number-bar">
+                    <span>25</span>
+                </div>
+                <p class="question">
+                    If \(a\), \(b\), and \(c\) are real numbers such that \(|a| + |b| + |c| = 0\), what are the possible values of \(a + b + c\)?
+                </p>
+                <div class="option-1-container">
+                    <button class="option-1">A</button><p class="choice-1">\(0\)
+                    </p>
+                </div>
+                <div class="option-2-container">
+                    <button class="option-2">B</button><p class="choice-2">\(1\)
+                    </p>
+                </div>
+                <div class="option-3-container">
+                    <button class="option-3">C</button><p class="choice-3">\(-1\)
+                    </p>
+                </div>
+                <div class="option-4-container">
+                    <button class="option-4">D</button><p class="choice-4">\(2\)
+                    </p>
+                </div>
+            </div>
+            <button id="button-show-explanation25" class="button-show-explanation" onclick="toggleExplanation(currentQuestionIndex)">Show Explanation</button>
+            <div id="explanation25" class="explanation">
+                <p class="explanation-paragraph">The sum of absolute values \(|a| + |b| + |c|\) is always non-negative. <br>
+                    It can only be equal to zero if each of the absolute values is zero individually. <br>
+                    This implies that \(a\), \(b\), and \(c\) must all be equal to zero. <br>
+                    Therefore, the correct answer is A.
+                </p>
+            </div>
+        </div>
+
+        <div class="question-part" id="questionContent26" data-question-id="absolute26">
+            <h1 class="title">Digital SAT Math</h1>
+            <h2 class="subtitle">Absolute Values</h2>
+            <div class="question-list">
+                <div class="number-bar">
+                    <span>26</span>
+                </div>
+                <p class="question">
+                    Which of the following is the values of \(x\) for which \(|x - 2| = |3 - x|\)?
+                </p>
+                <div class="option-1-container">
+                    <button class="option-1">A</button><p class="choice-1">\(x = \frac{5}{2}\)
+                    </p>
+                </div>
+                <div class="option-2-container">
+                    <button class="option-2">B</button><p class="choice-2">\(x = -1\)
+                    </p>
+                </div>
+                <div class="option-3-container">
+                    <button class="option-3">C</button><p class="choice-3">\(x = 2\)
+                    </p>
+                </div>
+                <div class="option-4-container">
+                    <button class="option-4">D</button><p class="choice-4">\(x = 0\)
+                    </p>
+                </div>
+            </div>
+            <button id="button-show-explanation26" class="button-show-explanation" onclick="toggleExplanation(currentQuestionIndex)">Show Explanation</button>
+            <div id="explanation26" class="explanation">
+                <p class="explanation-paragraph"> To find the values of \(x\) for which \(|x - 2| = |3 - x|\), we consider two cases: <br>
+                    1. When \(x - 2 = 3 - x\): <br>
+                       \(2x = 5 \implies x = \frac{5}{2}.\) <br>                    
+                    2. When \(x - 2 = -(3 - x)\): <br>
+                       \(x - 2 = -3 + x \implies -2 = -3.\), this statement is false.<br>                    
+                    Therefore, the correct answers is (A) \(x = \frac{5}{2}\).
+                </p>
+            </div>
+        </div>
+
+        <div class="question-part" id="questionContent27" data-question-id="absolute27">
+            <h1 class="title">Digital SAT Math</h1>
+            <h2 class="subtitle">Absolute Values</h2>
+            <div class="question-list">
+                <div class="number-bar">
+                    <span>27</span>
+                </div>
+                <p class="question">
+                    What is the simplified form of the expression \(\sqrt{|x^2 - 9|}\)?
+                </p>
+                <div class="option-1-container">
+                    <button class="option-1">A</button><p class="choice-1">\(x - 3\)
+                    </p>
+                </div>
+                <div class="option-2-container">
+                    <button class="option-2">B</button><p class="choice-2">\(x + 3\)
+                    </p>
+                </div>
+                <div class="option-3-container">
+                    <button class="option-3">C</button><p class="choice-3">\(-x + 5\)
+                    </p>
+                </div>
+                <div class="option-4-container">
+                    <button class="option-4">D</button><p class="choice-4">\(-x - 2\)
+                    </p>
+                </div>
+            </div>
+            <button id="button-show-explanation27" class="button-show-explanation" onclick="toggleExplanation(currentQuestionIndex)">Show Explanation</button>
+            <div id="explanation27" class="explanation">
+                <p class="explanation-paragraph">To simplify \(\sqrt{|x^2 - 9|}\), consider two cases: <br>
+                    1. When \(x^2 - 9 \geq 0\): <br>
+                       \(\sqrt{|x^2 - 9|} = \sqrt{x^2 - 9} = |x - 3|\)   as \((x \geq 3)\). <br>                    
+                    2. When \(x^2 - 9 < 0\): <br>
+                       \(\sqrt{|x^2 - 9|} = \sqrt{-(x^2 - 9)} = \sqrt{9 - x^2} = |x + 3|\) as \(x < -3\) <br>                    
+                    Therefore, the correct answer is both A, (\(x - 3\) when \(x \geq 3\)) and B, (\(x + 3\) when \(x < -3\)). 
+                </p>
+            </div>
+        </div>
+
+        <div class="question-part" id="questionContent28" data-question-id="absolute28">
+            <h1 class="title">Digital SAT Math</h1>
+            <h2 class="subtitle">Absolute Values</h2>
+            <div class="question-list">
+                <div class="number-bar">
+                    <span>28</span>
+                </div>
+                <p class="question">
+                    What is the value of \(x\) for which \(|4x + 2| = 2 |x - 1|\)?
+                </p>
+                <div class="option-1-container">
+                    <button class="option-1">A</button><p class="choice-1">\(x = -2\)
+                    </p>
+                </div>
+                <div class="option-2-container">
+                    <button class="option-2">B</button><p class="choice-2">\(x = 0\)
+                    </p>
+                </div>
+                <div class="option-3-container">
+                    <button class="option-3">C</button><p class="choice-3">\(x = -1\)
+                    </p>
+                </div>
+                <div class="option-4-container">
+                    <button class="option-4">D</button><p class="choice-4">\(x = 1\)
+                    </p>
+                </div>
+            </div>
+            <button id="button-show-explanation28" class="button-show-explanation" onclick="toggleExplanation(currentQuestionIndex)">Show Explanation</button>
+            <div id="explanation28" class="explanation">
+                <p class="explanation-paragraph">We consider two cases based on the sign of \(x - 1\): <br>
+                    1. Case 1: \((x \geq 1)\): <br>
+                       In this case, \(|4x + 2| = 4x + 2\) and \(|x - 1| = x - 1\). The equation becomes: <br>
+                       \( 4x + 2 = 2(x - 1) \) <br>
+                       Solving for \(x\): <br>
+                       \( 4x + 2 = 2x - 2 \) <br>
+                       \( 2x = -4 \) <br>
+                       \( x = -2 \) <br>                    
+                    2. Case 2: (\(x < 1\)): <br>
+                       In this case, \(|4x + 2| = -(4x + 2)\) and \(|x - 1| = -(x - 1)\). The equation becomes: <br>
+                       \( -(4x + 2) = 2(x - 1) \) <br>
+                       Solving for \(x\): <br>
+                       \( -4x - 2 = 2x - 2 \) <br>
+                       \( -6x = 0 \) <br>
+                       \( x = 0 \) <br>                    
+                    Therefore, the solutions are \(x = -2\) and \(x = 0\), which correspond to options A and B.
+                </p>
+            </div>
+        </div>
+
+        <div class="question-part" id="questionContent29" data-question-id="absolute29">
+            <h1 class="title">Digital SAT Math</h1>
+            <h2 class="subtitle">Absolute Values</h2>
+            <div class="question-list">
+                <div class="number-bar">
+                    <span>29</span>
+                </div>
+                <p class="question">
+                    What is the solution set for \(x\) in the equation \( |x + 2| = |x^2 - 4|\)?
+                </p>
+                <div class="option-1-container">
+                    <button class="option-1">A</button><p class="choice-1">\(2,3\)
+                    </p>
+                </div>
+                <div class="option-2-container">
+                    <button class="option-2">B</button><p class="choice-2">\(1,-2\)
+                    </p>
+                </div>
+                <div class="option-3-container">
+                    <button class="option-3">C</button><p class="choice-3">\(1,4\)
+                    </p>
+                </div>
+                <div class="option-4-container">
+                    <button class="option-4">D</button><p class="choice-4">\(3,4\)
+                    </p>
+                </div>
+            </div>
+            <button id="button-show-explanation29" class="button-show-explanation" onclick="toggleExplanation(currentQuestionIndex)">Show Explanation</button>
+            <div id="explanation29" class="explanation">
+                <p class="explanation-paragraph">We consider two cases based on the sign of \(x + 2\) and \(x^2 - 4\): <br>
+                    1. Case 1: \(x \geq -2\): <br>
+                       In this case, \(|x + 2| = x + 2\) and \(|x^2 - 4| = x^2 - 4\). The equation becomes: <br>
+                       \( x + 2 = x^2 - 4 \) <br>
+                       Solving for \(x\): <br>
+                       \( x^2 - x - 6 = 0 \) <br>
+                       \( (x - 3)(x + 2) = 0 \) <br>
+                       So, \(x = 3\) or \(x = -2\). <br>
+                    
+                    2. Case 2: \(x < -2\): <br>
+                       In this case, \(|x + 2| = -(x + 2)\) and \(|x^2 - 4| = -(x^2 - 4)\). The equation becomes: <br>
+                       \( -(x + 2) = x^2 - 4 \) <br>
+                       Solving for \(x\): <br>
+                       \( x^2 + x - 2 = 0 \) <br>
+                       \( (x - 1)(x + 2) = 0 \) <br>
+                       So, \(x = 1\) or \(x = -2\). <br>                    
+                    Therefore, the solutions are \(x = 3, x = -2,\) and \(x = 1\). <br>
+                    So, the correct answer is B.
+                </p>
+            </div>
+        </div>
+
+        <div class="question-part" id="questionContent30" data-question-id="absolute30">
+            <h1 class="title">Digital SAT Math</h1>
+            <h2 class="subtitle">Absolute Values</h2>
+            <div class="question-list">
+                <div class="number-bar">
+                    <span>30</span>
+                </div>
+                <p class="question">
+                    The expression \(|x|+|y|\) is equal to \(0\) if and only if:
+                </p>
+                <div class="option-1-container">
+                    <button class="option-1">A</button><p class="choice-1">\(x=0\) and \(y=0\)
+                    </p>
+                </div>
+                <div class="option-2-container">
+                    <button class="option-2">B</button><p class="choice-2">\(x=y\)
+                    </p>
+                </div>
+                <div class="option-3-container">
+                    <button class="option-3">C</button><p class="choice-3">\(x=-y\)
+                    </p>
+                </div>
+                <div class="option-4-container">
+                    <button class="option-4">D</button><p class="choice-4">\(x\) and \(y\) are both positive
+                    </p>
+                </div>
+                <div class="option-5-container">
+                    <button class="option-5">E</button><p class="choice-5">\(x\) and \(y\) are both negative
+                    </p>
+                </div>
+            </div>
+            <button id="button-show-explanation30" class="button-show-explanation" onclick="toggleExplanation(currentQuestionIndex)">Show Explanation</button>
+            <div id="explanation30" class="explanation">
+                <p class="explanation-paragraph">The expression \( |x| + |y| \) represents the sum of the absolute values of \(x\) and \(y\). <br>
+                    The only way for this sum to be equal to 0 is if both \(|x|\) and \(|y|\) are 0. <br>
+                    This occurs when \(x = 0\) and \(y = 0\). <br>
+                    Therefore, the correct answer is A.
+                </p>
+            </div>
+        </div>
+
+        <div class="question-part" id="questionContent31" data-question-id="absolute31">
+            <h1 class="title">Digital SAT Math</h1>
+            <h2 class="subtitle">Absolute Values</h2>
+            <div class="question-list">
+                <div class="number-bar">
+                    <span>31</span>
+                </div>
+                <p class="question">
+                    What is the solution set for \( |3x - 2| = 2x + 1 \)?
+                </p>
+                <div class="option-1-container">
+                    <button class="option-1">A</button><p class="choice-1">\(-\frac{3}{5}, 2\)
+                    </p>
+                </div>
+                <div class="option-2-container">
+                    <button class="option-2">B</button><p class="choice-2">\(\frac{2}{3}, -\frac{3}{5}\)
+                    </p>
+                </div>
+                <div class="option-3-container">
+                    <button class="option-3">C</button><p class="choice-3">\(\frac{1}{5} ,3\)
+                    </p>
+                </div>
+                <div class="option-4-container">
+                    <button class="option-4">D</button><p class="choice-4">\(\frac{3}{5}, \frac{6}{5}, \)
+                    </p>
+                </div>
+            </div>
+            <button id="button-show-explanation31" class="button-show-explanation" onclick="toggleExplanation(currentQuestionIndex)">Show Explanation</button>
+            <div id="explanation31" class="explanation">
+                <p class="explanation-paragraph">We consider two cases based on the sign of \(3x - 2\): <br>
+                    1. Case 1: \(3x - 2 \geq 0\) (when \(x \geq \frac{2}{3}\)): <br>
+                       In this case, \( |3x - 2| = 3x - 2\) and the equation becomes: <br>
+                       \(3x - 2 = 2x + 1\) <br>
+                       Solving for \(x\): <br>
+                       \(x = 3 \) <br>
+                       Since \(x \geq \frac{2}{3}\), \(x = 3\) is a valid solution. <br>
+                    2. Case 2: \(3x - 2 < 0\) (when \(x < \frac{2}{3}\)): <br>
+                       In this case, \( |3x - 2| = -(3x - 2)\) and the equation becomes: <br>
+                       \(-(3x - 2) = 2x + 1 \) <br>
+                       Solving for \(x\): <br>
+                       \(x = \frac{1}{5} \) <br>
+                       Since \(x < \frac{2}{3}\), \(x = \frac{1}{5}\) is a valid solution.
+                    Therefore, the solution set is \( x = \frac{1}{5} \) for \( x < \frac{2}{3} \) and \( x = 3 \) for \( x \geq \frac{2}{3} \). <br> 
+                    The correct answer is C.
+                </p>
+            </div>
+        </div>
+
+        <div class="question-part" id="questionContent32" data-question-id="absolute32">
+            <h1 class="title">Digital SAT Math</h1>
+            <h2 class="subtitle">Absolute Values</h2>
+            <div class="question-list">
+                <div class="number-bar">
+                    <span>32</span>
+                </div>
+                <p class="question">
+                    If \( |x - 4| = 7 \), what is the sum of all possible values of \( x \)?
+                </p>
+                <div class="option-1-container">
+                    <button class="option-1">A</button><p class="choice-1">\(1\)</p>
+                </div>
+                <div class="option-2-container">
+                    <button class="option-2">B</button><p class="choice-2">\(8\)</p>
+                </div>
+                <div class="option-3-container">
+                    <button class="option-3">C</button><p class="choice-3">\(15\)</p>
+                </div>
+                <div class="option-4-container">
+                    <button class="option-4">D</button><p class="choice-4">\(22\)</p>
+                </div>
+            </div>
+            <button id="button-show-explanation32" class="button-show-explanation" onclick="toggleExplanation(currentQuestionIndex)">Show Explanation</button>
+            <div id="explanation32" class="explanation">
+                <p class="explanation-paragraph">The absolute value equation \( |x - 4| = 7 \) splits into two cases: <br>
+                    1. Case 1: \( x - 4 = 7 \) when \( x \geq 4 \): <br>
+                       Solving for \( x \): <br>
+                       \( x = 11 \) <br>
+                    2. Case 2: \( x - 4 = -7 \) when \( x < 4 \): <br>
+                       Solving for \( x \): <br>
+                       \( x = -3 \) <br>
+                    To find the sum of all possible values of \( x \), we add \( 11 \) and \( -3 \): <br>
+                    \( 11 + (-3) = 8 \). <br>
+                    Therefore, the sum of all possible values of \( x \) is \( 8 \). <br>
+                    The correct answer is B.
+                </p>
+            </div>
+        </div>
+
+        <div class="question-part" id="questionContent33" data-question-id="absolute33">
+            <h1 class="title">Digital SAT Math</h1>
+            <h2 class="subtitle">Absolute Values</h2>
+            <div class="question-list">
+                <div class="number-bar">
+                    <span>33</span>
+                </div>
+                <p class="question">
+                    For what value of \( x \) does \( |3x - 5| + 2 = 0 \) hold true?
+                </p>
+                <div class="option-1-container">
+                    <button class="option-1">A</button><p class="choice-1">\(1\)</p>
+                </div>
+                <div class="option-2-container">
+                    <button class="option-2">B</button><p class="choice-2">\(-1\)</p>
+                </div>
+                <div class="option-3-container">
+                    <button class="option-3">C</button><p class="choice-3">\(\frac{5}{3}\)</p>
+                </div>
+                <div class="option-4-container">
+                    <button class="option-4">D</button><p class="choice-4">\(\frac{-5}{3}\)</p>
+                </div>
+                <div class="option-5-container">
+                    <button class="option-5">E</button><p class="choice-5">\(\varnothing\)</p>
+                </div>
+            </div>
+            <button id="button-show-explanation33" class="button-show-explanation" onclick="toggleExplanation(currentQuestionIndex)">Show Explanation</button>
+            <div id="explanation33" class="explanation">
+                <p class="explanation-paragraph">Since the absolute value of any real number is non-negative, the smallest value \( |3x - 5| \) can take is \( 0 \). Therefore, the equation \( |3x - 5| + 2 = 0 \) has no solution because \( |3x - 5| \geq 0 \) and thus \( |3x - 5| + 2 \geq 2 \) for all real numbers \( x \). The addition of 2 means the expression cannot equal zero. <br>
+                    Therefore, there is no value of \( x \) that satisfies the equation, and the correct answer is option E.
+                </p>
+            </div>
+        </div>
+        
+        <div class="question-part" id="questionContent34" data-question-id="absolute34">
+            <h1 class="title">Digital SAT Math</h1>
+            <h2 class="subtitle">Absolute Values</h2>
+            <div class="question-list">
+                <div class="number-bar">
+                    <span>34</span>
+                </div>
+                <p class="question">
+                    The expression \( |2x + 1| - 5 \) is negative for which interval of \( x \)?
+                </p>
+                <div class="option-1-container">
+                    <button class="option-1">A</button><p class="choice-1">\( x < -3 \)</p>
+                </div>
+                <div class="option-2-container">
+                    <button class="option-2">B</button><p class="choice-2">\( x > 2 \)</p>
+                </div>
+                <div class="option-3-container">
+                    <button class="option-3">C</button><p class="choice-3">\( -3 < x < 2 \)</p>
+                </div>
+                <div class="option-4-container">
+                    <button class="option-4">D</button><p class="choice-4">No such interval exists</p>
+                </div>
+            </div>
+            <button id="button-show-explanation34" class="button-show-explanation" onclick="toggleExplanation(currentQuestionIndex)">Show Explanation</button>
+            <div id="explanation34" class="explanation">
+                <p class="explanation-paragraph">For the expression \( |2x + 1| - 5 \) to be negative, the absolute value must be less than 5, since the smallest value the absolute value can take is 0. However, subtracting 5 from any non-negative number cannot yield a negative result. Hence, there is no interval of \( x \) for which \( |2x + 1| - 5 \) is negative. <br>
+                    The correct answer is D, no such interval exists.
+                </p>
+            </div>
+        </div>
+
+        <div class="question-part" id="questionContent35" data-question-id="absolute35">
+            <h1 class="title">Digital SAT Math</h1>
+            <h2 class="subtitle">Absolute Values</h2>
+            <div class="question-list">
+                <div class="number-bar">
+                    <span>35</span>
+                </div>
+                <p class="question">
+                    Which of the following represents the solution set for \( |x + 3| > 9 \)?
+                </p>
+                <div class="option-1-container">
+                    <button class="option-1">A</button><p class="choice-1">\( x < -12 \) or \( x > 6 \)</p>
+                </div>
+                <div class="option-2-container">
+                    <button class="option-2">B</button><p class="choice-2">\( x < -6 \) or \( x > 12 \)</p>
+                </div>
+                <div class="option-3-container">
+                    <button class="option-3">C</button><p class="choice-3">\( -6 < x < 12 \)</p>
+                </div>
+                <div class="option-4-container">
+                    <button class="option-4">D</button><p class="choice-4">\( -12 < x < 6 \)</p>
+                </div>
+            </div>
+            <button id="button-show-explanation35" class="button-show-explanation" onclick="toggleExplanation(currentQuestionIndex)">Show Explanation</button>
+            <div id="explanation35" class="explanation">
+                <p class="explanation-paragraph">The inequality \( |x + 3| > 9 \) splits into two cases due to the nature of absolute values: <br>
+                    1. Case 1: \( x + 3 > 9 \) when \( x > -3 \): <br>
+                       Solving for \( x \) gives \( x > 6 \). <br>
+                    2. Case 2: \( x + 3 < -9 \) when \( x < -3 \): <br>
+                       Solving for \( x \) gives \( x < -12 \). <br>
+                    Combining both cases, the solution set for \( x \) is \( x < -12 \) or \( x > 6 \). <br>
+                    The correct answer is A.
+                </p>
+            </div>
+        </div>
+
+        <div class="question-part" id="questionContent36" data-question-id="absolute36">
+            <h1 class="title">Digital SAT Math</h1>
+            <h2 class="subtitle">Absolute Values</h2>
+            <div class="question-list">
+                <div class="number-bar">
+                    <span>36</span>
+                </div>
+                <p class="question">
+                    If the equation \( |x - a| = b \) (where \( b > 0 \)) has exactly one solution, what can we infer about \( a \)?
+                </p>
+                <div class="option-1-container">
+                    <button class="option-1">A</button><p class="choice-1">\( a = 0 \)</p>
+                </div>
+                <div class="option-2-container">
+                    <button class="option-2">B</button><p class="choice-2">\( a = b \)</p>
+                </div>
+                <div class="option-3-container">
+                    <button class="option-3">C</button><p class="choice-3">\( a \) must be greater than \( b \)</p>
+                </div>
+                <div class="option-4-container">
+                    <button class="option-4">D</button><p class="choice-4">\( a \) must be less than \( b \)</p>
+                </div>
+            </div>
+            <button id="button-show-explanation36" class="button-show-explanation" onclick="toggleExplanation(currentQuestionIndex)">Show Explanation</button>
+            <div id="explanation36" class="explanation">
+                <p class="explanation-paragraph">Given the equation \( |x - a| = b \) where \( b > 0 \), we are told it has exactly one solution. <br>
+                    Under normal circumstances, the absolute value equation would yield two solutions: \( x = a + b \) and \( x = a - b \). <br>
+                    
+                    For there to be only one solution, one of these must not hold. Since \( b \) is strictly positive, \( x = a - b \) cannot be a solution if \( a = b \), because it would imply that \( x = 0 \), which is not greater than \( b \). <br>
+                    
+                    Thus, the only way for the equation to have a single solution is for \( a \) to be equal to \( b \), making \( x = a + b \) the only solution. <br>
+                    
+                    Therefore, the correct answer is:
+                
+                    B. \( a = b \)
+                </p>
+            </div>
+        </div>
+        
+        <div class="question-part" id="questionContent37" data-question-id="absolute37">
+            <h1 class="title">Digital SAT Math</h1>
+            <h2 class="subtitle">Absolute Values</h2>
+            <div class="question-list">
+                <div class="number-bar">
+                    <span>37</span>
+                </div>
+                <p class="question">
+                    What is the minimum value of the expression \( 3|2x - 4| + 6 \)?
+                </p>
+                <div class="option-1-container">
+                    <button class="option-1">A</button><p class="choice-1">\(0\)</p>
+                </div>
+                <div class="option-2-container">
+                    <button class="option-2">B</button><p class="choice-2">\(6\)</p>
+                </div>
+                <div class="option-3-container">
+                    <button class="option-3">C</button><p class="choice-3">\(10\)</p>
+                </div>
+                <div class="option-4-container">
+                    <button class="option-4">D</button><p class="choice-4">\(18\)</p>
+                </div>
+            </div>
+            <button id="button-show-explanation37" class="button-show-explanation" onclick="toggleExplanation(currentQuestionIndex)">Show Explanation</button>
+            <div id="explanation37" class="explanation">
+                <p class="explanation-paragraph">The absolute value function \( |2x - 4| \) represents the distance of \( 2x - 4 \) from zero, which is always non-negative. The smallest value of \( |2x - 4| \) is 0, which occurs when \( 2x - 4 = 0 \). Thus, the minimum value of the entire expression is achieved when \( |2x - 4| \) is at its minimum. <br>
+                    Therefore, the minimum value of \( 3|2x - 4| + 6 \) is \( 3 \times 0 + 6 = 6 \). <br>
+                    The correct answer is B.
+                </p>
+            </div>
+        </div>
+
+        <div class="question-part" id="questionContent38" data-question-id="absolute38">
+            <h1 class="title">Digital SAT Math</h1>
+            <h2 class="subtitle">Absolute Values</h2>
+            <div class="question-list">
+                <div class="number-bar">
+                    <span>38</span>
+                </div>
+                <p class="question">
+                    If \( |5 - x| = |2x + 1| \), which of the following could be a value of \( x \)?
+                </p>
+                <div class="option-1-container">
+                    <button class="option-1">A</button><p class="choice-1">\(2\)</p>
+                </div>
+                <div class="option-2-container">
+                    <button class="option-2">B</button><p class="choice-2">\(1\)</p>
+                </div>
+                <div class="option-3-container">
+                    <button class="option-3">C</button><p class="choice-3">\(3\)</p>
+                </div>
+                <div class="option-4-container">
+                    <button class="option-4">D</button><p class="choice-4">\(4\)</p>
+                </div>
+            </div>
+            <button id="button-show-explanation38" class="button-show-explanation" onclick="toggleExplanation(currentQuestionIndex)">Show Explanation</button>
+            <div id="explanation38" class="explanation">
+                <p class="explanation-paragraph">The equation \( |5 - x| = |2x + 1| \) can be solved by considering the two cases when the expressions inside the absolute values are equal and when they are negatives of each other.<br>
+                    1. Case 1: \( 5 - x = 2x + 1 \): <br>
+                       Solving for \( x \) gives \( x = \frac{4}{3} \), which is not an option here. <br>
+                    2. Case 2: \( 5 - x = -(2x + 1) \): <br>
+                       Solving for \( x \) gives \( x = 2 \), which is listed as an option.<br>
+                    Therefore, options A is the correct answer. 
+                </p>
+            </div>
+        </div>
+        
+        <div class="question-part" id="questionContent39" data-question-id="absolute39">
+            <h1 class="title">Digital SAT Math</h1>
+            <h2 class="subtitle">Absolute Values</h2>
+            <div class="question-list">
+                <div class="number-bar">
+                    <span>39</span>
+                </div>
+                <p class="question">
+                    The function \( f(x) = |x - 3| + |x + 4| \) has a minimum value at \( x = \)?
+                </p>
+                <div class="option-1-container">
+                    <button class="option-1">A</button><p class="choice-1">\(-0.5\)</p>
+                </div>
+                <div class="option-2-container">
+                    <button class="option-2">B</button><p class="choice-2">\(0\)</p>
+                </div>
+                <div class="option-3-container">
+                    <button class="option-3">C</button><p class="choice-3">\(0.5\)</p>
+                </div>
+                <div class="option-4-container">
+                    <button class="option-4">D</button><p class="choice-4">\(3\)</p>
+                </div>
+            </div>
+            <button id="button-show-explanation39" class="button-show-explanation" onclick="toggleExplanation(currentQuestionIndex)">Show Explanation</button>
+            <div id="explanation39" class="explanation">
+                <p class="explanation-paragraph">The function \( f(x) = |x - 3| + |x + 4| \) is a piecewise function that changes behavior at the points \( x = 3 \) and \( x = -4 \). To find the minimum value, we need to check the values of the function at these points and between them. <br>
+                    1. For \( x < -4 \), both absolute values are positive, and the function is decreasing.<br>
+                    2. For \( -4 < x < 3 \), \( |x + 4| \) is positive and \( |x - 3| \) is negative, so the function increases and then decreases.<br>
+                    3. For \( x > 3 \), both absolute values are positive, and the function is increasing.<br>
+                    Thus, the minimum value is between \( x = -4 \) and \( x = 3 \). The exact minimum value occurs where the rate of increase from both absolute values balances out, which is exactly between \( x = -4 \) and \( x = 3 \), at \( x = \frac{-4 + 3}{2} = -0.5 \).<br>
+                    The correct answer is A.
+                </p>
+            </div>
+        </div>
+
+        <div class="question-part" id="questionContent40" data-question-id="absolute40">
+            <h1 class="title">Digital SAT Math</h1>
+            <h2 class="subtitle">Absolute Values</h2>
+            <div class="question-list">
+                <div class="number-bar">
+                    <span>40</span>
+                </div>
+                <p class="question">
+                    If \( |2x + 1| = 11 \), which of the following cannot be the value of \( x \)?
+                </p>
+                <div class="option-1-container">
+                    <button class="option-1">A</button><p class="choice-1">\(-6\)</p>
+                </div>
+                <div class="option-2-container">
+                    <button class="option-2">B</button><p class="choice-2">\(5\)</p>
+                </div>
+                <div class="option-3-container">
+                    <button class="option-3">C</button><p class="choice-3">\(4\)</p>
+                </div>
+                <div class="option-4-container">
+                    <button class="option-4">D</button><p class="choice-4">\(-5\)</p>
+                </div>
+            </div>
+            <button id="button-show-explanation40" class="button-show-explanation" onclick="toggleExplanation(currentQuestionIndex)">Show Explanation</button>
+            <div id="explanation40" class="explanation">
+                <p class="explanation-paragraph">The absolute value equation \( |2x + 1| = 11 \) can be split into two cases: <br>
+                    1. Case 1: \( 2x + 1 = 11 \) <br>
+                       Solving for \( x \) gives \( x = 5 \), which is an option here. <br>
+                    2. Case 2: \( 2x + 1 = -11 \) <br>
+                       Solving for \( x \) gives \( x = -6 \), which is also listed as an option.<br>
+                    Since both \( x = 5 \) and \( x = -6 \) are solutions to the equation, the value that cannot be \( x \) is \( x = 4 \), which does not satisfy the equation. <br>
+                    The correct answer is C.
+                </p>
+            </div>
+        </div>
+        
+        <div class="question-part" id="questionContent41" data-question-id="absolute41">
+            <h1 class="title">Digital SAT Math</h1>
+            <h2 class="subtitle">Absolute Values</h2>
+            <div class="question-list">
+                <div class="number-bar">
+                    <span>41</span>
+                </div>
+                <p class="question">
+                    What are the possible values of \( x \) if \( |x^2 - 4x + 3| < 2 \)?
+                </p>
+                <div class="option-1-container">
+                    <button class="option-1">A</button><p class="choice-1">\( x < 1 \) or \( x > 3 \)</p>
+                </div>
+                <div class="option-2-container">
+                    <button class="option-2">B</button><p class="choice-2">\( 1 < x < 3 \)</p>
+                </div>
+                <div class="option-3-container">
+                    <button class="option-3">C</button><p class="choice-3">\( 0 < x < 4 \)</p>
+                </div>
+                <div class="option-4-container">
+                    <button class="option-4">D</button><p class="choice-4">\( x = 2 \)</p>
+                </div>
+            </div>
+            <button id="button-show-explanation41" class="button-show-explanation" onclick="toggleExplanation(currentQuestionIndex)">Show Explanation</button>
+            <div id="explanation41" class="explanation">
+                <p class="explanation-paragraph">To solve the inequality \( |x^2 - 4x + 3| < 2 \), we split it into two cases: <br>
+                    1. Case 1: \( x^2 - 4x + 3 < 2 \): <br>
+                       This simplifies to \( x^2 - 4x + 1 < 0 \). By factoring, we find that this inequality holds true for \( 1 < x < 3 \). <br>
+                    2. Case 2: \( x^2 - 4x + 3 > -2 \): <br>
+                       This simplifies to \( x^2 - 4x + 5 > 0 \), which is true for all real numbers \( x \). <br>
+                    Combining both cases, the solution set for \( x \) is \( 1 < x < 3 \). <br>
+                    The correct answer is B.
+                </p>
+            </div>
+        </div>
+
+        <div class="question-part" id="questionContent42" data-question-id="absolute42">
+            <h1 class="title">Digital SAT Math</h1>
+            <h2 class="subtitle">Absolute Values</h2>
+            <div class="question-list">
+                <div class="number-bar">
+                    <span>42</span>
+                </div>
+                <p class="question">
+                    If \( |x - 7| + |x + 2| = 10 \), how many integer solutions exist for \( x \)?
+                </p>
+                <div class="option-1-container">
+                    <button class="option-1">A</button><p class="choice-1">None</p>
+                </div>
+                <div class="option-2-container">
+                    <button class="option-2">B</button><p class="choice-2">One</p>
+                </div>
+                <div class="option-3-container">
+                    <button class="option-3">C</button><p class="choice-3">Two</p>
+                </div>
+                <div class="option-4-container">
+                    <button class="option-4">D</button><p class="choice-4">Infinite</p>
+                </div>
+            </div>
+            <button id="button-show-explanation42" class="button-show-explanation" onclick="toggleExplanation(currentQuestionIndex)">Show Explanation</button>
+            <div id="explanation42" class="explanation">
+                <p class="explanation-paragraph">The equation \( |x - 7| + |x + 2| = 10 \) can be solved by considering different intervals where the values within the absolute value brackets change sign. <br>
+                    1. For \( x \geq 7 \), the equation becomes \( x - 7 + x + 2 = 10 \), simplifying to \( 2x - 5 = 10 \). Solving this gives a non-integer solution. <br>
+                    2. For \( -2 \leq x < 7 \), the equation becomes \( 7 - x + x + 2 = 10 \), which simplifies to \( 9 = 10 \), a contradiction. <br>
+                    3. For \( x < -2 \), the equation becomes \( 7 - x - x - 2 = 10 \), simplifying to \( -2x + 5 = 10 \). Solving this gives a non-integer solution. <br>
+                    Since none of these cases yield an integer solution, the answer is A, none.
+                </p>
+            </div>
+        </div>
+
+        <div class="question-part" id="questionContent43" data-question-id="absolute43">
+            <h1 class="title">Digital SAT Math</h1>
+            <h2 class="subtitle">Absolute Values</h2>
+            <div class="question-list">
+                <div class="number-bar">
+                    <span>43</span>
+                </div>
+                <p class="question">
+                    The inequality \( |3x - 9| \leq 6 \) is true for \( x \) in the range:
+                </p>
+                <div class="option-1-container">
+                    <button class="option-1">A</button><p class="choice-1">\( 1 \leq x \leq 5 \)</p>
+                </div>
+                <div class="option-2-container">
+                    <button class="option-2">B</button><p class="choice-2">\( 0 \leq x \leq 3 \)</p>
+                </div>
+                <div class="option-3-container">
+                    <button class="option-3">C</button><p class="choice-3">\( x \leq 1 \) or \( x \geq 5 \)</p>
+                </div>
+                <div class="option-4-container">
+                    <button class="option-4">D</button><p class="choice-4">\( x \leq 0 \) or \( x \geq 3 \)</p>
+                </div>
+            </div>
+            <button id="button-show-explanation43" class="button-show-explanation" onclick="toggleExplanation(currentQuestionIndex)">Show Explanation</button>
+            <div id="explanation43" class="explanation">
+                <p class="explanation-paragraph">To solve the inequality \( |3x - 9| \leq 6 \), we consider the two scenarios for the absolute value: <br>
+                    1. \( 3x - 9 \leq 6 \): <br>
+                       Solving for \( x \) gives \( x \leq 5 \). <br>
+                    2. \( -(3x - 9) \leq 6 \) or \( 3x - 9 \geq -6 \): <br>
+                       Solving for \( x \) gives \( x \geq 1 \). <br>
+                    Combining these two cases, we find that the inequality is satisfied for \( 1 \leq x \leq 5 \). <br>
+                    The correct answer is A.
+                </p>
+            </div>
+        </div>
+
+        <div class="question-part" id="questionContent44" data-question-id="absolute44">
+            <h1 class="title">Digital SAT Math</h1>
+            <h2 class="subtitle">Absolute Values</h2>
+            <div class="question-list">
+                <div class="number-bar">
+                    <span>44</span>
+                </div>
+                <p class="question">
+                    Which of the following equations has the solution set that includes \( x = -2 \) and \( x = 8 \)?
+                </p>
+                <div class="option-1-container">
+                    <button class="option-1">A</button><p class="choice-1">\( |x - 3| = 5 \)</p>
+                </div>
+                <div class="option-2-container">
+                    <button class="option-2">B</button><p class="choice-2">\( |x + 2| = 10 \)</p>
+                </div>
+                <div class="option-3-container">
+                    <button class="option-3">C</button><p class="choice-3">\( |x - 8| = 10 \)</p>
+                </div>
+                <div class="option-4-container">
+                    <button class="option-4">D</button><p class="choice-4">\( |x| = 6 \)</p>
+                </div>
+            </div>
+            <button id="button-show-explanation44" class="button-show-explanation" onclick="toggleExplanation(currentQuestionIndex)">Show Explanation</button>
+            <div id="explanation44" class="explanation">
+                <p class="explanation-paragraph">To find which equation has the solution set that includes \( x = -2 \) and \( x = 8 \), we can test each option: <br>
+                    1. \( |x - 3| = 5 \): Solving gives \( x = -2 \) and \( x = 8 \), so this could be a solution. <br>
+                    2. \( |x + 2| = 10 \): Solving gives \( x = -12 \) and \( x = 8 \), so this does not include both required values. <br>
+                    3. \( |x - 8| = 10 \): Solving gives \( x = -2 \) and \( x = 18 \), so this does not include both required values. <br>
+                    4. \( |x| = 6 \): Solving gives \( x = -6 \) and \( x = 6 \), so this does not include both required values. <br>
+                    Therefore, the correct answer is A, \( |x - 3| = 5 \).
+                </p>
+            </div>
+        </div>
+
+        <div class="question-part" id="questionContent45" data-question-id="absolute45">
+            <h1 class="title">Digital SAT Math</h1>
+            <h2 class="subtitle">Absolute Values</h2>
+            <div class="question-list">
+                <div class="number-bar">
+                    <span>45</span>
+                </div>
+                <p class="question">
+                    The expression \(2|3 - 2x| + 4\) equals 16 for \(x =\)?
+                </p>
+                <div class="option-1-container">
+                    <button class="option-1">A</button><p class="choice-1">\( -2 \) and \( 4 \)</p>
+                </div>
+                <div class="option-2-container">
+                    <button class="option-2">B</button><p class="choice-2">\( 1 \) and \( \frac{7}{2} \)</p>
+                </div>
+                <div class="option-3-container">
+                    <button class="option-3">C</button><p class="choice-3">\( \frac{1}{2} \) and \( 5 \)</p>
+                </div>
+                <div class="option-4-container">
+                    <button class="option-4">D</button><p class="choice-4">\(- \frac{3}{2} \) and \( \frac{9}{2} \)</p>
+                </div>
+            </div>
+            <button id="button-show-explanation45" class="button-show-explanation" onclick="toggleExplanation(currentQuestionIndex)">Show Explanation</button>
+            <div id="explanation45" class="explanation">
+                <p class="explanation-paragraph">To find the value of \( x \) for which \( 2|3 - 2x| + 4 = 16 \), we first simplify the equation: <br>
+                    \( 2|3 - 2x| + 4 = 16 \) simplifies to \( 2|3 - 2x| = 12 \), and further to \( |3 - 2x| = 6 \). <br>
+                    We then consider the two cases for the absolute value: <br>
+                    1. \( 3 - 2x = 6 \): Solving for \( x \) gives \( x = -\frac{3}{2} \). <br>
+                    2. \( 3 - 2x = -6 \): Solving for \( x \) gives \( x = \frac{9}{2} \). <br>
+                    Thus, the values of \( x \) that satisfy the equation are \( -\frac{3}{2} \) and \( \frac{9}{2} \). <br>
+                    Therefore, the correct answer is D.
+                </p>
+            </div>
+        </div>
+        
+        <div class="question-part" id="questionContent46" data-question-id="absolute46">
+            <h1 class="title">Digital SAT Math</h1>
+            <h2 class="subtitle">Absolute Values</h2>
+            <div class="question-list">
+                <div class="number-bar">
+                    <span>46</span>
+                </div>
+                <p class="question">
+                    If \( |x - 2| + |x - 5| = 5 \), what is the range of possible values for \( x \)?
+                </p>
+                <div class="option-1-container">
+                    <button class="option-1">A</button><p class="choice-1">\( x \leq 2 \) or \( x \geq 5 \)</p>
+                </div>
+                <div class="option-2-container">
+                    <button class="option-2">B</button><p class="choice-2">\( 2 \leq x \leq 5 \)</p>
+                </div>
+                <div class="option-3-container">
+                    <button class="option-3">C</button><p class="choice-3">\( x \leq 2 \) or \( 5 \leq x \leq 7 \)</p>
+                </div>
+                <div class="option-4-container">
+                    <button class="option-4">D</button><p class="choice-4">\( 2 \leq x \leq 3 \)</p>
+                </div>
+            </div>
+            <button id="button-show-explanation46" class="button-show-explanation" onclick="toggleExplanation(currentQuestionIndex)">Show Explanation</button>
+            <div id="explanation46" class="explanation">
+                <p class="explanation-paragraph">To solve \( |x - 2| + |x - 5| = 5 \), we consider different intervals where the absolute values change their behavior. <br>
+                    1. For \( x < 2 \), the equation becomes \( 2 - x + 5 - x = 5 \), which simplifies to \( 7 - 2x = 5 \). Solving for \( x \) gives no solution in this range. <br>
+                    2. For \( 2 \leq x \leq 5 \), the equation becomes \( x - 2 + 5 - x = 5 \), which simplifies to \( 3 = 5 \), a contradiction. <br>
+                    3. For \( x > 5 \), the equation becomes \( x - 2 + x - 5 = 5 \), simplifying to \( 2x - 7 = 5 \). Solving for \( x \) gives \( x = 6 \), which is in this range.<br>
+                    Therefore, the only solution is \( x = 6 \), and the correct answer is C, \( x \leq 2 \) or \( 5 \leq x \leq 7 \).
+                </p>
+            </div>
+        </div>
+
+        <div class="question-part" id="questionContent47" data-question-id="absolute47">
+            <h1 class="title">Digital SAT Math</h1>
+            <h2 class="subtitle">Absolute Values</h2>
+            <div class="question-list">
+                <div class="number-bar">
+                    <span>47</span>
+                </div>
+                <p class="question">
+                    Which of the following represents the graph of \( y = |x| \) shifted 4 units down and 3 units to the right?
+                </p>
+                <div class="option-1-container">
+                    <button class="option-1">A</button><p class="choice-1">\( y = |x - 3| - 4 \)</p>
+                </div>
+                <div class="option-2-container">
+                    <button class="option-2">B</button><p class="choice-2">\( y = |x + 3| - 4 \)</p>
+                </div>
+                <div class="option-3-container">
+                    <button class="option-3">C</button><p class="choice-3">\( y = |x - 4| - 3 \)</p>
+                </div>
+                <div class="option-4-container">
+                    <button class="option-4">D</button><p class="choice-4">\( y = |x + 4| - 3 \)</p>
+                </div>
+            </div>
+            <button id="button-show-explanation47" class="button-show-explanation" onclick="toggleExplanation(currentQuestionIndex)">Show Explanation</button>
+            <div id="explanation47" class="explanation">
+                <p class="explanation-paragraph">Shifting the graph of \( y = |x| \) \(4\) units down and \(3\) units to the right can be achieved by replacing \( x \) with \( x - 3 \) (for the right shift) and subtracting \(4\) from the entire function (for the downward shift). <br>
+                    Therefore, the equation of the shifted graph is \( y = |x - 3| - 4 \). <br>
+                    The correct answer is A.
+                </p>
+            </div>
+        </div>
+
+        <div class="question-part" id="questionContent48" data-question-id="absolute48">
+            <h1 class="title">Digital SAT Math</h1>
+            <h2 class="subtitle">Absolute Values</h2>
+            <div class="question-list">
+                <div class="number-bar">
+                    <span>48</span>
+                </div>
+                <p class="question">
+                    The equation \( |2x - 5| = |x + 3| \) has how many real solutions?
+                </p>
+                <div class="option-1-container">
+                    <button class="option-1">A</button><p class="choice-1">\(0\)</p>
+                </div>
+                <div class="option-2-container">
+                    <button class="option-2">B</button><p class="choice-2">\(1\)</p>
+                </div>
+                <div class="option-3-container">
+                    <button class="option-3">C</button><p class="choice-3">\(8\)</p>
+                </div>
+                <div class="option-4-container">
+                    <button class="option-4">D</button><p class="choice-4">\(3\)</p>
+                </div>
+            </div>
+            <button id="button-show-explanation48" class="button-show-explanation" onclick="toggleExplanation(currentQuestionIndex)">Show Explanation</button>
+            <div id="explanation48" class="explanation">
+                <p class="explanation-paragraph">To solve \( |2x - 5| = |x + 3| \), we consider two cases: <br>
+                    1. \( 2x - 5 = x + 3 \): Solving for \( x \) gives \( x = 8 \). <br>
+                    2. \( 2x - 5 = -(x + 3) \): Solving for \( x \) gives \( x = \frac{2}{3} \). <br>
+                    Therefore, there are two real solutions: \( x = 8 \) and \( x = \frac{2}{3} \). <br>
+                    The correct answer is C.
+                </p>
+            </div>
+        </div>
+        
+        <div class="question-part" id="questionContent49" data-question-id="absolute49">
+            <h1 class="title">Digital SAT Math</h1>
+            <h2 class="subtitle">Absolute Values</h2>
+            <div class="question-list">
+                <div class="number-bar">
+                    <span>49</span>
+                </div>
+                <p class="question">
+                    What is the product of all the real solutions of the equation \( |x^2 - 5x + 6| = 0 \)?
+                </p>
+                <div class="option-1-container">
+                    <button class="option-1">A</button><p class="choice-1">\(6\)</p>
+                </div>
+                <div class="option-2-container">
+                    <button class="option-2">B</button><p class="choice-2">\(8\)</p>
+                </div>
+                <div class="option-3-container">
+                    <button class="option-3">C</button><p class="choice-3">\(12\)</p>
+                </div>
+                <div class="option-4-container">
+                    <button class="option-4">D</button><p class="choice-4">\(3\)0</p>
+                </div>
+            </div>
+            <button id="button-show-explanation49" class="button-show-explanation" onclick="toggleExplanation(currentQuestionIndex)">Show Explanation</button>
+            <div id="explanation49" class="explanation">
+                <p class="explanation-paragraph">The absolute value equation \( |x^2 - 5x + 6| = 0 \) implies that \( x^2 - 5x + 6 = 0 \), as the only number whose absolute value is zero is zero itself. <br>
+                    Solving \( x^2 - 5x + 6 = 0 \) gives \( (x - 2)(x - 3) = 0 \), hence the solutions are \( x = 2 \) and \( x = 3 \). <br>
+                    The product of all real solutions is \( 2 \times 3 = 6 \). <br>
+                    The correct answer is A.
+                </p>
+            </div>
+        </div>
+        
+        <div class="question-part" id="questionContent50" data-question-id="absolute50">
+            <h1 class="title">Digital SAT Math</h1>
+            <h2 class="subtitle">Absolute Values</h2>
+            <div class="question-list">
+                <div class="number-bar">
+                    <span>50</span>
+                </div>
+                <p class="question">
+                    If the absolute value function \( f(x) = |ax + b| \) has a vertex at \( (2, 3) \), what is the value of \( a + b \)?
+                </p>
+                <div class="option-1-container">
+                    <button class="option-1">A</button><p class="choice-1">\(1.5\)</p>
+                </div>
+                <div class="option-2-container">
+                    <button class="option-2">B</button><p class="choice-2">\(1\)</p>
+                </div>
+                <div class="option-3-container">
+                    <button class="option-3">C</button><p class="choice-3">\(-1\)</p>
+                </div>
+                <div class="option-4-container">
+                    <button class="option-4">D</button><p class="choice-4">\(0\)</p>
+                </div>
+            </div>
+            <button id="button-show-explanation50" class="button-show-explanation" onclick="toggleExplanation(currentQuestionIndex)">Show Explanation</button>
+            <div id="explanation50" class="explanation">
+                <p class="explanation-paragraph">Since the vertex of the absolute value function \( f(x) = |ax + b| \) is at \( (2, 3) \), this means that at \( x = 2 \), \( f(x) = 3 \). Therefore, \( |2a + b| = 3 \). <br>
+                    Since we cannot determine the sign of \( 2a + b \) directly, we consider the vertex's coordinates to find \( a \) and \( b \). The vertex's x-coordinate gives us the point where the expression inside the absolute value becomes zero, hence \( 2a + b = 0 \). Solving these equations simultaneously, we find that \( a = -\frac{3}{2} \) and \( b = 3 \). <br>
+                    Therefore, \( a + b = -\frac{3}{2} + 3 = \frac{3}{2} = 1.5\)<br>
+                    So, our correct answer is A.
+                </p>
+            </div>
+        </div>
+    </body>
+</html>

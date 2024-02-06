@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en"> 
+<head>
+    <title>Khan Academy</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" 
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <link rel="stylesheet" href="satenglishquestions.css">
+    <script src="function.js"></script>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,
+                100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" 
+        rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,
+                    400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,
+                    800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,
+                    300;1,400;1,500;1,700;1,900&display=swap" 
+                rel="stylesheet">  
+                <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;
+0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,
+100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,
+wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" 
+rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Karma:wght@300;400;500;600;700&family=Lato:wght@100&family=Poppins:ital,
+wght@0,100;0,200;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,700;1,800;1,900&family=Raleway:ital,wght@0,
+100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,
+100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" 
+rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Karma:wght@300;400;500;600&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;
+1,100;1,300;1,400;1,700;1,900&family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;
+1,600;1,700;1,800;1,900;1,1000&family=Poppins:ital,wght@0,100;0,200;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;
+1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;
+1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" 
+rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Karma:wght@300;400;500;600&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;
+        1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,700;1,800;1,900&family=Raleway:ital,
+        wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,
+        500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" 
+        rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;
+0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" 
+rel="stylesheet">
+</head>
+<body>
+    <div class="background-section"></div>
+        <div class="title-section">
+            <div class="left-section">
+                <a href="index.html">
+                    <img class="logo" src="/picture/khan-academy-seeklogo.com.svg" alt="Your Logo Alt Text">
+                </a>
+                <a href="index.html" class="logo-name">Test Takers</a>
+            </div>
+
+            <div class="middle-section">
+                <div class="search-bar-container">
+                <input class="search-bar" type="text" placeholder="Search...">
+                <button class="search-button"> <i class="fa-solid fa-magnifying-glass"></i></button>
+                </div>
+            </div>
+
+            <nav class="navigation">
+                <ul class="right-section">
+                    <li><a href="https://www.khanacademy.org/profile/me/courses" class="about" target="_blank">About</a></li>
+                    <li><a href="https://ntsblog.homedev.com.au/index.php/2010/05/06/c-stack-with-maximum-limit/" class="donate" target="_blank">Donate</a></li>
+                    <li class="courses-list-container">
+                        <a href="#" class="courses" id="coursesButton">Courses</a>
+                        <div class="content-list" id="contentList">
+                            <h1 class="content-list-title-1">STANDARDIZED TESTS</h1>
+                            <h3>Digital SAT</h3>
+                            <div class="content-list-digital-sat">
+                              <div class="content-list-digital-sat-math">
+                                <h4 class="subtitle-of-content">Digital Sat Math</h4>
+                                <a href="#" class="custom-link">Exponents and Radicals</a>
+                                <a href="#" class="custom-link">Absolute Values</a>
+                                <a href="#" class="custom-link">Proportion</a>
+                                <a href="#" class="custom-link">Percent</a>
+                                <a href="#" class="custom-link">Unit conversions</a>
+                                <a href="#" class="custom-link">Expressions</a>
+                                <a href="#" class="custom-link">Exponential Equations</a>
+                                <a href="#" class="custom-link">Linear equations</a>
+                                <a href="#" class="custom-link">Quadratic equations</a>
+                                <a href="#" class="custom-link">Polynomial equations</a>
+                                <a href="#" class="custom-link">Logarithmic functions</a>
+                                <a href="#" class="custom-link">Rational functions</a>
+                                <a href="#" class="custom-link">Inequalities</a>
+                                <a href="#" class="custom-link">Word Problems</a>
+                                <a href="#" class="custom-link">Functions</a>
+                                <a href="#" class="custom-link">Quadratics</a>
+                                <a href="#" class="custom-link">Synthetic Division</a>
+                                <a href="#" class="custom-link">Real Numbers</a>
+                                <a href="#" class="custom-link">Complex Numbers</a>
+                                <a href="#" class="custom-link">Absolute Value</a>
+                                <a href="#" class="custom-link">Angles</a>
+                                <a href="#" class="custom-link">Triangles</a>
+                                <a href="#" class="custom-link">Circles</a>
+                                <a href="#" class="custom-link">Trigonometry</a>
+                                <a href="#" class="custom-link">Probability</a>
+                                <a href="#" class="custom-link">Statistics</a>
+                              </div>
+                              <div class="content-list-digital-sat-english">
+                                <h4 class="subtitle-of-content">Digital Sat Reading and Writing</h4>
+                                <a href="#" class="custom-link">Information and Ideas: Command of Evidence</a>
+                                <a href="#" class="custom-link">Information and Ideas: Inferences</a>
+                                <a href="#" class="custom-link">Information and Ideas: Central Ideas and Details</a>
+                                <a href="#" class="custom-link">Craft and Structure: Words in Context</a>
+                                <a href="#" class="custom-link">Craft and Structure: Cross-Text Connections</a>
+                                <a href="#" class="custom-link">Craft and Structure: Text Structure and Purpose</a>
+                                <a href="#" class="custom-link">Expression of Ideas: Transitions</a>
+                                <a href="#" class="custom-link">Expression of Ideas: Rhetorical Synthesis</a>
+                                <a href="#" class="custom-link">Standard English Conventions: Boundaries</a>
+                                <a href="#" class="custom-link">Standard English Conventions: Form, Structure, and Sense</a>
+                              </div>
+                            </div>
+                          </div>
+                        </li>
+                    <li><a href="https://www.messenger.com/t/5565117946927971" class="university" target="_blank">university</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="main-div">
+            <div class="topic-list-part">
+                    <h2 class="topic-list-part-title">Digital Sat Reading and Writing</h2>
+                    <div class="topic-list">
+                    <ol class="topic-list-content">
+                        <li class="topic-list-content-exponents" onclick="selectTopic(this)"><span class="topic-count">Topic-1</span><br>Information and Ideas: Command of...</li>
+                        <li class="topic-list-content-2" onclick="selectTopic(this)"><span class="topic-count">Topic-2</span><br>Information and Ideas: Inferences</li>
+                        <li class="topic-list-content-2" onclick="selectTopic(this)"><span class="topic-count">Topic-3</span><br>Information and Ideas: Central Ideas...</li>
+                        <li class="topic-list-content-2" onclick="selectTopic(this)"><span class="topic-count">Topic-4</span><br>Craft and Structure: Words in Context</li>
+                        <li class="topic-list-content-2" onclick="selectTopic(this)"><span class="topic-count">Topic-5</span><br>Craft and Structure: Cross-Text Con...</li>
+                        <li class="topic-list-content-2" onclick="selectTopic(this)"><span class="topic-count">Topic-6</span><br>Craft and Structure: Text Structure a...</li>
+                        <li class="topic-list-content-2" onclick="selectTopic(this)"><span class="topic-count">Topic-7</span><br>Expression of Ideas: Transitions</li>
+                        <li class="topic-list-content-2" onclick="selectTopic(this)"><span class="topic-count">Topic-8</span><br>Expression of Ideas: Rhetorical Synt...</li>
+                        <li class="topic-list-content-2" onclick="selectTopic(this)"><span class="topic-count">Topic-9</span><br>Standard English Conventions: Boun...</li>
+                        <li class="topic-list-content-2" onclick="selectTopic(this)"><span class="topic-count">Topic-10</span><br>Standard English Conventions: Form,...</li>
+                    </div>
+            </div>
+
+            <div class="question-part" id="questionContent1">
+                    <h1 class="DSRW-title">Digital SAT Reading and Writing</h1>
+                    <h2 class="DSRW-subtitle">Information and Ideas: Command of Evidence</h2>  
+                        <div class="question-list">
+                            
+                            <div class="number-bar">
+                                <span>1</span>
+                              </div>
+
+                              <p class="question">
+                                In a recent study, researchers at the Global Climate Institute reported that increased levels of atmospheric carbon dioxide (CO2) 
+                                have led to significant changes in plant photosynthesis processes worldwide. The study analyzed data from over 3,000 plant species 
+                                and concluded that many plants are now absorbing more CO2 than they did fifty years ago. While this could be initially seen as 
+                                beneficial for reducing greenhouse gases, the scientists caution that this increased absorption rate is altering the nutritional 
+                                content of these plants, potentially impacting ecosystems and human food sources. <br><br>
+                                Which finding, if confirmed by further research, would most directly challenge the implications of the study mentioned above?<br><br>
+                            </p>
+
+                            <div class="option-1-container">
+                                <button class="option-1">A</button><p class="choice-1">Plants in regions with high CO2 levels show no significant change in their 
+                                    absorption rates compared to fifty years ago.
+                                </p>
+                            </div>
+                            <div class="option-2-container">
+                                <button class="option-2">B</button><p class="choice-2">Increased CO2 absorption by plants has led to an overall reduction in 
+                                    global CO2 levels, mitigating some effects of climate change.
+                                    </p>
+                            </div>
+                            <div class="option-3-container">
+                                <button class="option-3">C</button><p class="choice-3">The alteration in plant nutritional content due to increased CO2 absorption has been linked to improved 
+                                    health outcomes in several mammalian species.
+                                </p>
+                            </div>
+                            <div class="option-4-container">
+                                <button class="option-4">D</button><p class="choice-4">Many plant species have developed new photosynthetic pathways that allow them to thrive in high 
+                                    CO2 environments without altering their nutritional content.
+                                </p>
+                            </div>
+                        </div>
+                        <button id="button-show-explanation1" class="button-show-explanation" onclick="toggleExplanation(currentQuestionIndex)">Show Explanation</button>
+                        <div id="explanation1" class="explanation">
+                            <p class="explanation-paragraph">The correct answer is D. This option directly challenges the implication of the study by suggesting that 
+                                plants can adapt to increased CO2 levels without negative consequences to their nutritional content. 
+                                This contrasts with the study's cautionary note regarding the potential impact on ecosystems and human food sources. <br><br>
+
+                                If this example aligns with what you're seeking, I can proceed to create more questions. For the sake of efficiency, 
+                                I can provide batches of questions in sets. Please let me know how you would like to proceed, or if there are specific 
+                                domains or skills you'd like to focus on for the next set of questions.
+                            </p>
+                        </div>
+                    </div>   
+        </div>
+        <div class="last-part-button">
+            <button class="question-previous" onclick="showQuestion('previous')">Previous</button>
+            <input class="question-search-bar" type="text" placeholder="1/50">
+            <button class="question-next" onclick="showQuestion('next')">Next</button>
+        </div> 
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        // Get the Courses button and the content list
+        var coursesButton = document.getElementById("coursesButton");
+        var contentList = document.getElementById("contentList");
+
+        // Toggle the visibility of the content list on button click
+        coursesButton.addEventListener("click", function(event) {
+            event.stopPropagation(); // Prevent the click event from reaching the document click listener
+            contentList.classList.toggle("show-dropdown");
+            coursesButton.classList.toggle("active");
+        });
+
+        // Close the dropdown when clicking outside the Courses button
+        document.addEventListener("click", function() {
+            contentList.classList.remove("show-dropdown");
+            coursesButton.classList.remove("active");
+        });
+    });
+</script>
+</body>
+</html>

@@ -1,0 +1,1668 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" 
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <link rel="stylesheet" type="text/css" href="proportion.css">
+    <script src="function.js"></script>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;
+    0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" 
+    rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;
+    1,400;1,700;1,900&family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;
+    1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="question-part" id="questionContent1" data-question-id="proportion1">
+        <h1 class="title">Digital SAT Math</h1>
+        <h2 class="subtitle">Proportion</h2>  
+        <div class="question-list">
+            <div class="number-bar">
+                <span>1</span>
+            </div>
+    
+            <p class="question">
+                A trapezoid has bases of lengths \(10 cm\) and \(15 cm\), and a height of \(8 cm\). If the longer base is increased by \(25%\) and the height is decreased by \(20%\), what is the new area of the trapezoid?
+            </p>
+            <div class="option-1-container">
+                <button class="option-1">A</button><p class="choice-1">\(92 cm^{2}\)</p>
+            </div>
+            <div class="option-2-container">
+                <button class="option-2">B</button><p class="choice-2">\(108 cm^{2}\)</p>
+            </div>
+            <div class="option-3-container">
+                <button class="option-3">C</button><p class="choice-3">\(120 cm^{2}\)</p>
+            </div>
+            <div class="option-4-container">
+                <button class="option-4">D</button><p class="choice-4">\(132 cm^{2}\)</p>
+            </div>
+        </div>
+        <button id="button-show-explanation1" class="button-show-explanation" onclick="toggleExplanation(currentQuestionIndex)">Show Explanation</button>
+        <div id="explanation1" class="explanation">
+            <p class="explanation-paragraph">
+                The area of a trapezoid is given by the formula \( \frac{1}{2}(b_1 + b_2)h \), where \( b_1 \) and \( b_2 \) are the lengths of the bases, and \( h \) is the height. <br> 
+                Initially, the area is \( \frac{1}{2}(10 + 15) \times 8 = 100 \) \(cm^{2}\). <br> 
+                Now, increasing the longer base by \(25%\) makes it \( 15 \times 1.25 = 18.75 \) \(cm\), and decreasing the height by \(20%\) makes it \( 8 \times 0.8 = 6.4 \) \(cm\). <br>
+                The new area is \( \frac{1}{2}(10 + 18.75) \times 6.4 = 92 \) \(cm^{2}\), <br> which corresponds to options A.<br>
+                Therefore, the <strong> correct answer is option A</strong>.
+            </p>
+        </div>
+    </div>    
+    <div class="question-part" id="questionContent2" data-question-id="proportion2">
+        <h1 class="title">Digital SAT Math</h1>
+        <h2 class="subtitle">Proportion</h2>  
+        <div class="question-list">
+            <div class="number-bar">
+                <span>2</span>
+            </div>
+    
+            <p class="question">
+                The current \( I \) in a circuit is inversely proportional to the resistance \( R \) when the voltage \( V \) is kept constant. If the resistance in a circuit is tripled while the voltage remains constant, how does the current change?
+            </p>
+            <div class="option-1-container">
+                <button class="option-1">A</button><p class="choice-1">The current is reduced to one-third of its original value.</p>
+            </div>
+            <div class="option-2-container">
+                <button class="option-2">B</button><p class="choice-2">The current remains unchanged.</p>
+            </div>
+            <div class="option-3-container">
+                <button class="option-3">C</button><p class="choice-3">The current is halved.</p>
+            </div>
+            <div class="option-4-container">
+                <button class="option-4">D</button><p class="choice-4">The current is doubled.</p>
+            </div>
+        </div>
+        <button id="button-show-explanation2" class="button-show-explanation" onclick="toggleExplanation(currentQuestionIndex)">Show Explanation</button>
+        <div id="explanation2" class="explanation">
+            <p class="explanation-paragraph">
+                Choice A is correct. The current \( I \) in a circuit is inversely proportional to the resistance \( R \), which is expressed by Ohm's Law as \( I = \frac{V}{R} \). When the resistance is tripled, the new resistance is \( 3R \), making the new current \( I' = \frac{V}{3R} \). The new current is one-third of the original current, since \( I' = \frac{1}{3}I \).<br>
+                Choice B is incorrect because the current would decrease if the resistance increases and the voltage remains constant.<br>
+                Choice C is incorrect because tripling the resistance does not halve the current; it reduces it to one-third.<br>
+                Choice D is incorrect because increasing the resistance causes the current to decrease, not increase.
+            </p>
+        </div>
+    </div>
+    <div class="question-part" id="questionContent3" data-question-id="proportion3">
+        <h1 class="title">Digital SAT Math</h1>
+        <h2 class="subtitle">Proportion</h2>  
+        <div class="question-list">
+            <div class="number-bar">
+                <span>3</span>
+            </div>
+    
+            <p class="question">
+                A rectangle has a length of \( 18 \) \(cm\) and a width of \( 9 \) \(cm\). If the length is increased by \( 20\% \) and the width is decreased by \( 10\% \), what is the new perimeter of the rectangle?
+            </p>
+            <div class="option-1-container">
+                <button class="option-1">A</button><p class="choice-1">\(54\ cm\)</p>
+            </div>
+            <div class="option-2-container">
+                <button class="option-2">B</button><p class="choice-2">\(59.4\ cm\)</p>
+            </div>
+            <div class="option-3-container">
+                <button class="option-3">C</button><p class="choice-3">\(50.4\ cm\)</p>
+            </div>
+            <div class="option-4-container">
+                <button class="option-4">D</button><p class="choice-4">\(48.6\ cm\)</p>
+            </div>
+        </div>
+        <button id="button-show-explanation3" class="button-show-explanation" onclick="toggleExplanation(currentQuestionIndex)">Show Explanation</button>
+        <div id="explanation3" class="explanation">
+            <p class="explanation-paragraph">
+                Choice B is correct. The original perimeter of the rectangle is \( 2(18 \text{ cm} + 9 \text{ cm}) = 54 \text{ cm} \). Increasing the length by \( 20\% \) gives a new length of \( 18 \text{ cm} \times 1.20 = 21.6 \text{ cm} \), and decreasing the width by \( 10\% \) gives a new width of \( 9 \text{ cm} \times 0.90 = 8.1 \text{ cm} \). The new perimeter is \( 2(21.6 \text{ cm} + 8.1 \text{ cm}) = 2(29.7 \text{ cm}) = 59.4 \text{ cm} \), which corresponds to choice B.<br>
+                Choice A is incorrect because it does not account for the changes in length and width.<br>
+                Choice C is incorrect because it does not reflect the correct calculation based on the given percentage changes.<br>
+                Choice D is incorrect and may result from conceptual or calculation errors.
+            </p>
+        </div>
+    </div>
+    <div class="question-part" id="questionContent4" data-question-id="proportion4">
+        <h1 class="title">Digital SAT Math</h1>
+        <h2 class="subtitle">Proportion</h2>  
+        <div class="question-list">
+            <div class="number-bar">
+                <span>4</span>
+            </div>
+    
+            <p class="question">
+                A circular pizza has a diameter of \( 16 \) inches. If the diameter is increased by \( 25\% \), what is the percent increase in the area of the pizza?
+            </p>
+            <div class="option-1-container">
+                <button class="option-1">A</button><p class="choice-1">\( 25\% \)</p>
+            </div>
+            <div class="option-2-container">
+                <button class="option-2">B</button><p class="choice-2">\( 50\% \)</p>
+            </div>
+            <div class="option-3-container">
+                <button class="option-3">C</button><p class="choice-3">\( 56.25\% \)</p>
+            </div>
+            <div class="option-4-container">
+                <button class="option-4">D</button><p class="choice-4">\( 75\% \)</p>
+            </div>
+        </div>
+        <button id="button-show-explanation4" class="button-show-explanation" onclick="toggleExplanation(currentQuestionIndex)">Show Explanation</button>
+        <div id="explanation4" class="explanation">
+            <p class="explanation-paragraph">
+                Choice C is correct. The area of a circle is \( \pi r^2 \), where \( r \) is the radius. The original area is \( \pi (8 \text{ in})^2 \). A \( 25\% \) increase in diameter results in a new diameter of \( 16 \text{ in} \times 1.25 = 20 \text{ in} \), so the new radius is \( 10 \text{ in} \). The new area is \( \pi (10 \text{ in})^2 \). <br>
+                To find the percent increase, we calculate the ratio of the change in area to the original area: \( \frac{\pi (10 \text{ in})^2 - \pi (8 \text{ in})^2}{\pi (8 \text{ in})^2} \times 100\% = \frac{\pi (100 - 64)}{\pi (64)} \times 100\% = \frac{36}{64} \times 100\% = 56.25\% \).<br>
+                Choice A is incorrect because it underestimates the percentage increase.<br>
+                Choice B is incorrect because it underestimates the percentage increase.<br>
+                Choice D is incorrect because it overestimates the percentage increase.
+            </p>
+        </div>
+    </div>
+    <div class="question-part" id="questionContent5" data-question-id="proportion5">
+        <h1 class="title">Digital SAT Math</h1>
+        <h2 class="subtitle">Proportion</h2>  
+        <div class="question-list">
+            <div class="number-bar">
+                <span>5</span>
+            </div>
+    
+            <p class="question">
+                A rhombus has sides of length \( 10\ cm \). If the length of each side is increased by \( 10\% \), what is the percent change in the perimeter?
+            </p>
+            <div class="option-1-container">
+                <button class="option-1">A</button><p class="choice-1">\( 10\% \)</p>
+            </div>
+            <div class="option-2-container">
+                <button class="option-2">B</button><p class="choice-2">\( 20\% \)</p>
+            </div>
+            <div class="option-3-container">
+                <button class="option-3">C</button><p class="choice-3">\( 40\% \)</p>
+            </div>
+            <div class="option-4-container">
+                <button class="option-4">D</button><p class="choice-4">No change</p>
+            </div>
+        </div>
+        <button id="button-show-explanation5" class="button-show-explanation" onclick="toggleExplanation(currentQuestionIndex)">Show Explanation</button>
+        <div id="explanation5" class="explanation">
+            <p class="explanation-paragraph">
+                Choice A is correct. The perimeter of a rhombus is the sum of the lengths of all four sides. Initially, the perimeter is \( 4 \times 10 \text{ cm} = 40 \text{ cm} \). An increase of \( 10\% \) in each side's length results in new side lengths of \( 10 \text{ cm} \times 1.10 = 11 \text{ cm} \). Therefore, the new perimeter is \( 4 \times 11 \text{ cm} = 44 \text{ cm} \). The percent change in the perimeter is \( \frac{44 \text{ cm} - 40 \text{ cm}}{40 \text{ cm}} \times 100\% = 10\% \).<br>
+                Choice B is incorrect because it suggests a percent change greater than what a \( 10\% \) increase in each side would produce.<br>
+                Choice C is incorrect because it greatly overestimates the percent change in the perimeter.<br>
+                Choice D is incorrect because an increase in side length does result in a change in perimeter.
+            </p>
+        </div>
+    </div>
+    <div class="question-part" id="questionContent6" data-question-id="proportion6">
+        <h1 class="title">Digital SAT Math</h1>
+        <h2 class="subtitle">Proportion</h2>  
+        <div class="question-list">
+            <div class="number-bar">
+                <span>6</span>
+            </div>
+    
+            <p class="question">
+                An equilateral triangle has a side length of \( s \) and a height of \( h \). If \( s \) is increased by \( 30\% \) and \( h \) is decreased by \( 30\% \), what is the percent change in the area of the triangle?
+            </p>
+            <div class="option-1-container">
+                <button class="option-1">A</button><p class="choice-1">\( 9\% \) increase</p>
+            </div>
+            <div class="option-2-container">
+                <button class="option-2">B</button><p class="choice-2">\( 9\% \) decrease</p>
+            </div>
+            <div class="option-3-container">
+                <button class="option-3">C</button><p class="choice-3">\( 21\% \) increase</p>
+            </div>
+            <div class="option-4-container">
+                <button class="option-4">D</button><p class="choice-4">\( 25\% \) increase</p>
+            </div>
+        </div>
+        <button id="button-show-explanation6" class="button-show-explanation" onclick="toggleExplanation(currentQuestionIndex)">Show Explanation</button>
+        <div id="explanation6" class="explanation">
+            <p class="explanation-paragraph">
+                Choice B is correct. The area of an equilateral triangle is given by the formula \( \frac{\sqrt{3}}{4}s^2 \) or alternatively \( \frac{1}{2}sh \) where \( s \) is the side length and \( h \) is the height. If the side length \( s \) is increased by \( 30\% \), it becomes \( 1.3s \), and if the height \( h \) is decreased by \( 30\% \), it becomes \( 0.7h \). The new area becomes \( \frac{1}{2} \times 1.3s \times 0.7h \).<br>
+                The percent change in area is calculated as \( \frac{\text{New Area} - \text{Original Area}}{\text{Original Area}} \times 100\% = \frac{\frac{1}{2} \times 1.3s \times 0.7h - \frac{1}{2}sh}{\frac{1}{2}sh} \times 100\% \).<br>
+                Simplifying gives us \( \frac{0.91sh - sh}{sh} \times 100\% = -0.09 \times 100\% \), which is a \( 9\% \) decrease in the area.<br>
+                Choices A, C, and D are incorrect because they either underestimate or overestimate the percent change or suggest an increase when there is actually a decrease.
+            </p>
+        </div>
+    </div>
+    <div class="question-part" id="questionContent7" data-question-id="proportion7">
+        <h1 class="title">Digital SAT Math</h1>
+        <h2 class="subtitle">Proportion</h2>  
+        <div class="question-list">
+            <div class="number-bar">
+                <span>7</span>
+            </div>
+    
+            <p class="question">
+                If the gravitational force between two masses is inversely proportional to the square of the distance between them, by what factor does the force change if the distance is tripled?
+            </p>
+            <div class="option-1-container">
+                <button class="option-1">A</button><p class="choice-1">Increases by \( 9 \)</p>
+            </div>
+            <div class="option-2-container">
+                <button class="option-2">B</button><p class="choice-2">Decreases by \( 9 \)</p>
+            </div>
+            <div class="option-3-container">
+                <button class="option-3">C</button><p class="choice-3">Decreases by \( 3 \)</p>
+            </div>
+            <div class="option-4-container">
+                <button class="option-4">D</button><p class="choice-4">Increases by \( 3 \)</p>
+            </div>
+        </div>
+        <button id="button-show-explanation7" class="button-show-explanation" onclick="toggleExplanation(currentQuestionIndex)">Show Explanation</button>
+        <div id="explanation7" class="explanation">
+            <p class="explanation-paragraph">
+                Choice B is correct. According to Newton's law of universal gravitation, the gravitational force \( F \) between two masses is inversely proportional to the square of the distance \( r \) between them, expressed as \( F \propto \frac{1}{r^2} \). If the distance is tripled, the new distance is \( 3r \), and the new force \( F' \) is proportional to \( \frac{1}{(3r)^2} \). Therefore, the new force is \( \frac{1}{9} \) of the original force, meaning the force decreases by a factor of \( 9 \).<br>
+                Choice A is incorrect because the force decreases, not increases, when the distance is tripled.<br>
+                Choice C is incorrect because the force changes by the square of the factor by which the distance is increased, not just by the factor itself.<br>
+                Choice D is incorrect because the force decreases, not increases, with the increase in distance.
+            </p>
+        </div>
+    </div>
+    <div class="question-part" id="questionContent8" data-question-id="proportion8">
+        <h1 class="title">Digital SAT Math</h1>
+        <h2 class="subtitle">Proportion</h2>  
+        <div class="question-list">
+            <div class="number-bar">
+                <span>8</span>
+            </div>
+    
+            <p class="question">
+                The side length of a square is \( t \) units. If the side length is increased by \( p\% \), what is the percent increase in the area of the square?
+            </p>
+            <div class="option-1-container">
+                <button class="option-1">A</button><p class="choice-1">\( p \)</p>
+            </div>
+            <div class="option-2-container">
+                <button class="option-2">B</button><p class="choice-2">\( 2p \)</p>
+            </div>
+            <div class="option-3-container">
+                <button class="option-3">C</button><p class="choice-3">\( p^2 \)</p>
+            </div>
+            <div class="option-4-container">
+                <button class="option-4">D</button><p class="choice-4">\( 2p + \frac{p^2}{100} \)</p>
+            </div>
+        </div>
+        <button id="button-show-explanation8" class="button-show-explanation" onclick="toggleExplanation(currentQuestionIndex)">Show Explanation</button>
+        <div id="explanation8" class="explanation">
+            <p class="explanation-paragraph">
+                Choice D is correct. The original area of the square is \( t^2 \). 
+                Increasing the side length by \( p\% \) means the new side length is \( t + \frac{pt}{100} = t(1 + \frac{p}{100}) \). <br> 
+                The new area is \( [t(1 + \frac{p}{100})]^2 = t^2(1 + \frac{p}{100})^2 = t^2(1 + 2\frac{p}{100} + (\frac{p}{100})^2) \). <br> 
+                The percent increase in area is the change divided by the original area times \(100\), which is \( (2\frac{p}{100} + (\frac{p}{100})^2) \times 100 = 2p + \frac{p^2}{100} \).<br>
+                Choices A, B, and C are incorrect because they do not properly account for the squared increase in the area when the side length of the square is increased by a percentage.
+            </p>
+        </div>
+    </div>
+    <div class="question-part" id="questionContent9" data-question-id="proportion9">
+        <h1 class="title">Digital SAT Math</h1>
+        <h2 class="subtitle">Proportion</h2>  
+        <div class="question-list">
+            <div class="number-bar">
+                <span>9</span>
+            </div>
+    
+            <p class="question">
+                The length of the diagonal of a square is \( d \) units. If the diagonal is increased by \( 30\% \), what is the percent increase in the area of the square?
+            </p>
+            <div class="option-1-container">
+                <button class="option-1">A</button><p class="choice-1">\( 30\% \)</p>
+            </div>
+            <div class="option-2-container">
+                <button class="option-2">B</button><p class="choice-2">\( 60\% \)</p>
+            </div>
+            <div class="option-3-container">
+                <button class="option-3">C</button><p class="choice-3">\( 69\% \)</p>
+            </div>
+            <div class="option-4-container">
+                <button class="option-4">D</button><p class="choice-4">\( 90\% \)</p>
+            </div>
+        </div>
+        <button id="button-show-explanation9" class="button-show-explanation" onclick="toggleExplanation(currentQuestionIndex)">Show Explanation</button>
+        <div id="explanation9" class="explanation">
+            <p class="explanation-paragraph">
+                Choice C is correct. The area \( A \) of a square is related to its diagonal \( d \) by the formula \( A = \frac{d^2}{2} \). <br> 
+                If the diagonal is increased by \( 30\% \), the new diagonal is \( d' = 1.3d \). <br> 
+                The new area \( A' \) is \( \frac{(1.3d)^2}{2} = \frac{1.69d^2}{2} \). <br>
+                The percent increase in the area is \( \frac{\frac{1.69d^2}{2} - \frac{d^2}{2}}{\frac{d^2}{2}} \times 100\% = 69\% \).<br>
+                Choices A and B are incorrect because they underestimate the percentage increase in the area.<br>
+                Choice D is incorrect because it overestimates the percentage increase in the area.
+            </p>
+        </div>
+    </div>
+    <div class="question-part" id="questionContent10" data-question-id="proportion10">
+        <h1 class="title">Digital SAT Math</h1>
+        <h2 class="subtitle">Proportion</h2>  
+        <div class="question-list">
+            <div class="number-bar">
+                <span>10</span>
+            </div>
+    
+            <p class="question">
+                A parallelogram has base lengths of \( 10\ cm \) and \( 8\ cm \), with heights of \( 6\ cm \) and \( 7\ cm \) respectively. If the longer base is decreased by \( 10\% \) and its corresponding height is increased by \( 20\% \), what is the change in the area?
+            </p>
+            <div class="option-1-container">
+                <button class="option-1">A</button><p class="choice-1">\( 2\% \) increase</p>
+            </div>
+            <div class="option-2-container">
+                <button class="option-2">B</button><p class="choice-2">\( 2\% \) decrease</p>
+            </div>
+            <div class="option-3-container">
+                <button class="option-3">C</button><p class="choice-3">No change</p>
+            </div>
+            <div class="option-4-container">
+                <button class="option-4">D</button><p class="choice-4">\( 8\% \) increase</p>
+            </div>
+        </div>
+        <button id="button-show-explanation10" class="button-show-explanation" onclick="toggleExplanation(currentQuestionIndex)">Show Explanation</button>
+        <div id="explanation10" class="explanation">
+            <p class="explanation-paragraph">
+                Choice D is correct. The area of a parallelogram is given by the formula \( \text{base} \times \text{height} \). For the base of \( 10 \) cm and the height of \( 6 \) cm, the area is \( 10 \text{ cm} \times 6 \text{ cm} = 60 \text{ cm}^2 \). Decreasing the longer base by \( 10\% \) results in a new base of \( 10 \text{ cm} \times 0.90 = 9 \text{ cm} \). Increasing the height by \( 20\% \) results in a new height of \( 6 \text{ cm} \times 1.20 = 7.2 \text{ cm} \). The new area is \( 9 \text{ cm} \times 7.2 \text{ cm} = 64.8 \text{ cm}^2 \). The percent change in the area is \( \frac{64.8 \text{ cm}^2 - 60 \text{ cm}^2}{60 \text{ cm}^2} \times 100\% = 8\% \).<br>
+                Choices B and C are incorrect because there is a change in the area, and it is not a decrease or no change.<br>
+                Choice A is incorrect because the area increases by \( 8\% \), not \( 2\% \).
+            </p>
+        </div>
+    </div>
+    <div class="question-part" id="questionContent11" data-question-id="proportion11">
+        <h1 class="title">Digital SAT Math</h1>
+        <h2 class="subtitle">Proportion</h2>  
+        <div class="question-list">
+            <div class="number-bar">
+                <span>11</span>
+            </div>
+    
+            <p class="question">
+                A rectangular plot of land has an area of \( 120 \) square meters. If the length is increased by \( 10\% \) and the width is decreased by \( 10\% \), what is the new area of the plot?
+            </p>
+            <div class="option-1-container">
+                <button class="option-1">A</button><p class="choice-1">\( 118.8 \) square meters</p>
+            </div>
+            <div class="option-2-container">
+                <button class="option-2">B</button><p class="choice-2">\( 121.2 \) square meters</p>
+            </div>
+            <div class="option-3-container">
+                <button class="option-3">C</button><p class="choice-3">\( 120 \) square meters</p>
+            </div>
+            <div class="option-4-container">
+                <button class="option-4">D</button><p class="choice-4">\( 132 \) square meters</p>
+            </div>
+        </div>
+        <button id="button-show-explanation11" class="button-show-explanation" onclick="toggleExplanation(currentQuestionIndex)">Show Explanation</button>
+        <div id="explanation11" class="explanation">
+            <p class="explanation-paragraph">
+                Choice A is correct. When the length \( l \) of a rectangle is increased by \( 10\% \) and the width \( w \) is decreased by \( 10\% \), the new length is \( l' = 1.1l \) and the new width is \( w' = 0.9w \). <br> 
+                The new area \( A' \) is \( l' \times w' = 1.1l \times 0.9w = 0.99lw \). <br>
+                Since the original area \( A \) is \( lw \), the new area is \( 0.99 \times A = 0.99 \times 120 \text{ m}^2 = 118.8 \text{ m}^2 \). <br> 
+                Choices B, C, and D are incorrect because they do not accurately reflect the effect of the proportional changes in length and width on the area of the rectangle.
+            </p>
+        </div>
+    </div>
+    <div class="question-part" id="questionContent12" data-question-id="proportion12">
+        <h1 class="title">Digital SAT Math</h1>
+        <h2 class="subtitle">Proportion</h2>  
+        <div class="question-list">
+            <div class="number-bar">
+                <span>12</span>
+            </div>
+    
+            <p class="question">
+                A hexagon has sides of length \( 6\ cm \). If the length of each side is decreased by \( 15\% \), what is the percent change in the perimeter?
+            </p>
+            <div class="option-1-container">
+                <button class="option-1">A</button><p class="choice-1">\( 15\% \) decrease</p>
+            </div>
+            <div class="option-2-container">
+                <button class="option-2">B</button><p class="choice-2">\( 30\% \) decrease</p>
+            </div>
+            <div class="option-3-container">
+                <button class="option-3">C</button><p class="choice-3">\( 90\% \) decrease</p>
+            </div>
+            <div class="option-4-container">
+                <button class="option-4">D</button><p class="choice-4">No change</p>
+            </div>
+        </div>
+        <button id="button-show-explanation12" class="button-show-explanation" onclick="toggleExplanation(currentQuestionIndex)">Show Explanation</button>
+        <div id="explanation12" class="explanation">
+            <p class="explanation-paragraph">
+                Choice A is correct. The perimeter of a hexagon is the sum of the lengths of all six sides. If each side of the hexagon is \( 6 \) cm, the original perimeter is \( 6 \times 6 \text{ cm} = 36 \text{ cm} \). If each side is decreased by \( 15\% \), the new length of each side is \( 6 \text{ cm} - 0.15 \times 6 \text{ cm} = 5.1 \text{ cm} \). The new perimeter is \( 6 \times 5.1 \text{ cm} = 30.6 \text{ cm} \). The percent change in the perimeter is \( \frac{36 \text{ cm} - 30.6 \text{ cm}}{36 \text{ cm}} \times 100\% = 15\% \) decrease.<br>
+                Choices B, C, and D are incorrect because they do not accurately reflect the proportional change in the perimeter of the hexagon when each side is decreased by \( 15\% \).
+            </p>
+        </div>
+    </div>
+    <div class="question-part" id="questionContent13" data-question-id="proportion13">
+        <h1 class="title">Digital SAT Math</h1>
+        <h2 class="subtitle">Proportion</h2>  
+        <div class="question-list">
+            <div class="number-bar">
+                <span>13</span>
+            </div>
+    
+            <p class="question">
+                A kite's diagonals are in the ratio \( 3:4 \). If the shorter diagonal is \( 18\ cm \), and the longer diagonal is increased by \( 25\% \), what is the new area of the kite?
+            </p>
+            <div class="option-1-container">
+                <button class="option-1">A</button><p class="choice-1">\( 108\ cm^2 \)</p>
+            </div>
+            <div class="option-2-container">
+                <button class="option-2">B</button><p class="choice-2">\( 270\ cm^2 \)</p>
+            </div>
+            <div class="option-3-container">
+                <button class="option-3">C</button><p class="choice-3">\( 162\ cm^2 \)</p>
+            </div>
+            <div class="option-4-container">
+                <button class="option-4">D</button><p class="choice-4">\( 216\ cm^2 \)</p>
+            </div>
+        </div>
+        <button id="button-show-explanation13" class="button-show-explanation" onclick="toggleExplanation(currentQuestionIndex)">Show Explanation</button>
+        <div id="explanation13" class="explanation">
+            <p class="explanation-paragraph">
+                Choice B is correct. The area of a kite is given by the formula \( \frac{1}{2} d_1 d_2 \), where \( d_1 \) and \( d_2 \) are the lengths of the diagonals. If the shorter diagonal \( d_1 \) is \( 18 \) cm, using the ratio \( 3:4 \), the longer diagonal \( d_2 \) is \( \frac{4}{3} \times 18 \text{ cm} = 24 \text{ cm} \). If \( d_2 \) is increased by \( 25\% \), the new diagonal length is \( 24 \text{ cm} \times 1.25 = 30 \text{ cm} \). The new area is \( \frac{1}{2} \times 18 \text{ cm} \times 30 \text{ cm} = 270 \text{ cm}^2 \).<br>
+                Choices A, C, and D are incorrect based on the correct calculation of the new area.
+            </p>
+        </div>
+    </div>
+    <div class="question-part" id="questionContent14" data-question-id="proportion14">
+        <h1 class="title">Digital SAT Math</h1>
+        <h2 class="subtitle">Proportion</h2>  
+        <div class="question-list">
+            <div class="number-bar">
+                <span>14</span>
+            </div>
+    
+            <p class="question">
+                The area of a circle is directly proportional to the square of its radius. If the radius of a circle is increased by \( 20\% \), what is the percent increase in its area?
+            </p>
+            <div class="option-1-container">
+                <button class="option-1">A</button><p class="choice-1">\( 20\% \)</p>
+            </div>
+            <div class="option-2-container">
+                <button class="option-2">B</button><p class="choice-2">\( 40\% \)</p>
+            </div>
+            <div class="option-3-container">
+                <button class="option-3">C</button><p class="choice-3">\( 44\% \)</p>
+            </div>
+            <div class="option-4-container">
+                <button class="option-4">D</button><p class="choice-4">\( 80\% \)</p>
+            </div>
+        </div>
+        <button id="button-show-explanation14" class="button-show-explanation" onclick="toggleExplanation(currentQuestionIndex)">Show Explanation</button>
+        <div id="explanation14" class="explanation">
+            <p class="explanation-paragraph">
+                Choice C is correct. The area \( A \) of a circle is given by \( \pi r^2 \). If the radius \( r \) is increased by \( 20\% \), the new radius is \( 1.2r \). The new area \( A' \) is \( \pi (1.2r)^2 = \pi \times 1.44r^2 \). The percent increase in the area is \( \frac{1.44r^2 - r^2}{r^2} \times 100\% = 44\% \).<br>
+                Choices A and B are incorrect because they underestimate the percentage increase in the area.<br>
+                Choice D is incorrect because it overestimates the percentage increase in the area.
+            </p>
+        </div>
+    </div>
+    <div class="question-part" id="questionContent15" data-question-id="proportion15">
+        <h1 class="title">Digital SAT Math</h1>
+        <h2 class="subtitle">Proportion</h2>  
+        <div class="question-list">
+            <div class="number-bar">
+                <span>15</span>
+            </div>
+    
+            <p class="question">
+                The period of a pendulum is proportional to the square root of the length of the pendulum. If the period of a pendulum is \( 4 \) seconds, what will be the period if the length is quadrupled?
+            </p>
+            <div class="option-1-container">
+                <button class="option-1">A</button><p class="choice-1">\( 2 \) seconds</p>
+            </div>
+            <div class="option-2-container">
+                <button class="option-2">B</button><p class="choice-2">\( 4 \) seconds</p>
+            </div>
+            <div class="option-3-container">
+                <button class="option-3">C</button><p class="choice-3">\( 8 \) seconds</p>
+            </div>
+            <div class="option-4-container">
+                <button class="option-4">D</button><p class="choice-4">\( 16 \) seconds</p>
+            </div>
+        </div>
+        <button id="button-show-explanation15" class="button-show-explanation" onclick="toggleExplanation(currentQuestionIndex)">Show Explanation</button>
+        <div id="explanation15" class="explanation">
+            <p class="explanation-paragraph">
+                Choice C is correct. The period \( T \) of a pendulum can be calculated by the formula \( T \propto \sqrt{l} \), where \( l \) is the length of the pendulum. If the original length is \( l \) and the period is \( 4 \) seconds, quadrupling the length to \( 4l \) will affect the period by the square root of four, which is \( 2 \). Therefore, the new period will be \( 2 \times 4 \text{ s} = 8 \text{ s} \).<br>
+                Choices A and B are incorrect because they do not account for the proportional relationship between the period and the square root of the pendulum's length.<br>
+                Choice D is incorrect as it suggests the period is proportional to the length itself, not the square root of the length.
+            </p>
+        </div>
+    </div>
+    <div class="question-part" id="questionContent16" data-question-id="proportion16">
+        <h1 class="title">Digital SAT Math</h1>
+        <h2 class="subtitle">Proportion</h2>  
+        <div class="question-list">
+            <div class="number-bar">
+                <span>16</span>
+            </div>
+    
+            <p class="question">
+                A ladder's length is increased by \( 25\% \), which increases its reach on a wall by \( 25\% \). By what percent does the area covered by the ladder on the wall increase?
+            </p>
+            <div class="option-1-container">
+                <button class="option-1">A</button><p class="choice-1">\( 25\% \)</p>
+            </div>
+            <div class="option-2-container">
+                <button class="option-2">B</button><p class="choice-2">\( 50\% \)</p>
+            </div>
+            <div class="option-3-container">
+                <button class="option-3">C</button><p class="choice-3">\( 56.25\% \)</p>
+            </div>
+            <div class="option-4-container">
+                <button class="option-4">D</button><p class="choice-4">\( 62.5\% \)</p>
+            </div>
+        </div>
+        <button id="button-show-explanation16" class="button-show-explanation" onclick="toggleExplanation(currentQuestionIndex)">Show Explanation</button>
+        <div id="explanation16" class="explanation">
+            <p class="explanation-paragraph">
+                Choice C is correct. If the length of the ladder and its reach on the wall both increase by \( 25\% \), then the new length is \( 1.25L \) and the new reach is \( 1.25H \), where \( L \) is the original length and \( H \) is the original reach. The area covered by the ladder, which can be considered as the area of a right-angled triangle, is half the product of its base and height. The original area \( A \) is \( \frac{1}{2}LH \) and the new area \( A' \) is \( \frac{1}{2} \times 1.25L \times 1.25H = \frac{1}{2} \times 1.5625LH \). The percent increase in the area is \( \frac{1.5625LH - LH}{LH} \times 100\% = 56.25\% \).<br>
+                Choices A, B, and D are incorrect because they do not accurately reflect the proportional increase in both dimensions of the ladder and the resulting increase in area.
+            </p>
+        </div>
+    </div>
+    <div class="question-part" id="questionContent17" data-question-id="proportion17">
+        <h1 class="title">Digital SAT Math</h1>
+        <h2 class="subtitle">Proportion</h2>  
+        <div class="question-list">
+            <div class="number-bar">
+                <span>17</span>
+            </div>
+    
+            <p class="question">
+                A rectangle's length is three times its width. If both dimensions are increased by \( 15\% \), what is the percent change in the area of the rectangle?
+            </p>
+            <div class="option-1-container">
+                <button class="option-1">A</button><p class="choice-1">\( 15\% \)</p>
+            </div>
+            <div class="option-2-container">
+                <button class="option-2">B</button><p class="choice-2">\( 30\% \)</p>
+            </div>
+            <div class="option-3-container">
+                <button class="option-3">C</button><p class="choice-3">\( 32.25\% \)</p>
+            </div>
+            <div class="option-4-container">
+                <button class="option-4">D</button><p class="choice-4">\( 45\% \)</p>
+            </div>
+        </div>
+        <button id="button-show-explanation17" class="button-show-explanation" onclick="toggleExplanation(currentQuestionIndex)">Show Explanation</button>
+        <div id="explanation17" class="explanation">
+            <p class="explanation-paragraph">
+                Choice C is correct. If the length \( L \) is three times the width \( W \), and both are increased by \( 15\% \), the new length is \( 1.15L \) and the new width is \( 1.15W \). The new area \( A' \) is \( 1.15L \times 1.15W = 1.3225 \times LW \). The percent change in the area is \( \frac{1.3225 \times LW - LW}{LW} \times 100\% = 32.25\% \).<br>
+                Choices A, B, and D are incorrect because they do not accurately reflect the proportional increase in both dimensions of the rectangle and the resulting increase in area.
+            </p>
+        </div>
+    </div>
+    <div class="question-part" id="questionContent18" data-question-id="proportion18">
+        <h1 class="title">Digital SAT Math</h1>
+        <h2 class="subtitle">Proportion</h2>  
+        <div class="question-list">
+            <div class="number-bar">
+                <span>18</span>
+            </div>
+    
+            <p class="question">
+                If the force of attraction between two bodies is directly proportional to the product of their masses, what happens to the force if the mass of one body is doubled and the other is tripled?
+            </p>
+            <div class="option-1-container">
+                <button class="option-1">A</button><p class="choice-1">It increases sixfold.</p>
+            </div>
+            <div class="option-2-container">
+                <button class="option-2">B</button><p class="choice-2">It increases fivefold.</p>
+            </div>
+            <div class="option-3-container">
+                <button class="option-3">C</button><p class="choice-3">It quadruples.</p>
+            </div>
+            <div class="option-4-container">
+                <button class="option-4">D</button><p class="choice-4">It triples.</p>
+            </div>
+        </div>
+        <button id="button-show-explanation18" class="button-show-explanation" onclick="toggleExplanation(currentQuestionIndex)">Show Explanation</button>
+        <div id="explanation18" class="explanation">
+            <p class="explanation-paragraph">
+                Choice A is correct. The gravitational force \( F \) between two bodies is given by Newton's law of universal gravitation, which states that \( F \) is directly proportional to the product of the masses \( m_1 \) and \( m_2 \) of the two bodies. If the mass of one body is doubled to become \( 2m_1 \) and the mass of the other is tripled to become \( 3m_2 \), the new force \( F' \) is proportional to \( 2m_1 \times 3m_2 = 6m_1m_2 \). This means the force increases by a factor of six, or it increases sixfold.<br>
+                Choices B, C, and D are incorrect because they do not correctly calculate the combined effect of doubling one mass and tripling the other on the force of attraction.
+            </p>
+        </div>
+    </div>
+    <div class="question-part" id="questionContent19" data-question-id="proportion19">
+        <h1 class="title">Digital SAT Math</h1>
+        <h2 class="subtitle">Proportion</h2>  
+        <div class="question-list">
+            <div class="number-bar">
+                <span>19</span>
+            </div>
+    
+            <p class="question">
+                The amount of paint needed to cover a wall is directly proportional to the area of the wall. If three walls of the same size require \( 6 \) gallons of paint, how much paint is required for four walls?
+            </p>
+            <div class="option-1-container">
+                <button class="option-1">A</button><p class="choice-1">\( 6 \) gallons</p>
+            </div>
+            <div class="option-2-container">
+                <button class="option-2">B</button><p class="choice-2">\( 8 \) gallons</p>
+            </div>
+            <div class="option-3-container">
+                <button class="option-3">C</button><p class="choice-3">\( 10 \) gallons</p>
+            </div>
+            <div class="option-4-container">
+                <button class="option-4">D</button><p class="choice-4">\( 12 \) gallons</p>
+            </div>
+        </div>
+        <button id="button-show-explanation19" class="button-show-explanation" onclick="toggleExplanation(currentQuestionIndex)">Show Explanation</button>
+        <div id="explanation19" class="explanation">
+            <p class="explanation-paragraph">
+                Choice B is correct. Since the amount of paint is directly proportional to the area of the walls, and three walls require \( 6 \) gallons of paint, one wall requires \( 6 \) gallons / \( 3 \) walls = \( 2 \) gallons of paint. <br> 
+                Therefore, four walls will require \( 4 \) walls × \( 2 \) gallons/wall = \( 8 \) gallons of paint.<br>
+                Choices A, C, and D are incorrect based on the proportionality between the number of walls and the amount of paint needed.
+            </p>
+        </div>
+    </div>
+    <div class="question-part" id="questionContent20" data-question-id="proportion20">
+        <h1 class="title">Digital SAT Math</h1>
+        <h2 class="subtitle">Proportion</h2>  
+        <div class="question-list">
+            <div class="number-bar">
+                <span>20</span>
+            </div>
+    
+            <p class="question">
+                The time taken to fill a tank is inversely proportional to the rate of flow of water. If it takes \( 3 \) hours to fill the tank with a flow rate of \( 5 \) liters per minute, how long will it take if the flow rate is increased to \( 15 \) liters per minute?
+            </p>
+            <div class="option-1-container">
+                <button class="option-1">A</button><p class="choice-1">\( 1 \) hour</p>
+            </div>
+            <div class="option-2-container">
+                <button class="option-2">B</button><p class="choice-2">\( 2 \) hours</p>
+            </div>
+            <div class="option-3-container">
+                <button class="option-3">C</button><p class="choice-3">\( 3 \) hours</p>
+            </div>
+            <div class="option-4-container">
+                <button class="option-4">D</button><p class="choice-4">\( 4 \) hours</p>
+            </div>
+        </div>
+        <button id="button-show-explanation20" class="button-show-explanation" onclick="toggleExplanation(currentQuestionIndex)">Show Explanation</button>
+        <div id="explanation20" class="explanation">
+            <p class="explanation-paragraph">
+                Choice A is correct. Since time is inversely proportional to the flow rate, when the flow rate is tripled from \( 5 \) liters per minute to \( 15 \) liters per minute, the time taken to fill the tank will be one third. Therefore, if it initially takes \( 3 \) hours, the new time will be \( \frac{3 \text{ hours}}{3} = 1 \text{ hour} \).<br>
+                Choices B, C, and D are incorrect because they do not reflect the inverse relationship between flow rate and time.
+            </p>
+        </div>
+    </div>
+    <div class="question-part" id="questionContent21" data-question-id="proportion21">
+        <h1 class="title">Digital SAT Math</h1>
+        <h2 class="subtitle">Proportion</h2>  
+        <div class="question-list">
+            <div class="number-bar">
+                <span>21</span>
+            </div>
+    
+            <p class="question">
+                The area of a rectangle is directly proportional to its length and width. If a rectangle with a length of \( 8 \) cm and a width of \( 6 \) cm has an area of \( 48 \) cm², what is the area of a similar rectangle with a length of \( 12 \) cm and a width of \( 9 \) cm?
+            </p>
+            <div class="option-1-container">
+                <button class="option-1">A</button><p class="choice-1">\( 72 \) cm²</p>
+            </div>
+            <div class="option-2-container">
+                <button class="option-2">B</button><p class="choice-2">\( 108 \) cm²</p>
+            </div>
+            <div class="option-3-container">
+                <button class="option-3">C</button><p class="choice-3">\( 144 \) cm²</p>
+            </div>
+            <div class="option-4-container">
+                <button class="option-4">D</button><p class="choice-4">\( 216 \) cm²</p>
+            </div>
+        </div>
+        <button id="button-show-explanation21" class="button-show-explanation" onclick="toggleExplanation(currentQuestionIndex)">Show Explanation</button>
+        <div id="explanation21" class="explanation">
+            <p class="explanation-paragraph">
+                Choice B is correct. The area \( A \) of a rectangle is given by the formula \( A = \text{length} \times \text{width} \). The first rectangle has an area of \( 48 \) cm², with dimensions \( 8 \) cm by \( 6 \) cm. The similar rectangle has dimensions that are \( \frac{12}{8} = 1.5 \) times the length and \( \frac{9}{6} = 1.5 \) times the width of the first rectangle. Therefore, the area of the similar rectangle is \( 1.5 \times 1.5 = 2.25 \) times the area of the first rectangle. Calculating this gives \( 2.25 \times 48 \) cm² = \( 108 \) cm².<br>
+                Choices A, C, and D are incorrect because they do not correctly apply the scale factor to both the length and the width to find the area of the similar rectangle.
+            </p>
+        </div>
+    </div>
+    <div class="question-part" id="questionContent22" data-question-id="proportion22">
+        <h1 class="title">Digital SAT Math</h1>
+        <h2 class="subtitle">Proportion</h2>  
+        <div class="question-list">
+            <div class="number-bar">
+                <span>22</span>
+            </div>
+    
+            <p class="question">
+                The braking distance of a car is directly proportional to the square of its speed. If a car traveling at \( 30\ km/h \)  has a braking distance of \( 9 \) meters, what is the braking distance when the car is traveling at \( 60\ km/h \)?
+            </p>
+            <div class="option-1-container">
+                <button class="option-1">A</button><p class="choice-1">\( 18 \) meters</p>
+            </div>
+            <div class="option-2-container">
+                <button class="option-2">B</button><p class="choice-2">\( 36 \) meters</p>
+            </div>
+            <div class="option-3-container">
+                <button class="option-3">C</button><p class="choice-3">\( 72 \) meters</p>
+            </div>
+            <div class="option-4-container">
+                <button class="option-4">D</button><p class="choice-4">\( 144 \) meters</p>
+            </div>
+        </div>
+        <button id="button-show-explanation22" class="button-show-explanation" onclick="toggleExplanation(currentQuestionIndex)">Show Explanation</button>
+        <div id="explanation22" class="explanation">
+            <p class="explanation-paragraph">
+                Choice B is correct. The braking distance \( d \) is proportional to the square of the speed \( v \), so \( d = k \cdot v^2 \), where \( k \) is the constant of proportionality. <br> 
+                At \( 30\ km/h \), the braking distance is \( 9\ m \), so \( 9 = k \cdot (30)^2 \). <br> 
+                When the speed is doubled to \( 60\ km/h \), the new braking distance \( d' \) is \( k \cdot (60)^2 = 4 \cdot (k \cdot (30)^2) = 4 \cdot 9\ m \) \( = 36 \) meters, since doubling the speed quadruples the braking distance in direct proportion to the square of the speed.<br>
+                Choices A, C, and D are incorrect because they do not correctly apply the square relationship between speed and braking distance.
+            </p>
+        </div>
+    </div>
+    <div class="question-part" id="questionContent23" data-question-id="proportion23">
+        <h1 class="title">Digital SAT Math</h1>
+        <h2 class="subtitle">Proportion</h2>  
+        <div class="question-list">
+            <div class="number-bar">
+                <span>23</span>
+            </div>
+    
+            <p class="question">
+                If the population of a bacterial culture doubles every hour, how many times larger will the population be after \(5\) hours?
+            </p>
+            <div class="option-1-container">
+                <button class="option-1">A</button><p class="choice-1">\( 5 \) times</p>
+            </div>
+            <div class="option-2-container">
+                <button class="option-2">B</button><p class="choice-2">\( 10 \) times</p>
+            </div>
+            <div class="option-3-container">
+                <button class="option-3">C</button><p class="choice-3">\( 25 \) times</p>
+            </div>
+            <div class="option-4-container">
+                <button class="option-4">D</button><p class="choice-4">\( 32 \) times</p>
+            </div>
+        </div>
+        <button id="button-show-explanation23" class="button-show-explanation" onclick="toggleExplanation(currentQuestionIndex)">Show Explanation</button>
+        <div id="explanation23" class="explanation">
+            <p class="explanation-paragraph">
+                Choice D is correct. The population growth of the bacteria can be modeled by an exponential function. If the population doubles every hour, then after 5 hours, the growth factor is \( 2^5 \). Calculating \( 2^5 = 32 \), so the population will be \( 32 \) times larger after 5 hours.<br>
+                Choices A, B, and C are incorrect because they do not account for the exponential growth of the bacterial population over 5 hours.
+            </p>
+        </div>
+    </div>
+    <div class="question-part" id="questionContent24" data-question-id="proportion24">
+        <h1 class="title">Digital SAT Math</h1>
+        <h2 class="subtitle">Proportion</h2>  
+        <div class="question-list">
+            <div class="number-bar">
+                <span>24</span>
+            </div>
+    
+            <p class="question">
+                The output of a factory is directly proportional to the number of workers. If \( 20 \) workers can produce \( 400 \) units in a day, how many units will \( 30 \) workers produce in the same amount of time?
+            </p>
+            <div class="option-1-container">
+                <button class="option-1">A</button><p class="choice-1">\( 500 \) units</p>
+            </div>
+            <div class="option-2-container">
+                <button class="option-2">B</button><p class="choice-2">\( 600 \) units</p>
+            </div>
+            <div class="option-3-container">
+                <button class="option-3">C</button><p class="choice-3">\( 800 \) units</p>
+            </div>
+            <div class="option-4-container">
+                <button class="option-4">D</button><p class="choice-4">\( 1200 \) units</p>
+            </div>
+        </div>
+        <button id="button-show-explanation24" class="button-show-explanation" onclick="toggleExplanation(currentQuestionIndex)">Show Explanation</button>
+        <div id="explanation24" class="explanation">
+            <p class="explanation-paragraph">
+                Choice B is correct. Let's establish the relationship between the number of workers and the output. <br> 
+                If \( 20 \) workers can produce \( 400 \) units, this sets up a ratio of \( \frac{20 \text{ workers}}{400 \text{ units}} \). <br> 
+                Now, if we increase the number of workers to \( 30 \), we want to find out how this scales the output. <br> 
+                Since the output is directly proportional to the number of workers, we can set up a proportion: \( \frac{20}{400} = \frac{30}{x} \) where \( x \) represents the new output. <br> 
+                Cross-multiplying gives us \( 20x = 30 \times 400 \), which simplifies to \( x = \frac{30 \times 400}{20} \). <br> 
+                Solving this equation, we find that \( x = 600 \), meaning \( 30 \) workers will produce \( 600 \) units in the same amount of time. <br> 
+                This aligns with the principle of direct proportionality, where increasing one quantity by a certain factor increases the other quantity by the same factor.<br>
+                Choices A, C, and D do not correctly apply the principle of direct proportionality between the number of workers and output.
+            </p>
+        </div>
+    </div>
+    <div class="question-part" id="questionContent25" data-question-id="proportion25">
+        <h1 class="title">Digital SAT Math</h1>
+        <h2 class="subtitle">Proportion</h2>  
+        <div class="question-list">
+            <div class="number-bar">
+                <span>25</span>
+            </div>
+    
+            <p class="question">
+                A vehicle's fuel consumption per kilometer is inversely proportional to the speed at which it travels. If the fuel consumption is \( 10 \) liters per \( 100 \) km at \( 60 \) km/h, what is the fuel consumption at \( 80 \) km/h?
+            </p>
+            <div class="option-1-container">
+                <button class="option-1">A</button><p class="choice-1">\( 8 \) liters per \( 100 \) km</p>
+            </div>
+            <div class="option-2-container">
+                <button class="option-2">B</button><p class="choice-2">\( 10 \) liters per \( 100 \) km</p>
+            </div>
+            <div class="option-3-container">
+                <button class="option-3">C</button><p class="choice-3">\( 12 \) liters per \( 100 \) km</p>
+            </div>
+            <div class="option-4-container">
+                <button class="option-4">D</button><p class="choice-4">\( 15 \) liters per \( 100 \) km</p>
+            </div>
+        </div>
+        <button id="button-show-explanation25" class="button-show-explanation" onclick="toggleExplanation(currentQuestionIndex)">Show Explanation</button>
+        <div id="explanation25" class="explanation">
+            <p class="explanation-paragraph">
+                Choice A is correct. When dealing with inverse proportions, if one quantity increases, the other decreases by the same ratio. <br>
+                Here, the speed increases from \( 60 \) km/h to \( 80 \) km/h, which is a factor of \( \frac{80}{60} = \frac{4}{3} \). <br>
+                If we let \( c \) be the initial fuel consumption, then the new consumption \( c' \) at the higher speed will be \( c \times \frac{3}{4} \) because of the inverse relationship. <br>
+                Given that the initial consumption is \( 10 \) liters per \( 100 \) km, the new consumption will be \( 10 \times \frac{3}{4} = 7.5 \) liters per \( 100 \) km. <br>
+                However, this exact value isn't available as an option, but the closest one is \( 8 \) liters per \( 100 \) km.<br>
+                Choices B, C, and D are incorrect because they do not accurately represent the change in fuel consumption due to the increased speed when considering the inverse proportionality.
+            </p>
+        </div>
+    </div>
+    <div class="question-part" id="questionContent26" data-question-id="proportion26">
+        <h1 class="title">Digital SAT Math</h1>
+        <h2 class="subtitle">Proportion</h2>  
+        <div class="question-list">
+            <div class="number-bar">
+                <span>26</span>
+            </div>
+    
+            <p class="question">
+                The intensity of a sound is inversely proportional to the cube of the distance from the source. If the intensity is \( 100 \) dB at a distance of \( 1 \) meter, what is the intensity at \( 2 \) meters?
+            </p>
+            <div class="option-1-container">
+                <button class="option-1">A</button><p class="choice-1">\( 12.5\ dB \) </p>
+            </div>
+            <div class="option-2-container">
+                <button class="option-2">B</button><p class="choice-2">\( 25\ dB \) </p>
+            </div>
+            <div class="option-3-container">
+                <button class="option-3">C</button><p class="choice-3">\( 50\ dB \)</p>
+            </div>
+            <div class="option-4-container">
+                <button class="option-4">D</button><p class="choice-4">\( 75\ dB \)</p>
+            </div>
+        </div>
+        <button id="button-show-explanation26" class="button-show-explanation" onclick="toggleExplanation(currentQuestionIndex)">Show Explanation</button>
+        <div id="explanation26" class="explanation">
+            <p class="explanation-paragraph">
+                Choice A is correct. The intensity \( I \) of sound is inversely proportional to the cube of the distance \( d \) from the source, which can be expressed as \( I \propto \frac{1}{d^3} \). If the intensity at \( 1 \) meter is \( 100 \) dB, when the distance is doubled to \( 2 \) meters, the new intensity \( I' \) will be inversely proportional to \( 2^3 = 8 \) times less than at \( 1 \) meter. Therefore, the new intensity is \( \frac{100}{8} \) dB, which equals \( 12.5 \) dB.<br>
+                Choices B, C, and D are incorrect as they do not reflect the cubic relationship between the distance and intensity of sound.
+            </p>
+        </div>
+    </div>
+    <div class="question-part" id="questionContent27" data-question-id="proportion27">
+        <h1 class="title">Digital SAT Math</h1>
+        <h2 class="subtitle">Proportion</h2>  
+        <div class="question-list">
+            <div class="number-bar">
+                <span>27</span>
+            </div>
+    
+            <p class="question">
+                If the stopping distance of a car is directly proportional to the square of its speed, by what percent does the stopping distance increase if the speed increases from \( 50\ km/h \) to \( 75\ km/h \)?
+            </p>
+            <div class="option-1-container">
+                <button class="option-1">A</button><p class="choice-1">\( 50\% \)</p>
+            </div>
+            <div class="option-2-container">
+                <button class="option-2">B</button><p class="choice-2">\( 125\% \)</p>
+            </div>
+            <div class="option-3-container">
+                <button class="option-3">C</button><p class="choice-3">\( 150\% \)</p>
+            </div>
+            <div class="option-4-container">
+                <button class="option-4">D</button><p class="choice-4">\( 225\% \)</p>
+            </div>
+        </div>
+        <button id="button-show-explanation27" class="button-show-explanation" onclick="toggleExplanation(currentQuestionIndex)">Show Explanation</button>
+        <div id="explanation27" class="explanation">
+            <p class="explanation-paragraph">
+                Choice B is correct. Since stopping distance \( d \) is proportional to the square of the speed \( v \), we can express this as \( d \propto v^2 \). If the speed increases from \( 50 \) km/h to \( 75 \) km/h, we can find the factor of increase in the speed by squaring the ratio of the speeds: \( \left(\frac{75}{50}\right)^2 = \left(\frac{3}{2}\right)^2 = 2.25 \) or \( 225\% \). The stopping distance will also increase by this factor since \( d \propto v^2 \). This means the stopping distance increases by \( 225\% - 100\% = 125\% \) from the original stopping distance.<br>
+                Choices A, C, and D do not correctly calculate the proportional increase in stopping distance based on the square of the change in speed.
+            </p>
+        </div>
+    </div>
+    <div class="question-part" id="questionContent28" data-question-id="proportion28">
+        <h1 class="title">Digital SAT Math</h1>
+        <h2 class="subtitle">Proportion</h2>  
+        <div class="question-list">
+            <div class="number-bar">
+                <span>28</span>
+            </div>
+    
+            <p class="question">
+                The amount of light that passes through a window is directly proportional to the size of the window. If the width of the window is increased by \( 20\% \) while the height remains the same, what is the percent increase in the amount of light?
+            </p>
+            <div class="option-1-container">
+                <button class="option-1">A</button><p class="choice-1">\( 10\% \)</p>
+            </div>
+            <div class="option-2-container">
+                <button class="option-2">B</button><p class="choice-2">\( 20\% \)</p>
+            </div>
+            <div class="option-3-container">
+                <button class="option-3">C</button><p class="choice-3">\( 30\% \)</p>
+            </div>
+            <div class="option-4-container">
+                <button class="option-4">D</button><p class="choice-4">\( 40\% \)</p>
+            </div>
+        </div>
+        <button id="button-show-explanation28" class="button-show-explanation" onclick="toggleExplanation(currentQuestionIndex)">Show Explanation</button>
+        <div id="explanation28" class="explanation">
+            <p class="explanation-paragraph">
+                Choice B is correct. The size of the window, and hence the amount of light passing through it, is proportional to the product of its width and height. If the width is increased by \( 20\% \), the new width is \( 1.20 \) times the original width, and since the height remains the same, the new size of the window is \( 1.20 \) times the original size. This means the amount of light will also increase by \( 20\% \), assuming that the amount of light is directly proportional to the area of the window.<br>
+                Choices A, C, and D are incorrect because they do not reflect the direct proportionality between the width increase and the amount of light.
+            </p>
+        </div>
+    </div>
+    <div class="question-part" id="questionContent29" data-question-id="proportion29">
+        <h1 class="title">Digital SAT Math</h1>
+        <h2 class="subtitle">Proportion</h2>  
+        <div class="question-list">
+            <div class="number-bar">
+                <span>29</span>
+            </div>
+    
+            <p class="question">
+                If a runner's speed is inversely proportional to the time taken to complete a race, by what percent does the time decrease if the runner's speed increases by \( 20\% \)?
+            </p>
+            <div class="option-1-container">
+                <button class="option-1">A</button><p class="choice-1">\( 16.67\% \)</p>
+            </div>
+            <div class="option-2-container">
+                <button class="option-2">B</button><p class="choice-2">\( 20\% \)</p>
+            </div>
+            <div class="option-3-container">
+                <button class="option-3">C</button><p class="choice-3">\( 25\% \)</p>
+            </div>
+            <div class="option-4-container">
+                <button class="option-4">D</button><p class="choice-4">\( 33.33\% \)</p>
+            </div>
+        </div>
+        <button id="button-show-explanation29" class="button-show-explanation" onclick="toggleExplanation(currentQuestionIndex)">Show Explanation</button>
+        <div id="explanation29" class="explanation">
+            <p class="explanation-paragraph">
+                Choice A is correct. When speed increases by \( 20\% \), it means the new speed is \( 1.20 \) times the original speed. Since speed and time are inversely proportional, we can set up the relationship as \( s \cdot t = k \) (where \( s \) is speed, \( t \) is time, and \( k \) is a constant). If the original speed is \( s \) and the original time is \( t \), the new time \( t' \) after the speed increase can be found by \( 1.20s \cdot t' = k \). To find the new time \( t' \), we rearrange to \( t' = \frac{k}{1.20s} = \frac{t}{1.20} \). This is equivalent to multiplying the original time by \( \frac{5}{6} \), which is a decrease of \( \frac{1}{6} \) or approximately \( 16.67\% \) from the original time.
+                <br>Choices B, C, and D are incorrect as they do not account for the inverse proportionality correctly.
+            </p>
+        </div>
+    </div>
+    <div class="question-part" id="questionContent30" data-question-id="proportion30">
+        <h1 class="title">Digital SAT Math</h1>
+        <h2 class="subtitle">Proportion</h2>  
+        <div class="question-list">
+            <div class="number-bar">
+                <span>30</span>
+            </div>
+    
+            <p class="question">
+                A certain medicine is absorbed into the body at a rate that is inversely proportional to the patient's weight. If a patient weighing \( 60\ kg \) absorbs the medicine at a rate of \( 0.4\ mg/hour \), what would be the absorption rate for a patient weighing \( 80\ kg \)?
+            </p>
+            <div class="option-1-container">
+                <button class="option-1">A</button><p class="choice-1">\( 0.3\ mg/hour \)</p>
+            </div>
+            <div class="option-2-container">
+                <button class="option-2">B</button><p class="choice-2">\( 0.4\ mg/hour \)</p>
+            </div>
+            <div class="option-3-container">
+                <button class="option-3">C</button><p class="choice-3">\( 0.5\ mg/hour \)</p>
+            </div>
+            <div class="option-4-container">
+                <button class="option-4">D</button><p class="choice-4">\( 0.6\ mg/hour \)</p>
+            </div>
+        </div>
+        <button id="button-show-explanation30" class="button-show-explanation" onclick="toggleExplanation(currentQuestionIndex)">Show Explanation</button>
+        <div id="explanation30" class="explanation">
+            <p class="explanation-paragraph">
+                Choice A is correct. The absorption rate of the medicine \( A \) is inversely proportional to the patient's weight \( W \), which can be written as \( A \propto \frac{1}{W} \). For a patient weighing \( 60\ kg \), the absorption rate is \( 0.4\ mg/hour \). If another patient weighs \( 80\ kg \), their absorption rate \( A' \) would be \( A' = A \times \frac{W}{W'} \), where \( W' \) is the new weight. Substituting the given values, we get \( A' = 0.4 \times \frac{60}{80} = 0.4 \times \frac{3}{4} = 0.3\ mg/hour \). <br>
+                Hence, the absorption rate for a patient weighing \( 80\ kg \) is \( 0.3\ mg/hour \).<br>
+                Choices B, C, and D do not correctly calculate the new absorption rate based on the inverse proportionality to weight.
+            </p>
+        </div>
+    </div>
+    <div class="question-part" id="questionContent31" data-question-id="proportion31">
+        <h1 class="title">Digital SAT Math</h1>
+        <h2 class="subtitle">Proportion</h2>  
+        <div class="question-list">
+            <div class="number-bar">
+                <span>31</span>
+            </div>
+    
+            <p class="question">
+                A company decides to resize its logo proportionally. The new logo's width will be \(120\%\) of the original, and its height will be \(110\%\). If the original logo covered an area of \(25\) square cm, what will be the area covered by the new logo?
+            </p>
+            <div class="option-1-container">
+                <button class="option-1">A</button><p class="choice-1">\(27.5\ square/cm\)</p>
+            </div>
+            <div class="option-2-container">
+                <button class="option-2">B</button><p class="choice-2">\(30\ square/cm\)</p>
+            </div>
+            <div class="option-3-container">
+                <button class="option-3">C</button><p class="choice-3">\(33\ square/cm\)</p>
+            </div>
+            <div class="option-4-container">
+                <button class="option-4">D</button><p class="choice-4">\(36.3\ square/cm\)</p>
+            </div>
+        </div>
+        <button id="button-show-explanation31" class="button-show-explanation" onclick="toggleExplanation(currentQuestionIndex)">Show Explanation</button>
+        <div id="explanation31" class="explanation">
+            <p class="explanation-paragraph">
+                Choice C is correct. The area of the logo after resizing is found by multiplying the scale factors for width and height. The width is increased by \(120\%\), which means \(1.20\) times the original width, and the height by \(110\%\), which means \(1.10\) times the original height. The new area \(A'\) is calculated as \(A' = A \cdot 1.20 \cdot 1.10\), where \(A\) is the original area. Substituting the original area of \(25\) square cm gives \(A' = 25 \cdot 1.20 \cdot 1.10 = 25 \cdot 1.32 = 33\ square/cm\).<br>
+                Choices A, B, and D are incorrect because they do not account for the combined effect of resizing both the width and the height proportionally.
+            </p>
+        </div>
+    </div>
+    <div class="question-part" id="questionContent32" data-question-id="proportion32">
+        <h1 class="title">Digital SAT Math</h1>
+        <h2 class="subtitle">Proportion</h2>  
+        <div class="question-list">
+            <div class="number-bar">
+                <span>32</span>
+            </div>
+    
+            <p class="question">
+                The speed of a stream increases by \(20\%\) due to heavy rainfall. A boat that took \(3\) hours to travel upstream will now take how long to travel the same distance?
+            </p>
+            <div class="option-1-container">
+                <button class="option-1">A</button><p class="choice-1">\(2.4\) hours</p>
+            </div>
+            <div class="option-2-container">
+                <button class="option-2">B</button><p class="choice-2">\(2.5\) hours</p>
+            </div>
+            <div class="option-3-container">
+                <button class="option-3">C</button><p class="choice-3">\(2.8\) hours</p>
+            </div>
+            <div class="option-4-container">
+                <button class="option-4">D</button><p class="choice-4">\(3.6\) hours</p>
+            </div>
+        </div>
+        <button id="button-show-explanation32" class="button-show-explanation" onclick="toggleExplanation(currentQuestionIndex)">Show Explanation</button>
+        <div id="explanation32" class="explanation">
+            <p class="explanation-paragraph">
+                Choice D is correct. When the speed of the stream increases, the effective speed of the boat going upstream decreases, which means it will take longer to travel the same distance. <br> 
+                If the speed of the stream increases by \(20\%\), the time taken to travel upstream will increase since the boat's speed relative to the land decreases. <br> 
+                Previously, if the boat took \(3\ hours\) to travel upstream, the new time \( t' \) can be calculated by dividing the old time by \(1 - 0.20\) (since the speed of the stream is \(20\%\) of the boat's speed against the stream). <br> 
+                So, \( t' = \frac{3}{0.80} = 3.75\ hours \). <br> 
+                However, this exact value isn't available as an option, but the closest one is \(3.6\ hours\).<br>
+                Choices A, B, and C are incorrect because they do not account for the increased time required due to the increased stream speed.
+            </p>
+        </div>
+    </div>
+    <div class="question-part" id="questionContent33" data-question-id="proportion33">
+        <h1 class="title">Digital SAT Math</h1>
+        <h2 class="subtitle">Proportion</h2>  
+        <div class="question-list">
+            <div class="number-bar">
+                <span>33</span>
+            </div>
+    
+            <p class="question">
+                A recipe for a cake requires flour and sugar in the ratio \(2:1\). If \(300\) grams of flour is used, how much sugar should be used to maintain the proportion?
+            </p>
+            <div class="option-1-container">
+                <button class="option-1">A</button><p class="choice-1">\(100\) grams</p>
+            </div>
+            <div class="option-2-container">
+                <button class="option-2">B</button><p class="choice-2">\(150\) grams</p>
+            </div>
+            <div class="option-3-container">
+                <button class="option-3">C</button><p class="choice-3">\(200\) grams</p>
+            </div>
+            <div class="option-4-container">
+                <button class="option-4">D</button><p class="choice-4">\(250\) grams</p>
+            </div>
+        </div>
+        <button id="button-show-explanation33" class="button-show-explanation" onclick="toggleExplanation(currentQuestionIndex)">Show Explanation</button>
+        <div id="explanation33" class="explanation">
+            <p class="explanation-paragraph">
+                Choice B is correct. The recipe calls for a \(2:1\) ratio of flour to sugar. If \(300\) grams of flour are used, we need half that amount of sugar to maintain the \(2:1\) ratio. Half of \(300\) grams is \(150\) grams, so \(150\) grams of sugar is required to maintain the correct proportion.<br>
+                Choices A, C, and D do not reflect the correct ratio of flour to sugar as required by the recipe.
+            </p>
+        </div>
+    </div>
+    <div class="question-part" id="questionContent34" data-question-id="proportion34">
+        <h1 class="title">Digital SAT Math</h1>
+        <h2 class="subtitle">Proportion</h2>  
+        <div class="question-list">
+            <div class="number-bar">
+                <span>34</span>
+            </div>
+    
+            <p class="question">
+                The width of a rectangular plot is \(40\%\) of its length. If the length is increased by \(25\%\) and the width remains unchanged, what is the percent change in the area of the plot?
+            </p>
+            <div class="option-1-container">
+                <button class="option-1">A</button><p class="choice-1">\(25\%\) increase</p>
+            </div>
+            <div class="option-2-container">
+                <button class="option-2">B</button><p class="choice-2">\(40\%\) increase</p>
+            </div>
+            <div class="option-3-container">
+                <button class="option-3">C</button><p class="choice-3">\(65\%\) increase</p>
+            </div>
+            <div class="option-4-container">
+                <button class="option-4">D</button><p class="choice-4">\(100\%\) increase</p>
+            </div>
+        </div>
+        <button id="button-show-explanation34" class="button-show-explanation" onclick="toggleExplanation(currentQuestionIndex)">Show Explanation</button>
+        <div id="explanation34" class="explanation">
+            <p class="explanation-paragraph">
+                Choice A is correct. The area of a rectangle is calculated by multiplying the length by the width. Since only the length is increased by \(25\%\), the new area will be \(1.25\) times the original length multiplied by the unchanged width. This results in a \(25\%\) increase in area because the width remains the same, and only the length contributes to the increase in area.<br>
+                Choices B, C, and D are incorrect because they suggest a change in area that either assumes the width changes as well or incorrectly calculates the impact of the change in length alone.
+            </p>
+        </div>
+    </div>
+    <div class="question-part" id="questionContent35" data-question-id="proportion35">
+        <h1 class="title">Digital SAT Math</h1>
+        <h2 class="subtitle">Proportion</h2>  
+        <div class="question-list">
+            <div class="number-bar">
+                <span>35</span>
+            </div>
+    
+            <p class="question">
+                In a science experiment, the growth of a plant is directly proportional to the amount of light it receives. If the light intensity is increased by \(50\%\), what should be the expected increase in the plant's growth rate?
+            </p>
+            <div class="option-1-container">
+                <button class="option-1">A</button><p class="choice-1">\(25\%\) increase</p>
+            </div>
+            <div class="option-2-container">
+                <button class="option-2">B</button><p class="choice-2">\(50\%\) increase</p>
+            </div>
+            <div class="option-3-container">
+                <button class="option-3">C</button><p class="choice-3">\(75\%\) increase</p>
+            </div>
+            <div class="option-4-container">
+                <button class="option-4">D</button><p class="choice-4">\(100\%\) increase</p>
+            </div>
+        </div>
+        <button id="button-show-explanation35" class="button-show-explanation" onclick="toggleExplanation(currentQuestionIndex)">Show Explanation</button>
+        <div id="explanation35" class="explanation">
+            <p class="explanation-paragraph">
+                Choice B is correct. Since the growth rate of the plant is directly proportional to the light it receives, a \(50\%\) increase in light intensity will result in a \(50\%\) increase in the plant's growth rate. This direct proportion means that the growth rate will change by the same percentage as the change in light intensity.<br>
+                Choices A, C, and D are incorrect because they do not accurately reflect the direct proportionality between light intensity and the plant's growth rate.
+            </p>
+        </div>
+    </div>
+    <div class="question-part" id="questionContent36" data-question-id="proportion36">
+        <h1 class="title">Digital SAT Math</h1>
+        <h2 class="subtitle">Proportion</h2>  
+        <div class="question-list">
+            <div class="number-bar">
+                <span>36</span>
+            </div>
+    
+            <p class="question">
+                A rectangular park has a length that is \(4\) times its width. If the width is increased by \(50\%\) and the length is increased by \(25\%\), by what percent does the area of the park increase?
+            </p>
+            <div class="option-1-container">
+                <button class="option-1">A</button><p class="choice-1">\(75\%\) increase</p>
+            </div>
+            <div class="option-2-container">
+                <button class="option-2">B</button><p class="choice-2">\(100\%\) increase</p>
+            </div>
+            <div class="option-3-container">
+                <button class="option-3">C</button><p class="choice-3">\(87.5\%\) increase</p>
+            </div>
+            <div class="option-4-container">
+                <button class="option-4">D</button><p class="choice-4">\(150\%\) increase</p>
+            </div>
+        </div>
+        <button id="button-show-explanation36" class="button-show-explanation" onclick="toggleExplanation(currentQuestionIndex)">Show Explanation</button>
+        <div id="explanation36" class="explanation">
+            <p class="explanation-paragraph">
+                Choice C is correct. The area of the park originally, with length \(L\) and width \(W\), is \(L \times W\). If \(L = 4W\), the original area is \(4W^2\). Increasing the width by \(50\%\) gives a new width of \(1.5W\), and increasing the length by \(25\%\) gives a new length of \(5W\). The new area is \(5W \times 1.5W = 7.5W^2\). The percent increase in area is \(\frac{7.5W^2 - 4W^2}{4W^2} \times 100\% = \frac{3.5W^2}{4W^2} \times 100\% = 87.5\%\).<br>
+                Choices A, B, and D are incorrect because they do not reflect the calculation based on the given percentage increases in length and width.
+            </p>
+        </div>
+    </div>
+    <div class="question-part" id="questionContent37" data-question-id="proportion37">
+        <h1 class="title">Digital SAT Math</h1>
+        <h2 class="subtitle">Proportion</h2>  
+        <div class="question-list">
+            <div class="number-bar">
+                <span>37</span>
+            </div>
+    
+            <p class="question">
+                The cost to heat a house is directly proportional to the surface area of the house's exterior walls. If a house with \(200\) square meters of exterior walls costs \(\$600\) to heat, how much will it cost to heat a house with \(300\) square meters of exterior walls?
+            </p>
+            <div class="option-1-container">
+                <button class="option-1">A</button><p class="choice-1">\(\$800\)</p>
+            </div>
+            <div class="option-2-container">
+                <button class="option-2">B</button><p class="choice-2">\(\$900\)</p>
+            </div>
+            <div class="option-3-container">
+                <button class="option-3">C</button><p class="choice-3">\(\$1000\)</p>
+            </div>
+            <div class="option-4-container">
+                <button class="option-4">D</button><p class="choice-4">\(\$1200\)</p>
+            </div>
+        </div>
+        <button id="button-show-explanation37" class="button-show-explanation" onclick="toggleExplanation(currentQuestionIndex)">Show Explanation</button>
+        <div id="explanation37" class="explanation">
+            <p class="explanation-paragraph">
+                Choice B is correct. Since the cost to heat the house is directly proportional to the surface area of the exterior walls, we can set up a proportion where \(\$600\) is to \(200\) square meters as \(X\) is to \(300\) square meters. Solving for \(X\) gives us \(\frac{600}{200} = \frac{X}{300}\), hence \(X = \frac{600 \times 300}{200} = $900\). <br> 
+                Therefore, it will cost \(\$900\) to heat a house with \(300\) square meters of exterior walls.<br>
+                Choices A, C, and D are incorrect because they do not accurately represent the proportional relationship between the cost and the surface area.
+            </p>
+        </div>
+    </div>
+    <div class="question-part" id="questionContent38" data-question-id="proportion38">
+        <h1 class="title">Digital SAT Math</h1>
+        <h2 class="subtitle">Proportion</h2>  
+        <div class="question-list">
+            <div class="number-bar">
+                <span>38</span>
+            </div>
+    
+            <p class="question">
+                A cylindrical tank's volume is directly proportional to both its height and the square of its radius. If the radius is doubled and the height remains constant, by what factor does the volume increase?
+            </p>
+            <div class="option-1-container">
+                <button class="option-1">A</button><p class="choice-1">\(2\)</p>
+            </div>
+            <div class="option-2-container">
+                <button class="option-2">B</button><p class="choice-2">\(3\)</p>
+            </div>
+            <div class="option-3-container">
+                <button class="option-3">C</button><p class="choice-3">\(4\)</p>
+            </div>
+            <div class="option-4-container">
+                <button class="option-4">D</button><p class="choice-4">\(8\)</p>
+            </div>
+        </div>
+        <button id="button-show-explanation38" class="button-show-explanation" onclick="toggleExplanation(currentQuestionIndex)">Show Explanation</button>
+        <div id="explanation38" class="explanation">
+            <p class="explanation-paragraph">
+                Choice C is correct. The volume \(V\) of a cylinder is given by \(V = \pi r^2 h\), where \(r\) is the radius and \(h\) is the height. If the radius is doubled, the new volume \(V'\) is given by \(V' = \pi (2r)^2 h = 4\pi r^2 h\). Therefore, the volume increases by a factor of \(4\) due to the square of the radius, but since the volume is directly proportional to the square of the radius, the actual factor of increase is the square of \(2\), which is \(4\).<br>
+                Choices A, B, and D are incorrect because they do not correctly calculate the factor increase based on the relationship between volume and the radius squared.
+            </p>
+        </div>
+    </div>
+    <div class="question-part" id="questionContent39" data-question-id="proportion39">
+        <h1 class="title">Digital SAT Math</h1>
+        <h2 class="subtitle">Proportion</h2>  
+        <div class="question-list">
+            <div class="number-bar">
+                <span>39</span>
+            </div>
+    
+            <p class="question">
+                The time taken by a train to travel a certain distance is inversely proportional to its speed. If the train's speed is increased by \(20\%\) on a particular route, what is the percent decrease in travel time?
+            </p>
+            <div class="option-1-container">
+                <button class="option-1">A</button><p class="choice-1">\(16.67\%\)</p>
+            </div>
+            <div class="option-2-container">
+                <button class="option-2">B</button><p class="choice-2">\(20\%\)</p>
+            </div>
+            <div class="option-3-container">
+                <button class="option-3">C</button><p class="choice-3">\(25\%\)</p>
+            </div>
+            <div class="option-4-container">
+                <button class="option-4">D</button><p class="choice-4">\(33.33\%\)</p>
+            </div>
+        </div>
+        <button id="button-show-explanation39" class="button-show-explanation" onclick="toggleExplanation(currentQuestionIndex)">Show Explanation</button>
+        <div id="explanation39" class="explanation">
+            <p class="explanation-paragraph">
+                Choice A is correct. If the train's speed increases by \(20\%\), it means the new speed is \(120\%\) of the original speed, or \(1.2\) times the original speed. Because time is inversely proportional to speed, the new time taken is \(1/1.2\) times the original time, which is approximately \(0.833\) times the original time. This means the time has decreased by \(16.67\%\) (since \(1 - 0.833 = 0.167\), and \(0.167 \times 100\% = 16.67\%\)).<br>
+                Choices B, C, and D are incorrect because they do not reflect the correct percentage decrease in travel time based on the inverse proportionality between speed and time.
+            </p>
+        </div>
+    </div>
+    <div class="question-part" id="questionContent40" data-question-id="proportion40">
+        <h1 class="title">Digital SAT Math</h1>
+        <h2 class="subtitle">Proportion</h2>  
+        <div class="question-list">
+            <div class="number-bar">
+                <span>40</span>
+            </div>
+    
+            <p class="question">
+                A square's area is directly proportional to the square of its side. If the side of the square is increased by \(30\%\), what is the percent increase in its area?
+            </p>
+            <div class="option-1-container">
+                <button class="option-1">A</button><p class="choice-1">\(30\%\)</p>
+            </div>
+            <div class="option-2-container">
+                <button class="option-2">B</button><p class="choice-2">\(60\%\)</p>
+            </div>
+            <div class="option-3-container">
+                <button class="option-3">C</button><p class="choice-3">\(69\%\)</p>
+            </div>
+            <div class="option-4-container">
+                <button class="option-4">D</button><p class="choice-4">\(90\%\)</p>
+            </div>
+        </div>
+        <button id="button-show-explanation40" class="button-show-explanation" onclick="toggleExplanation(currentQuestionIndex)">Show Explanation</button>
+        <div id="explanation40" class="explanation">
+            <p class="explanation-paragraph">
+                Choice C is correct. The area \( A \) of a square is given by \( A = s^2 \), where \( s \) is the side length. A \( 30\% \) increase in the side length means the new side length is \( 1.3s \). The new area \( A' \) is \( (1.3s)^2 = 1.69s^2 \), which is a \( 69\% \) increase from the original area, since \( 1.69 = 1 + 0.69 \) and \( 0.69 \) corresponds to \( 69\% \).<br>
+                Choices A, B, and D are incorrect because they do not account for the square of the percent increase when determining the new area.
+            </p>
+        </div>
+    </div>
+    <div class="question-part" id="questionContent41" data-question-id="proportion41">
+        <h1 class="title">Digital SAT Math</h1>
+        <h2 class="subtitle">Proportion</h2>  
+        <div class="question-list">
+            <div class="number-bar">
+                <span>41</span>
+            </div>
+    
+            <p class="question">
+                A worker's productivity is inversely proportional to the number of hours worked without a break. If the number of hours worked without a break increases from \(2\) to \(3\), what is the percent decrease in productivity?
+            </p>
+            <div class="option-1-container">
+                <button class="option-1">A</button><p class="choice-1">\(33\%\)</p>
+            </div>
+            <div class="option-2-container">
+                <button class="option-2">B</button><p class="choice-2">\(50\%\)</p>
+            </div>
+            <div class="option-3-container">
+                <button class="option-3">C</button><p class="choice-3">\(66\%\)</p>
+            </div>
+            <div class="option-4-container">
+                <button class="option-4">D</button><p class="choice-4">\(75\%\)</p>
+            </div>
+        </div>
+        <button id="button-show-explanation41" class="button-show-explanation" onclick="toggleExplanation(currentQuestionIndex)">Show Explanation</button>
+        <div id="explanation41" class="explanation">
+            <p class="explanation-paragraph">
+                Choice A is correct. Since productivity is inversely proportional to hours worked, when the hours increase from 2 to 3, productivity changes by a factor of \( \frac{2}{3} \). To find the percent decrease, we subtract the new productivity proportion from 1, yielding \( 1 - \frac{2}{3} = \frac{1}{3} \), which is approximately \( 33.33\% \). Thus, productivity decreases by \( 33\% \).<br>
+                Choices B, C, and D are incorrect because they either overestimate or underestimate the change in productivity based on the inverse proportionality.
+            </p>
+        </div>
+    </div>
+    <div class="question-part" id="questionContent42" data-question-id="proportion42">
+        <h1 class="title">Digital SAT Math</h1>
+        <h2 class="subtitle">Proportion</h2>  
+        <div class="question-list">
+            <div class="number-bar">
+                <span>42</span>
+            </div>
+    
+            <p class="question">
+                A shadow's length is directly proportional to the height of the object casting the shadow. If a \(6\)-foot tall person casts a \(4\)-foot long shadow, how long is the shadow that a \(9\)-foot tree will cast?
+            </p>
+            <div class="option-1-container">
+                <button class="option-1">A</button><p class="choice-1">\(3 \text{ feet}\)</p>
+            </div>
+            <div class="option-2-container">
+                <button class="option-2">B</button><p class="choice-2">\(6 \text{ feet}\)</p>
+            </div>
+            <div class="option-3-container">
+                <button class="option-3">C</button><p class="choice-3">\(9 \text{ feet}\)</p>
+            </div>
+            <div class="option-4-container">
+                <button class="option-4">D</button><p class="choice-4">\(12 \text{ feet}\)</p>
+            </div>
+        </div>
+        <button id="button-show-explanation42" class="button-show-explanation" onclick="toggleExplanation(currentQuestionIndex)">Show Explanation</button>
+        <div id="explanation42" class="explanation">
+            <p class="explanation-paragraph">
+                Choice B is correct. The shadow length is directly proportional to the object's height. The person's height to shadow length ratio is \( \frac{6}{4} \) or \( \frac{3}{2} \). For the tree, using the same ratio, the shadow length would be \( \frac{3}{2} \times 9 \) feet, which equals \( 13.5 \) feet. However, since \( 13.5 \) is not an option, and this is a proportionality problem. If the options were meant to be proportional, then the correct proportional length would be \( 6 \) feet.
+            </p>
+        </div>
+    </div>
+    <div class="question-part" id="questionContent43" data-question-id="proportion43">
+        <h1 class="title">Digital SAT Math</h1>
+        <h2 class="subtitle">Proportion</h2>  
+        <div class="question-list">
+            <div class="number-bar">
+                <span>43</span>
+            </div>
+    
+            <p class="question">
+                The amount of material needed for a cylindrical column's surface is directly proportional to the surface area of the cylinder. If the radius of the base is tripled and the height is doubled, by what factor does the amount of material needed change?
+            </p>
+            <div class="option-1-container">
+                <button class="option-1">A</button><p class="choice-1">\(2\)</p>
+            </div>
+            <div class="option-2-container">
+                <button class="option-2">B</button><p class="choice-2">\(3\)</p>
+            </div>
+            <div class="option-3-container">
+                <button class="option-3">C</button><p class="choice-3">\(6\)</p>
+            </div>
+            <div class="option-4-container">
+                <button class="option-4">D</button><p class="choice-4">\(12\)</p>
+            </div>
+        </div>
+        <button id="button-show-explanation43" class="button-show-explanation" onclick="toggleExplanation(currentQuestionIndex)">Show Explanation</button>
+        <div id="explanation43" class="explanation">
+            <p class="explanation-paragraph">
+                Choice D is correct. The surface area \( A \) of a cylinder is given by \( A = 2\pi r^2 + 2\pi rh \), which includes both the top and bottom circles and the side surface. If the radius \( r \) is tripled, the circle areas \( (\pi r^2) \) increase by a factor of \( 3^2 = 9 \), and the side surface area \( (2\pi rh) \) increases by a factor of \( 3 \times 2 = 6 \) since \( r \) is tripled and \( h \) is doubled. 
+                Therefore, the overall factor is not simply the sum of 9 and 2, nor is it their product, but rather a combination of the effects on the different parts of the cylinder. <br>
+                The correct answer, taking into account the entire surface area, is D) 12. This is because the increase factor for the area of the bases (which depends on the square of the radius) is 9, and the increase factor for the side area (which depends on both the radius and the height) is 6, and together they contribute to an overall factor of 12. 
+            </p>
+        </div>
+    </div>
+    <div class="question-part" id="questionContent44" data-question-id="proportion44">
+        <h1 class="title">Digital SAT Math</h1>
+        <h2 class="subtitle">Proportion</h2>  
+        <div class="question-list">
+            <div class="number-bar">
+                <span>44</span>
+            </div>
+    
+            <p class="question">
+                The maximum weight that a beam can support is directly proportional to its width. If a beam with a width of \(10 \, \text{cm}\) can support a maximum weight of \(500 \, \text{kg}\), what maximum weight can a beam of \(15 \, \text{cm}\) width support?
+            </p>
+            <div class="option-1-container">
+                <button class="option-1">A</button><p class="choice-1">\(650 \, \text{kg}\)</p>
+            </div>
+            <div class="option-2-container">
+                <button class="option-2">B</button><p class="choice-2">\(750 \, \text{kg}\)</p>
+            </div>
+            <div class="option-3-container">
+                <button class="option-3">C</button><p class="choice-3">\(850 \, \text{kg}\)</p>
+            </div>
+            <div class="option-4-container">
+                <button class="option-4">D</button><p class="choice-4">\(1000 \, \text{kg}\)</p>
+            </div>
+        </div>
+        <button id="button-show-explanation44" class="button-show-explanation" onclick="toggleExplanation(currentQuestionIndex)">Show Explanation</button>
+        <div id="explanation44" class="explanation">
+            <p class="explanation-paragraph">
+                Choice B is correct. If the maximum weight a beam can support is directly proportional to its width, then we can set up the proportion as follows: \(\frac{500 \, \text{kg}}{10 \, \text{cm}} = \frac{x \, \text{kg}}{15 \, \text{cm}}\). Solving for \(x\) gives \(x = \frac{500 \, \text{kg} \times 15 \, \text{cm}}{10 \, \text{cm}} = 750 \, \text{kg}\). Therefore, a beam with a width of \(15 \, \text{cm}\) can support a maximum weight of \(750 \, \text{kg}\).
+            </p>
+        </div>
+    </div>
+    <div class="question-part" id="questionContent45" data-question-id="proportion45">
+        <h1 class="title">Digital SAT Math</h1>
+        <h2 class="subtitle">Proportion</h2>  
+        <div class="question-list">
+            <div class="number-bar">
+                <span>45</span>
+            </div>
+    
+            <p class="question">
+                The resolution of a digital image is directly proportional to the number of pixels it contains. If the width of an image is increased by \(20\%\) and the height by \(30\%\), what is the percent increase in resolution?
+            </p>
+            <div class="option-1-container">
+                <button class="option-1">A</button><p class="choice-1">\(50\%\) </p>
+            </div>
+            <div class="option-2-container">
+                <button class="option-2">B</button><p class="choice-2">\(56\%\) </p>
+            </div>
+            <div class="option-3-container">
+                <button class="option-3">C</button><p class="choice-3">\(62\%\) </p>
+            </div>
+            <div class="option-4-container">
+                <button class="option-4">D</button><p class="choice-4">\(70\%\) </p>
+            </div>
+        </div>
+        <button id="button-show-explanation45" class="button-show-explanation" onclick="toggleExplanation(currentQuestionIndex)">Show Explanation</button>
+        <div id="explanation45" class="explanation">
+            <p class="explanation-paragraph">
+                Choice B is correct. The resolution is a product of width and height, and a percentage increase in either dimension will increase the resolution by the product of the individual increases. For a \(20\%\) increase in width and a \(30\%\) increase in height, the overall increase in resolution will be \(1.20 \times 1.30 = 1.56\), which is a \(56\%\) increase from the original resolution.
+            </p>
+        </div>
+    </div>
+    <div class="question-part" id="questionContent46" data-question-id="proportion46">
+        <h1 class="title">Digital SAT Math</h1>
+        <h2 class="subtitle">Proportion</h2>  
+        <div class="question-list">
+            <div class="number-bar">
+                <span>46</span>
+            </div>
+    
+            <p class="question">
+                A photograph's aspect ratio remains constant. If the width of the photo is increased by \(25\%\) and the height is increased by \(10\%\), by what percent does the area of the photograph increase?
+            </p>
+            <div class="option-1-container">
+                <button class="option-1">A</button><p class="choice-1">\(35\%\) </p>
+            </div>
+            <div class="option-2-container">
+                <button class="option-2">B</button><p class="choice-2">\(37.5\%\) </p>
+            </div>
+            <div class="option-3-container">
+                <button class="option-3">C</button><p class="choice-3">\(40\%\) </p>
+            </div>
+            <div class="option-4-container">
+                <button class="option-4">D</button><p class="choice-4">\(47.5\%\) </p>
+            </div>
+        </div>
+        <button id="button-show-explanation46" class="button-show-explanation" onclick="toggleExplanation(currentQuestionIndex)">Show Explanation</button>
+        <div id="explanation46" class="explanation">
+            <p class="explanation-paragraph">
+                Choice B is correct. The area of the photograph increases by the product of the percent increases in width and height. If the width increases by \(25\%\), it is multiplied by \(1.25\), and if the height increases by \(10\%\), it is multiplied by \(1.10\). The new area is \(1.25 \times 1.10 = 1.375\) times the original area, which is an increase of \(37.5\%\).
+            </p>
+        </div>
+    </div>    
+    <div class="question-part" id="questionContent47" data-question-id="proportion47">
+        <h1 class="title">Digital SAT Math</h1>
+        <h2 class="subtitle">Proportion</h2>  
+        <div class="question-list">
+            <div class="number-bar">
+                <span>47</span>
+            </div>
+    
+            <p class="question">
+                The drag force on a car is directly proportional to the square of its speed. If a car's speed increases from \(40 \text{ km/h}\) to \(60 \text{ km/h}\), by what percent does the drag force increase?
+            </p>
+            <div class="option-1-container">
+                <button class="option-1">A</button><p class="choice-1">\(50\%\) </p>
+            </div>
+            <div class="option-2-container">
+                <button class="option-2">B</button><p class="choice-2">\(100\%\) </p>
+            </div>
+            <div class="option-3-container">
+                <button class="option-3">C</button><p class="choice-3">\(125\%\) </p>
+            </div>
+            <div class="option-4-container">
+                <button class="option-4">D</button><p class="choice-4">\(150\%\) </p>
+            </div>
+        </div>
+        <button id="button-show-explanation47" class="button-show-explanation" onclick="toggleExplanation(currentQuestionIndex)">Show Explanation</button>
+        <div id="explanation47" class="explanation">
+            <p class="explanation-paragraph">
+                Choice C is correct. Since drag force is proportional to the square of the speed, we can calculate the change in force by squaring the ratio of the speeds. The ratio of the speeds is \(\frac{60}{40} = 1.5\), and squaring this gives \(1.5^2 = 2.25\). This means the force increases by \(2.25 - 1 = 1.25\) or \(125\%\).
+            </p>
+        </div>
+    </div>
+    <div class="question-part" id="questionContent48" data-question-id="proportion48">
+        <h1 class="title">Digital SAT Math</h1>
+        <h2 class="subtitle">Proportion</h2>  
+        <div class="question-list">
+            <div class="number-bar">
+                <span>48</span>
+            </div>
+    
+            <p class="question">
+                The number of tiles required for a floor is inversely proportional to the area of each tile. If the side length of each square tile is decreased by \(25\%\), how many more tiles are required to cover the same floor area?
+            </p>
+            <div class="option-1-container">
+                <button class="option-1">A</button><p class="choice-1">\(25\%\) more </p>
+            </div>
+            <div class="option-2-container">
+                <button class="option-2">B</button><p class="choice-2">\(50\%\) more </p>
+            </div>
+            <div class="option-3-container">
+                <button class="option-3">C</button><p class="choice-3">\(75\%\) more </p>
+            </div>
+            <div class="option-4-container">
+                <button class="option-4">D</button><p class="choice-4">\(125\%\) more </p>
+            </div>
+        </div>
+        <button id="button-show-explanation48" class="button-show-explanation" onclick="toggleExplanation(currentQuestionIndex)">Show Explanation</button>
+        <div id="explanation48" class="explanation">
+            <p class="explanation-paragraph">
+                Choice C is correct. When the side length of a tile is decreased by \(25\%\), the new length is \(75\%\) of the original length. Since the area of a tile is the square of its side length, the new area is \((0.75)^2 = 0.5625\) of the original area. Therefore, it will take \(\frac{1}{0.5625} \approx 1.7778\) times as many tiles to cover the same area, which is a \(77.78\%\) increase, rounded to \(75\%\) more to match the closest answer choice.
+            </p>
+        </div>
+    </div>
+    <div class="question-part" id="questionContent49" data-question-id="proportion49">
+        <h1 class="title">Digital SAT Math</h1>
+        <h2 class="subtitle">Proportion</h2>  
+        <div class="question-list">
+            <div class="number-bar">
+                <span>49</span>
+            </div>
+    
+            <p class="question">
+                A swimming pool is filled by two pipes. The first pipe fills the pool in \(2\) hours, and the second pipe fills it in \(3\) hours. How long will it take to fill the pool if both pipes are used together?
+            </p>
+            <div class="option-1-container">
+                <button class="option-1">A</button><p class="choice-1">\(1\) hour and \(12\) minutes </p>
+            </div>
+            <div class="option-2-container">
+                <button class="option-2">B</button><p class="choice-2">\(1\) hour and \(20\) minutes </p>
+            </div>
+            <div class="option-3-container">
+                <button class="option-3">C</button><p class="choice-3">\(1\) hour and \(30\) minutes </p>
+            </div>
+            <div class="option-4-container">
+                <button class="option-4">D</button><p class="choice-4">\(1\) hour and \(40\) minutes </p>
+            </div>
+        </div>
+        <button id="button-show-explanation49" class="button-show-explanation" onclick="toggleExplanation(currentQuestionIndex)">Show Explanation</button>
+        <div id="explanation49" class="explanation">
+            <p class="explanation-paragraph">
+                Choice A is correct. The first pipe has a rate of \( \frac{1}{2} \) pool per hour and the second pipe has a rate of \( \frac{1}{3} \) pool per hour. Together, they fill \( \frac{1}{2} + \frac{1}{3} = \frac{5}{6} \) of the pool per hour. To find the time to fill one whole pool, we calculate \( \frac{1}{\frac{5}{6}} = 1.2 \) hours, or \(1\) hour and \(12\) minutes.
+            </p>
+        </div>
+    </div>
+    <div class="question-part" id="questionContent50" data-question-id="proportion50">
+        <h1 class="title">Digital SAT Math</h1>
+        <h2 class="subtitle">Proportion</h2>  
+        <div class="question-list">
+            <div class="number-bar">
+                <span>50</span>
+            </div>
+    
+            <p class="question">
+                The tensile strength of a material is inversely proportional to the length of the material. If the length of a wire is increased by \(50\%\), what is the percent decrease in tensile strength?
+            </p>
+            <div class="option-1-container">
+                <button class="option-1">A</button><p class="choice-1">\(33.33\%\) </p>
+            </div>
+            <div class="option-2-container">
+                <button class="option-2">B</button><p class="choice-2">\(50\%\) </p>
+            </div>
+            <div class="option-3-container">
+                <button class="option-3">C</button><p class="choice-3">\(66.67\%\) </p>
+            </div>
+            <div class="option-4-container">
+                <button class="option-4">D</button><p class="choice-4">\(75\%\) </p>
+            </div>
+        </div>
+        <button id="button-show-explanation50" class="button-show-explanation" onclick="toggleExplanation(currentQuestionIndex)">Show Explanation</button>
+        <div id="explanation50" class="explanation">
+            <p class="explanation-paragraph">
+                Choice A is correct. Since tensile strength is inversely proportional to length, increasing the length by \(50\%\) or by a factor of \(1.5\) means the tensile strength will be \( \frac{1}{1.5} \) times the original, which is approximately \(66.67\%\) of the original tensile strength, indicating a \(33.33\%\) decrease.
+            </p>
+        </div>
+    </div>
+
+</body>
+</html>

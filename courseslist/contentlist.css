@@ -1,0 +1,43 @@
+.content-list{
+    display: flex;
+    flex-direction: column;
+    font-family: noto sans, "sans-serif";
+    padding-left: 10rem;
+}
+
+.content-list-title-1{
+    font-family: noto sans, "sans-serif";
+    font-size: 20px;
+    margin: 0;
+    padding: 0;
+}
+
+.content-list-digital-sat{
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+    margin: 0;
+}
+
+.custom-link{
+    text-decoration: none;
+    color: #000;
+}
+
+.subtitle-of-content{
+    padding: 0;
+    margin: 0;
+}
+
+.content-list-digital-sat-math{
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.content-list-digital-sat-english{
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    padding-left: 7rem;
+}

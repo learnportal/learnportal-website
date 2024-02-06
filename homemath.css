@@ -1,0 +1,514 @@
+.exponents-importance-paragraph-list{
+    list-style-type: square;
+}
+
+.topic-list::-webkit-scrollbar{
+    width: 0.5rem;
+}
+
+body::-webkit-scrollbar{
+    width: 0;
+}
+
+.topic-list::-webkit-scrollbar-thumb {
+    background-color: #aec2cc;
+    border-radius: 2px;
+}
+
+.content-list::-webkit-scrollbar-thumb{
+    background-color: #6497b1;
+    border-radius: 10px;
+}
+
+.content-list::-webkit-scrollbar{
+    width: 0.5rem;
+}
+
+.topic-list::-webkit-scrollbar-thumb:hover {
+    background-color: #cfd9de;
+}
+
+a{
+    text-decoration: none;
+    color: #e4e4e4;
+}
+
+.attribution-link {
+    display: none;
+  }
+
+  .background-section {
+    background-color: #03396c;
+    height: 50px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999; /* Adjust the z-index as needed */
+}
+.title-section{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #6497b1;
+    height: 90px;
+    z-index: 1000;
+    margin-top: 50px;
+}
+
+.left-section{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-shrink: 0;
+    margin-left: 40px;
+}
+
+.logo{
+    height: 60px;
+    cursor: pointer;
+}
+
+.logo-name{
+    font-family: roboto, sans-serif;
+    font-size: 25px;
+    margin-left: 10px;
+    color: rgb(1, 31, 75);
+    letter-spacing: .5px;
+    font-weight: 700;
+    text-shadow: 1px;
+    cursor: pointer;
+}
+
+.middle-section{
+    display: flex;
+    flex: 1;
+    max-width: 400px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.search-bar-container{
+    display: flex;
+    align-items: center;
+    position: relative;
+    width: 100%;
+}
+
+.search-bar{
+    height: 25px;
+    border-radius: 5px;
+    flex: 1;
+    width: 0;
+    border-width: 1px;
+    border-color: #787878;
+    box-shadow: inset 1px 2px 3px rgb(1, 31, 75, 0.2);
+    background-color: #b3cde0;
+    color: rgb(0, 0, 0);
+    font-family: roboto, arial;
+    font-weight: 400;
+    font-size: 13px;
+    outline: none;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px; 
+    letter-spacing: .5px;  
+}
+
+.search-bar::placeholder{
+    color:#000000 !important;
+    font-family: Roboto, arial;
+}
+
+.search-button{ 
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: text;
+    position: absolute;
+    right: 5px;
+    top: 50%;
+    transform: translateY(-50%); 
+}
+
+.search-button i{
+    font-size: 18px;
+    margin-right: 4px;   
+}
+
+.navigation ul {
+    text-decoration: none !important;
+    list-style-type: none !important; 
+    padding-left: 0; 
+}
+
+.navigation a{
+    text-decoration: none;
+}
+
+.right-section{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-shrink: 0;
+    margin-right: 40px;
+}
+
+.about{
+    margin-right: 25px;
+    color: rgb(0, 0, 0);
+    font-size: 14px !important;
+    cursor: pointer !important;
+    font-family: railway, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 700;
+}
+
+.donate{
+    margin-right: 25px;
+    color: rgb(0, 0, 0);
+    cursor: pointer !important;
+    font-size: 14px !important;
+    font-family: railway, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 700;
+}
+
+.show-dropdown {
+    display: block !important;
+}  
+
+.courses-list-container{
+    position: relative;
+}
+
+#coursesButton.active{
+    color: #ffffff;
+    transition-duration: 0.3s;
+}
+
+.content-list{
+    display: none;
+    font-family: noto sans, "sans-serif";
+    padding-left: 5rem;
+    padding-right: 5rem;
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+    border-radius: 10px;
+    position: absolute;
+    right: -80px;
+    top: 54px;
+    width: 50em;
+    max-height: 500px;
+    overflow-y: auto;
+    background-color: #03396c;
+    color: #6497b1;
+    scroll-behavior: smooth;
+}
+
+.content-list-title-1{
+    font-family: noto sans, "sans-serif";
+    font-size: 20px;
+    margin: 0;
+    padding: 0;
+}
+
+.content-list-digital-sat{
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+    margin: 0;
+}
+
+.custom-link{
+    text-decoration: none;
+    color: rgb(197, 195, 195);
+}
+
+.subtitle-of-content{
+    padding: 0;
+    margin: 0;
+}
+
+.content-list-digital-sat-math{
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    padding-bottom: 1rem;
+}
+
+.content-list-digital-sat-english{
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    padding-left: 7rem;
+}
+
+.courses{
+    margin-right: 25px;
+    color: rgb(0, 0, 0);
+    cursor: pointer !important;
+    font-size: 14px !important;
+    font-family: railway, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 700;
+}
+
+.university{
+    color: rgb(0, 0, 0);
+    cursor: pointer !important;
+    font-size: 14px !important;
+    font-family: railway, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 700;
+}
+
+body{
+    margin: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 0;
+    font-weight: 500;
+    scroll-behavior: smooth;
+} 
+
+.main-div{
+    display: block;
+    flex-direction: row;
+    margin-top: 141px;
+    max-height: 51.79em;
+    overflow-y: auto;
+    position: relative;
+}
+
+.question-part{
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    margin-left: 35em;
+    margin-right: 30em;
+    padding-bottom: 20px;
+}
+
+.DSMath-title{
+    text-align: center !important;
+    font-family: lato, noto sans, 'sans-serif';
+    font-size: 28px;
+    font-weight: 700;
+    border-bottom: 2px solid #e9eaea;
+    padding-bottom: 10px;
+}
+
+.DSMath-introduction-paragraph{
+    font-family: lato, noto sans,'sans-serif' !important;
+    letter-spacing: .5px !important;
+    margin: 0 !important;
+    font-weight: 500 !important;
+    font-size: 20px !important;
+    line-height: 30px !important;
+    color: rgb(33, 36, 44) !important;
+    padding-bottom: 20px !important;
+    border-bottom: 1px #dbdbdb solid !important;
+}
+
+.DSMath-overview{
+    font-family: lato, noto sans, 'sans-serif' !important;
+    font-size: 22px !important;
+    font-weight: 700 !important;
+    letter-spacing: .5px !important;
+    margin: 0 !important;
+    padding-top: 40px !important;
+    padding-bottom: 15px !important;
+}
+
+.DSMath-overview-paragraph{
+    font-family: lato, noto sans, 'sans-serif' !important;
+    letter-spacing: .5px !important;
+    margin: 0 !important;
+    font-weight: 500 !important;
+    font-size: 20px !important;
+    line-height: 30px !important;
+    color: rgb(33, 36, 44) !important;
+    border-bottom: 1px #dbdbdb solid !important;
+    padding-bottom: 20px !important;
+}
+
+.passages-and-questions{
+    font-family: lato, noto sans, 'sans-serif';
+    font-size: 22px;
+    font-weight: 700;
+    letter-spacing: .5px;
+    margin: 0;
+    padding-top: 40px;
+    padding-bottom: 15px;
+    letter-spacing: .5px;
+}
+
+.passages-and-questions-paragraph-list{
+    font-family: lato, noto sans, 'sans-serif';
+    letter-spacing: .5px;
+    margin: 0;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+    color: rgb(33, 36, 44);
+    padding-top: 15px;
+    padding-bottom: 15px;
+    list-style-type: inherit;
+}
+
+.dsat-math-questions-domains{
+    list-style-type: decimal;
+    padding-left: 100px;
+    font-family: lato, noto sans, "sans-serif";
+    letter-spacing: .5px;
+    margin: 0;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+    color: rgb(33, 36, 44);
+    padding-bottom: 15px;
+}
+
+.passages-and-questions-paragraph-list-last{
+    font-family: lato, noto sans, 'sans-serif';
+    letter-spacing: .5px;
+    margin: 0;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+    color: rgb(33, 36, 44);
+    padding-top: 15px;
+    padding-bottom: 20px;
+    list-style-type: inherit;
+    border-bottom: 1px #dbdbdb solid !important;
+}
+
+.DSMath-getting-started, .DSMath-ready{
+    font-family: lato, noto sans, 'sans-serif';
+    font-size: 22px;
+    font-weight: 700;
+    letter-spacing: .5px;
+    margin: 0;
+    padding-top: 40px;
+    padding-bottom: 15px;
+    letter-spacing: .5px;
+}
+
+.DSMath-getting-started-paragraph{
+    font-family: lato, noto sans, 'sans-serif' !important;
+    letter-spacing: .5px !important;
+    margin: 0 !important;
+    font-weight: 500 !important;
+    font-size: 20px !important;
+    line-height: 30px !important;
+    color: rgb(33, 36, 44) !important;
+    border-bottom: 1px #dbdbdb solid !important;
+    padding-bottom: 30px !important;
+}
+
+.DSMath-ready-paragraph{
+    font-family: lato, noto sans, 'sans-serif' !important;
+    letter-spacing: .5px !important;
+    margin: 0 !important;
+    font-weight: 500 !important;
+    font-size: 20px !important;
+    line-height: 30px !important;
+    color: rgb(33, 36, 44) !important;
+    padding-bottom: 30px !important;
+}
+
+.DSMath-ready-paragraph-list{
+    font-family: lato, noto sans, 'sans-serif';
+    letter-spacing: .5px;
+    margin: 0;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+    color: rgb(33, 36, 44);
+    padding-top: 15px;
+    padding-bottom: 15px;
+    list-style-type: inherit;
+}
+
+.DSMath-last-paragraph{
+    font-family: lato, noto sans, 'sans-serif' !important;
+    letter-spacing: .5px !important;
+    margin: 0 !important;
+    font-weight: 500 !important;
+    font-size: 20px !important;
+    line-height: 30px !important;
+    color: rgb(33, 36, 44) !important;
+    padding-bottom: 30px !important;
+}
+
+.khanacademylink{
+    color: #6497b1;
+    font-weight: bold;
+}
+
+.home-math-start-button{
+    font-family: lato,noto sans,sans-serif;
+    letter-spacing: 1px;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 16px;
+    background-color: #011f4b;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 50px;
+    padding-right: 50px;
+    line-height: 30px;
+    border-radius: 6px;
+    border: 0;
+    color: rgb(255, 255, 255);
+    position: absolute;
+    top: 126.5rem;
+    left: 64rem;
+    box-shadow: 5px 5px 10px rgb(1, 31, 75, 0.2);
+}
+
+.home-math-start-button:hover{
+    color: rgb(255, 255, 255);
+    background-color: #011f4bdc;
+    transition-duration: 0.3s;
+}
+
+.loading-screen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.7); /* Semi-transparent white */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000; /* Ensure it's above other content */
+    opacity: 0;
+    transition-duration: opacity 0.3s ease;
+}
+
+.loader {
+    border: 5px solid #6497b16b; /* Light grey border */
+    border-top: 5px solid #011f4b; /* Blue border */
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}

@@ -1,0 +1,664 @@
+a{
+    text-decoration: none;
+    color: #e4e4e4;
+}
+
+.attribution-link {
+    display: none;
+  }
+
+.background-section {
+    background-color: #03396c; /* Change this to your desired color */
+    height: 50px;
+}
+.title-section{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #6497b1;
+    height: 90px;
+}
+
+.left-section{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-shrink: 0;
+    margin-left: 40px;
+}
+
+.logo{
+    height: 60px;
+    cursor: pointer;
+}
+
+.logo-name{
+    font-family: roboto, sans-serif;
+    font-size: 25px;
+    margin-left: 10px;
+    color: rgb(1, 31, 75);
+    letter-spacing: .5px;
+    font-weight: 700;
+    text-shadow: 1px;
+    cursor: pointer;
+}
+
+.middle-section{
+    display: flex;
+    flex: 1;
+    max-width: 400px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.search-bar-container{
+    display: flex;
+    align-items: center;
+    position: relative;
+    width: 100%;
+}
+
+.search-bar{
+    height: 25px;
+    border-radius: 5px;
+    flex: 1;
+    width: 0;
+    border-width: 1px;
+    border-color: #787878;
+    box-shadow: inset 1px 2px 3px rgb(1, 31, 75, 0.2);
+    background-color: #b3cde0;
+    color: rgb(0, 0, 0);
+    font-family: roboto, arial;
+    font-weight: 400;
+    font-size: 13px;
+    outline: none;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px; 
+    letter-spacing: .5px;  
+}
+
+.search-bar::placeholder{
+    color:#000000 !important;
+    font-family: Roboto, arial;
+}
+
+.search-button{ 
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: text;
+    position: absolute;
+    right: 5px;
+    top: 50%;
+    transform: translateY(-50%); 
+}
+
+.search-button i{
+    font-size: 18px;
+    margin-right: 4px;   
+}
+
+.navigation ul {
+    text-decoration: none !important;
+    list-style-type: none !important; 
+    padding-left: 0; 
+}
+
+.navigation a{
+    text-decoration: none;
+}
+
+.right-section{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-shrink: 0;
+    margin-right: 40px;
+}
+
+.about{
+    margin-right: 25px;
+    color: rgb(0, 0, 0);
+    font-size: 14px !important;
+    cursor: pointer !important;
+    font-family: railway, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 700;
+}
+
+.donate{
+    margin-right: 25px;
+    color: rgb(0, 0, 0);
+    cursor: pointer !important;
+    font-size: 14px !important;
+    font-family: railway, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 700;
+}
+
+.courses{
+    margin-right: 25px;
+    color: rgb(0, 0, 0);
+    cursor: pointer !important;
+    font-size: 14px !important;
+    font-family: railway, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 700;
+}
+
+.university{
+    color: rgb(0, 0, 0);
+    cursor: pointer !important;
+    font-size: 14px !important;
+    font-family: railway, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 700;
+}
+
+body{
+    margin: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 0;
+    font-weight: 500;
+    scroll-behavior: smooth;
+} 
+
+.main{
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+}
+
+.main-title{
+    font-family: noto sans, sans-serif;
+    font-size: 30px;
+    text-align: center;
+    line-height: 34px;
+}
+
+.pp-1{
+    display: flex;
+    flex-direction: row;
+    justify-content: first baseline;
+    padding-left: 250px;
+    padding-right: 250px;
+    margin-top: 30px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: #c9d8e6;
+    color: #000000;
+}
+
+.pp-1-1{
+    font-family: roboto, sans-serif;
+    font-size: 25px;
+    margin-right: 20px;
+}
+
+.pp-1-title{
+    font-family: noto sans, sans-serif;
+    font-size: 25px;
+    letter-spacing: .5px;
+}
+
+.pp-1-paragraph{
+    font-family: poppins, sans-serif;
+    font-size: 18px;
+    letter-spacing: .5px;
+    line-height: 34px;
+}
+
+.pp-2{
+    display: flex;
+    flex-direction: row;
+    justify-content: first baseline;
+    padding-left: 250px;
+    padding-right: 250px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: #c9d8e6;
+    color: #000000;
+}
+
+.pp-2-2{
+    font-family: roboto, sans-serif;
+    font-size: 25px;
+    margin-right: 20px;
+}
+
+.pp-2-title{
+    font-family: noto sans, sans-serif;
+    font-size: 25px;
+    letter-spacing: .5px;
+}
+
+.pp-3{
+    display: flex;
+    flex-direction: row;
+    padding-left: 250px;
+    padding-right: 250px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: #8dabc8;
+    color: #000000;
+}
+
+.pp-3-3{
+    font-family: roboto, sans-serif;
+    font-size: 25px;
+    margin-right: 20px;
+}
+
+.pp-3-title{
+    font-family: noto sans, sans-serif;
+    font-size: 25px;
+    letter-spacing: .5px;
+}
+
+.pp-3-paragraph{
+    font-family: poppins, sans-serif;
+    font-size: 18px;
+    letter-spacing: .5px;
+    line-height: 34px;
+}
+
+.pp-4{
+    display: flex;
+    flex-direction: row;
+    padding-left: 250px;
+    padding-right: 250px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: #8dabc8;
+    color: #000000;
+}
+
+.pp-4-4{
+    font-family: roboto, sans-serif;
+    font-size: 25px;
+    margin-right: 20px;
+}
+
+.pp-4-title{
+    font-family: noto sans, sans-serif;
+    font-size: 25px;
+    letter-spacing: .5px;
+}
+
+.pp-4-paragraph{
+    font-family: poppins, sans-serif;
+    font-size: 18px;
+    letter-spacing: .5px;
+    line-height: 34px;
+}
+
+.pp-5{
+    display: flex;
+    flex-direction: row;
+    padding-left: 250px;
+    padding-right: 250px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: #ced1be;
+}
+
+.pp-5-5{
+    font-family: roboto, sans-serif;
+    font-size: 25px;
+    margin-right: 20px;
+}
+
+.pp-5-title{
+    font-family: noto sans, sans-serif;
+    font-size: 25px;
+    letter-spacing: .5px;
+}
+
+.pp-5-paragraph{
+    font-family: poppins, sans-serif;
+    font-size: 18px;
+    letter-spacing: .5px;
+    line-height: 34px;
+}
+
+.pp-6{
+    display: flex;
+    flex-direction: row;
+    padding-left: 250px;
+    padding-right: 250px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: #ced1be;
+}
+
+.pp-6-6{
+    font-family: roboto, sans-serif;
+    font-size: 25px;
+    margin-right: 20px;
+}
+
+.pp-6-title{
+    font-family: noto sans, sans-serif;
+    font-size: 25px;
+    letter-spacing: .5px;
+}
+
+.pp-6-paragraph{
+    font-family: poppins, sans-serif;
+    font-size: 18px;
+    letter-spacing: .5px;
+    line-height: 34px;
+}
+
+.pp-7{
+    display: flex;
+    flex-direction: row;
+    padding-left: 250px;
+    padding-right: 250px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: #be8e01;
+}
+
+.pp-7-7{
+    font-family: roboto, sans-serif;
+    font-size: 25px;
+    margin-right: 20px;
+}
+
+.pp-7-title{
+    font-family: noto sans, sans-serif;
+    font-size: 25px;
+    letter-spacing: .5px;
+}
+
+.pp-7-paragraph{
+    font-family: poppins, sans-serif;
+    font-size: 18px;
+    letter-spacing: .5px;
+    line-height: 34px;
+}
+
+.dot-sequence {
+    list-style-type: square;
+    font-family: poppins, sans-serif;
+    font-size: 18px;
+    letter-spacing: .5px;
+    line-height: 34px;
+}
+
+.pp-8{
+    display: flex;
+    flex-direction: row;
+    padding-left: 250px;
+    padding-right: 250px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: #be8e01;
+}
+
+.pp-8-8{
+    font-family: roboto, sans-serif;
+    font-size: 25px;
+    margin-right: 20px;
+}
+
+.pp-8-title{
+    font-family: noto sans, sans-serif;
+    font-size: 25px;
+    letter-spacing: .5px;
+}
+
+.pp-8-paragraph{
+    font-family: poppins, sans-serif;
+    font-size: 18px;
+    letter-spacing: .5px;
+    line-height: 34px;
+}
+
+.pp-9{
+    display: flex;
+    flex-direction: row;
+    padding-left: 250px;
+    padding-right: 250px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: #d2ebd8;
+}
+
+.pp-9-9{
+    font-family: roboto, sans-serif;
+    font-size: 25px;
+    margin-right: 20px;
+}
+
+.pp-9-title{
+    font-family: noto sans, sans-serif;
+    font-size: 25px;
+    letter-spacing: .5px;
+}
+
+.pp-9-paragraph{
+    font-family: poppins, sans-serif;
+    font-size: 18px;
+    letter-spacing: .5px;
+    line-height: 34px;
+}
+
+.pp-10{
+    display: flex;
+    flex-direction: row;
+    justify-content: first baseline;
+    padding-left: 236px;
+    padding-right: 250px;
+    padding-top: 20px;
+    padding-bottom: 50px;
+    background-color: #d2ebd8;
+}
+
+.pp-10-10{
+    font-family: roboto, sans-serif;
+    font-size: 25px;
+    margin-right: 20px;
+}
+
+.pp-10-title{
+    font-family: noto sans, sans-serif;
+    font-size: 25px;
+    letter-spacing: .5px;
+}
+
+.pp-10-paragraph{
+    font-family: poppins, sans-serif;
+    font-size: 18px;
+    letter-spacing: .5px;
+    line-height: 34px;
+}
+
+.end-part{
+    display: flex;
+    align-items: baseline;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 40px;
+    background-color: #01213e;
+}
+
+.end-part-paragraph{
+    font-family: poppins, sans-serif;
+    color: #ffffff;
+    letter-spacing: .5px;
+    font-weight: 500;
+    line-height: 34px;
+    font-size: 18px;
+    max-width: 500px;
+}
+
+.end-part-important-links{
+    display: flex;
+    flex-direction: column;
+    margin-left: 18em;
+    flex: 1;
+}
+
+.end-part-important-links-title{
+    font-family: poppins, sans-serif;
+    color: #ffffff;
+    letter-spacing: .5px;
+    font-weight: 500;
+    font-size: 20px;
+    margin: 0;
+    margin-bottom: 15px;
+}
+
+.important-links-about{
+    font-family: poppins, sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    cursor: pointer;
+    width: fit-content;
+    margin: 0;
+    margin-bottom: 10px;
+}
+
+.important-links-privacy-policy{
+    font-family: poppins, sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    width: fit-content;
+    cursor: pointer;
+    margin: 0;
+    margin-bottom: 10px;
+}
+
+.important-links-terms-and-condition{
+    font-family: poppins, sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    width: fit-content;
+    cursor: pointer;
+    margin: 0;
+    margin-bottom: 10px;
+}
+
+.important-links-donate{
+    font-family: poppins, sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    width: fit-content;
+    cursor: pointer;
+    margin: 0;
+}
+
+.end-part-contact{
+    display: flex;
+    flex-direction: column;
+}
+
+.end-part-contact-title{
+    font-family: poppins, sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+
+.end-part-contact-facebook-section{
+    display: flex;
+    align-items: center;
+}
+
+.end-part-contact-facebook{
+    font-size: 25px;
+    color: #ffffff;
+}
+
+.end-part-contact-facebook-paragraph{
+    font-family: poppins, sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    margin-left: 12px;
+    color: #e4e4e4;
+}
+
+.end-part-contact-twitter-section{
+    display: flex;
+    align-items: center;
+}
+
+.end-part-contact-twitter{
+    font-size: 25px;
+    color: #ffffff;
+}
+
+.end-part-contact-twitter-paragraph{
+    font-family: poppins, sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    margin-left: 13px;
+    color: #e4e4e4;
+}
+
+.end-part-contact-youtube-section{
+    display: flex;
+    align-items: center;
+}
+
+.end-part-contact-youtube{
+    font-size: 25px;
+    color: #ffffff;
+}
+
+.end-part-contact-youtube-paragraph{
+    font-family: poppins, sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    color: #e4e4e4;
+    margin-left: 10px;
+}
+
+.end-part-contact-linkedin-section{
+    display: flex;
+    align-items: center;
+}
+
+.end-part-contact-linkedin{
+    font-size: 25px;
+    color: #ffffff;
+}
+
+.end-part-contact-linkedin-paragraph{
+    font-family: poppins, sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    color: #e4e4e4;
+    margin-left: 17px;
+}
+
+.all-rights-reserve-section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #01213e;
+    padding-bottom: 15px;
+}
+
+.last-logo{
+    width: 70px;
+}
+
+.all-rights-reserve{
+    font-family: noto sans, sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    color: #e4e4e4;
+    margin-left: 10px;
+}

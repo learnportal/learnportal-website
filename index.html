@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en"> 
+<head>
+    <title>Khan Academy</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" 
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <link rel="stylesheet" href="styles.css">
+    <script src="function.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,
+                100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" 
+        rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,
+                    400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,
+                    800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,
+                    300;1,400;1,500;1,700;1,900&display=swap" 
+                rel="stylesheet">  
+                <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;
+0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,
+100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,
+wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" 
+rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Karma:wght@300;400;500;600;700&family=Lato:wght@100&family=Poppins:ital,
+wght@0,100;0,200;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,700;1,800;1,900&family=Raleway:ital,wght@0,
+100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,
+100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" 
+rel="stylesheet">
+</head>
+<body>
+    <div class="background-section"></div>
+        <div class="title-section">
+            <div class="left-section">
+                <a href="index.html">
+                    <img class="logo" src="picture/khan-academy-seeklogo.com.svg" alt="Your Logo Alt Text">
+                </a>
+                <a href="index.html" class="logo-name">LearnPortal</a>
+            </div>
+
+            <div class="middle-section">
+                <div class="search-bar-container">
+                <input class="search-bar" type="text" placeholder="Search...">
+                <button class="search-button"> <i class="fa-solid fa-magnifying-glass"></i></button>
+                </div>
+            </div>
+
+            <nav class="navigation">
+                <ul class="right-section">
+                    <li><a href="https://www.khanacademy.org/profile/me/courses" class="about" target="_blank">About</a></li>
+                    <li><a href="https://ntsblog.homedev.com.au/index.php/2010/05/06/c-stack-with-maximum-limit/" class="donate" target="_blank">Donate</a></li>
+                    <li class="courses-list-container">
+                        <a href="#" class="courses" id="coursesButton">Courses</a>
+                        <div class="content-list" id="contentList">
+                            <h1 class="content-list-title-1">STANDARDIZED TESTS</h1>
+                            <h3>Digital SAT</h3>
+                            <div class="content-list-digital-sat">
+                              <div class="content-list-digital-sat-math">
+                                <h4 class="subtitle-of-content">Digital Sat Math</h4>
+                                <a href="#" class="custom-link">Exponents and Radicals</a>
+                                <a href="#" class="custom-link">Absolute Values</a>
+                                <a href="#" class="custom-link">Proportion</a>
+                                <a href="#" class="custom-link">Percent</a>
+                                <a href="#" class="custom-link">Unit conversions</a>
+                                <a href="#" class="custom-link">Expressions</a>
+                                <a href="#" class="custom-link">Exponential Equations</a>
+                                <a href="#" class="custom-link">Linear equations</a>
+                                <a href="#" class="custom-link">Quadratic equations</a>
+                                <a href="#" class="custom-link">Polynomial equations</a>
+                                <a href="#" class="custom-link">Logarithmic functions</a>
+                                <a href="#" class="custom-link">Rational functions</a>
+                                <a href="#" class="custom-link">Inequalities</a>
+                                <a href="#" class="custom-link">Word Problems</a>
+                                <a href="#" class="custom-link">Functions</a>
+                                <a href="#" class="custom-link">Quadratics</a>
+                                <a href="#" class="custom-link">Synthetic Division</a>
+                                <a href="#" class="custom-link">Real Numbers</a>
+                                <a href="#" class="custom-link">Complex Numbers</a>
+                                <a href="#" class="custom-link">Absolute Value</a>
+                                <a href="#" class="custom-link">Angles</a>
+                                <a href="#" class="custom-link">Triangles</a>
+                                <a href="#" class="custom-link">Circles</a>
+                                <a href="#" class="custom-link">Trigonometry</a>
+                                <a href="#" class="custom-link">Probability</a>
+                                <a href="#" class="custom-link">Statistics</a>
+                              </div>
+                              <div class="content-list-digital-sat-english">
+                                <h4 class="subtitle-of-content">Digital Sat Reading and Writing</h4>
+                                <a href="#" class="custom-link">Information and Ideas: Command of Evidence</a>
+                                <a href="#" class="custom-link">Information and Ideas: Inferences</a>
+                                <a href="#" class="custom-link">Information and Ideas: Central Ideas and Details</a>
+                                <a href="#" class="custom-link">Craft and Structure: Words in Context</a>
+                                <a href="#" class="custom-link">Craft and Structure: Cross-Text Connections</a>
+                                <a href="#" class="custom-link">Craft and Structure: Text Structure and Purpose</a>
+                                <a href="#" class="custom-link">Expression of Ideas: Transitions</a>
+                                <a href="#" class="custom-link">Expression of Ideas: Rhetorical Synthesis</a>
+                                <a href="#" class="custom-link">Standard English Conventions: Boundaries</a>
+                                <a href="#" class="custom-link">Standard English Conventions: Form, Structure, and Sense</a>
+                              </div>
+                            </div>
+                          </div>
+                        </li>
+                    <li><a href="https://www.messenger.com/t/5565117946927971" class="university" target="_blank">university</a></li>
+                </ul>
+            </nav>
+        </div>
+
+    <div class="scrollable-container">
+            <div class="video-background">
+            <video autoplay loop muted playsinline class="video">
+                <source src="picture/pexels-mikhail-nilov-7583758 (1080p).mp4" type="video/mp4">
+            </video>
+            </div>
+        <div class="container">
+            <div class="about-website-section-1">
+                <h1 class="h1">Begin your excellent test preparation!</h1>
+                <div class="h1-text-button-decoration">
+                <p class="h1-text">Start Practicing Now</p>
+                <div class="button-container">
+                    <button class="h1-text-button">Let's go! <i class="fa-sharp fa-solid fa-arrow-right"></i></button>
+                    <span class="tooltip">Browse Courses</span>
+                </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="second-section"><p class="second-section-title">Unlock your full potential with our comprehensive resources!</p></div>
+        <div class="h2-section">
+            <div class="h2-section-1">
+                <h2 class="h2">Practice Questions </h2>
+                <p class="solve-questions-paragraph">Challenge your knowledge 
+                    and sharpen your skills with our extensive collection of practice questions. 
+                    Whether you're preparing for standardized tests or simply 
+                    looking to enhance your learning, our curated question sets cover a wide range 
+                    of subjects and topics. Put your problem-solving abilities to the test and track 
+                    your progress as you tackle questions designed to boost your confidence and knowledge. 
+                    Get started on your path to success by solving questions that matter.</p>
+            </div>
+           <img class="h2-section-1st-image" src="picture/Online test-pana (2).png">
+        </div>    
+
+
+        <div class="h3-section">
+            <img class="h3-section-image" src="picture/wepik-export-20230917113417cB2j.png">
+            <div class="h3-section-1">
+                <h2 class="h3">Check The Answer</h2>
+                <p class="check-the-answer">Once you have answered a practice question, you can 
+                    click the "Check Answer" button to see if you are correct. The correct answer will be 
+                    highlighted, and you will also receive a brief explanation of the answer. If you answered 
+                    incorrectly, you can review the explanation and try the question again.</p>
+            </div>
+        </div>
+
+        <div class="h4-section">
+            <div class="h4-section-1">
+                <h2 class="h4">Explore the Solution</h2>
+                <p class="see-the-solution">If you encounter
+                     a challenging question, don't worry. Just click on the "See Solution" button, and you'll gain 
+                     access to a step-by-step solution that's presented in a clear and concise manner. You'll also 
+                     have the opportunity to explore any relevant formulas or equations, making it easier for you 
+                     to grasp the concept and tackle similar problems in the future."</p>
+            </div>
+           <img class="h4-section-image" src="picture/wepik-export-20230917094212nwQ5.png">
+        </div>
+        
+        <div class="h5-section">
+            <img class="h5-section-image" src="picture/wepik-export-20230917180517Frqw.png">
+            <div class="h5-section-1">
+                <h2 class="h5">Shortcut Technique</h2>
+                <p class="shortcut-technique">Some questions may have a shortcut technique that can help you solve 
+                    them more quickly and efficiently. If a shortcut technique is available, you will see a 
+                    "Shortcut Technique" button below the question. Clicking this button will reveal the shortcut technique.
+                </p>
+            </div>
+        </div>
+
+<div class="university-introduction">
+    <h2 class="university-introduction-title">
+        <span class="word1">University</span>
+        <span class="word2">Resource</span>
+        <span class="word3">Center</span>
+    </h2>
+    <div>
+        <p class="university-introduction-title-paragraph">
+            In our University Resource Center, you'll discover a wealth of information to guide you on your higher 
+            education journey. Here, you can explore in-depth insights into various universities, including details 
+            about programs, campuses, admission requirements, and more. 
+        </p>
+
+        <div class="university-introduction-sections">
+                    <div class="university-introduction-1st-section">
+                        <div class="college-search">
+                            <div class="college-search-section">
+                                <h2 class="college-search-title">College Search</h2>
+                                <img src="picture/college search animation.gif" class="college-search-img">
+                            </div>
+                            <p class="college-search-paragraph">
+                                Explore a wide range of colleges and universities, discover programs, admission requirements, 
+                                and campus life. Our College Search tool empowers you to make informed decisions about your 
+                                educational journey.
+                            </p>
+                        </div>
+
+                        <div class="college-ranking">
+                            <div class="college-ranking-section">
+                                <h2 class="college-ranking-title">College Ranking</h2>
+                                <img src="picture/college ranking animation.gif" class="college-ranking-img">
+                            </div>
+                            <p class="college-ranking-paragraph">
+                                Discover the finest colleges and universities recognized for their academic excellence, 
+                                innovative programs, and outstanding faculty. Explore rankings by categories such as academic 
+                                performance, campus life, affordability, and more. 
+                            </p>
+                        </div>
+
+                        <div class="subject-ranking">
+                            <div class="subject-ranking-section">
+                                <h2 class="subject-ranking-title">Subject Ranking</h2>
+                                <img src="picture/subject-ranking-animation.gif" class="subject-ranking-img">
+                            </div>
+                                <p class="subject-ranking-paragraph">
+                                Explore in-depth subject-based rankings that provide insights into the top programs and departments 
+                                across various academic disciplines. Whether you're interested in science, humanities, 
+                                engineering, or any other field, our subject rankings will guide you towards the right educational 
+                                opportunities.
+                            </p>
+                        </div>
+
+                        <div class="important-dates">
+                            <div class="important-dates-section">
+                                <h2 class="important-dates-title">Important Dates</h2>
+                                <img src="picture/important dates animation.gif" class="important-dates-img">
+                            </div>
+                            <p class="important-dates-paragraph">
+                                Stay updated with essential deadlines, application dates, and admission timelines for universities. 
+                                Missing critical dates can be stressful, but our website ensures you have all the 
+                                information you need to plan your academic journey effectively. From application deadlines to exam 
+                                schedules, we've got you covered."
+                            </p>
+                        </div>
+
+                        <div class="test-policy">
+                            <div class="test-policy-section">
+                                <h2 class="test-policy-title">Test Policy</h2>
+                                <img src="picture/test policy animation.gif" class="test-policy-img">
+                            </div>
+                                <p class="test-policy-paragraph">
+                                Learn about the testing policies and requirements of universities. Our website provides 
+                                insights into standardized tests, such as SAT, ACT, GRE, IELTS, TOEFL and more. Understand the test score expectations, 
+                                exemptions, and guidelines for each institution, helping you prepare for admission exams with confidence."
+                            </p>
+                        </div>
+
+                        <div class="financial-aid">
+                            <div class="financial-aid-section">
+                                <h2 class="financial-aid-title">Financial Aid and Scholarships</h2>
+                                <img src="picture/Animation (6).gif" class="financial-aid-img">
+                            </div>
+                            <p class="financial-aid-paragraph">
+                                Explore in-depth subject-based rankings that provide insights into the top programs and departments 
+                                across various academic disciplines. Whether you're interested in science, humanities, 
+                                engineering, or any other field, our subject rankings will guide you towards the right educational 
+                                opportunities.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+<div class="vocabulary-section">
+    <h2 class="vocabulary-section-title">
+        <span class="vocabulary-word1">LEARN</span>
+        <span class="vocabulary-word2">IMPORTANT</span>
+        <span class="vocabulary-word3">WORDS</span></h2>
+
+    <div class="vocabulary-introduction-section">
+            <div class="important-words">
+                <h2 class="important-words-title">Important Words</h2>
+                <p class="important-words-paragraph">
+                    Our vocabulary section is a curated list of essential vocabulary words that are commonly used in standardized tests. 
+                    By mastering these essential terms, you can elevate your language skills and increase your chances of success on these important exams.
+                </p>
+            </div>
+        <div class="words-definition-example">
+            <div class="words-definition">
+                <h2 class="words-definition-title">Definition</h2>
+                <p class="words-definition-paragraph">
+                    Gain a clear understanding of each vocabulary word with detailed definitions. 
+                    We provide concise explanations to help you grasp the meaning and usage of these words. 
+                </p>
+            </div>
+
+            <div class="words-example">
+                <h2 class="words-example-title">Example</h2>
+                <p class="words-example-paragraph">
+                    See how these words are used in real-life sentences and scenarios. 
+                    Our collection of realistic examples will illustrate the context in which these vocabulary words can be applied.
+                </p>
+            </div>
+        </div>
+    </div>
+<div>
+<div class="faq">
+    <div class="faq-container">
+        <h2 class="faq-container-title">Freequently Asked Questions</h2>
+        <p class="faq-container-paragraph">Our "FAQ (Frequently Asked Questions)" is your go-to resource for finding answers 
+            to common queries and clarifications related to tests, exams, and our website. Whether you have doubts about test formats, 
+            preparation tips, or navigating our platform, you'll find comprehensive explanations here to help you move forward with 
+            confidence. Explore our FAQ to streamline your test preparation journey.</p>
+    </div>
+    <img class="faq-img" src="picture/pngwing.com (26).png">
+</div>
+<div class="donate-section">
+        <h2 class="donate-section-title">Donate Us!</h2>
+            <p class="donate-section-title-paragraph">If you find our resources helpful and would like to contribute to our mission, 
+                consider making a donation. Your generous support helps us continue providing valuable educational content to learners 
+                like you. Every contribution brings us one step closer to creating a better learning experience for all. We appreciate 
+                your support and thank you for being a part of our community.
+            </p>
+        <div class="donate-section-title-button">
+            <p>
+                <span class="donate-section-title-button-describe">Be a part of our community</span>
+                <span class="donate-section-title-button-text">Donate Now<button class="donate-section-title-button-arrow"> <i class="fa-sharp fa-solid fa-arrow-right"></i></button></span>
+            </p>    
+        </div>
+</div>
+<div class="end-part">
+     <p class="end-part-paragraph">At [Your Organization Name], we're dedicated to [briefly describe your main mission or purpose]. 
+        Our team of passionate individuals strives to [mention what your team works towards]. Explore our website to [briefly highlight 
+        the main offerings or activities visitors can find on your website], and join us on our journey to [mention the broader goal or 
+        impact you aim to achieve].</p>
+    <div class="end-part-important-links">
+        <p class="end-part-important-links-title">Important Links</p>
+        <p class="important-links-about"><a href="index.html">About</a></p>
+        <p class="important-links-privacy-policy"><a href="privacy-policy.html" target="_blank">Privacy Policy</a></p>
+        <p class="important-links-terms-and-condition"><a href="terms-and-conditions.html" target="_blank">Terms and Conditions</a></p>
+        <p class="important-links-donate"><a href="donate.html" target="_blank">Donate</a></p>
+    </div>
+    <div class="end-part-contact">
+        <p class="end-part-contact-title">Contact Us</p>
+        <div class="end-part-contact-facebook-section">
+            <a class="end-part-contact-facebook" href="https://www.facebook.com/khanacademy" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+            <p class="end-part-contact-facebook-paragraph">Join our Facebook community!</p>
+        </div>
+        <div class="end-part-contact-twitter-section">
+            <a class="end-part-contact-twitter" href="https://www.facebook.com/khanacademy" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+            <p class="end-part-contact-twitter-paragraph">Follow us on Twitter for the latest!</p>
+        </div>
+        <div class="end-part-contact-youtube-section">    
+            <a class="end-part-contact-youtube" href="https://www.facebook.com/khanacademy" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+            <p class="end-part-contact-youtube-paragraph">Subscribe to our YouTube channel for videos!</p>
+        </div>
+        <div class="end-part-contact-linkedin-section">
+            <a class="end-part-contact-linkedin" href="https://www.facebook.com/khanacademy" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+            <p class="end-part-contact-linkedin-paragraph">Network with us on LinkedIn!</p>
+        </div>
+    </div>
+</div>
+<div class="all-rights-reserve-section">
+    <img class="last-logo" src="picture/khan-academy-seeklogo.com.svg">
+    <p class="all-rights-reserve">Copyright &copy;2023 your company name. All rights reserved.</p>
+</div>
+    <a class="attribution-link" href="https://www.freepik.com/free-photo/rag-doll-drawing-v-square_948242.htm#page=2&query=check%20mark%203d&position
+    =46&from_view=keyword&track=ais">Image by d3images</a>
+    <a class="attribution-link" href="https://www.freepik.com/free-photo/blue-pencil-posing-with-blank-placard_953474.htm#page=7&query=rag%20doll%20drawing%203d&position=28&from
+    _view=search&track=ais">Image by d3images</a> 
+    <a href="https://storyset.com/people" class="attribution-link">People illustrations by Storyset</a>
+    <a class="attribution-link" href="https://www.freepik.com/free-photo/man-with-blank-sign_918619.htm#page=2&query=rag%20doll%20drawing&position=6&from_view=search&track=ais">
+        Image by kjpargeter</a> 
+</div>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        // Get the Courses button and the content list
+        var coursesButton = document.getElementById("coursesButton");
+        var contentList = document.getElementById("contentList");
+
+        // Toggle the visibility of the content list on button click
+        coursesButton.addEventListener("click", function(event) {
+            event.stopPropagation(); // Prevent the click event from reaching the document click listener
+            contentList.classList.toggle("show-dropdown");
+            coursesButton.classList.toggle("active");
+        });
+
+        // Close the dropdown when clicking outside the Courses button
+        document.addEventListener("click", function() {
+            contentList.classList.remove("show-dropdown");
+            coursesButton.classList.remove("active");
+        });
+    });
+</script>
+
+</body>
+</html>

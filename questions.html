@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en"> 
+<head>
+    <title>Khan Academy</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" 
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <link rel="stylesheet" href="questions.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="function.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.2/dist/confetti.browser.min.js"></script>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,
+                100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" 
+        rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,
+                    400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,
+                    800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,
+                    300;1,400;1,500;1,700;1,900&display=swap" 
+                rel="stylesheet">  
+                <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;
+0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,
+100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,
+wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" 
+rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Karma:wght@300;400;500;600;700&family=Lato:wght@100&family=Poppins:ital,
+wght@0,100;0,200;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,700;1,800;1,900&family=Raleway:ital,wght@0,
+100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,
+100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" 
+rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Karma:wght@300;400;500;600&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;
+1,100;1,300;1,400;1,700;1,900&family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;
+1,600;1,700;1,800;1,900;1,1000&family=Poppins:ital,wght@0,100;0,200;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;
+1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;
+1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" 
+rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Karma:wght@300;400;500;600&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;
+        1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,700;1,800;1,900&family=Raleway:ital,
+        wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,
+        500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" 
+        rel="stylesheet">
+</head>
+<body>
+    <div class="background-section"></div>
+        <div class="title-section">
+            <div class="left-section">
+                <a href="index.html">
+                    <img class="logo" src="picture/khan-academy-seeklogo.com.svg" alt="Your Logo Alt Text">
+                </a>
+                <a href="index.html" class="logo-name">Test Takers</a>
+            </div>
+
+            <div class="middle-section">
+                <div class="search-bar-container">
+                <input class="search-bar" type="text" placeholder="Search...">
+                <button class="search-button"> <i class="fa-solid fa-magnifying-glass"></i></button>
+                </div>
+            </div>
+
+            <nav class="navigation">
+                <ul class="right-section">
+                    <li><a href="https://www.khanacademy.org/profile/me/courses" class="about" target="_blank">About</a></li>
+                    <li><a href="https://ntsblog.homedev.com.au/index.php/2010/05/06/c-stack-with-maximum-limit/" class="donate" target="_blank">Donate</a></li>
+                    <li class="courses-list-container">
+                        <a href="#" class="courses" id="coursesButton">Courses</a>
+                        <div class="content-list" id="contentList">
+                            <h1 class="content-list-title-1">STANDARDIZED TESTS</h1>
+                            <h3>Digital SAT</h3>
+                            <div class="content-list-digital-sat">
+                              <div class="content-list-digital-sat-math">
+                                <h4 class="subtitle-of-content">Digital Sat Math</h4>
+                                <a href="#" class="custom-link">Exponents and Radicals</a>
+                                <a href="#" class="custom-link">Absolute Values</a>
+                                <a href="#" class="custom-link">Proportion</a>
+                                <a href="#" class="custom-link">Percent</a>
+                                <a href="#" class="custom-link">Unit conversions</a>
+                                <a href="#" class="custom-link">Expressions</a>
+                                <a href="#" class="custom-link">Exponential Equations</a>
+                                <a href="#" class="custom-link">Linear equations</a>
+                                <a href="#" class="custom-link">Quadratic equations</a>
+                                <a href="#" class="custom-link">Polynomial equations</a>
+                                <a href="#" class="custom-link">Logarithmic functions</a>
+                                <a href="#" class="custom-link">Rational functions</a>
+                                <a href="#" class="custom-link">Inequalities</a>
+                                <a href="#" class="custom-link">Word Problems</a>
+                                <a href="#" class="custom-link">Functions</a>
+                                <a href="#" class="custom-link">Quadratics</a>
+                                <a href="#" class="custom-link">Synthetic Division</a>
+                                <a href="#" class="custom-link">Real Numbers</a>
+                                <a href="#" class="custom-link">Complex Numbers</a>
+                                <a href="#" class="custom-link">Angles</a>
+                                <a href="#" class="custom-link">Triangles</a>
+                                <a href="#" class="custom-link">Circles</a>
+                                <a href="#" class="custom-link">Trigonometry</a>
+                                <a href="#" class="custom-link">Probability</a>
+                                <a href="#" class="custom-link">Statistics</a>
+                              </div>
+                              <div class="content-list-digital-sat-english">
+                                <h4 class="subtitle-of-content">Digital Sat Reading and Writing</h4>
+                                <a href="#" class="custom-link">Information and Ideas: Command of Evidence</a>
+                                <a href="#" class="custom-link">Information and Ideas: Inferences</a>
+                                <a href="#" class="custom-link">Information and Ideas: Central Ideas and Details</a>
+                                <a href="#" class="custom-link">Craft and Structure: Words in Context</a>
+                                <a href="#" class="custom-link">Craft and Structure: Cross-Text Connections</a>
+                                <a href="#" class="custom-link">Craft and Structure: Text Structure and Purpose</a>
+                                <a href="#" class="custom-link">Expression of Ideas: Transitions</a>
+                                <a href="#" class="custom-link">Expression of Ideas: Rhetorical Synthesis</a>
+                                <a href="#" class="custom-link">Standard English Conventions: Boundaries</a>
+                                <a href="#" class="custom-link">Standard English Conventions: Form, Structure, and Sense</a>
+                              </div>
+                            </div>
+                          </div>
+                        </li>
+                    <li><a href="https://www.messenger.com/t/5565117946927971" class="university" target="_blank">university</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <div id="loading" class="loading-screen" style="display:none;">
+            <!-- Circular loader (hidden initially) -->
+            <div class="loader"></div>
+        </div>
+
+        <div class="main-div">
+            <div class="topic-list-part">
+                <h2 class="topic-list-part-title">Digital Sat Math</h2>
+                <div class="topic-list">
+                    <ol class="topic-list-content">
+                        <li class="topic-list-content-exponents-and-radicals" onclick="selectTopic(this)"><span class="topic-count">Topic-1</span><br>Exponents and Radicals</li>
+                        <li class="topic-list-content-absolute-value" onclick="selectTopic(this)"><span class="topic-count">Topic-2</span><br>Absolute Values</li>
+                        <li class="topic-list-content-proportion" onclick="selectTopic(this)"><span class="topic-count">Topic-3</span><br>Proportion</li>
+                        <li class="topic-list-content-percent" onclick="selectTopic(this)"><span class="topic-count">Topic-4</span><br>Percent</li>
+                        <li class="topic-list-content-unit-conversions" onclick="selectTopic(this)"><span class="topic-count">Topic-5</span><br>Unit Conversions</li>
+                        <li class="topic-list-content-expressions" onclick="selectTopic(this)"><span class="topic-count">Topic-6</span><br>Expressions</li>
+                        <li class="topic-list-content-exponential-equations" onclick="selectTopic(this)"><span class="topic-count">Topic-7</span><br>Exponential Equations</li>
+                        <li class="topic-list-content-linear-equations" onclick="selectTopic(this)"><span class="topic-count">Topic-8</span><br>Linear Equations</li>
+                        <li class="topic-list-content-quadratic-equations" onclick="selectTopic(this)"><span class="topic-count">Topic-9</span><br>Quadratic Equations</li>
+                        <li class="topic-list-content-polynomial-equations" onclick="selectTopic(this)"><span class="topic-count">Topic-10</span><br>Polynomial Equations</li>
+                        <li class="topic-list-content-logarithmic-functions" onclick="selectTopic(this)"><span class="topic-count">Topic-11</span><br>Logarithmic Functions</li>
+                        <li class="topic-list-content-rational-functions" onclick="selectTopic(this)"><span class="topic-count">Topic-12</span><br>Rational Functions</li>
+                        <li class="topic-list-content-inequalities" onclick="selectTopic(this)"><span class="topic-count">Topic-13</span><br>Inequalities</li>
+                        <li class="topic-list-content-word-problems" onclick="selectTopic(this)"><span class="topic-count">Topic-14</span><br>Word Problems</li>
+                        <li class="topic-list-content-functions" onclick="selectTopic(this)"><span class="topic-count">Topic-15</span><br>Functions</li>
+                        <li class="topic-list-content-quadratics" onclick="selectTopic(this)"><span class="topic-count">Topic-16</span><br>Quadratics</li>
+                        <li class="topic-list-content-synthetic-division" onclick="selectTopic(this)"><span class="topic-count">Topic-17</span><br>Synthetic Division</li>
+                        <li class="topic-list-content-real-numbers" onclick="selectTopic(this)"><span class="topic-count">Topic-18</span><br>Real Numbers</li>
+                        <li class="topic-list-content-complex-numbers" onclick="selectTopic(this)"><span class="topic-count">Topic-19</span><br>Complex Numbers</li>
+                        <li class="topic-list-content-angles" onclick="selectTopic(this)"><span class="topic-count">Topic-20</span><br>Angles</li>
+                        <li class="topic-list-content-triangles" onclick="selectTopic(this)"><span class="topic-count">Topic-21</span><br>Triangles</li>
+                        <li class="topic-list-content-circles" onclick="selectTopic(this)"><span class="topic-count">Topic-22</span><br>Circles</li>
+                        <li class="topic-list-content-trigonometry" onclick="selectTopic(this)"><span class="topic-count">Topic-23</span><br>Trigonometry</li>
+                        <li class="topic-list-content-probability" onclick="selectTopic(this)"><span class="topic-count">Topic-24</span><br>Probability</li>
+                        <li class="topic-list-content-statistics" onclick="selectTopic(this)"><span class="topic-count">Topic-25</span><br>Statistics</li>
+                    </ol>
+                </div>                
+            </div>
+            <div class="question-part" id="questionContent">
+                    <h2 class="exponents-title">Exponents</h2>
+                    <div>
+                    <h3 class="exponents-introduction">Introduction</h3>
+                        <p class="exponents-introduction-paragraph">Exponents 
+                            are a fundamental concept in mathematics that represent repeated multiplication.
+                            They are used to simplify and express large numbers or quantities more efficiently. <br>
+                            For example, 2 to the power of 3 can be written as 2<sup>3</sup> or 2 &#215; 2 &#215; 2. <br>
+
+                            Exponents can be positive, negative, or fractional. For example, 2 to the power of -3 can be written as <br>2<sup>-3</sup> or 1/8. <br>
+                            Exponents are used in many different areas of mathematics, including algebra, geometry, and trigonometry. <br> 
+                            In the context of the SAT math section, a solid understanding of exponents is essential for solving various types of problems efficiently.
+                        </p>
+                        <h3 class="exponents-example">Example</h3>
+                        <p class="exponents-example-paragraph">Let's consider an example to understand exponents better: Calculate 2⁻<sup class="power">4</sup></p>
+                        <p class="exponents-example-paragraph-solution">Solution: <br> In this example, 2 is called the base, and 
+                            4 is the exponent. The exponent tells us how many times the base (2) should be multiplied by itself.<br>
+                            2<sup>4</sup> means multiplying 2 by itself four times: <br>
+                            2<sup>4</sup> = 2 &#215; 2 &#215; 2 &#215; 2 = 16 <br>
+                            So, 2<sup>4</sup> is equal to 16.</p>
+
+                            <h3 class="exponents-importance">Importance in SAT Math</h3>
+                            <p class="exponents-importance-paragraph">Exponents frequently appear in SAT math questions, particularly in questions related to 
+                                algebra, equations, and expressions. Understanding how to manipulate and simplify expressions with exponents is crucial for 
+                                solving these problems effectively. <br> You may be asked to solve problems involving exponents, such as: </p>
+                                <ul class="exponents-importance-paragraph-list">
+                                    <li>Simplify expressions containing exponents or</li>
+                                    <li>Evaluate exponential expressions or</li>
+                                    <li>Solve exponential equations.</li>
+                                </ul>
+                                <p class="exponents-importance-paragraph-2nd">Here is an example of a digital SAT question involving exponents: <br>                            
+                                What is the value of 2<sup>3</sup> + 3<sup>2</sup>? <br>
+                                A. 8 <br>
+                                B. 11 <br>
+                                C. 12 <br>
+                                D. 16 <br>
+                                Solution: <br>
+                                2<sup>3</sup> + 3<sup>2</sup> = 8 + 9 = 17 <br>
+                                Therefore, the answer is D. </p>
+                                <p class="exponents-importance-paragraph-3rd"> Now that you have a basic understanding of exponents, let's practice solving problems related to this topic to strengthen your skills for the SAT math section.</p>
+                            <button onclick="loadContent()" class="exponents-start-now-button">Start practicing</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="last-part-button" style="display: none;">
+        <button class="question-previous" onclick="showQuestion('previous')">Previous</button>
+        <div class="placeholder-previous question-button"></div>
+        <input class="question-search-bar" type="text" placeholder="1/50">
+        <button class="question-next" onclick="showQuestion('next')">Next</button>
+        <button class="question-check" type="button" style="display: none;" onclick="checkAnswer()">Check</button>
+        <button class="question-finish" style="display: none;" onclick="loadNextTopic()">Finish</button>
+    </div>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        // Get the Courses button and the content list 
+        var coursesButton = document.getElementById("coursesButton");
+        var contentList = document.getElementById("contentList");
+
+        // Toggle the visibility of the content list on button click
+        coursesButton.addEventListener("click", function(event) {
+            event.stopPropagation(); // Prevent the click event from reaching the document click listener
+            contentList.classList.toggle("show-dropdown");
+            coursesButton.classList.toggle("active");
+        });
+
+        // Close the dropdown when clicking outside the Courses button
+        document.addEventListener("click", function() {
+            contentList.classList.remove("show-dropdown");
+            coursesButton.classList.remove("active");
+        });
+    });
+</script>
+</body>
+</html>

@@ -1,0 +1,1096 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" 
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <link rel="stylesheet" type="text/css" href="expressions.css">
+    <script src="function.js"></script>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;
+    0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" 
+    rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;
+    1,400;1,700;1,900&family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;
+    1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="question-part" id="questionContent1">
+        <h1 class="title">Digital SAT Math</h1>
+        <h2 class="subtitle">Expressions</h2>  
+        <div class="question-list">
+            <div class="number-bar">
+                <span>1</span>
+            </div>
+    
+            <p class="question">
+                What is the simplified form of the expression \((3\sqrt{2} + 1)(3\sqrt{2} - 1)?\)
+            </p>
+            <div class="option-1-container">
+                <button class="option-1">A</button><p class="choice-1">\(2\sqrt{6}\)</p>
+            </div>
+            <div class="option-2-container">
+                <button class="option-2">B</button><p class="choice-2">\(17\)</p>
+            </div>
+            <div class="option-3-container">
+                <button class="option-3">C</button><p class="choice-3">\(18\)</p>
+            </div>
+            <div class="option-4-container">
+                <button class="option-4">D</button><p class="choice-4">\(9\sqrt{2}\)</p>
+            </div>
+        </div>
+        <button id="button-show-explanation1" class="button-show-explanation" onclick="toggleExplanation(currentQuestionIndex)">Show Explanation</button>
+        <div id="explanation1" class="explanation">
+            <p class="explanation-paragraph">
+                To simplify the given expression, we can use the difference of squares formula, <br> 
+            which states that \((a + b)(a - b) = a^2 - b^2\). <br> 
+            Here, \(a = 3\sqrt{2}\) and \(b = 1\). <br>
+            \((3\sqrt{2} + 1)(3\sqrt{2} - 1) = (3\sqrt{2})^2 - 1^2\) <br>
+            Now, calculate the squares: <br>
+            \(= 9 \cdot 2 - 1\) <br>    
+            \( = 18 - 1\) <br>               
+            \( = 17\) <br>
+            Therefore, the simplified expression is \(17\) and the correct answer is B.
+            </p>
+        </div>
+    </div>
+    <div class="question-part" id="questionContent2">
+        <h1 class="title">Digital SAT Math</h1>
+        <h2 class="subtitle">Expressions</h2>  
+        <div class="question-list">
+            <div class="number-bar">
+                <span>2</span>
+            </div>
+    
+            <p class="question">
+                If \(a^3 + b^3 = 1\), what is the value of \((a + b)(a^2 - ab + b^2)?\)
+            </p>
+            <div class="option-1-container">
+                <button class="option-1">A</button><p class="choice-1">\(1\)</p>
+            </div>
+            <div class="option-2-container">
+                <button class="option-2">B</button><p class="choice-2">\(0\)</p>
+            </div>
+            <div class="option-3-container">
+                <button class="option-3">C</button><p class="choice-3">\(a + b\)</p>
+            </div>
+            <div class="option-4-container">
+                <button class="option-4">D</button><p class="choice-4">\(a^3 + b^3\)</p>
+            </div>
+        </div>
+        <button id="button-show-explanation2" class="button-show-explanation" onclick="toggleExplanation(currentQuestionIndex)">Show Explanation</button>
+        <div id="explanation2" class="explanation">
+            <p class="explanation-paragraph">
+                Given the equation \(a^3 + b^3 = 1\), we can use the factorization \(a^3 + b^3 = (a + b)(a^2 - ab + b^2)\). <br>
+            So, \((a + b)(a^2 - ab + b^2) = a^3 + b^3 = 1\). <br>
+            Therefore, the value of \((a + b)(a^2 - ab + b^2)\) is 1.
+            </p>
+        </div>
+    </div>
+    <div class="question-part" id="questionContent3">
+        <h1 class="title">Digital SAT Math</h1>
+        <h2 class="subtitle">Expressions</h2>  
+        <div class="question-list">
+            <div class="number-bar">
+                <span>3</span>
+            </div>
+    
+            <p class="question">
+                If \(a^2 + b^2 = 1\), what is the value of \((a + b)(a - b)(a^2 + b^2 - 1)?\)
+            </p>
+            <div class="option-1-container">
+                <button class="option-1">A</button><p class="choice-1">\(0\)</p>
+            </div>
+            <div class="option-2-container">
+                <button class="option-2">B</button><p class="choice-2">\(1\)</p>
+            </div>
+            <div class="option-3-container">
+                <button class="option-3">C</button><p class="choice-3">\(a^2 - b^2\)</p>
+            </div>
+            <div class="option-4-container">
+                <button class="option-4">D</button><p class="choice-4">\(a^4 - b^4\)</p>
+            </div>
+        </div>
+        <button id="button-show-explanation3" class="button-show-explanation" onclick="toggleExplanation(currentQuestionIndex)">Show Explanation</button>
+        <div id="explanation3" class="explanation">
+            <p class="explanation-paragraph">
+                Given that \(a^2 + b^2 = 1\), we can factor \(a^2 + b^2 - 1\) using the given equation: <br>
+            \(a^2 + b^2 - 1 = 1 - 1 = 0\) <br>
+            
+            Now, substitute this result into the expression \((a + b)(a - b)(a^2 + b^2 - 1)\): <br>
+            \((a + b)(a - b)(a^2 + b^2 - 1) = (a + b)(a - b)(0)\) <br>
+            
+            Since any expression multiplied by 0 is 0, the value of \((a + b)(a - b)(a^2 + b^2 - 1)\) is 0. <br>
+            So, the correct answer is A.
+            </p>
+        </div>
+    </div>
+    <div class="question-part" id="questionContent4">
+        <h1 class="title">Digital SAT Math</h1>
+        <h2 class="subtitle">Expressions</h2>  
+        <div class="question-list">
+            <div class="number-bar">
+                <span>4</span>
+            </div>
+            <p class="question">
+                If \( p \neq -1 \), which of the following is equivalent to \( \frac{3}{p+1} + \frac{2}{p} ?\)
+            </p>
+            <div class="option-1-container">
+                <button class="option-1">A</button><p class="choice-1">\( \frac{5p+3}{p(p+1)} \)</p>
+            </div>
+            <div class="option-2-container">
+                <button class="option-2">B</button><p class="choice-2">\( \frac{5p+2}{p(p+1)} \)</p>
+            </div>
+            <div class="option-3-container">
+                <button class="option-3">C</button><p class="choice-3">\( \frac{5}{p+1} \)</p>
+            </div>
+            <div class="option-4-container">
+                <button class="option-4">D</button><p class="choice-4">\( \frac{3p+2}{p+1} \)</p>
+            </div>
+        </div>
+        <button id="button-show-explanation4" class="button-show-explanation" onclick="toggleExplanation(4)">Show Explanation</button>
+        <div id="explanation4" class="explanation">
+            <p class="explanation-paragraph">
+                Choice B is correct. When finding a common denominator for the two fractions, we multiply \( \frac{3}{p+1} \) by \( \frac{p}{p} \) and \( \frac{2}{p} \) by \( \frac{p+1}{p+1} \), giving us \( \frac{3p}{p(p+1)} + \frac{2(p+1)}{p(p+1)} \), which simplifies to \( \frac{5p+2}{p(p+1)} \).<br>
+            Choice A is incorrect because the numerator \( 5p+3 \) suggests an additional unit has been incorrectly added to the numerator.<br>
+            Choice C is incorrect as it simplifies the denominators without correctly combining the numerators, leading to an incorrect representation of the expression.<br>
+            Choice D is incorrect because it does not correctly represent the combined fraction; it also suggests a common denominator of \( p+1 \) only, which does not take into account the other fraction’s denominator of \( p \).
+            </p>
+        </div>
+    </div>
+    <div class="question-part" id="questionContent5">
+        <h1 class="title">Digital SAT Math</h1>
+        <h2 class="subtitle">Expressions</h2>  
+        <div class="question-list">
+            <div class="number-bar">
+                <span>5</span>
+            </div>
+            <p class="question">
+                Which of the following is equivalent to \( 2(a^2 - 3a + 2) - (a - 1)^2 ?\)
+            </p>
+            <div class="option-1-container">
+                <button class="option-1">A</button><p class="choice-1">\( a^2 - 2a + 3 \)</p>
+            </div>
+            <div class="option-2-container">
+                <button class="option-2">B</button><p class="choice-2">\( a^2 - 4a + 3 \)</p>
+            </div>
+            <div class="option-3-container">
+                <button class="option-3">C</button><p class="choice-3">\( 3a^2 - 2a + 1 \)</p>
+            </div>
+            <div class="option-4-container">
+                <button class="option-4">D</button><p class="choice-4">\( a^2 - 2a + 1 \)</p>
+            </div>
+        </div>
+        <button id="button-show-explanation5" class="button-show-explanation" onclick="toggleExplanation(5)">Show Explanation</button>
+        <div id="explanation5" class="explanation">
+            <p class="explanation-paragraph">
+                Choice B is correct. Expanding and simplifying \( 2(a^2 - 3a + 2) \) gives \( 2a^2 - 6a + 4 \). <br> 
+                Expanding \( (a - 1)^2 \) gives \( a^2 - 2a + 1 \). <br>
+                Subtracting the second expression from the first gives \( (2a^2 - 6a + 4) - (a^2 - 2a + 1) \), which simplifies to \( a^2 - 4a + 3 \).<br>
+                Choice A is incorrect because it represents a different numerical relationship between the terms.<br>
+                Choice C is incorrect because it suggests an incorrect coefficient for the \( a^2 \) term.<br>
+                Choice D is incorrect because it does not account for the multiplication by 2 in the first part of the expression and also incorrectly subtracts the second expression.
+            </p>
+        </div>
+    </div>
+    <div class="question-part" id="questionContent6">
+        <h1 class="title">Digital SAT Math</h1>
+        <h2 class="subtitle">Expressions</h2>  
+        <div class="question-list">
+            <div class="number-bar">
+                <span>6</span>
+            </div>
+            <p class="question">
+                Which of the following is equivalent to \( 4x^2 + 20x + 25 ?\)
+            </p>
+            <div class="option-1-container">
+                <button class="option-1">A</button><p class="choice-1">\( (2x+5)(2x+5) \)</p>
+            </div>
+            <div class="option-2-container">
+                <button class="option-2">B</button><p class="choice-2">\( (2x-5)^2 \)</p>
+            </div>
+            <div class="option-3-container">
+                <button class="option-3">C</button><p class="choice-3">\( (4x+25)^2 \)</p>
+            </div>
+            <div class="option-4-container">
+                <button class="option-4">D</button><p class="choice-4">\( (4x+5)(x+5) \)</p>
+            </div>
+        </div>
+        <button id="button-show-explanation6" class="button-show-explanation" onclick="toggleExplanation(6)">Show Explanation</button>
+        <div id="explanation6" class="explanation">
+            <p class="explanation-paragraph">
+                Choice A is correct. The given expression is a perfect square trinomial, which can be factored into \( (2x+5)^2 \).<br>
+                Choice B is incorrect because it represents the square of \( 2x-5 \), which would yield \( 4x^2 - 20x + 25 \), not \( 4x^2 + 20x + 25 \).<br>
+                Choice C is incorrect because it represents the square of \( 4x+25 \), which would yield a different set of terms not equivalent to the given expression.<br>
+                Choice D is incorrect because it suggests the product of two different binomials, which would not result in the original expression when multiplied out.
+            </p>
+        </div>
+    </div>
+    <div class="question-part" id="questionContent7">
+        <h1 class="title">Digital SAT Math</h1>
+        <h2 class="subtitle">Expressions</h2>  
+        <div class="question-list">
+            <div class="number-bar">
+                <span>7</span>
+            </div>
+            <p class="question">
+                If \( b > 2 \), which of the following is the simplified form of \( \frac{1}{b - 2} + \frac{2}{b + 2} ?\)
+            </p>
+            <div class="option-1-container">
+                <button class="option-1">A</button><p class="choice-1">\( \frac{3b-2}{b^2-4} \)</p>
+            </div>
+            <div class="option-2-container">
+                <button class="option-2">B</button><p class="choice-2">\( \frac{b+4}{b^2-4} \)</p>
+            </div>
+            <div class="option-3-container">
+                <button class="option-3">C</button><p class="choice-3">\( \frac{3}{b-2} \)</p>
+            </div>
+            <div class="option-4-container">
+                <button class="option-4">D</button><p class="choice-4">\( \frac{4}{b+2} \)</p>
+            </div>
+        </div>
+        <button id="button-show-explanation7" class="button-show-explanation" onclick="toggleExplanation(7)">Show Explanation</button>
+        <div id="explanation7" class="explanation">
+            <p class="explanation-paragraph">
+                1. Find a common denominator:
+                \[\frac{b + 2}{b + 2} \cdot \frac{1}{b - 2} + \frac{b - 2}{b - 2} \cdot \frac{2}{b + 2}\]
+                
+                2. Combine multiplied terms into a single fraction:
+                \[\frac{b + 2}{(b - 2)(b + 2)} + \frac{(b - 2) \cdot 2}{(b - 2)(b + 2)}\]
+                
+                3. Combine fractions with common denominator:
+                \[\frac{b + 2 + (b - 2) \cdot 2}{(b - 2)(b + 2)}\]
+                
+                4. Simplify:
+                \[\frac{3b - 2}{(b - 2)(b + 2)} = \frac{3b - 2}{b^2 - 4}\]
+                
+                Therefore, the correct answer is A. <br>
+                Choice B is incorrect because it suggests adding 4 to \( b \) in the numerator, which does not account for the multiplication by 2 in the second term of the original expression.<br>
+                Choice C is incorrect as it only considers the first term and ignores the second term altogether.<br>
+                Choice D is incorrect because it suggests the second term's denominator applies to both terms, which it does not.
+            </p>
+        </div>
+    </div>
+    <div class="question-part" id="questionContent8">
+        <h1 class="title">Digital SAT Math</h1>
+        <h2 class="subtitle">Expressions</h2>  
+        <div class="question-list">
+            <div class="number-bar">
+                <span>8</span>
+            </div>
+            <p class="question">
+                Which of the following is the factored form of \( 5y^2 - 20y + 20 ?\)
+            </p>
+            <div class="option-1-container">
+                <button class="option-1">A</button><p class="choice-1">\(5(y^2 - 4y + 4)\)</p>
+            </div>
+            <div class="option-2-container">
+                <button class="option-2">B</button><p class="choice-2">\( 5(y + 2)(y - 2) \)</p>
+            </div>
+            <div class="option-3-container">
+                <button class="option-3">C</button><p class="choice-3">\( 5(y - 4)(y + 1) \)</p>
+            </div>
+            <div class="option-4-container">
+                <button class="option-4">D</button><p class="choice-4">\(5(y - 2)^2\)</p>
+            </div>
+        </div>
+        <button id="button-show-explanation8" class="button-show-explanation" onclick="toggleExplanation(8)">Show Explanation</button>
+        <div id="explanation8" class="explanation">
+            <p class="explanation-paragraph">
+                Choice D is correct. The quadratic expression \( 5y^2 - 20y + 20 \) can be factored by first factoring out the greatest common factor, which is \(5\), to get \( 5(y^2 - 4y + 4) \). <br> 
+                The quadratic \( y^2 - 4y + 4 \) is a perfect square and can be further factored to \( (y - 2)^2 \), resulting in \( 5(y - 2)^2 \).<br>
+                Choice A is incorrect because it lists the quadratic in its expanded form rather than its factored form, which is asked for in the question. <br>
+                Choice B is incorrect because the factors \( (y + 2)(y - 2) \) produce \( y^2 - 4 \) when multiplied, not \( y^2 - 4y + 4 \).<br>
+                Choice C is incorrect as the factors \( (y - 4)(y + 1) \) would produce \( y^2 - 3y - 4 \) when multiplied, which is different from the given expression.<br>
+            </p>
+        </div>
+    </div>
+    <div class="question-part" id="questionContent9">
+        <h1 class="title">Digital SAT Math</h1>
+        <h2 class="subtitle">Expressions</h2>  
+        <div class="question-list">
+            <div class="number-bar">
+                <span>9</span>
+            </div>
+            <p class="question">
+                Which of the following is equivalent to the expansion of \( (3x + 4)^2 - (2x - 3)(3x + 4) ?\)
+            </p>
+            <div class="option-1-container">
+                <button class="option-1">A</button><p class="choice-1">\( 9x^2 + 24x + 16 \)</p>
+            </div>
+            <div class="option-2-container">
+                <button class="option-2">B</button><p class="choice-2">\( 5x^2 + 18x + 28 \)</p>
+            </div>
+            <div class="option-3-container">
+                <button class="option-3">C</button><p class="choice-3">\( x^2 + x + 1 \)</p>
+            </div>
+            <div class="option-4-container">
+                <button class="option-4">D</button><p class="choice-4">\(3x^2 + 25x + 28 \)</p>
+            </div>
+        </div>
+        <button id="button-show-explanation9" class="button-show-explanation" onclick="toggleExplanation(9)">Show Explanation</button>
+        <div id="explanation9" class="explanation">
+            <p class="explanation-paragraph">
+                Choice D is correct. Expanding the square \( (3x + 4)^2 \) results in \( 9x^2 + 24x + 16 \). Expanding the product \( (2x - 3)(3x + 4) \) gives \( 6x^2 + 8x - 9x - 12 \), which simplifies to \( 6x^2 - x - 12 \). Subtracting the expanded product from the squared term gives, \[ (9x^2 + 24x + 16) - (6x^2 - x - 12) \] which simplifies to \( 3x^2 + 25x + 28 \).<br>
+                Choices A, B, and C are incorrect as they do not match the final simplified expression after performing the proper expansion and subtraction of the given algebraic expressions.
+            </p>
+        </div>
+    </div>
+    <div class="question-part" id="questionContent10">
+        <h1 class="title">Digital SAT Math</h1>
+        <h2 class="subtitle">Expressions</h2>  
+        <div class="question-list">
+            <div class="number-bar">
+                <span>10</span>
+            </div>
+            <p class="question">
+                For what values of \( x \) does the expression \( 6x^3 + 12x^2 - 18x \) equal zero\(?\)
+            </p>
+            <div class="input-button">
+                <input class="input-answer" type="text"> 
+            </div>
+            <button id="button-show-explanation10" class="button-show-explanation" onclick="toggleExplanation(10)">Show Explanation</button>
+            <div id="explanation10" class="explanation">
+                <p class="explanation-paragraph">
+                    To find the values of \( x \) that make the expression \( 6x^3 + 12x^2 - 18x \) equal to zero, we factor the expression.
+
+                    First, factor out the greatest common factor (GCF):
+
+                    \[
+                    6x^3 + 12x^2 - 18x = 6x(x^2 + 2x - 3)
+                    \]
+
+                    Next, factor the quadratic:
+
+                    \[
+                    6x(x^2 + 2x - 3) = 6x(x + 3)(x - 1)
+                    \]
+
+                    Set each factor equal to zero and solve for \( x \):
+
+                    \[
+                    \begin{align*}
+                    6x &= 0 & \Rightarrow & \quad x = 0 \\
+                    x + 3 &= 0 & \Rightarrow & \quad x = -3 \\
+                    x - 1 &= 0 & \Rightarrow & \quad x = 1
+                    \end{align*}
+                    \]
+
+                    The values of \( x \) that satisfy the equation are \( x = 0 \), \( x = -3 \), and \( x = 1 \).
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="question-part" id="questionContent11">
+        <h1 class="title">Digital SAT Math</h1>
+        <h2 class="subtitle">Expressions</h2>
+        <div class="question-list">
+            <div class="number-bar">
+                <span>11</span>
+            </div>
+            <p class="question">
+                A quadratic expression \( 3x^2 + cx + 54 \), where \( c \) is a constant, can be rewritten in the form \( (ax + m)(x + n) \), where \( a, m, \) and \( n \) are integer constants. If the constant term in the expanded form of \( (ax + m)(x + n) \) is a product of two integers whose sum is \(9\), which of the following must be true\(?\)
+            </p>
+            <div class="option-1-container">
+                <button class="option-1">A</button><p class="choice-1">\( c \) is a multiple of \( a \)</p>
+            </div>
+            <div class="option-2-container">
+                <button class="option-2">B</button><p class="choice-2">\( \frac{c}{a} \) is an integer</p>
+            </div>
+            <div class="option-3-container">
+                <button class="option-3">C</button><p class="choice-3">\( \frac{54}{a} \) must be an integer</p>
+            </div>
+            <div class="option-4-container">
+                <button class="option-4">D</button><p class="choice-4">\( \frac{c}{n} \) must be an integer</p>
+            </div>
+        </div>
+        <button id="button-show-explanation11" class="button-show-explanation" onclick="toggleExplanation(11)">Show Explanation</button>
+        <div id="explanation11" class="explanation">
+            <p class="explanation-paragraph">
+                Choice C is correct. Given that the quadratic expression can be rewritten as \( (ax + m)(x + n) \) and the constant term of this product is \( mn \), which equals \(54\) Also, the sum of \( m \) and \( n \) is \(9\).  
+                To satisfy both conditions, \( m \) and \( n \) must be factors of \(54\) that add up to \(9\), which are \(6\) and \(3\). Since \( a \) is the coefficient of \( x^2 \), and the expression is \( 3x^2 \), \( a \) must be \(3\). <br> 
+                Therefore, \( \frac{54}{a} \) or \( \frac{54}{3} \) is an integer, which is \(18\).<br>
+                Choices A and B are not necessarily true because \( c \) could be any integer and is not required to be a multiple of \( a \) or such that \( \frac{c}{a} \) is an integer. <br> 
+                Choice D is incorrect because there is no requirement for \( \frac{c}{n} \) to be an integer based on the information given.
+            </p>
+        </div>
+    </div>
+    <div class="question-part" id="questionContent12">
+        <h1 class="title">Digital SAT Math</h1>
+        <h2 class="subtitle">Expressions</h2>
+        <div class="question-list">
+            <div class="number-bar">
+                <span>12</span>
+            </div>
+            <p class="question">
+                Given the expression \( 0.24x^2 + 1.2x + 2.4 \), it can be rewritten in the form \( a(x^2 + 5x + 10) \), where \( a \) is a constant. What is the value of \( a ?\)
+            </p>
+            <div class="option-1-container">
+                <button class="option-1">A</button><p class="choice-1">\(0.12\)</p>
+            </div>
+            <div class="option-2-container">
+                <button class="option-2">B</button><p class="choice-2">\(0.24\)</p>
+            </div>
+            <div class="option-3-container">
+                <button class="option-3">C</button><p class="choice-3">\(0.48\)</p>
+            </div>
+            <div class="option-4-container">
+                <button class="option-4">D</button><p class="choice-4">\(0.96\)</p>
+            </div>
+        </div>
+        <button id="button-show-explanation12" class="button-show-explanation" onclick="toggleExplanation(12)">Show Explanation</button>
+        <div id="explanation12" class="explanation">
+            <p class="explanation-paragraph">
+                Choice B is correct. When the given expression \( 0.24x^2 + 1.2x + 2.4 \) is compared to the form \( a(x^2 + 5x + 10) \), we can see that each term in the expression is \( a \) times the corresponding term in \( x^2 + 5x + 10 \). Thus, \( a \times x^2 = 0.24x^2 \), which means \( a = 0.24 \). Additionally, \( a \times 5x = 1.2x \) and \( a \times 10 = 2.4 \) both hold true when \( a = 0.24 \), confirming that this is the correct value of \( a \).
+            </p>
+        </div>
+    </div>
+    <div class="question-part" id="questionContent13">
+        <h1 class="title">Digital SAT Math</h1>
+        <h2 class="subtitle">Expressions</h2>
+        <div class="question-list">
+            <div class="number-bar">
+                <span>13</span>
+            </div>
+            <p class="question">
+                What is the simplified result of \( (2k + 3)^2 - (k + 5)^2 ?\)
+            </p>
+            <div class="option-1-container">
+                <button class="option-1">A</button><p class="choice-1">\( 3k^2 + 2k - 16 \)</p>
+            </div>
+            <div class="option-2-container">
+                <button class="option-2">B</button><p class="choice-2">\( 3k^2 - 4k - 16 \)</p>
+            </div>
+            <div class="option-3-container">
+                <button class="option-3">C</button><p class="choice-3">\( k^2 - 2k - 8 \)</p>
+            </div>
+            <div class="option-4-container">
+                <button class="option-4">D</button><p class="choice-4">\( k^2 + 4k - 8 \)</p>
+            </div>
+        </div>
+        <button id="button-show-explanation13" class="button-show-explanation" onclick="toggleExplanation(13)">Show Explanation</button>
+        <div id="explanation13" class="explanation">
+            <p class="explanation-paragraph">
+                Choice A is correct. To find the simplified result, we first expand each binomial separately:
+                \[ (2k + 3)^2 = 4k^2 + 12k + 9\ \text{and } (k + 5)^2 = k^2 + 10k + 25 \]
+                Subtraction of the two expanded binomials gives us \[ 4k^2 + 12k + 9 - (k^2 + 10k + 25) \]
+                Distributing the negative sign across the second trinomial and combining like terms, we get \[ 4k^2 + 12k + 9 - k^2 - 10k - 25 \] which simplifies to \( 3k^2 + 2k - 16 \).
+            </p>
+        </div>
+    </div>
+    <div class="question-part" id="questionContent14">
+        <h1 class="title">Digital SAT Math</h1>
+        <h2 class="subtitle">Expressions</h2>
+        <div class="question-list">
+            <div class="number-bar">
+                <span>14</span>
+            </div>
+            <p class="question">
+                One of the factors of \( 2x^3 + 42x^2 + 208x \) is \( x + b \), where \( b \) is a positive constant. What is the smallest possible value of \( b ?\)
+            </p>
+            <div class="option-1-container">
+                <button class="option-1">A</button><p class="choice-1">\(8\)</p>
+            </div>
+            <div class="option-2-container">
+                <button class="option-2">B</button><p class="choice-2">\(9\)</p>
+            </div>
+            <div class="option-3-container">
+                <button class="option-3">C</button><p class="choice-3">\(10\)</p>
+            </div>
+            <div class="option-4-container">
+                <button class="option-4">D</button><p class="choice-4">\(11\)</p>
+            </div>
+        </div>
+        <button id="button-show-explanation14" class="button-show-explanation" onclick="toggleExplanation(14)">Show Explanation</button>
+        <div id="explanation14" class="explanation">
+            <p class="explanation-paragraph">
+                The smallest possible value of \( b \) can be determined by factoring out the greatest common factor (GCF) from the given expression. The GCF of \( 2x^3 + 42x^2 + 208x \) is \( 2x \), which when factored out leaves us with \( x^2 + 21x + 104 \). To find \( b \), we need the factors of \( 104 \) that, when added to \( 21 \), give us a coefficient in the middle term of \( x^2 + 21x + 104 \). The pair of factors of \( 104 \) that add up to \( 21 \) is \( 8 \) and \( 13 \). Since \( 8 \) is smaller than \( 13 \), the smallest possible value of \( b \) is \( 8 \). <br>
+                Choice A is correct because \( 8 \) is the smallest factor of \( 104 \) that can be added to another factor to get \( 21 \). <br>
+                Choice B is not correct because \( 9 \) is not a factor of \( 104 \). <br>
+                Choice C is not correct because \( 10 \) is not a factor of \( 104 \) that, when added to another factor, results in \( 21 \). <br>
+                Choice D is not correct because \( 11 \) is not a factor of \( 104 \), and even if it were, it would not be the smallest factor to satisfy the condition.
+            </p>
+        </div>
+    </div>
+    <div class="question-part" id="questionContent15">
+        <h1 class="title">Digital SAT Math</h1>
+        <h2 class="subtitle">Expressions</h2>
+        <div class="question-list">
+            <div class="number-bar">
+                <span>15</span>
+            </div>
+            <p class="question">
+                If \( n > 0 \), which of the following is equivalent to \( \frac{2}{\sqrt[4]{n}} + \frac{3n}{\sqrt[4]{n^3}} ?\)
+            </p>
+            <div class="option-1-container">
+                <button class="option-1">A</button><p class="choice-1">\( \frac{5}{\sqrt[4]{n}} \)</p>
+            </div>
+            <div class="option-2-container">
+                <button class="option-2">B</button><p class="choice-2">\( \frac{5\sqrt[4]{n}}{n} \)</p>
+            </div>
+            <div class="option-3-container">
+                <button class="option-3">C</button><p class="choice-3">\( \frac{2+3\sqrt{n}}{\sqrt[4]{n}} \)</p>
+            </div>
+            <div class="option-4-container">
+                <button class="option-4">D</button><p class="choice-4">\( 2\sqrt[4]{n} + 3 \)</p>
+            </div>
+        </div>
+        <button id="button-show-explanation15" class="button-show-explanation" onclick="toggleExplanation(15)">Show Explanation</button>
+        <div id="explanation15" class="explanation">
+            <p class="explanation-paragraph">
+                Choice C is correct. To combine the terms, we need a common denominator, which is \( \sqrt[4]{n} \). The second term can be simplified by noting that \( \sqrt[4]{n^3} = n^{3/4} \), so \( \frac{3n}{\sqrt[4]{n^3}} \) simplifies to \( \frac{3n}{n^{3/4}} = 3n^{1/4} \). Adding the two expressions gives \( \frac{2}{\sqrt[4]{n}} + 3n^{1/4} \), which simplifies to \( \frac{2+3\sqrt{n}}{\sqrt[4]{n}} \) since \( n^{1/4} = \sqrt[4]{n} \). <br>
+                Choice A is incorrect because it only adds the numerators without considering the radical in the denominator. <br>
+                Choice B is incorrect as it incorrectly multiplies the numerator by \( \sqrt[4]{n} \) instead of adding it. <br>
+                Choice D is incorrect because it suggests that the terms are added without a common denominator, which would imply that \( n^{1/4} \) is not equivalent to \( \sqrt[4]{n} \).
+            </p>
+        </div>
+    </div>
+    <div class="question-part" id="questionContent16">
+        <h1 class="title">Digital SAT Math</h1>
+        <h2 class="subtitle">Expressions</h2>
+        <div class="question-list">
+            <div class="number-bar">
+                <span>16</span>
+            </div>
+            <p class="question">
+                Which of the following is equivalent to \( \frac{8}{x^2 - 9} \) when \( x \neq 3 \) and \( x \neq -3 ?\)
+            </p>
+            <div class="option-1-container">
+                <button class="option-1">A</button><p class="choice-1">\( \frac{8}{(x-3)(x+3)} \)</p>
+            </div>
+            <div class="option-2-container">
+                <button class="option-2">B</button><p class="choice-2">\( \frac{4}{x-3} \)</p>
+            </div>
+            <div class="option-3-container">
+                <button class="option-3">C</button><p class="choice-3">\( \frac{-4}{x+3} \)</p>
+            </div>
+            <div class="option-4-container">
+                <button class="option-4">D</button><p class="choice-4">\( \frac{8}{x+3} \)</p>
+            </div>
+        </div>
+        <button id="button-show-explanation16" class="button-show-explanation" onclick="toggleExplanation(16)">Show Explanation</button>
+        <div id="explanation16" class="explanation">
+            <p class="explanation-paragraph">
+                Choice A is correct. The given expression \( \frac{8}{x^2 - 9} \) can be factored into \( \frac{8}{(x-3)(x+3)} \), since \( x^2 - 9 \) is a difference of squares. None of the other options are equivalent to the given expression. <br>
+                Choice B is incorrect because it represents only one factor of the denominator, \( x-3 \), and does not account for the \( x+3 \) term. <br>
+                Choice C is incorrect because it incorrectly introduces a negative sign and, like Choice B, only accounts for one factor of the denominator. <br>
+                Choice D is incorrect because it, too, only represents one factor of the denominator, \( x+3 \), without the \( x-3 \) term.
+            </p>
+        </div>
+    </div>
+    <div class="question-part" id="questionContent17">
+        <h1 class="title">Digital SAT Math</h1>
+        <h2 class="subtitle">Expressions</h2>
+        <div class="question-list">
+            <div class="number-bar">
+                <span>17</span>
+            </div>
+            <p class="question">
+                The expression \( 12x^2 + 11x - 12 \) is factored to:
+            </p>
+            <div class="option-1-container">
+                <button class="option-1">A</button><p class="choice-1">\( (3x - 4)(4x + 3) \)</p>
+            </div>
+            <div class="option-2-container">
+                <button class="option-2">B</button><p class="choice-2">\( (4x - 3)(3x + 4) \)</p>
+            </div>
+            <div class="option-3-container">
+                <button class="option-3">C</button><p class="choice-3">\( (2x - 3)(6x + 4) \)</p>
+            </div>
+            <div class="option-4-container">
+                <button class="option-4">D</button><p class="choice-4">\( (6x - 4)(2x + 3) \)</p>
+            </div>
+        </div>
+        <button id="button-show-explanation17" class="button-show-explanation" onclick="toggleExplanation(17)">Show Explanation</button>
+        <div id="explanation17" class="explanation">
+            <p class="explanation-paragraph">
+                Choice B is correct. To factor the quadratic expression \( 12x^2 + 11x - 12 \), we look for two numbers that multiply to \( 12 \times -12 = -144 \) and add to \( 11 \). The numbers \( 16 \) and \( -9 \) meet these criteria. Therefore, we can express the quadratic as \( 12x^2 + 16x - 9x - 12 \). Grouping the terms in pairs and factoring by grouping, we get \( 4x(3x + 4) - 3(3x + 4) \), which further factors to \( (4x - 3)(3x + 4) \). <br>
+                Choices A, C, and D are incorrect because they do not correctly factor the given expression based on the criteria for multiplication and addition that lead to the middle term and the constant term.
+            </p>
+        </div>
+    </div>
+    <div class="question-part" id="questionContent18">
+        <h1 class="title">Digital SAT Math</h1>
+        <h2 class="subtitle">Expressions</h2>  
+        <div class="question-list">
+            <div class="number-bar">
+                <span>18</span>
+            </div>
+            <p class="question">
+                What is the expanded form of \( (x - 3)(x^2 + 3x + 9) ?\)
+            </p>
+            <div class="option-1-container">
+                <button class="option-1">A</button><p class="choice-1">\( x^3 - 27 \)</p>
+            </div>
+            <div class="option-2-container">
+                <button class="option-2">B</button><p class="choice-2">\( x^3 - 9x^2 + 27x - 27 \)</p>
+            </div>
+            <div class="option-3-container">
+                <button class="option-3">C</button><p class="choice-3">\( x^3 + 6x^2 + 9x - 27 \)</p>
+            </div>
+            <div class="option-4-container">
+                <button class="option-4">D</button><p class="choice-4">\( x^3 - 6x^2 + 9x + 27 \)</p>
+            </div>
+        </div>
+        <button id="button-show-explanation18" class="button-show-explanation" onclick="toggleExplanation(18)">Show Explanation</button>
+        <div id="explanation18" class="explanation">
+            <p class="explanation-paragraph">
+                Choice A is correct. To find the expanded form, we distribute each term in \( x - 3 \) across the trinomial \( x^2 + 3x + 9 \):
+                \[ (x)(x^2) + (x)(3x) + (x)(9) - (3)(x^2) - (3)(3x) - (3)(9) \]
+                which simplifies to:
+                \[ x^3 + 3x^2 + 9x - 3x^2 - 9x - 27 \]
+                Combining like terms, we get:
+                \[ x^3 - 27 \]
+                Choice B is incorrect because it does not account for the middle terms produced when expanding the binomial and the trinomial. <br>
+                Choice C is incorrect because the coefficients of \( x^2 \) and \( x \) are not correct. <br>
+                Choice D is incorrect because it has a positive coefficient for the \( x^2 \) term and an incorrect constant term.
+            </p>
+        </div>
+    </div>
+    <div class="question-part" id="questionContent19">
+        <h1 class="title">Digital SAT Math</h1>
+        <h2 class="subtitle">Expressions</h2>
+        <div class="question-list">
+            <div class="number-bar">
+                <span>19</span>
+            </div>
+            <p class="question">
+                What is the equivalent simplified form of the expression \(2(x^3 - x^2 + x - 1) + 3(x^3 + x^2 - x + 1)?\)
+            </p>
+            <div class="option-1-container">
+                <button class="option-1">A</button><p class="choice-1">\( 5x^3 + 2x^2 + 3x \)</p>
+            </div>
+            <div class="option-2-container">
+                <button class="option-2">B</button><p class="choice-2">\( 5x^3 - 2x \)</p>
+            </div>
+            <div class="option-3-container">
+                <button class="option-3">C</button><p class="choice-3">\( 5x^3 - 2x^2 + x - 1 \)</p>
+            </div>
+            <div class="option-4-container">
+                <button class="option-4">D</button><p class="choice-4">\( 5x^3 + x^2 - x + 1 \)</p>
+            </div>
+        </div>
+        <button id="button-show-explanation19" class="button-show-explanation" onclick="toggleExplanation(19)">Show Explanation</button>
+        <div id="explanation19" class="explanation">
+            <p class="explanation-paragraph">
+                Choice D is correct. Distributing the coefficients in the expression, we get \( 2x^3 - 2x^2 + 2x - 2 + 3x^3 + 3x^2 - 3x + 3 \). Combining like terms gives us \( 5x^3 + x^2 - x + 1 \), which simplifies to the expression in Choice D. <br>
+                Choice A is incorrect because the coefficient of the \( x \) term should be negative and the constant term is missing. <br>
+                Choice B omits the quadratic term and the constant term and incorrectly represents the linear term with a negative coefficient. <br>
+                Choice C incorrectly represents the quadratic term with a negative coefficient and the constant term with a negative value.
+            </p>
+        </div>
+    </div>
+    <div class="question-part" id="questionContent20">
+        <h1 class="title">Digital SAT Math</h1>
+        <h2 class="subtitle">Expressions</h2>
+        <div class="question-list">
+            <div class="number-bar">
+                <span>20</span>
+            </div>
+            <p class="question">
+                What is the result of \( (x + y)(2x - y + 3) ?\)
+            </p>
+            <div class="option-1-container">
+                <button class="option-1">A</button><p class="choice-1">\( 2x^2 + xy - y^2 + 3x + 3y \)</p>
+            </div>
+            <div class="option-2-container">
+                <button class="option-2">B</button><p class="choice-2">\( 2x^2 - xy + y^2 + 3x - 3y \)</p>
+            </div>
+            <div class="option-3-container">
+                <button class="option-3">C</button><p class="choice-3">\( 2x^2 - xy + 3x - y^2 + 3y \)</p>
+            </div>
+            <div class="option-4-container">
+                <button class="option-4">D</button><p class="choice-4">\( 2x^2 + xy + 3x + y^2 + 3y \)</p>
+            </div>
+        </div>
+        <button id="button-show-explanation20" class="button-show-explanation" onclick="toggleExplanation(21)">Show Explanation</button>
+        <div id="explanation20" class="explanation">
+            <p class="explanation-paragraph">
+                The correct answer is A. To find the result, we apply the distributive property, also known as the FOIL method (First, Outer, Inner, Last terms):
+                \[ (x)(2x) + (x)(-y) + (x)(3) + (y)(2x) + (y)(-y) + (y)(3) \]
+                Simplifying each multiplication, we get:
+                \[ 2x^2 - xy + 3x + 2xy - y^2 + 3y \]
+                Combining the like terms \( -xy \) and \( +2xy \), we arrive at:
+                \[ 2x^2 + xy - y^2 + 3x + 3y \]
+                This matches the expression given in Choice A. <br>
+    
+                Choices B, C, and D are incorrect because they either have incorrect signs or incorrect coefficients when compared to the correct expansion of the binomial product.
+            </p>
+        </div>
+    </div>
+    <div class="question-part" id="questionContent21">
+        <h1 class="title">Digital SAT Math</h1>
+        <h2 class="subtitle">Expressions</h2>  
+        <div class="question-list">
+            <div class="number-bar">
+                <span>21</span>
+            </div>
+            <p class="question">
+                What is the result of \( (2x - 3)^3 ?\)
+            </p>
+            <div class="option-1-container">
+                <button class="option-1">A</button><p class="choice-1">\( 8x^3 - 36x^2 + 54x - 27 \)</p>
+            </div>
+            <div class="option-2-container">
+                <button class="option-2">B</button><p class="choice-2">\( 8x^3 - 27x^2 + 18x - 9 \)</p>
+            </div>
+            <div class="option-3-container">
+                <button class="option-3">C</button><p class="choice-3">\( 8x^3 - 12x^2 + 18x - 27 \)</p>
+            </div>
+            <div class="option-4-container">
+                <button class="option-4">D</button><p class="choice-4">\( 8x^3 + 27 \)</p>
+            </div>
+        </div>
+        <button id="button-show-explanation21" class="button-show-explanation" onclick="toggleExplanation(21)">Show Explanation</button>
+        <div id="explanation21" class="explanation">
+            <p class="explanation-paragraph">
+                The correct answer is A. When expanding \( (2x - 3)^3 \), we are essentially calculating \( (2x - 3) \times (2x - 3) \times (2x - 3) \). This can be done by first squaring \( (2x - 3) \) to get \( 4x^2 - 12x + 9 \), and then multiplying this result by \( (2x - 3) \) again.
+                
+                Multiplying the square of the binomial by the binomial, we have:
+                \[ (4x^2 - 12x + 9) \times (2x - 3) \]
+                \[ 8x^3 - 24x^2 + 18x - 12x^2 + 36x - 27 \]
+                
+                Combining like terms, the final expanded form is:
+                \[ 8x^3 - 36x^2 + 54x - 27 \]
+                
+                This corresponds to option A. <br>
+    
+                Options B, C, and D do not correctly represent the expanded form of \( (2x - 3)^3 \) as they have different coefficients for the terms when the correct expansion process is followed.
+            </p>
+        </div>
+    </div>
+    <div class="question-part" id="questionContent22">
+        <h1 class="title">Digital SAT Math</h1>
+        <h2 class="subtitle">Expressions</h2>
+        <div class="question-list">
+            <div class="number-bar">
+                <span>22</span>
+            </div>
+            <p class="question">
+                Given the expression \( 16a^4 - 81y^4 \), if \( y \) is 1 less than twice the value of \( a \) (i.e., \( y = 2a - 1 \)), what is the value of the expression when \( a = 3 ?\)
+            </p>
+            <div class="input-button">
+                <input class="input-answer" type="text" placeholder="">
+            </div>
+        </div>
+        <button id="button-show-explanation22" class="button-show-explanation" onclick="toggleExplanation(22)">Show Explanation</button>
+        <div id="explanation22" class="explanation">
+            <p class="explanation-paragraph">
+                To find the value of the expression when \( a = 3 \), first find the value of \( y \) using the given relationship \( y = 2a - 1 \). Substituting \( a = 3 \) gives \( y = 2(3) - 1 = 5 \).
+                
+                Now substitute \( a = 3 \) and \( y = 5 \) into the expression:
+                \[ 16a^4 - 81y^4 = 16(3)^4 - 81(5)^4 \]
+                \[ = 16(81) - 81(625) \]
+                \[ = 1296 - 50625 \]
+                \[ = -49329 \]
+                
+                So, the value of the expression when \( a = 3 \) is \( -49329 \).
+            </p>
+        </div>
+    </div>
+    <div class="question-part" id="questionContent23">
+        <h1 class="title">Digital SAT Math</h1>
+        <h2 class="subtitle">Expressions</h2>
+        <div class="question-list">
+            <div class="number-bar">
+                <span>23</span>
+            </div>
+            <p class="question">
+                Simplify the expression \( \frac{1}{x} + \frac{1}{y} \), given \( x \neq 0 \) and \( y \neq 0 \).
+            </p>
+            <div class="option-1-container">
+                <button class="option-1">A</button><p class="choice-1">\( \frac{x+y}{xy} \)</p>
+            </div>
+            <div class="option-2-container">
+                <button class="option-2">B</button><p class="choice-2">\( \frac{1}{xy} \)</p>
+            </div>
+            <div class="option-3-container">
+                <button class="option-3">C</button><p class="choice-3">\( \frac{x-y}{xy} \)</p>
+            </div>
+            <div class="option-4-container">
+                <button class="option-4">D</button><p class="choice-4">\( \frac{2}{x+y} \)</p>
+            </div>
+        </div>
+        <button id="button-show-explanation23" class="button-show-explanation" onclick="toggleExplanation(23)">Show Explanation</button>
+        <div id="explanation23" class="explanation">
+            <p class="explanation-paragraph">
+                The correct answer is A. To simplify \( \frac{1}{x} + \frac{1}{y} \), we need a common denominator, which in this case is \( xy \). We rewrite each fraction with the common denominator:
+    
+                \[ \frac{1}{x} \cdot \frac{y}{y} + \frac{1}{y} \cdot \frac{x}{x} \]
+                \[ \frac{y}{xy} + \frac{x}{xy} \]
+                
+                Now that we have the same denominator, we can combine the numerators:
+    
+                \[ \frac{y + x}{xy} \]
+                
+                Which simplifies to:
+    
+                \[ \frac{x + y}{xy} \]
+                
+                This matches option A. <br>
+                
+                Options B, C, and D are incorrect because they do not represent the correct method for combining fractions with different denominators.
+            </p>
+        </div>
+    </div>
+    <div class="question-part" id="questionContent24">
+        <h1 class="title">Digital SAT Math</h1>
+        <h2 class="subtitle">Expressions</h2>
+        <div class="question-list">
+            <div class="number-bar">
+                <span>24</span>
+            </div>
+            <p class="question">
+                If \( n \neq 1 \) and \( n \neq -1 \), which of the following is equivalent to \( \frac{n^3 - n}{n^2 - 1} ?\)
+            </p>
+            <div class="option-1-container">
+                <button class="option-1">A</button><p class="choice-1">\( n^2 + n \)</p>
+            </div>
+            <div class="option-2-container">
+                <button class="option-2">B</button><p class="choice-2">\( n^2 - n \)</p>
+            </div>
+            <div class="option-3-container">
+                <button class="option-3">C</button><p class="choice-3">\( n \)</p>
+            </div>
+            <div class="option-4-container">
+                <button class="option-4">D</button><p class="choice-4">\( n^2 \)</p>
+            </div>
+        </div>
+        <button id="button-show-explanation24" class="button-show-explanation" onclick="toggleExplanation(24)">Show Explanation</button>
+        <div id="explanation24" class="explanation">
+            <p class="explanation-paragraph">
+                The correct answer is C. We start by factoring the numerator and the denominator. The numerator \( n^3 - n \) can be factored out as \( n(n^2 - 1) \). The denominator \( n^2 - 1 \) is a difference of squares and can be factored as \( (n - 1)(n + 1) \).
+    
+                Now, the expression can be written as:
+                \[ \frac{n(n - 1)(n + 1)}{(n - 1)(n + 1)} \]
+    
+                We can cancel out the common factors \( (n - 1) \) and \( (n + 1) \) from the numerator and denominator, which leaves us with:
+                \[ n \]
+    
+                Therefore, the simplified form of the expression is \( n \), which corresponds to option C. <br>
+    
+                Options A, B, and D are incorrect because they do not account for the cancellation of terms after factoring the numerator and denominator.
+            </p>
+        </div>
+    </div>
+    <div class="question-part" id="questionContent25">
+        <h1 class="title">Digital SAT Math</h1>
+        <h2 class="subtitle">Expressions</h2>
+        <div class="question-list">
+            <div class="number-bar">
+                <span>25</span>
+            </div>
+            <p class="question">
+                What is the value of the expression \(3x^2 - 2y + z\) multiplied by \(2x^2 + 3y^2 - z^2\) when \(x = 3\), \(y = 2\), and \(z = 1?\)
+            </p>
+            <div class="option-1-container">
+                <button class="option-1">A</button><p class="choice-1">\(99\)</p>
+            </div>
+            <div class="option-2-container">
+                <button class="option-2">B</button><p class="choice-2">\(135\)</p>
+            </div>
+            <div class="option-3-container">
+                <button class="option-3">C</button><p class="choice-3">\(696\)</p>
+            </div>
+            <div class="option-4-container">
+                <button class="option-4">D</button><p class="choice-4">\(120\)</p>
+            </div>
+        </div>
+        <button id="button-show-explanation25" class="button-show-explanation" onclick="toggleExplanation(25)">Show Explanation</button>
+        <div id="explanation25" class="explanation">
+            <p class="explanation-paragraph">
+                To find the value of the expression, we first substitute the given values for \(x\), \(y\), and \(z\) into the expression and then perform the multiplication.
+    
+                Substituting the values gives us:
+                \[ (3 \cdot 3^2 - 2 \cdot 2 + 1) \times (2 \cdot 3^2 + 3 \cdot 2^2 - 1^2) \]
+                \[ =(3 \cdot 9 - 4 + 1) \times (2 \cdot 9 + 3 \cdot 4 - 1) \]
+                \[ =(27 - 4 + 1) \times (18 + 12 - 1) \]
+                \[ =24 \times 29 \]
+                \[ =696 \]
+    
+                Therefore, the value of the expression is \( 696 \), which corresponds to option C. <br>
+            </p>
+        </div>
+    </div>
+    <div class="question-part" id="questionContent26">
+        <h1 class="title">Digital SAT Math</h1>
+        <h2 class="subtitle">Expressions</h2>  
+        <div class="question-list">
+            <div class="number-bar">
+                <span>26</span>
+            </div>
+            <p class="question">
+                What is the simplified form of \( \frac{x^2 - 9}{x^2 - 6x + 9} ?\)
+            </p>
+            <div class="option-1-container">
+                <button class="option-1">A</button><p class="choice-1">\( \frac{x + 3}{x - 3} \)</p>
+            </div>
+            <div class="option-2-container">
+                <button class="option-2">B</button><p class="choice-2">\( x - 3 \)</p>
+            </div>
+            <div class="option-3-container">
+                <button class="option-3">C</button><p class="choice-3">\( \frac{x - 3}{x + 3} \)</p>
+            </div>
+            <div class="option-4-container">
+                <button class="option-4">D</button><p class="choice-4">\( x + 3 \)</p>
+            </div>
+        </div>
+        <button id="button-show-explanation26" class="button-show-explanation" onclick="toggleExplanation(26)">Show Explanation</button>
+        <div id="explanation26" class="explanation">
+            <p class="explanation-paragraph">
+                The correct answer is A. The numerator \( x^2 - 9 \) is a difference of squares and can be factored as \( (x + 3)(x - 3) \). The denominator \( x^2 - 6x + 9 \) is a perfect square trinomial and can be factored as \( (x - 3)(x - 3) \) or \( (x - 3)^2 \).
+    
+                The expression simplifies to:
+                \[ \frac{(x + 3)(x - 3)}{(x - 3)(x - 3)} \]
+                We can cancel the common factor of \( (x - 3) \) from the numerator and denominator:
+
+                \[ \frac{x + 3}{x - 3} \]
+        
+                Therefore, the simplified form of the expression is \( \frac{x + 3}{x - 3} \), which corresponds to option C. <br>
+        
+                Options B, C, and D are incorrect because they do not reflect the correct cancellation of terms after factoring the numerator and denominator.
+            </p>
+        </div>
+    </div>        
+    <div class="question-part" id="questionContent27">
+        <h1 class="title">Digital SAT Math</h1>
+        <h2 class="subtitle">Expressions</h2>
+        <div class="question-list">
+            <div class="number-bar">
+                <span>27</span>
+            </div>
+            <p class="question">
+                What are the factors of the quartic polynomial \( x^4 - 10x^2 + 9 ?\)
+            </p>
+            <div class="option-1-container">
+                <button class="option-1">A</button><p class="choice-1">\( (x^2 - 1)(x^2 - 9) \)</p>
+            </div>
+            <div class="option-2-container">
+                <button class="option-2">B</button><p class="choice-2">\( (x^2 + 1)(x^2 - 9) \)</p>
+            </div>
+            <div class="option-3-container">
+                <button class="option-3">C</button><p class="choice-3">\( (x - 3)(x + 3)(x - 1)(x + 1) \)</p>
+            </div>
+            <div class="option-4-container">
+                <button class="option-4">D</button><p class="choice-4">\( (x^2 - 3)(x^2 - 3) \)</p>
+            </div>
+        </div>
+        <button id="button-show-explanation27" class="button-show-explanation" onclick="toggleExplanation(27)">Show Explanation</button>
+        <div id="explanation27" class="explanation">
+            <p class="explanation-paragraph">
+                The correct answer is C. This quartic polynomial resembles a quadratic in form, where \( x^2 \) is the variable term. We can use the factoring method suitable for quadratics:
+    
+                \[ x^4 - 10x^2 + 9 = (x^2 - 1)(x^2 - 9) \]
+    
+                We recognize that both \( x^2 - 1 \) and \( x^2 - 9 \) are differences of squares, which can be further factored:
+    
+                \[ (x^2 - 1) = (x - 1)(x + 1) \]
+                \[ (x^2 - 9) = (x - 3)(x + 3) \]
+                Thus, the complete factorization of the polynomial is:
+
+                \[ (x - 1)(x + 1)(x - 3)(x + 3) \]
+        
+                Which corresponds to option C. <br>
+        
+                Options A, B, and D are incorrect because they do not fully factor the expression or do not factor it correctly. <br> 
+                Option A stops at the quadratic factors without recognizing the difference of squares. <br> 
+                Option B includes an incorrect factor of \(x^2 + 1\) which is not a factor of the original polynomial. <br> 
+                Option D has a repeated incorrect factor and does not correctly represent the polynomial's factorization.
+            </p>
+        </div>
+    </div>            
+    <div class="question-part" id="questionContent28">
+        <h1 class="title">Digital SAT Math</h1>
+        <h2 class="subtitle">Expressions</h2>
+        <div class="question-list">
+            <div class="number-bar">
+                <span>28</span>
+            </div>
+            <p class="question">
+                What is the simplified result of the expression \( \frac{(x - 2)^2 - (x + 2)^2}{x^2 - 4} \) when \( x = 9 \)?
+            </p>
+            <div class="input-button">
+                <input class="input-answer" type="text"> 
+            </div>
+        </div>
+        <button id="button-show-explanation28" class="button-show-explanation" onclick="toggleExplanation(28)">Show Explanation</button>
+        <div id="explanation28" class="explanation">
+            <p class="explanation-paragraph">
+                The numerator is a difference of squares and simplifies to \( -8x \). The denominator is also a difference of squares and factors as \( (x - 2)(x + 2) \). Simplifying before substitution gives us \( \frac{-8x}{x^2 - 4} \). Substituting \( x = 9 \) into the simplified expression gives \( \frac{-8 \cdot 9}{9^2 - 4} = \frac{-72}{77} \), which is the simplified result.
+            </p>
+        </div>
+    </div>
+    <div class="question-part" id="questionContent29">
+        <h1 class="title">Digital SAT Math</h1>
+        <h2 class="subtitle">Expressions</h2>  
+        <div class="question-list">
+            <div class="number-bar">
+                <span>29</span>
+            </div>
+            <p class="question">
+                If \( y \neq 2 \) and \( y \neq -2 \), what is \( \frac{y^2 - 4}{y^2 - 2y} \) simplified?
+            </p>
+            <div class="option-1-container">
+                <button class="option-1">A</button><p class="choice-1">\( \frac{y + 2}{y} \)</p>
+            </div>
+            <div class="option-2-container">
+                <button class="option-2">B</button><p class="choice-2">\( \frac{y - 2}{y} \)</p>
+            </div>
+            <div class="option-3-container">
+                <button class="option-3">C</button><p class="choice-3">\( y + 2 \)</p>
+            </div>
+            <div class="option-4-container">
+                <button class="option-4">D</button><p class="choice-4">\( y - 2 \)</p>
+            </div>
+        </div>
+        <button id="button-show-explanation29" class="button-show-explanation" onclick="toggleExplanation(29)">Show Explanation</button>
+        <div id="explanation29" class="explanation">
+            <p class="explanation-paragraph">
+                The correct answer is A. To simplify the expression \( \frac{y^2 - 4}{y^2 - 2y} \), let's factor both the numerator and the denominator. The numerator is a difference of squares, which can be factored into \( (y + 2)(y - 2) \). For the denominator, we factor out a \( y \), which gives us \( y(y - 2) \). After canceling the common term \( (y - 2) \) from the numerator and denominator, we are left with \( \frac{y + 2}{y} \).<br>
+                Choice B is incorrect because it represents the subtraction of the \( y \) term in the denominator without accounting for the addition of 2 in the numerator.<br>
+                Choice C is incorrect because it suggests that the entire denominator is canceled out, which is not the case since there is no \( y \) term in the numerator to cancel out the \( y \) in the denominator.<br>
+                Choice D is incorrect because it also implies complete cancellation of the denominator and incorrectly changes the sign of the 2 in the numerator.
+            </p>
+        </div>
+    </div>
+    <div class="question-part" id="questionContent30">
+        <h1 class="title">Digital SAT Math</h1>
+        <h2 class="subtitle">Expressions</h2>
+        <div class="question-list">
+            <div class="number-bar">
+                <span>30</span>
+            </div>
+            <p class="question">
+                What is the result of \( (2x + 1)(2x^2 - 2x + 1) - 4x^3 \)?
+            </p>
+            <div class="option-1-container">
+                <button class="option-1">A</button><p class="choice-1">\( 1 - 2x^2 \)</p>
+            </div>
+            <div class="option-2-container">
+                <button class="option-2">B</button><p class="choice-2">\( 2x^2 - 2x + 1 \)</p>
+            </div>
+            <div class="option-3-container">
+                <button class="option-3">C</button><p class="choice-3">\( 4x^3 + 2x^2 + 2x + 1 \)</p>
+            </div>
+            <div class="option-4-container">
+                <button class="option-4">D</button><p class="choice-4">\( 4x^2 - 2x + 1 \)</p>
+            </div>
+        </div>
+        <button id="button-show-explanation30" class="button-show-explanation" onclick="toggleExplanation(30)">Show Explanation</button>
+        <div id="explanation30" class="explanation">
+            <p class="explanation-paragraph">
+                The correct answer is A. When expanding \( (2x + 1)(2x^2 - 2x + 1) \), we distribute each term in the first binomial across the second trinomial, then combine like terms. Finally, we subtract \( 4x^3 \) from the result. This process should simplify to \( 1 - 2x^2 \), after canceling and combining like terms.<br>
+                Choices B, C, and D do not accurately represent the result of the given expression once simplified. This can be verified by expanding and combining like terms correctly.
+            </p>    
+        </div>
+    </div>
+</body>
+</html>
