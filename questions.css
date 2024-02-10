@@ -286,7 +286,7 @@ body{
     display: block;
     flex-direction: row;
     margin-top: 141px;
-    max-height: 47em;
+    max-height: calc(93vh - 141px);
     overflow-y: auto;
 }
 
@@ -547,9 +547,9 @@ body{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    position: absolute;
-    top: 55.9rem;
-    left: 28rem;
+    position: fixed; /* Change to fixed if you want it to stay at the bottom of the screen */
+    bottom: 0.1em; 
+    left: 28em; 
     width: 92rem;
     height: 3.9em;
     background-color: #dfeaf0;
