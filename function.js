@@ -236,10 +236,12 @@ function handleSelection(e) {
                 opt.classList.remove('selected');
                 opt.style.backgroundColor = 'transparent';
                 opt.style.color = '#011f4b';
+                opt.style.borderColor = '#011f4b';
             });
             selectedOption.classList.add('selected');
             selectedOption.style.backgroundColor = '#011f4b';
             selectedOption.style.color = 'white';
+            selectedOption.style.borderColor = '#011f4b';
         }
 
         var lastPartButton = document.querySelector('.last-part-button');
@@ -269,6 +271,7 @@ function handleSelection(e) {
             if (!isNaN(questionNumber) && questionNumber >= 1 && questionNumber <= numberOfQuestions) {
                 currentQuestionIndex = questionNumber; // Update the current question index
                 showQuestion('specific'); // Show the specific question
+                isAnswerChecked = false;
             }
         });
 
@@ -394,18 +397,10 @@ function showQuestion(direction) {
         // If it's a regular navigation, update the current question index based on the direction
         if (direction === 'next') {
             currentQuestionIndex++;
-            const searchInput = document.querySelector(".question-search-bar");
-            if(searchInput){
-                searchInput.value = '';
-                isAnswerChecked = false;
-            }
+            isAnswerChecked = false;
         } else if (direction === 'previous') {
             currentQuestionIndex--;
-            const searchInput = document.querySelector(".question-search-bar");
-            if(searchInput){
-                searchInput.value = '';
-                isAnswerChecked = false;
-            }
+            isAnswerChecked = false;
         }
 
         // Make sure the index stays within bounds
@@ -481,6 +476,13 @@ function showQuestion(direction) {
             setTimeout(() => {
                 searchInput.value = ''; // Clear the input field after 5 seconds
             }, 2000); // Delay in milliseconds (5000ms = 5s)
+        }
+        let questionId = 'questionContent' + currentQuestionIndex;
+        let inputField = document.querySelector(`#${questionId} .input-answer`);
+        if(inputField){
+            inputField.value = '';
+            inputField.readOnly = false;
+            inputField.style.borderColor = '#011f4b';
         }
         
     }, 500);
@@ -675,15 +677,14 @@ function checkAnswer() {
     if (inputField) {
         userAnswer = inputField.value.trim();
         isCorrect = correctAnswer.some(ans => userAnswer.toLowerCase() === ans.toLowerCase());
-        inputField.readOnly = true;
-        isAnswerChecked = true;
 
         if (isCorrect) {
             inputField.style.borderColor = 'rgb(0, 163, 0)'; 
             feedbackSound.src = 'picture/interface-124464.mp3'; 
             feedbackSound.play();  
             toggleExplanation(currentQuestionIndex); 
-
+            isAnswerChecked = true;
+            inputField.readOnly = true;
             var end = Date.now() + (1 * 1000);
         var colors = ['#011f4b', '#6497b16b', '#011f4ba9', '#6f8aa2', '#dfeaf0', '#dbdbdb', '#e9eaea', '#03396c12', '#6497b1', '#03396c', '#b3cde0', '#011F4B', '#cfd9de', '#aec2cc'];
         (function frame() {
@@ -708,17 +709,19 @@ function checkAnswer() {
             
         } else {
         inputField.style.color = '#db1c1c';
-        inputField.style.borderColor = '#db1c1c'; 
+        inputField.style.borderColor = '#db1c1c';
+        isAnswerChecked = true; 
+        inputField.readOnly = true;
         }
     } else if (selectedOption) {
         userAnswer = selectedOption.innerText.trim();
-        isCorrect = correctAnswer.some(ans => userAnswer.toLowerCase() === ans.toLowerCase());
-         isAnswerChecked = true; 
+        isCorrect = correctAnswer.some(ans => userAnswer.toLowerCase() === ans.toLowerCase()); 
     if (isCorrect) {
         if (selectedOption) {
             selectedOption.style.color = 'rgb(0, 163, 0)';
             selectedOption.style.borderColor = 'rgb(0, 163, 0)';
             selectedOption.style.backgroundColor = 'transparent';
+            isAnswerChecked = true;
         }
         feedbackSound.src = 'picture/interface-124464.mp3'; 
         feedbackSound.play();  
@@ -750,9 +753,10 @@ function checkAnswer() {
         selectedOption.style.color = '#db1c1c';
         selectedOption.style.borderColor = '#db1c1c';
         selectedOption.style.backgroundColor = 'transparent';
+        isAnswerChecked = true;
     }
 }
-resetUI().style.transition = 'opacity 0.5s ease-in-out';
+resetUI();
 }
 
 function resetUI() {
