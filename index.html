@@ -73,7 +73,7 @@ rel="stylesheet">
                             <h3>Digital SAT</h3>
                             <div class="content-list-digital-sat">
                               <div class="content-list-digital-sat-math">
-                                <h4 class="subtitle-of-content">Digital Sat Math</h4>
+                                <h4 class="subtitle-of-content" onclick="satmathloading()">Digital Sat Math</h4>
                                 <a href="#" class="custom-link">Exponents and Radicals</a>
                                 <a href="#" class="custom-link">Absolute Values</a>
                                 <a href="#" class="custom-link">Proportion</a>
@@ -102,7 +102,7 @@ rel="stylesheet">
                                 <a href="#" class="custom-link">Statistics</a>
                               </div>
                               <div class="content-list-digital-sat-english">
-                                <h4 class="subtitle-of-content">Digital Sat Reading and Writing</h4>
+                                <h4 class="subtitle-of-content" onclick="satenglishloading()">Digital Sat Reading and Writing</h4>
                                 <a href="#" class="custom-link">Information and Ideas: Command of Evidence</a>
                                 <a href="#" class="custom-link">Information and Ideas: Inferences</a>
                                 <a href="#" class="custom-link">Information and Ideas: Central Ideas and Details</a>
@@ -285,6 +285,14 @@ rel="stylesheet">
                 </div>
             </div>
         </div>
+
+        <div id="loading" class="loading-screen" style="display:none;">
+            <!-- Circular loader (hidden initially) -->
+            <div class="loader-div">
+            <div class="loader"></div>
+            </div>
+        </div>
+
 <div class="vocabulary-section">
     <h2 class="vocabulary-section-title">
         <span class="vocabulary-word1">LEARN</span>
@@ -406,6 +414,26 @@ rel="stylesheet">
             coursesButton.classList.remove("active");
         });
     });
+    function satmathloading() {
+    var loadingScreen = document.getElementById('loading');
+    loadingScreen.style.display = 'flex';
+    setTimeout(function() {
+        loadingScreen.style.opacity = '1';
+        setTimeout(function() {
+            window.location.href = 'homemath.html';
+        }, 6000); 
+    }, 10); 
+}
+function satenglishloading() {
+    var loadingScreen = document.getElementById('loading');
+    loadingScreen.style.display = 'flex';
+    setTimeout(function() {
+        loadingScreen.style.opacity = '1';
+        setTimeout(function() {
+            window.location.href = '/dsat-english-question/home.html';
+        }, 6000); 
+    }, 10); 
+}
 </script>
 
 </body>
