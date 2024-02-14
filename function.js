@@ -540,7 +540,7 @@ function updateSelectedTopic(index) {
     const selectedTopic = document.querySelector('.topic-list-content li:nth-child(' + (index + 1) + ')');
     if (selectedTopic) {
         selectedTopic.classList.add('selected');
-        selectedTopic.style.borderLeft = '4px solid #011f4b'; // Set the left border styling
+        selectedTopic.style.borderLeft = '3px solid #011f4b'; // Set the left border styling
         isAnswerChecked = false;
     }
 }

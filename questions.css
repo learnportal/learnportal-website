@@ -76,13 +76,18 @@ a{
 
 .logo-name{
     font-family: roboto, sans-serif;
-    font-size: 25px;
+    font-size: 40px;
     margin-left: 10px;
-    color: rgb(1, 31, 75);
+    color: rgb(1, 31, 75, 20%);
     letter-spacing: .5px;
-    font-weight: 700;
+    font-weight: 900;
     text-shadow: 1px;
     cursor: pointer;
+    background-image: url(picture/Palestine_240-animated-flag-gifs.gif);
+    background-size: contain;
+    background-clip: text;
+    -webkit-background-clip: text;
+    background-position: center;
 }
 
 .middle-section{
@@ -310,7 +315,7 @@ body{
     font-size: 22px;
     padding-bottom: 15px;
     color: #272727;
-    
+    padding-left: 10px;
 }
 
 .topic-list{
@@ -342,7 +347,7 @@ body{
     font-family: lato, noto sans, sans-serif;
     font-size: 18px;
     color: rgba(0, 0, 0, 0.798);
-    padding-left: 5px;
+    padding-left: 10px;
     padding-bottom: 12px;   
     border-bottom: 1px solid #03396c12;
     border-top: 1px solid #03396c12;
@@ -377,7 +382,7 @@ body{
     font-size: 18px;
     color: rgba(0, 0, 0, 0.798);
     padding-bottom: 12px;
-    padding-left: 5px;
+    padding-left: 10px;
     border-bottom: 1px solid #03396c12;
     transition-duration: 0.3s;
 }
@@ -388,7 +393,7 @@ body{
     font-size: 18px;
     color: rgba(0, 0, 0, 0.798);
     padding-bottom: 12px;
-    padding-left: 5px;
+    padding-left: 10px;
     border-bottom: 1px solid #03396c12;
     transition-duration: 0.3s;
 }
