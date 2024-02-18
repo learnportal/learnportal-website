@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Terms and Conditions | Khan Academy</title>
+    <title>Terms and Conditions | LearnPortal</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" 
@@ -41,9 +41,9 @@ rel="stylesheet">
         <div class="title-section">
             <div class="left-section">
                 <a href="index.html">
-                    <img class="logo" src="picture/khan-academy-seeklogo.com.svg" alt="Your Logo Alt Text">
+                    <img class="logo" src="picture/khan-academy-seeklogo.com.svg" alt="">
                 </a>
-                <a href="index.html" class="logo-name">Test Takers</a>                
+                <a href="index.html" class="logo-name">LearnPortal</a>                
             </div>
 
             <div class="middle-section">
@@ -55,21 +55,71 @@ rel="stylesheet">
 
             <nav class="navigation">
                 <ul class="right-section">
-                    <li><a href="https://www.khanacademy.org/profile/me/courses" class="about" target="_blank">About</a></li>
-                    <li><a href="https://ntsblog.homedev.com.au/index.php/2010/05/06/c-stack-with-maximum-limit/" class="donate" target="_blank">Donate</a></li>
-                    <li><a href="https://www.youtube.com/shorts/ccvAXE89ems" class="courses" target="_blank">Courses</a></li>
-                    <li><a href="https://www.messenger.com/t/5565117946927971" class="university" target="_blank">university</a></li>
+                    <li><a href="" class="about" target="_blank">About</a></li>
+                    <li><a href="" class="donate" target="_blank">Donate</a></li>
+                    <li class="courses-list-container">
+                        <a href="#" class="courses" id="coursesButton">Courses</a>
+                        <div class="content-list" id="contentList">
+                            <h1 class="content-list-title-1">STANDARDIZED TESTS</h1>
+                            <h3>Digital SAT</h3>
+                            <div class="content-list-digital-sat">
+                              <div class="content-list-digital-sat-math">
+                                <h4 class="subtitle-of-content" onclick="satmathloading()">Digital Sat Math</h4>
+                                <a href="#" class="custom-link">Exponents and Radicals</a>
+                                <a href="#" class="custom-link">Absolute Values</a>
+                                <a href="#" class="custom-link">Proportion</a>
+                                <a href="#" class="custom-link">Percent</a>
+                                <a href="#" class="custom-link">Unit conversions</a>
+                                <a href="#" class="custom-link">Expressions</a>
+                                <a href="#" class="custom-link">Exponential Equations</a>
+                                <a href="#" class="custom-link">Linear equations</a>
+                                <a href="#" class="custom-link">Quadratic equations</a>
+                                <a href="#" class="custom-link">Polynomial equations</a>
+                                <a href="#" class="custom-link">Logarithmic functions</a>
+                                <a href="#" class="custom-link">Rational functions</a>
+                                <a href="#" class="custom-link">Inequalities</a>
+                                <a href="#" class="custom-link">Word Problems</a>
+                                <a href="#" class="custom-link">Functions</a>
+                                <a href="#" class="custom-link">Quadratics</a>
+                                <a href="#" class="custom-link">Synthetic Division</a>
+                                <a href="#" class="custom-link">Real Numbers</a>
+                                <a href="#" class="custom-link">Complex Numbers</a>
+                                <a href="#" class="custom-link">Absolute Value</a>
+                                <a href="#" class="custom-link">Angles</a>
+                                <a href="#" class="custom-link">Triangles</a>
+                                <a href="#" class="custom-link">Circles</a>
+                                <a href="#" class="custom-link">Trigonometry</a>
+                                <a href="#" class="custom-link">Probability</a>
+                                <a href="#" class="custom-link">Statistics</a>
+                              </div>
+                              <div class="content-list-digital-sat-english">
+                                <h4 class="subtitle-of-content" onclick="satenglishloading()">Digital Sat Reading and Writing</h4>
+                                <a href="#" class="custom-link">Information and Ideas: Command of Evidence</a>
+                                <a href="#" class="custom-link">Information and Ideas: Inferences</a>
+                                <a href="#" class="custom-link">Information and Ideas: Central Ideas and Details</a>
+                                <a href="#" class="custom-link">Craft and Structure: Words in Context</a>
+                                <a href="#" class="custom-link">Craft and Structure: Cross-Text Connections</a>
+                                <a href="#" class="custom-link">Craft and Structure: Text Structure and Purpose</a>
+                                <a href="#" class="custom-link">Expression of Ideas: Transitions</a>
+                                <a href="#" class="custom-link">Expression of Ideas: Rhetorical Synthesis</a>
+                                <a href="#" class="custom-link">Standard English Conventions: Boundaries</a>
+                                <a href="#" class="custom-link">Standard English Conventions: Form, Structure, and Sense</a>
+                              </div>
+                            </div>
+                          </div>
+                        </li>
+                    <li><a href="" class="university" target="_blank">university</a></li>
                 </ul>
             </nav>
         </div>
 
         <div class="main">
-            <h2 class="main-title">[Your Website Name]'s Terms and Conditions</h2>
+            <h2 class="main-title">LearnPortal's Terms and Conditions</h2>
             <div class="tac-1">
                 <p class="tac-1-1">1.</p>
                 <div>
                     <h2 class="tac-1-title">Acceptance of Terms</h2>
-                    <p class="tac-1-paragraph">By accessing or using [Your Website Name] (hereinafter referred to as "the Website"), 
+                    <p class="tac-1-paragraph">By accessing or using learnportal.org, 
                         you agree to comply with and be bound by these Terms and Conditions. If you do not agree to these Terms and 
                         Conditions, please do not use the Website.
                     </p>
@@ -110,7 +160,7 @@ rel="stylesheet">
                 <div>
                     <h2 class="tac-5-title">Intellectual Property</h2>
                     <p class="tac-5-paragraph">All content on the Website, including but not limited to text, graphics, logos, images, 
-                        and software, is the property of [Your Company Name] and is protected by copyright and other intellectual property laws.
+                        and software, is the property of LearnPortal and is protected by copyright and other intellectual property laws.
                     </p>
                 </div>
             </div>
@@ -119,7 +169,7 @@ rel="stylesheet">
                 <div>
                     <h2 class="tac-6-title">User-Generated Content</h2>
                     <p class="tac-6-paragraph">Users may submit or post content on the Website, such as comments, reviews, or contributions. 
-                        By posting content on the Website, you grant [Your Company Name] a non-exclusive, royalty-free, worldwide, perpetual, 
+                        By posting content on the Website, you grant LearnPortal a non-exclusive, royalty-free, worldwide, perpetual, 
                         and irrevocable right to use, reproduce, modify, adapt, publish, distribute, and display such content.
                     </p>
                 </div>
@@ -143,7 +193,7 @@ rel="stylesheet">
                 <p class="tac-8-8">8.</p>
                 <div>
                     <h2 class="tac-8-title">Limitation of Liability</h2>
-                    <p class="tac-8-paragraph">[Your Company Name] is not liable for any direct, indirect, incidental, consequential, 
+                    <p class="tac-8-paragraph">LearnPortal is not liable for any direct, indirect, incidental, consequential, 
                         or special damages arising out of or in any way related to your use of the Website.
                     </p>
                 </div>
@@ -152,7 +202,7 @@ rel="stylesheet">
                 <p class="tac-9-9">9.</p>
                 <div>
                     <h2 class="tac-9-title">Indemnification</h2>
-                    <p class="tac-9-paragraph">You agree to indemnify and hold [Your Company Name] harmless from any claims, losses, 
+                    <p class="tac-9-paragraph">You agree to indemnify and hold LearnPortal harmless from any claims, losses, 
                         liabilities, and expenses (including legal fees) arising out of or related to your use of the Website or your 
                         violation of these Terms and Conditions.
                 </div>
@@ -161,17 +211,22 @@ rel="stylesheet">
                 <p class="tac-10-10">10.</p>
                 <div>
                     <h2 class="tac-10-title">Governing Law</h2>
-                    <p class="tac-10-paragraph">These Terms and Conditions are governed by and construed in accordance with the laws of [Your Jurisdiction].
+                    <p class="tac-10-paragraph">These Terms and Conditions are governed by and construed in accordance with the laws of worldwide.
                     </p>
                 </div>
             </div>
         </div>
 
+        <div id="loading" class="loading-screen" style="display:none;">
+            <!-- Circular loader (hidden initially) -->
+            <div class="loader-div">
+            <div class="loader"></div>
+            </div>
+        </div>
+
         <div class="end-part">
-            <p class="end-part-paragraph">At [Your Organization Name], we're dedicated to [briefly describe your main mission or purpose]. 
-               Our team of passionate individuals strives to [mention what your team works towards]. Explore our website to [briefly highlight 
-               the main offerings or activities visitors can find on your website], and join us on our journey to [mention the broader goal or 
-               impact you aim to achieve].</p>
+            <p class="end-part-paragraph">At LearnPortal, we're dedicated to .... 
+               Our team of passionate individuals strives to .... Explore our website to ..., and join us on our journey to ....</p>
            <div class="end-part-important-links">
                <p class="end-part-important-links-title">Important Links</p>
                <p class="important-links-about"><a href="index.html">About</a></p>
@@ -182,26 +237,67 @@ rel="stylesheet">
            <div class="end-part-contact">
                <p class="end-part-contact-title">Contact Us</p>
                <div class="end-part-contact-facebook-section">
-                   <a class="end-part-contact-facebook" href="https://www.facebook.com/khanacademy" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                   <a class="end-part-contact-facebook" href="" target="_blank"><i class="fa-brands fa-facebook"></i></a>
                    <p class="end-part-contact-facebook-paragraph">Join our Facebook community!</p>
                </div>
                <div class="end-part-contact-twitter-section">
-                   <a class="end-part-contact-twitter" href="https://www.facebook.com/khanacademy" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+                   <a class="end-part-contact-twitter" href="" target="_blank"><i class="fa-brands fa-twitter"></i></a>
                    <p class="end-part-contact-twitter-paragraph">Follow us on Twitter for the latest!</p>
                </div>
                <div class="end-part-contact-youtube-section">    
-                   <a class="end-part-contact-youtube" href="https://www.facebook.com/khanacademy" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+                   <a class="end-part-contact-youtube" href="" target="_blank"><i class="fa-brands fa-youtube"></i></a>
                    <p class="end-part-contact-youtube-paragraph">Subscribe to our YouTube channel for videos!</p>
                </div>
                <div class="end-part-contact-linkedin-section">
-                   <a class="end-part-contact-linkedin" href="https://www.facebook.com/khanacademy" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                   <a class="end-part-contact-linkedin" href="" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
                    <p class="end-part-contact-linkedin-paragraph">Network with us on LinkedIn!</p>
                </div>
            </div>
        </div>
        <div class="all-rights-reserve-section">
-           <img class="last-logo" src="picture/khan-academy-seeklogo.com.svg">
+           <img class="last-logo" src="">
            <p class="all-rights-reserve">Copyright &copy;2023 your company name. All rights reserved.</p>
        </div>
+
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+    // Get the Courses button and the content list
+    var coursesButton = document.getElementById("coursesButton");
+    var contentList = document.getElementById("contentList");
+
+    // Toggle the visibility of the content list on button click
+    coursesButton.addEventListener("click", function(event) {
+        event.stopPropagation(); // Prevent the click event from reaching the document click listener
+        contentList.classList.toggle("show-dropdown");
+        coursesButton.classList.toggle("active");
+    });
+
+    // Close the dropdown when clicking outside the Courses button
+    document.addEventListener("click", function() {
+        contentList.classList.remove("show-dropdown");
+        coursesButton.classList.remove("active");
+    });
+});
+    function satmathloading() {
+    var loadingScreen = document.getElementById('loading');
+    loadingScreen.style.display = 'flex';
+    setTimeout(function() {
+        loadingScreen.style.opacity = '1';
+        setTimeout(function() {
+            window.location.href = 'homemath.html';
+        }, 6000); 
+    }, 10); 
+}
+    function satenglishloading() {
+        var loadingScreen = document.getElementById('loading');
+        loadingScreen.style.display = 'flex';
+        setTimeout(function() {
+            loadingScreen.style.opacity = '1';
+            setTimeout(function() {
+                window.location.href = '/dsat-english-question/home.html';
+            }, 6000); 
+        }, 10); 
+    }
+</script>
 </body>
 </html>

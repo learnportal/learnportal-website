@@ -11,6 +11,7 @@ a{
     background-color: #03396c; /* Change this to your desired color */
     height: 50px;
 }
+
 .title-section{
     display: flex;
     flex-direction: row;
@@ -35,13 +36,18 @@ a{
 
 .logo-name{
     font-family: roboto, sans-serif;
-    font-size: 25px;
+    font-size: 40px;
     margin-left: 10px;
-    color: rgb(1, 31, 75);
+    color: rgb(1, 31, 75, 20%);
     letter-spacing: .5px;
-    font-weight: 700;
+    font-weight: 900;
     text-shadow: 1px;
     cursor: pointer;
+    background-image: url(picture/Palestine_240-animated-flag-gifs.gif);
+    background-size: contain;
+    background-clip: text;
+    -webkit-background-clip: text;
+    background-position: center;
 }
 
 .middle-section{
@@ -128,6 +134,11 @@ a{
     text-transform: uppercase;
     letter-spacing: 1px;
     font-weight: 700;
+    transition-duration: 0.3s;
+}
+
+.about:hover{
+    color: #c6c6c6;
 }
 
 .donate{
@@ -139,6 +150,83 @@ a{
     text-transform: uppercase;
     letter-spacing: 1px;
     font-weight: 700;
+    transition-duration: 0.3s;
+}
+
+.donate:hover{
+    color: #c6c6c6;
+}
+
+.show-dropdown {
+    display: block !important;
+}  
+
+.courses-list-container{
+    position: relative;
+    z-index: 2;
+}
+
+#coursesButton.active{
+    color: #c6c6c6;
+    transition-duration: 0.3s;
+}
+
+.content-list{
+    display: none;
+    font-family: noto sans, "sans-serif";
+    padding-left: 5rem;
+    padding-right: 5rem;
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+    border-radius: 10px;
+    position: absolute;
+    right: -80px;
+    top: 54px;
+    width: 50em;
+    max-height: 500px;
+    overflow-y: auto;
+    background-color: #03396c;
+    color: #6497b1;
+    scroll-behavior: smooth;
+}
+
+.content-list-title-1{
+    font-family: noto sans, "sans-serif";
+    font-size: 20px;
+    margin: 0;
+    padding: 0;
+}
+
+.content-list-digital-sat{
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+    margin: 0;
+}
+
+.custom-link{
+    text-decoration: none;
+    color: rgb(197, 195, 195);
+}
+
+.subtitle-of-content{
+    padding: 0;
+    margin: 0;
+    cursor: pointer;
+}
+
+.content-list-digital-sat-math{
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    padding-bottom: 1rem;
+}
+
+.content-list-digital-sat-english{
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    padding-left: 7rem;
 }
 
 .courses{
@@ -150,6 +238,20 @@ a{
     text-transform: uppercase;
     letter-spacing: 1px;
     font-weight: 700;
+    transition-duration: 0.3s;
+}
+
+.courses:hover{
+    color: #c6c6c6;
+}
+
+.content-list::-webkit-scrollbar-thumb{
+    background-color: #6497b1;
+    border-radius: 10px;
+}
+
+.content-list::-webkit-scrollbar{
+    width: 0.5rem;
 }
 
 .university{
@@ -160,6 +262,11 @@ a{
     text-transform: uppercase;
     letter-spacing: 1px;
     font-weight: 700;
+    transition-duration: 0.3s;
+}
+
+.university:hover{
+    color: #c6c6c6;
 }
 
 body{
@@ -668,4 +775,48 @@ body{
     font-size: 15px;
     color: #e4e4e4;
     margin-left: 10px;
+}
+
+.loading-screen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #7a7a7a55; /* Semi-transparent white */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000; /* Ensure it's above other content */
+    opacity: 0;
+    transition-duration: 0.3s;
+}
+
+.loader-div{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    border-radius: 0.5rem;
+    transform: translate(-50%, -50%);
+    width: 7em;
+    height: 7em;
+    background: #03396c; /* Semi-transparent white */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition-duration: 0.3s;
+}
+
+.loader {
+    border: 3px solid #ffffff; /* Light grey border */
+    border-top: 3px solid #000000; /* Blue border */
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
 }

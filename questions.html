@@ -13,12 +13,12 @@
 
     gtag('config', 'G-NR1DRE9XHG');
     </script>
+    <link rel="stylesheet" href="questions.css">
+    <script src="function.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" 
     integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" 
     crossorigin="anonymous" referrerpolicy="no-referrer"/>
-    <link rel="stylesheet" href="questions.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="function.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.2/dist/confetti.browser.min.js"></script>
     <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
 <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
@@ -92,7 +92,7 @@ rel="stylesheet">
                             <h3>Digital SAT</h3>
                             <div class="content-list-digital-sat">
                               <div class="content-list-digital-sat-math">
-                                <h4 class="subtitle-of-content">Digital Sat Math</h4>
+                                <h4 class="subtitle-of-content" onclick="satmathloading()">Digital Sat Math</h4>
                                 <a href="#" class="custom-link">Exponents and Radicals</a>
                                 <a href="#" class="custom-link">Absolute Values</a>
                                 <a href="#" class="custom-link">Proportion</a>
@@ -120,7 +120,7 @@ rel="stylesheet">
                                 <a href="#" class="custom-link">Statistics</a>
                               </div>
                               <div class="content-list-digital-sat-english">
-                                <h4 class="subtitle-of-content">Digital Sat Reading and Writing</h4>
+                                <h4 class="subtitle-of-content" onclick="satenglishloading()">Digital Sat Reading and Writing</h4>
                                 <a href="#" class="custom-link">Information and Ideas: Command of Evidence</a>
                                 <a href="#" class="custom-link">Information and Ideas: Inferences</a>
                                 <a href="#" class="custom-link">Information and Ideas: Central Ideas and Details</a>
@@ -253,6 +253,26 @@ rel="stylesheet">
             coursesButton.classList.remove("active");
         });
     });
+    function satmathloading() {
+    var loadingScreen = document.getElementById('loading');
+    loadingScreen.style.display = 'flex';
+    setTimeout(function() {
+        loadingScreen.style.opacity = '1';
+        setTimeout(function() {
+            window.location.href = 'homemath.html';
+        }, 6000); 
+    }, 10); 
+}
+function satenglishloading() {
+    var loadingScreen = document.getElementById('loading');
+    loadingScreen.style.display = 'flex';
+    setTimeout(function() {
+        loadingScreen.style.opacity = '1';
+        setTimeout(function() {
+            window.location.href = '/dsat-english-question/home.html';
+        }, 6000); 
+    }, 10); 
+}
 </script>
 </body>
 </html>

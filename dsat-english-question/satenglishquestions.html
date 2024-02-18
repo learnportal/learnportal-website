@@ -61,9 +61,9 @@ rel="stylesheet">
         <div class="title-section">
             <div class="left-section">
                 <a href="index.html">
-                    <img class="logo" src="/picture/khan-academy-seeklogo.com.svg" alt="Your Logo Alt Text">
+                    <img class="logo" src="/picture/khan-academy-seeklogo.com.svg" alt="">
                 </a>
-                <a href="index.html" class="logo-name">Test Takers</a>
+                <a href="index.html" class="logo-name">LearnPortal</a>
             </div>
 
             <div class="middle-section">
@@ -84,7 +84,7 @@ rel="stylesheet">
                             <h3>Digital SAT</h3>
                             <div class="content-list-digital-sat">
                               <div class="content-list-digital-sat-math">
-                                <h4 class="subtitle-of-content">Digital Sat Math</h4>
+                                <h4 class="subtitle-of-content" onclick="satmathloading()">Digital Sat Math</h4>
                                 <a href="#" class="custom-link">Exponents and Radicals</a>
                                 <a href="#" class="custom-link">Absolute Values</a>
                                 <a href="#" class="custom-link">Proportion</a>
@@ -113,7 +113,7 @@ rel="stylesheet">
                                 <a href="#" class="custom-link">Statistics</a>
                               </div>
                               <div class="content-list-digital-sat-english">
-                                <h4 class="subtitle-of-content">Digital Sat Reading and Writing</h4>
+                                <h4 class="subtitle-of-content" onclick="satenglishloading()">Digital Sat Reading and Writing</h4>
                                 <a href="#" class="custom-link">Information and Ideas: Command of Evidence</a>
                                 <a href="#" class="custom-link">Information and Ideas: Inferences</a>
                                 <a href="#" class="custom-link">Information and Ideas: Central Ideas and Details</a>
@@ -133,21 +133,28 @@ rel="stylesheet">
             </nav>
         </div>
 
+        <div id="loading" class="loading-screen" style="display:none;">
+            <!-- Circular loader (hidden initially) -->
+            <div class="loader-div">
+            <div class="loader"></div>
+            </div>
+        </div>
+
         <div class="main-div">
             <div class="topic-list-part">
                     <h2 class="topic-list-part-title">Digital Sat Reading and Writing</h2>
                     <div class="topic-list">
                     <ol class="topic-list-content">
-                        <li class="topic-list-content-exponents" onclick="selectTopic(this)"><span class="topic-count">Topic-1</span><br>Information and Ideas: Command of...</li>
-                        <li class="topic-list-content-2" onclick="selectTopic(this)"><span class="topic-count">Topic-2</span><br>Information and Ideas: Inferences</li>
-                        <li class="topic-list-content-2" onclick="selectTopic(this)"><span class="topic-count">Topic-3</span><br>Information and Ideas: Central Ideas...</li>
-                        <li class="topic-list-content-2" onclick="selectTopic(this)"><span class="topic-count">Topic-4</span><br>Craft and Structure: Words in Context</li>
-                        <li class="topic-list-content-2" onclick="selectTopic(this)"><span class="topic-count">Topic-5</span><br>Craft and Structure: Cross-Text Con...</li>
-                        <li class="topic-list-content-2" onclick="selectTopic(this)"><span class="topic-count">Topic-6</span><br>Craft and Structure: Text Structure a...</li>
-                        <li class="topic-list-content-2" onclick="selectTopic(this)"><span class="topic-count">Topic-7</span><br>Expression of Ideas: Transitions</li>
-                        <li class="topic-list-content-2" onclick="selectTopic(this)"><span class="topic-count">Topic-8</span><br>Expression of Ideas: Rhetorical Synt...</li>
-                        <li class="topic-list-content-2" onclick="selectTopic(this)"><span class="topic-count">Topic-9</span><br>Standard English Conventions: Boun...</li>
-                        <li class="topic-list-content-2" onclick="selectTopic(this)"><span class="topic-count">Topic-10</span><br>Standard English Conventions: Form,...</li>
+                        <li class="topic-list-content-command" onclick="selectTopic(this)"><span class="topic-count">Topic-1</span><br>Information and Ideas: Command of...</li>
+                        <li class="topic-list-content-inference" onclick="selectTopic(this)"><span class="topic-count">Topic-2</span><br>Information and Ideas: Inferences</li>
+                        <li class="topic-list-content-central" onclick="selectTopic(this)"><span class="topic-count">Topic-3</span><br>Information and Ideas: Central Ideas...</li>
+                        <li class="topic-list-content-words-context" onclick="selectTopic(this)"><span class="topic-count">Topic-4</span><br>Craft and Structure: Words in Context</li>
+                        <li class="topic-list-content-cross-text" onclick="selectTopic(this)"><span class="topic-count">Topic-5</span><br>Craft and Structure: Cross-Text Con...</li>
+                        <li class="topic-list-content-text-structure" onclick="selectTopic(this)"><span class="topic-count">Topic-6</span><br>Craft and Structure: Text Structure a...</li>
+                        <li class="topic-list-content-transitions" onclick="selectTopic(this)"><span class="topic-count">Topic-7</span><br>Expression of Ideas: Transitions</li>
+                        <li class="topic-list-content-rhetorical" onclick="selectTopic(this)"><span class="topic-count">Topic-8</span><br>Expression of Ideas: Rhetorical Synt...</li>
+                        <li class="topic-list-content-boundary" onclick="selectTopic(this)"><span class="topic-count">Topic-9</span><br>Standard English Conventions: Boun...</li>
+                        <li class="topic-list-content-form" onclick="selectTopic(this)"><span class="topic-count">Topic-10</span><br>Standard English Conventions: Form,...</li>
                     </div>
             </div>
 
@@ -203,11 +210,14 @@ rel="stylesheet">
                         </div>
                     </div>   
         </div>
-        <div class="last-part-button">
+        <div class="last-part-button" style="display: none;">
             <button class="question-previous" onclick="showQuestion('previous')">Previous</button>
+            <div class="placeholder-previous question-button"></div>
             <input class="question-search-bar" type="text" placeholder="1/50">
             <button class="question-next" onclick="showQuestion('next')">Next</button>
-        </div> 
+            <button class="question-check" type="button" style="display: none;" onclick="checkAnswer()">Check</button>
+            <button class="question-finish" style="display: none;" onclick="loadNextTopic()">Finish</button>
+        </div>
 <script>
     document.addEventListener("DOMContentLoaded", function() {
         // Get the Courses button and the content list
@@ -227,6 +237,26 @@ rel="stylesheet">
             coursesButton.classList.remove("active");
         });
     });
+    function satmathloading() {
+    var loadingScreen = document.getElementById('loading');
+    loadingScreen.style.display = 'flex';
+    setTimeout(function() {
+        loadingScreen.style.opacity = '1';
+        setTimeout(function() {
+            window.location.href = '/homemath.html';
+        }, 6000); 
+    }, 10); 
+}
+function satenglishloading() {
+    var loadingScreen = document.getElementById('loading');
+    loadingScreen.style.display = 'flex';
+    setTimeout(function() {
+        loadingScreen.style.opacity = '1';
+        setTimeout(function() {
+            window.location.href = '/dsat-english-question/home.html';
+        }, 6000); 
+    }, 10); 
+}
 </script>
 </body>
 </html>

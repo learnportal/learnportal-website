@@ -279,10 +279,6 @@ function handleSelection(e) {
     const searchInputTop = document.querySelector(".search-bar");
     const searchButton = document.querySelector(".search-button");
 
-    searchInputTop.addEventListener("focus", function () {
-        searchButton.style.display = "none"; // Hide the search bar icon icon
-    });
-
     searchInputTop.addEventListener("blur", function () {
         if (searchInputTop.value.length === 0) {
             searchButton.style.display = "block"; // Show the icon if the input is empty
