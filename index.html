@@ -46,6 +46,9 @@ wght@0,100;0,200;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,5
 rel="stylesheet">
 </head>
 <body>
+    <div class="splash">
+        <h1 class="fade-in">Learn<span class="splash-2nd-word">Portal</span></h1>
+    </div>
     <div class="background-section"></div>
         <div class="title-section">
             <div class="left-section">
@@ -396,6 +399,10 @@ rel="stylesheet">
 
 <script>
     document.addEventListener("DOMContentLoaded", function() {
+        const splash = document.querySelector('.splash');
+        setTimeout(() => {
+        splash.classList.add('display-none');
+        }, 4000);
         // Get the Courses button and the content list
         var coursesButton = document.getElementById("coursesButton");
         var contentList = document.getElementById("contentList");
