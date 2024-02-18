@@ -226,7 +226,7 @@ a{
     max-height: 500px;
     overflow-y: auto;
     background-color: #03396c;
-    color: #6497b1;
+    color: rgb(197, 195, 195);
     scroll-behavior: smooth;
 }
 
@@ -246,26 +246,32 @@ a{
 
 .custom-link{
     text-decoration: none;
-    color: rgb(197, 195, 195);
+    color: #6497b1;
+    font-size: 16px;
+    cursor: text;
+    padding: 0;
+    margin: 0;
 }
 
 .subtitle-of-content{
     padding: 0;
     margin: 0;
     cursor: pointer;
+    font-size: 17px;
+    color: rgb(197, 195, 195);
 }
 
 .content-list-digital-sat-math{
     display: flex;
     flex-direction: column;
-    gap: 6px;
     padding-bottom: 1rem;
+    gap: 8px;
 }
 
 .content-list-digital-sat-english{
     display: flex;
     flex-direction: column;
-    gap: 6px;
+    gap: 8px;
     padding-left: 7rem;
 }
 
