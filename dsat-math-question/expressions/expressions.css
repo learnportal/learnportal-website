@@ -1,9 +1,8 @@
 .question-part{
-    display: flex;
-    flex: 1;
-    flex-direction: column;
-    padding-left: 45em;
-    margin-right: 23em;
+    display: block;
+    width: 750px;
+    padding-left: 10em;
+    margin-right: 24em;
     padding-bottom: 50px;
     padding-top: 25px;
 }
@@ -11,7 +10,7 @@
 .title{
     text-align: center !important;
     font-family: lato, "noto sans", sans-serif;
-    font-size: 33px;
+    font-size: 35px;
     font-weight: 700;
     line-height: 10px;
 }
@@ -22,6 +21,7 @@
     font-size: 25px;
     font-weight: 600;
     padding-bottom: 30px;
+    letter-spacing: .5px;
 }
 
 .number-bar {
@@ -51,15 +51,16 @@
 
 .question{
     font-family: lato, noto sans, sans-serif;
-    font-size: 20px !important;
-    font-weight: 600 !important;
+    font-size: 21px !important;
+    font-weight: 400 !important;
     line-height: 40px !important;
     color: rgb(33, 36, 44) !important;
     letter-spacing: .5px !important;
     margin: 0 !important;
     padding-top: 25px !important;
     padding-bottom: 15px !important;
-    padding-left: 10px !important;
+    padding-left: 40px !important;
+    padding-right: 40px !important;
 }
 
 .option-1-container{
@@ -68,7 +69,8 @@
     margin: 0;
     padding: 0;
     margin-top: 10px;
-    margin-left: 10px;
+    padding-left: 60px !important;
+    padding-right: 60px !important;
 }
 
 .option-1{
@@ -85,8 +87,9 @@
     color: #011f4b;
     cursor: pointer;
     padding: 0;
-    height: 25px;
-    width: 25px;
+    padding-bottom: 2px;
+    min-height: 25px;
+    min-width: 26px;
 }
 
 .choice-1{
@@ -97,6 +100,7 @@
     padding: 0;
     padding-left: 5px;
     margin: 0;
+    cursor: pointer;
 }
 
 .option-2-container{
@@ -104,7 +108,8 @@
     align-items: center;
     margin-top: 30px;
     margin-bottom: 30px;
-    margin-left: 10px;
+    padding-left: 60px !important;
+    padding-right: 60px !important;
 }
 
 .option-2{
@@ -121,8 +126,9 @@
     color: #011f4b;
     cursor: pointer;
     padding: 0;
-    height: 25px;
-    width: 25px;
+    padding-bottom: 2px;
+    min-height: 25px;
+    min-width: 26px;
 }
 
 .choice-2{
@@ -133,13 +139,15 @@
     padding: 0;
     padding-left: 5px;
     margin: 0;
+    cursor: pointer;
 }
 
 .option-3-container{
     display: flex;
     align-items: center;
     margin-bottom: 30px;
-    margin-left: 10px;
+    padding-left: 60px !important;
+    padding-right: 60px !important;
 }
 
 .option-3{
@@ -156,8 +164,9 @@
     color: #011f4b;
     cursor: pointer;
     padding: 0;
-    height: 25px;
-    width: 25px;
+    padding-bottom: 2px;
+    min-height: 25px;
+    min-width: 26px;
 }
 
 .choice-3{
@@ -168,13 +177,15 @@
     padding: 0;
     padding-left: 5px;
     margin: 0;
+    cursor: pointer;
 }
 
 .option-4-container{
     display: flex;
     align-items: center;
-    margin-bottom: 20px;
-    margin-left: 10px;
+    margin-bottom: 30px;
+    padding-left: 60px !important;
+    padding-right: 60px !important;
 }
 
 .option-4{
@@ -191,8 +202,9 @@
     color: #011f4b;
     cursor: pointer;
     padding: 0;
-    height: 25px;
-    width: 25px;
+    padding-bottom: 2px;
+    min-height: 25px;
+    min-width: 26px;
 }
 
 .choice-4{
@@ -203,13 +215,15 @@
     padding: 0;
     padding-left: 5px;
     margin: 0;
+    cursor: pointer;
 }
 
 .option-5-container{
     display: flex;
     align-items: center;
     margin-bottom: 30px;
-    margin-left: 10px;
+    padding-left: 60px !important;
+    padding-right: 60px !important;
 }
 
 .option-5{
@@ -226,8 +240,9 @@
     color: #011f4b;
     cursor: pointer;
     padding: 0;
-    height: 25px;
-    width: 25px;
+    padding-bottom: 2px;
+    min-height: 25px;
+    min-width: 26px;
 }
 
 .choice-5{
@@ -238,12 +253,14 @@
     padding: 0;
     padding-left: 5px;
     margin: 0;
+    cursor: pointer;
 }
 
 .input-button{
     margin: 0;
     padding: 0;
     padding-bottom: 1.5em;
+    padding-left: 50px;
 }
 
 .input-answer{
@@ -288,4 +305,12 @@
     letter-spacing: .5px;
     border-top: 2px solid #e9eaea;
     padding-left: 15px;
+}
+
+.dot-sequence {
+    list-style-type: inherit;
+    font-family: lato, noto sans, sans-serif;
+    font-size: 20px;
+    letter-spacing: .5px;
+    line-height: 55px;
 }
