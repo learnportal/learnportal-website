@@ -87,8 +87,9 @@
     color: #011f4b;
     cursor: pointer;
     padding: 0;
-    height: 25px;
-    width: 25px;
+    padding-bottom: 2px;
+    min-height: 25px;
+    min-width: 26px;
 }
 
 .choice-1{
@@ -125,8 +126,9 @@
     color: #011f4b;
     cursor: pointer;
     padding: 0;
-    height: 25px;
-    width: 25px;
+    padding-bottom: 2px;
+    min-height: 25px;
+    min-width: 26px;
 }
 
 .choice-2{
@@ -162,8 +164,9 @@
     color: #011f4b;
     cursor: pointer;
     padding: 0;
-    height: 25px;
-    width: 25px;
+    padding-bottom: 2px;
+    min-height: 25px;
+    min-width: 26px;
 }
 
 .choice-3{
@@ -199,8 +202,9 @@
     color: #011f4b;
     cursor: pointer;
     padding: 0;
-    height: 25px;
-    width: 25px;
+    padding-bottom: 2px;
+    min-height: 25px;
+    min-width: 26px;
 }
 
 .choice-4{
@@ -236,8 +240,9 @@
     color: #011f4b;
     cursor: pointer;
     padding: 0;
-    height: 25px;
-    width: 25px;
+    padding-bottom: 2px;
+    min-height: 25px;
+    min-width: 26px;
 }
 
 .choice-5{
