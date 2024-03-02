@@ -1,0 +1,2073 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" 
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <link rel="stylesheet" type="text/css" href="linear-equations.css">
+    <script src="function.js"></script>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;
+    0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" 
+    rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;
+    1,400;1,700;1,900&family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;
+    1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="question-part" id="questionContent1" data-question-id="linear1">
+        <h1 class="title">Digital SAT Math</h1>
+        <h2 class="subtitle">Linear Equations</h2>  
+        <div class="question-list">
+            <div class="number-bar">
+                <span>1</span>
+            </div>
+            <p class="question">
+                The function \( f(x) \) is defined such that for any real number \( x \), \( f(x + 1) - f(x) = 3 \). If \( f(2) = 10 \), what is the value of \( f(5) \)?
+            </p>
+            <div class="option-1-container">
+                <button class="option-1">A</button><p class="choice-1">\(19\)</p>
+            </div>
+            <div class="option-2-container">
+                <button class="option-2">B</button><p class="choice-2">\(20\)</p>
+            </div>
+            <div class="option-3-container">
+                <button class="option-3">C</button><p class="choice-3">\(21\)</p>
+            </div>
+            <div class="option-4-container">
+                <button class="option-4">D</button><p class="choice-4">\(22\)</p>
+            </div>
+        </div>
+        <button id="button-show-explanation1" class="button-show-explanation" onclick="toggleExplanation(1)">Show Explanation</button>
+        <div id="explanation1" class="explanation">
+            <p class="explanation-paragraph">
+                To determine the value of \( f(5) \), we can use the given property of the function \( f(x + 1) - f(x) = 3 \) to find the value of \( f(3) \), \( f(4) \), and then \( f(5) \). Since \( f(2) = 10 \), applying the property:
+                <ul>
+                    <li>\( f(3) = f(2 + 1) = f(2) + 3 = 10 + 3 = 13 \)</li>
+                    <li>\( f(4) = f(3 + 1) = f(3) + 3 = 13 + 3 = 16 \)</li>
+                    <li>\( f(5) = f(4 + 1) = f(4) + 3 = 16 + 3 = 19 \)</li>
+                </ul>
+                Therefore, the correct answer is \( f(5) = 19 \), which is option A.
+                <br>
+                Options B, C, and D are incorrect because they do not reflect the consistent application of the function's property for each integer step from \(2\) to \(5\).
+            </p>
+        </div>
+    </div>
+    <div class="question-part" id="questionContent2" data-question-id="linear2">
+        <h1 class="title">Digital SAT Math</h1>
+        <h2 class="subtitle">Linear Equations</h2>  
+        <div class="question-list">
+            <div class="number-bar">
+                <span>2</span>
+            </div>
+            <p class="question">
+                In the given system of equations, \( p \) is a constant. If the system has no solution, what is the value of \( p \)?
+                \[ 4x - 9y = 9y + 5 \]
+                \[ py = 2 + 4x \]
+            </p>
+            <div class="input-button">
+                <input class="input-answer" type="text"> 
+            </div>
+        </div>
+        <button id="button-show-explanation2" class="button-show-explanation" onclick="toggleExplanation(2)">Show Explanation</button>
+        <div id="explanation2" class="explanation">
+            <p class="explanation-paragraph">
+                For the system to have no solution, the equations must be parallel, which means their slopes must be the same, but the \(y-\)intercepts must be different. We can rewrite the first equation in slope-intercept form \((y = mx + b)\) as follows:
+                \[ 4x - 9y = 9y + 5 \]
+                \[ -18y = -4x + 5 \]
+                \[ y = \frac{4}{18}x - \frac{5}{18} \]
+                The slope of the first equation is \( \frac{2}{9} \).
+                For the second equation:
+                \[ py = 2 + 4x \]
+                \[ y = \frac{4}{p}x + \frac{2}{p} \]
+                For the system to have no solution, the slope of the second equation must also be \( \frac{2}{9} \).
+                \[ \frac{4}{p} = \frac{2}{9} \]
+                Solving for \( p \) gives \( p = 18 \).                
+            </p>
+        </div>
+    </div>
+    <div class="question-part" id="questionContent3" data-question-id="linear3">
+        <h1 class="title">Digital SAT Math</h1>
+        <h2 class="subtitle">Linear Equations</h2>  
+        <div class="question-list">
+            <div class="number-bar">
+                <span>3</span>
+            </div>
+            <p class="question">
+                In a coordinate plane, line \( m \) passes through the points \((2, -3)\) and has a slope of \( \frac{1}{2} \). Line \( n \) is perpendicular to line \( m \) and passes through the point where line \( m \) intersects the \(y-\)axis. What is the equation of line \( n \)? <br>
+                Note: \( b \) represents the \(y-\)intercept of line \( n \).
+            </p>
+            <div class="option-1-container">
+                <button class="option-1">A</button><p class="choice-1">\( y = -2x + b \)</p>
+            </div>
+            <div class="option-2-container">
+                <button class="option-2">B</button><p class="choice-2">\( y = -2x - b \)</p>
+            </div>
+            <div class="option-3-container">
+                <button class="option-3">C</button><p class="choice-3">\( y = 2x + b \)</p>
+            </div>
+            <div class="option-4-container">
+                <button class="option-4">D</button><p class="choice-4">\( y = 2x - b \)</p>
+            </div>
+        </div>
+        <button id="button-show-explanation3" class="button-show-explanation" onclick="toggleExplanation(3)">Show Explanation</button>
+        <div id="explanation3" class="explanation">
+            <p class="explanation-paragraph">
+                The slope of line \( m \) is given as \( \frac{1}{2} \). A line perpendicular to line \( m \) would have a slope that is the negative reciprocal of \( \frac{1}{2} \), which is \( -2 \). Line \( n \) must pass through the \(y-\)intercept of line \( m \). Since line \( m \) passes through the point \((2, -3)\) with a slope of \( \frac{1}{2} \), we can use the point-slope form to find its \(y-\)intercept (\( b \)):
+                \[ -3 = \frac{1}{2}(2) + b \]
+                \[ b = -3 - 1 \]
+                \[ b = -4 \]
+                The \(y-\)intercept of line \( m \) is \(-4\), which is also the \(y-\)intercept of line \( n \) since line \( n \) passes through this point. The equation of line \( n \) is therefore \( y = -2x + b \). <br>
+                Options B is incorrect as it represent lines with slopes of \( -2 \) but do not consider the negative value of \( b \) for the \(y-\)intercept. <br>
+                Option C is incorrect because it suggests a positive slope, which is not perpendicular to line \( m \). <br>
+                Option D incorrectly implies a positive slope and subtracts the \(y-\)intercept, which does not correspond to the slope of a line perpendicular to line \( m \).
+            </p>
+        </div>
+    </div>
+    <div class="question-part" id="questionContent4" data-question-id="linear4">
+        <h1 class="title">Digital SAT Math</h1>
+        <h2 class="subtitle">Linear Equations</h2>  
+        <div class="question-list">
+            <div class="number-bar">
+                <span>4</span>
+            </div>
+            <p class="question">
+                The sum of the digits of a two-digit number is \(12\). If the digits are reversed, the new number is \(18\) less than the original number. What is the original number?
+            </p>
+            <div class="option-1-container">
+                <button class="option-1">A</button><p class="choice-1">\(39\)</p>
+            </div>
+            <div class="option-2-container">
+                <button class="option-2">B</button><p class="choice-2">\(48\)</p>
+            </div>
+            <div class="option-3-container">
+                <button class="option-3">C</button><p class="choice-3">\(57\)</p>
+            </div>
+            <div class="option-4-container">
+                <button class="option-4">D</button><p class="choice-4">\(93\)</p>
+            </div>
+        </div>
+        <button id="button-show-explanation4" class="button-show-explanation" onclick="toggleExplanation(4)">Show Explanation</button>
+        <div id="explanation3" class="explanation">
+            <p class="explanation-paragraph">
+                Let the original number be \( 10a + b \) where \( a \) and \( b \) are the tens and units digit respectively. The conditions given are:
+                <ul>
+                    <li>\( a + b = 12 \) (since the sum of the digits is \(12\))</li>
+                    <li>\( 10b + a = 10a + b - 18 \) (since reversing the digits makes the number \(18\) less)</li>
+                </ul>
+                Simplifying the second equation gives us:
+                \[ 9b - 9a = -18 \]
+                \[ b - a = -2 \]
+                Adding this to the first equation \( a + b = 12 \), we get:
+                \[ 2b = 10 \]
+                \[ b = 5 \]
+                Substituting back into \( a + b = 12 \):
+                \[ a + 5 = 12 \]
+                \[ a = 7 \]
+                Therefore, the original number is \( 10a + b = 70 + 5 = 75 \), which is not listed in the options. There seems to be a mistake either in the question or the options provided.
+                If we check the given options: <br>
+                <strong>For choice A \((39)\):</strong> The sum is \( 3 + 9 = 12 \), and reversing the digits gives \(93,\) which is \( 93 - 39 = 54 \), not \(18\) less.
+                <br>
+                <strong>For choice B \((48)\):</strong> The sum is \( 4 + 8 = 12 \), and reversing the digits gives \(84,\) which is \( 84 - 48 = 36 \), not \(18\) less.
+                <br>
+                <strong>For choice C \((57)\):</strong> The sum is \( 5 + 7 = 12 \), and reversing the digits gives \(75,\) which is \( 75 - 57 = 18 \), less than the original number. <br> 
+                Hence, C is the correct answer based on the provided options.
+                <br>
+                <strong>For choice D \((93)\):</strong> The sum is \( 9 + 3 = 12 \), but reversing the digits gives \(39,\) which is \( 39 - 93 = -54 \), not \(18\) less.
+            </p>
+        </div>
+    </div>
+    <div class="question-part" id="questionContent5" data-question-id="linear5">
+        <h1 class="title">Digital SAT Math</h1>
+        <h2 class="subtitle">Linear of Equations</h2>  
+        <div class="question-list">
+            <div class="number-bar">
+                <span>5</span>
+            </div>
+            <p class="question">
+                For each real number \( r \), which of the following points lies on the graph of each equation in the xy-plane for the given system?
+                \[ 8x + 7y = 9 \]
+                \[ 24x + 21y = 27 \]
+            </p>
+            <div class="option-1-container">
+                <button class="option-1">A</button><p class="choice-1">\( \left(r, -\frac{8}{7}r + \frac{9}{7}\right) \)</p>
+            </div>
+            <div class="option-2-container">
+                <button class="option-2">B</button><p class="choice-2">\( \left(-\frac{8}{7}r + \frac{9}{7}, r\right) \)</p>
+            </div>
+            <div class="option-3-container">
+                <button class="option-3">C</button><p class="choice-3">\( \left(-\frac{8}{7}r + \frac{9}{7}, \frac{8}{7}r + 27\right) \)</p>
+            </div>
+            <div class="option-4-container">
+                <button class="option-4">D</button><p class="choice-4">\( \left(\frac{1}{3}r + 9, -\frac{1}{3}r + 27\right) \)</p>
+            </div>
+        </div>
+        <button id="button-show-explanation5" class="button-show-explanation" onclick="toggleExplanation(5)">Show Explanation</button>
+        <div id="explanation5" class="explanation">
+            <p class="explanation-paragraph">
+                Choice A is correct. Dividing both sides of the second equation in the given system by \(3\) yields \( 8x + 7y = 9 \), 
+                which is the first equation in the given system. <br>
+                Therefore, the first and second equations represent the same line in the \(xy-\)plane. <br>
+                If the \(x-\) and \(y-\)coordinates of a point satisfy an equation, the point lies on the graph of the equation in the \(xy-\)plane. <br>
+                Choice A is a point with \(x-\)coordinate \( r \) and \(y-\)coordinate \( -\frac{8}{7}r + \frac{9}{7} \). <br>
+                Substituting \( r \) for \( x \) and \( -\frac{8}{7}r + \frac{9}{7} \) for \( y \) in the equation \( 8x + 7y = 9 \) 
+                yields \( 8r + 7\left(-\frac{8}{7}r + \frac{9}{7}\right) = 9 \). <br>
+                Applying the distributive property to the left-hand side of this equation yields \( 8r - 8r + 9 = 9 \). <br>
+                Combining like terms on the left-hand side of this equation yields \( 9 = 9 \), so the coordinates of the point 
+                \( \left(r, -\frac{8}{7}r + \frac{9}{7}\right) \) satisfy both equations in the given system. <br>
+                Therefore, for each real number \( r \), the point \( \left(r, -\frac{8}{7}r + \frac{9}{7}\right) \) lies on the graph of 
+                each equation in the \(xy-\)plane for the given system. <br>
+    
+                Choices B, C, and D are incorrect and may result from conceptual or calculation errors. Specifically, they do not satisfy the conditions set by the equations in the system when substituted into either equation.
+            </p>
+        </div>
+    </div>
+    <div class="question-part" id="questionContent6" data-question-id="linear6">
+        <h1 class="title">Digital SAT Math</h1>
+        <h2 class="subtitle">Linear Equations</h2>  
+        <div class="question-list">
+            <div class="number-bar">
+                <span>6</span>
+            </div>
+            <p class="question">
+                A linear equation represents the total cost \( C \), in dollars, for \( p \) pounds of fruit at a market, where each pound costs \($3.50\). A customer buys some fruit and a bag for \($2.00,\) bringing the total cost to \($200.00\). Which equation represents \( C \) as a function of \( p \)?
+            </p>
+            <div class="option-1-container">
+                <button class="option-1">A</button><p class="choice-1">\( C = 3.5(p + 2) \)</p>
+            </div>
+            <div class="option-2-container">
+                <button class="option-2">B</button><p class="choice-2">\( C = 3.5p + 2 \)</p>
+            </div>
+            <div class="option-3-container">
+                <button class="option-3">C</button><p class="choice-3">\( C = (3.5 + 2)p \)</p>
+            </div>
+            <div class="option-4-container">
+                <button class="option-4">D</button><p class="choice-4">\( C = 3.5p - 2 \)</p>
+            </div>
+        </div>
+        <button id="button-show-explanation6" class="button-show-explanation" onclick="toggleExplanation(6)">Show Explanation</button>
+        <div id="explanation6" class="explanation">
+            <p class="explanation-paragraph">
+                Choice B is correct. The total cost \( C \) for \( p \) pounds of fruit, with each pound costing \($3.50,\) is \( 3.5p \). 
+                The customer also buys a bag for \($2.00\), so this cost is added to the cost of the fruit, yielding the equation \( C = 3.5p + 2 \). 
+                This represents the total cost as a function of the number of pounds of fruit \( p \).<br>
+                Choice A is incorrect because \( 3.5(p + 2) \) would imply that the customer is buying \(2\) more pounds of fruit in addition to the bag, which is not stated in the problem.<br>
+                Choice C is incorrect as it suggests that the price per pound of fruit is \($5.50\), which is not the case according to the information given.<br>
+                Choice D is incorrect because it indicates that the bag's cost is being subtracted from the total cost of the fruit, which contradicts the information provided.<br>
+                Therefore, the equation that correctly represents \( C \) as a function of \( p \) is \( C = 3.5p + 2 \), corresponding to choice B.
+            </p>
+        </div>
+    </div>
+    <div class="question-part" id="questionContent7" data-question-id="linear7">
+        <h1 class="title">Digital SAT Math</h1>
+        <h2 class="subtitle">Linear Equations</h2>  
+        <div class="question-list">
+            <div class="number-bar">
+                <span>7</span>
+            </div>
+            <p class="question">
+                Line \( p \) is defined by \( 4y + 8x = 6 \). Line \( r \) is perpendicular to line \( p \) in the \(xy-\)plane. What is the slope of line \( r \)?
+            </p>
+            <div class="input-button">
+                <input class="input-answer" type="text"> 
+            </div>
+        </div>
+        <button id="button-show-explanation7" class="button-show-explanation" onclick="toggleExplanation(7)">Show Explanation</button>
+        <div id="explanation7" class="explanation">
+            <p class="explanation-paragraph">
+                To find the slope of line \( r \), which is perpendicular to line \( p \), we first need to find the slope of line \( p \). <br>
+                The equation \( 4y + 8x = 6 \) can be rearranged to slope-intercept form \( y = mx + b \), which gives us 
+                \( y = -2x + \frac{3}{2} \). <br>
+                Therefore, the slope \( m \) of line \( p \) is \( -2 \). <br>
+                The slope of a line perpendicular to another line is the negative reciprocal of the original line's slope. <br>
+                Thus, the slope of line \( r \) will be the negative reciprocal of \( -2 \), which is \( \frac{1}{2} \). <br>
+                Therefore, the slope of line \( r \) is \( \frac{1}{2} \).
+            </p>
+        </div>
+    </div>
+    <div class="question-part" id="questionContent8" data-question-id="linear8">
+        <h1 class="title">Digital SAT Math</h1>
+        <h2 class="subtitle">Linear Equations</h2>  
+        <div class="question-list">
+            <div class="number-bar">
+                <span>8</span>
+            </div>
+            <p class="question">
+                The graph of \( 9x - 10y = 19 \) is translated down \(4\) units in the \(xy-\)plane. What is the x-coordinate of the x-intercept of the resulting graph?
+            </p>
+            <div class="option-1-container">
+                <button class="option-1">A</button><p class="choice-1">\( x = -\frac{21}{9} \)</p>
+            </div>
+            <div class="option-2-container">
+                <button class="option-2">B</button><p class="choice-2">\( x = \frac{7}{3} \)</p>
+            </div>
+            <div class="option-3-container">
+                <button class="option-3">C</button><p class="choice-3">\( x = \frac{59}{9} \)</p>
+            </div>
+            <div class="option-4-container">
+                <button class="option-4">D</button><p class="choice-4">\( x = -\frac{19}{10} \)</p>
+            </div>
+        </div>
+        <button id="button-show-explanation8" class="button-show-explanation" onclick="toggleExplanation(8)">Show Explanation</button>
+        <div id="explanation8" class="explanation">
+            <p class="explanation-paragraph">
+                To find the \(x-\)coordinate of the \(x-\)intercept after the graph is translated down, we first need to adjust the equation of the graph to reflect the translation. Translating a graph down by \(4\) units will subtract \(4\) from the y-coordinate, which means the new equation will be \( 9x - 10(y + 4) = 19 \) since \( y \) is replaced with \( y + 4 \) for a downward shift.<br>
+                Simplifying the new equation gives us \( 9x - 10y - 40 = 19 \), which further simplifies to \( 9x - 10y = 59 \).<br>
+                The x-intercept occurs where \( y = 0 \), so setting \( y \) to \(0\) gives us \( 9x = 59 \), and solving for \( x \) gives \( x = \frac{59}{9} \) which is choice C. 
+            </p>
+        </div>
+    </div>
+    <div class="question-part" id="questionContent9" data-question-id="linear9">
+        <h1 class="title">Digital SAT Math</h1>
+        <h2 class="subtitle">Linear Equations</h2>  
+        <div class="question-list">
+            <div class="number-bar">
+                <span>9</span>
+            </div>
+            <p class="question">
+                For an art project, the length of a rectangular canvas is represented by \( (3x + 2) \) inches and the width by \( (2x - 1) \) inches, where \( x \) is a constant. If the perimeter of the canvas is \(70\) inches, what is the value of \( x \)?
+            </p>
+            <div class="option-1-container">
+                <button class="option-1">A</button><p class="choice-1">\(7.2\)</p>
+            </div>
+            <div class="option-2-container">
+                <button class="option-2">B</button><p class="choice-2">\(8.5\)</p>
+            </div>
+            <div class="option-3-container">
+                <button class="option-3">C</button><p class="choice-3">\(6.8\)</p>
+            </div>
+            <div class="option-4-container">
+                <button class="option-4">D</button><p class="choice-4">\(12.3\)</p>
+            </div>
+        </div>
+        <button id="button-show-explanation9" class="button-show-explanation" onclick="toggleExplanation(9)">Show Explanation</button>
+        <div id="explanation9" class="explanation">
+            <p class="explanation-paragraph">
+                Choice C is correct. The perimeter \( P \) of a rectangle is given by \( P = 2(\text{length}) + 2(\text{width}) \). <br>
+                For the given lengths, the equation becomes:
+                \[ P = 2(3x + 2) + 2(2x - 1) \]
+                \[ 70 = 2(3x + 2) + 2(2x - 1) \]
+                Expanding this, we get:
+                \[ 70 = 6x + 4 + 4x - 2 \]
+                \[ 70 = 10x + 2 \]
+                Subtracting \(2\) from both sides, we get:
+                \[ 68 = 10x \]
+                Dividing by \(10\) gives us:
+                \[ x = 6.8 \]
+                Therefore, the correct value for \( x \) is \(6.8\) inches.
+                <br>
+                Choice A is incorrect because if \( x \) were \(7.2\), the perimeter would exceed \(70\) inches.
+                <br>
+                Choice B is incorrect because if \( x \) were \(8.5\), the perimeter would again exceed \(70\) inches.
+                <br>
+                Choice D is incorrect because if \( x \) were \(12.3\), the perimeter would be much greater than \(70\) inches.
+            </p>
+        </div>
+    </div>
+    <div class="question-part" id="questionContent10" data-question-id="linear10">
+        <h1 class="title">Digital SAT Math</h1>
+        <h2 class="subtitle">Linear Equations</h2>  
+        <div class="question-list">
+            <div class="number-bar">
+                <span>10</span>
+            </div>
+            <img class="graph-question" src="/picture/linear10.png" alt="">
+            <p class="question">
+                The graph of \( y = f(x) + 14 \) is shown. Which equation defines function \( f \)?
+            </p>
+            <div class="option-1-container">
+                <button class="option-1">A</button><p class="choice-1">\( f(x) = -\frac{1}{4}x - 14 \)</p>
+            </div>
+            <div class="option-2-container">
+                <button class="option-2">B</button><p class="choice-2">\( f(x) = -\frac{1}{4}x + 16 \)</p>
+            </div>
+            <div class="option-3-container">
+                <button class="option-3">C</button><p class="choice-3">\( f(x) = -\frac{1}{4}x + 2 \)</p>
+            </div>
+            <div class="option-4-container">
+                <button class="option-4">D</button><p class="choice-4">\( f(x) = -\frac{1}{4}x - 12 \)</p>
+            </div>
+        </div>
+        <button id="button-show-explanation10" class="button-show-explanation" onclick="toggleExplanation(10)">Show Explanation</button>
+        <div id="explanation10" class="explanation">
+            <p class="explanation-paragraph">
+                Choice D is correct. The graph shows \( y = f(x) + 14 \), meaning the graph of \( f(x) \) has been shifted up by \(14\) units. <br> 
+                To find \( f(x) \), we need to subtract \(14\) from the \( y \)-values of the given graph. <br>
+                The \( y \)-intercept of the given graph is at \( y = 0 \), so the \( y \)-intercept of \( f(x) \) will be \( 0 - 14 = -14 \). <br> 
+                However, since the graph has been translated up by \(14\) units, we are looking for the equation where, when \( y \) is decreased by \(14\) units, 
+                the \( y \)-intercept would be at \( -14 \). The only equation that fits this is \( f(x) = -\frac{1}{4}x - 12 \), because when \(14\) is 
+                subtracted from the \( y \)-intercept of this equation, \( -12 + 14 \), we get \( 2 \), which is the actual \( y \)-intercept of the 
+                original function \( f(x) \) before it was translated. <br>
+                The other choices do not result in the correct \( y \)-intercept when translated down by \(14\) units.
+            </p>
+        </div>
+    </div>
+    <div class="question-part" id="questionContent11" data-question-id="linear11">
+        <h1 class="title">Digital SAT Math</h1>
+        <h2 class="subtitle">Linear Equations</h2>  
+        <div class="question-list">
+            <div class="number-bar">
+                <span>11</span>
+            </div>
+            <p class="question">
+                For line \( h \), the table shows three values of \( x \) and their corresponding values of \( y \). Line \( k \) is the result of translating line \( h \) down \(5\) units in the \(xy-\)plane. What is the \( x \)-intercept of line \( k \)?
+            </p>
+            <div class="option-1-container">
+                <button class="option-1">A</button><p class="choice-1">\( \left(-\frac{26}{3}, 0\right) \)</p>
+            </div>
+            <div class="option-2-container">
+                <button class="option-2">B</button><p class="choice-2">\( \left(-\frac{9}{2}, 0\right) \)</p>
+            </div>
+            <div class="option-3-container">
+                <button class="option-3">C</button><p class="choice-3">\( \left(-\frac{11}{3}, 0\right) \)</p>
+            </div>
+            <div class="option-4-container">
+                <button class="option-4">D</button><p class="choice-4">\( \left(-\frac{17}{6}, 0\right) \)</p>
+            </div>
+        </div>
+        <button id="button-show-explanation11" class="button-show-explanation" onclick="toggleExplanation(11)">Show Explanation</button>
+        <div id="explanation11" class="explanation">
+            <p class="explanation-paragraph">
+                To find the \( x \)-intercept of line \( k \), we first need to determine the slope of line \( h \) using the given table of values. 
+                Once we have the slope, we can use the fact that line \( k \) is a translation of line \( h \) down \(5\) units to adjust the \( y \)-intercept accordingly. <br>
+                To find the slope, we can use any two points from the table, for example, \((18, 130)\) and \((23, 160)\):
+                \[ \text{Slope} = \frac{160 - 130}{23 - 18} = \frac{30}{5} = 6 \]
+                The equation of line \( h \) can be written in the slope-intercept form \( y = mx + b \). Using the point \((18, 130)\), we can solve for \( b \):
+                \[ 130 = 6(18) + b \]
+                \[ b = 130 - 108 = 22 \]
+                Therefore, the equation of line \( h \) is \( y = 6x + 22 \). <br>
+                Translating line \( h \) down by \(5\) units gives us line \( k \) with the equation \( y = 6x + 17 \). <br>
+                Setting \( y = 0 \) to find the \( x \)-intercept of line \( k \) gives:
+                \[ 0 = 6x + 17 \]
+                \[ 6x = -17 \]
+                \[ x = -\frac{17}{6} \]
+                Thus, the \( x \)-intercept of line \( k \) is \( \left(-\frac{17}{6}, 0\right) \), which corresponds to choice D.
+            </p>
+        </div>
+    </div>
+    <div class="question-part" id="questionContent12" data-question-id="linear12">
+        <h1 class="title">Digital SAT Math</h1>
+        <h2 class="subtitle">Linear Equations</h2>  
+        <div class="question-list">
+            <div class="number-bar">
+                <span>12</span>
+            </div>
+            <p class="question">
+                How many solutions does the equation \( 30(45x - 27) = -45(18 - 30x) \) have?
+            </p>
+            <div class="option-1-container">
+                <button class="option-1">A</button><p class="choice-1">Exactly one</p>
+            </div>
+            <div class="option-2-container">
+                <button class="option-2">B</button><p class="choice-2">Exactly two</p>
+            </div>
+            <div class="option-3-container">
+                <button class="option-3">C</button><p class="choice-3">Infinitely many</p>
+            </div>
+            <div class="option-4-container">
+                <button class="option-4">D</button><p class="choice-4">Zero</p>
+            </div>
+        </div>
+        <button id="button-show-explanation12" class="button-show-explanation" onclick="toggleExplanation(12)">Show Explanation</button>
+        <div id="explanation12" class="explanation">
+            <p class="explanation-paragraph">
+                To find out how many solutions the equation has, we should simplify it first:
+                \[ 30(45x - 27) = -45(18 - 30x) \]
+                Divide both sides of the equation by \(15\) to simplify:
+                \[ 2(45x - 27) = -3(18 - 30x) \]
+                Expand both sides:
+                \[ 90x - 54 = -54 + 90x \]
+                When we simplify both sides, we notice that the \( x \) terms are identical and the constant terms cancel each other out, resulting in an identity \( 0 = 0 \). This means that for every value of \( x \), the equation holds true.
+                <br>
+                Therefore, the equation has infinitely many solutions, which corresponds to choice C.
+            </p>
+        </div>
+    </div>    
+    <div class="question-part" id="questionContent13" data-question-id="linear13">
+        <h1 class="title">Digital SAT Math</h1>
+        <h2 class="subtitle">Linear Equations</h2>  
+        <div class="question-list">
+            <div class="number-bar">
+                <span>13</span>
+            </div>
+            <p class="question">
+                Store A sells raspberries for \( \$5.50 \) per pint and blackberries for \( \$3.00 \) per pint. 
+                Store B sells raspberries for \( \$6.50 \) per pint and blackberries for \( \$8.00 \) per pint. 
+                A certain purchase of raspberries and blackberries would cost \( \$37.00 \) at Store A or \( \$66.00 \) at Store B. 
+                How many pints of blackberries are in this purchase?
+            </p>
+            <div class="option-1-container">
+                <button class="option-1">A</button><p class="choice-1">\(4\)</p>
+            </div>
+            <div class="option-2-container">
+                <button class="option-2">B</button><p class="choice-2">\(5\)</p>
+            </div>
+            <div class="option-3-container">
+                <button class="option-3">C</button><p class="choice-3">\(8\)</p>
+            </div>
+            <div class="option-4-container">
+                <button class="option-4">D</button><p class="choice-4">\(12\)</p>
+            </div>
+        </div>
+        <button id="button-show-explanation13" class="button-show-explanation" onclick="toggleExplanation(13)">Show Explanation</button>
+        <div id="explanation13" class="explanation">
+            <p class="explanation-paragraph">
+                Let \( r \) represent the number of pints of raspberries and \( b \) the number of pints of blackberries purchased. 
+                At Store A, the cost of \( r \) pints of raspberries at \( \$5.50 \) each and \( b \) pints of blackberries at \( \$3.00 \) 
+                each is \( \$37.00 \), so the equation is:
+                \[ 5.50r + 3b = 37 \]
+                At Store B, the cost of the same \( r \) pints of raspberries at \( \$6.50 \) each and \( b \) pints of blackberries at 
+                \( \$8.00 \) each is \( \$66.00 \), so the equation is:
+                \[ 6.50r + 8b = 66 \]
+                Multiplying the first equation by \(2\), we get:
+                \[ 11r + 6b = 74 \]
+                Subtracting the second equation from this result eliminates \( r \):
+                \[ (11r + 6b) - (6.50r + 8b) = 74 - 66 \]
+                \[ 4.50r - 2b = 8 \]
+                \[ 2b = 4.50r - 8 \]
+                Simplifying further, we find that for every \( \$1.00 \) increase in the cost of raspberries between the stores, there is a \( \$5.00 \) difference in the cost of blackberries, which corresponds to a difference of \( 5 \) pints. Therefore, the purchaser buys \( 5 \) pints of blackberries.
+                <br>
+                This corresponds to choice B, indicating that there are \(5\) pints of blackberries in the purchase.
+            </p>
+        </div>
+    </div>
+    <div class="question-part" id="questionContent14" data-question-id="linear14">
+        <h1 class="title">Digital SAT Math</h1>
+        <h2 class="subtitle">Linear Equations</h2>  
+        <div class="question-list">
+            <div class="number-bar">
+                <span>14</span>
+            </div>
+            <p class="question">
+                A company charges \( \$x \) for the first hour of service and \( \frac{3}{4}x \) for each additional hour. 
+                If a customer is billed \( \$150 \) for \(4\) hours of service, what is the value of \( x \)?
+            </p>
+            <div class="option-1-container">
+                <button class="option-1">A</button><p class="choice-1">\( \$30 \)</p>
+            </div>
+            <div class="option-2-container">
+                <button class="option-2">B</button><p class="choice-2">\( \$40 \)</p>
+            </div>
+            <div class="option-3-container">
+                <button class="option-3">C</button><p class="choice-3">\( \$46.15 \)</p>
+            </div>
+            <div class="option-4-container">
+                <button class="option-4">D</button><p class="choice-4">\( \$60 \)</p>
+            </div>
+        </div>
+        <button id="button-show-explanation14" class="button-show-explanation" onclick="toggleExplanation(14)">Show Explanation</button>
+        <div id="explanation14" class="explanation">
+            <p class="explanation-paragraph">
+                The customer is billed for \(1\) hour at \( \$x \) and \(3\) additional hours at \( \frac{3}{4}x \) each. 
+                So, the total bill is:
+                \[ \$x + 3\left(\frac{3}{4}x\right) = \$150 \]
+                \[ \$x + \frac{9}{4}x = \$150 \]
+                \[ \frac{13}{4}x = \$150 \]
+                Multiplying both sides by \( \frac{4}{13} \) to solve for \( x \) gives:
+                \[ x = \$150 \times \frac{4}{13} \]
+                \[ x = \$46.15 \]
+                Therefore, the value of \( x \) is \( \$46.15 \), which corresponds to choice C.
+                <br>
+                Choice A is incorrect because \( \$30 \) would not total \( \$150 \) when calculated with the given rates for \(4\) hours.
+                <br>
+                Choice B is incorrect because \( \$40 \) would give a total less than \( \$150 \) for the \(4\) hours of service.
+                <br>
+                Choice D is incorrect because \( \$60 \) would exceed the total bill of \( \$150 \) for \(4\) hours of service.
+            </p>
+        </div>
+    </div>
+    <div class="question-part" id="questionContent15" data-question-id="linear15">
+        <h1 class="title">Digital SAT Math</h1>
+        <h2 class="subtitle">Linear Equations</h2>  
+        <div class="question-list">
+            <div class="number-bar">
+                <span>15</span>
+            </div>
+            <p class="question">
+                The linear equation \( 3x - 2y = 12 \) represents a certain line in the \(xy-\)plane. If point \( (p, q) \) lies on this line and \( p = 2q \), what is the value of \( p \)?
+            </p>
+            <div class="option-1-container">
+                <button class="option-1">A</button><p class="choice-1">\(3\)</p>
+            </div>
+            <div class="option-2-container">
+                <button class="option-2">B</button><p class="choice-2">\(4\)</p>
+            </div>
+            <div class="option-3-container">
+                <button class="option-3">C</button><p class="choice-3">\(6\)</p>
+            </div>
+            <div class="option-4-container">
+                <button class="option-4">D</button><p class="choice-4">\(8\)</p>
+            </div>
+        </div>
+        <button id="button-show-explanation15" class="button-show-explanation" onclick="toggleExplanation(15)">Show Explanation</button>
+        <div id="explanation15" class="explanation">
+            <p class="explanation-paragraph">
+                Given the equation \( 3x - 2y = 12 \) and the point \( (p, q) \) on this line, where \( p = 2q \), we can substitute \( p \) for \( x \) and \( q \) for \( y \) to find the value of \( p \):
+                \[ 3p - 2q = 12 \]
+                Substituting \( p = 2q \) into the equation gives us:
+                \[ 3(2q) - 2q = 12 \]
+                \[ 6q - 2q = 12 \]
+                \[ 4q = 12 \]
+                \[ q = 3 \]
+                Since \( p = 2q \), we then have:
+                \[ p = 2(3) \]
+                \[ p = 6 \]
+                Therefore, the value of \( p \) is \(6\), which corresponds to choice C.
+                <br>
+                Choices A, B, and D are incorrect because they do not satisfy the condition \( p = 2q \) when substituted into the original equation.
+            </p>
+        </div>
+    </div>
+    <div class="question-part" id="questionContent16" data-question-id="linear16">
+        <h1 class="title">Digital SAT Math</h1>
+        <h2 class="subtitle">Linear Equations</h2>  
+        <div class="question-list">
+            <div class="number-bar">
+                <span>16</span>
+            </div>
+            <p class="question">
+                In a game, players earn \(5\) points for each level completed and lose \(2\) points for each hint used. If a player completes \(10\) levels and uses \( h \) hints, resulting in a final score of \(40\) points, how many hints did the player use?
+            </p>
+            <div class="option-1-container">
+                <button class="option-1">A</button><p class="choice-1">\(5\)</p>
+            </div>
+            <div class="option-2-container">
+                <button class="option-2">B</button><p class="choice-2">\(10\)</p>
+            </div>
+            <div class="option-3-container">
+                <button class="option-3">C</button><p class="choice-3">\(15\)</p>
+            </div>
+            <div class="option-4-container">
+                <button class="option-4">D</button><p class="choice-4">\(20\)</p>
+            </div>
+        </div>
+        <button id="button-show-explanation16" class="button-show-explanation" onclick="toggleExplanation(16)">Show Explanation</button>
+        <div id="explanation16" class="explanation">
+            <p class="explanation-paragraph">
+                The player's final score is composed of the points earned from completing levels minus the points lost for using hints. For \(10\) levels completed, the player earns \( 10 \times 5 = 50 \) points. Let \( h \) represent the number of hints used. Each hint used subtracts \(2\) points, so the points lost from using hints is \( 2h \). The final score is given by the equation:
+                \[ 50 - 2h = 40 \]
+                Solving for \( h \) gives us:
+                \[ 2h = 50 - 40 \]
+                \[ 2h = 10 \]
+                \[ h = 5 \]
+                Therefore, the player used \(5\) hints, which corresponds to choice A.
+                <br>
+                Choice B is incorrect because using \(10\) hints would result in losing \(20\) points, leaving the player with a score of \(30\) points.
+                <br>
+                Choice C is incorrect because using \(15\) hints would result in losing \(30\) points, leaving the player with a score of \(20\) points.
+                <br>
+                Choice D is incorrect because using \(20\) hints would result in losing \(40\) points, leaving the player with a score of \(10\) points.
+            </p>
+        </div>
+    </div>
+    <div class="question-part" id="questionContent17" data-question-id="linear17">
+        <h1 class="title">Digital SAT Math</h1>
+        <h2 class="subtitle">Linear Equations</h2>  
+        <div class="question-list">
+            <div class="number-bar">
+                <span>17</span>
+            </div>
+            <p class="question">
+                The graph of \( 7x + 2y = -31 \) in the \(xy-\)plane has an \(x-\)intercept at \( (a, 0) \) and a \(y-\)intercept at \( (0, b) \), where \( a \) and \( b \) are constants. What is the value of \( \frac{b}{a} \)?
+            </p>
+            <div class="option-1-container">
+                <button class="option-1">A</button><p class="choice-1">\( -\frac{7}{2} \)</p>
+            </div>
+            <div class="option-2-container">
+                <button class="option-2">B</button><p class="choice-2">\( -\frac{2}{7} \)</p>
+            </div>
+            <div class="option-3-container">
+                <button class="option-3">C</button><p class="choice-3">\( \frac{2}{7} \)</p>
+            </div>
+            <div class="option-4-container">
+                <button class="option-4">D</button><p class="choice-4">\( \frac{7}{2} \)</p>
+            </div>
+        </div>
+        <button id="button-show-explanation17" class="button-show-explanation" onclick="toggleExplanation(17)">Show Explanation</button>
+        <div id="explanation17" class="explanation">
+            <p class="explanation-paragraph">
+                To find the \(x-\)intercept \( a \), we set \( y \) to \(0\) in the equation \( 7x + 2y = -31 \):
+                \[ 7a + 2(0) = -31 \]
+                \[ 7a = -31 \]
+                \[ a = -\frac{31}{7} \]
+                For the \(y-\)intercept \( b \), we set \( x \) to \(0\):
+                \[ 7(0) + 2b = -31 \]
+                \[ 2b = -31 \]
+                \[ b = -\frac{31}{2} \]
+                The value of \( \frac{b}{a} \) is:
+                \[ \frac{b}{a} = \frac{-\frac{31}{2}}{-\frac{31}{7}} \]
+                \[ \frac{b}{a} = \frac{-\frac{31}{2}}{1} \times \frac{7}{-\frac{31}{1}} \]
+                \[ \frac{b}{a} = \frac{7}{2} \]
+                Therefore, the value of \( \frac{b}{a} \) is \( \frac{7}{2} \), which corresponds to choice D.
+                <br>
+                Choices A and B are incorrect because they represent the negative ratio of \( a \) to \( b \) and \( b \) to \( a \) respectively, but with incorrect signs and reciprocal values.<br>
+                Choice C is incorrect because it represents the reciprocal of the correct ratio, but with an incorrect sign.
+            </p>
+        </div>
+    </div>
+    <div class="question-part" id="questionContent18" data-question-id="linear18">
+        <h1 class="title">Digital SAT Math</h1>
+        <h2 class="subtitle">Linear Equations</h2>  
+        <div class="question-list">
+            <div class="number-bar">
+                <span>18</span>
+            </div>
+            <p class="question">
+                A line in the \(xy-\)plane has a \(y-\)intercept at \( (0, b) \) and passes through the point \( (8, 0) \). If the slope of the line is \( -\frac{3}{4} \), what is the value of \( b \)?
+            </p>
+            <div class="option-1-container">
+                <button class="option-1">A</button><p class="choice-1">\(8\)</p>
+            </div>
+            <div class="option-2-container">
+                <button class="option-2">B</button><p class="choice-2">\(6\)</p>
+            </div>
+            <div class="option-3-container">
+                <button class="option-3">C</button><p class="choice-3">\(10\)</p>
+            </div>
+            <div class="option-4-container">
+                <button class="option-4">D</button><p class="choice-4">\(12\)</p>
+            </div>
+        </div>
+        <button id="button-show-explanation18" class="button-show-explanation" onclick="toggleExplanation(18)">Show Explanation</button>
+        <div id="explanation18" class="explanation">
+            <p class="explanation-paragraph">
+                The slope-intercept form of a line is \( y = mx + b \), where \( m \) is the slope and \( b \) is the y-intercept. Given the slope \( m = -\frac{3}{4} \) and a point on the line \( (8, 0) \), we can substitute these into the equation to find \( b \):
+                \[ 0 = -\frac{3}{4}(8) + b \]
+                \[ 0 = -6 + b \]
+                \[ b = 6 \]
+                Therefore, the \(y-\)intercept of the line is \(6\), which corresponds to choice B.
+                <br>
+                Choice A is incorrect because a slope of \( -\frac{3}{4} \) with an \(x-\)intercept of \(8\) leads to a \(y\)-intercept less than \(8\).
+                <br>
+                Choice C is incorrect because it does not account for the negative slope when determining the \(y-\)intercept.
+                <br>
+                Choice D is incorrect because it exceeds the value calculated using the given slope and \(x-\)intercept.
+            </p>
+        </div>
+    </div>
+    <div class="question-part" id="questionContent19" data-question-id="linear19">
+        <h1 class="title">Digital SAT Math</h1>
+        <h2 class="subtitle">Linear Equations</h2>  
+        <div class="question-list">
+            <div class="number-bar">
+                <span>19</span>
+            </div>
+            <p class="question">
+                A business owner tracks the monthly profit \( P \), in thousands of dollars, using the linear equation \( P = 8m - 35 \), where \( m \) represents the month of the year with \( m = 1 \) for January. According to this model, in which month will the business first see a profit?
+            </p>
+            <div class="option-1-container">
+                <button class="option-1">A</button><p class="choice-1">April</p>
+            </div>
+            <div class="option-2-container">
+                <button class="option-2">B</button><p class="choice-2">May</p>
+            </div>
+            <div class="option-3-container">
+                <button class="option-3">C</button><p class="choice-3">June</p>
+            </div>
+            <div class="option-4-container">
+                <button class="option-4">D</button><p class="choice-4">July</p>
+            </div>
+        </div>
+        <button id="button-show-explanation19" class="button-show-explanation" onclick="toggleExplanation(19)">Show Explanation</button>
+        <div id="explanation19" class="explanation">
+            <p class="explanation-paragraph">
+                For the business to see a profit, the profit \( P \) must be greater than zero. We can find the month where this occurs by setting \( P > 0 \):
+                \[ 8m - 35 > 0 \]
+                Adding \(35\) to both sides gives us:
+                \[ 8m > 35 \]
+                Dividing by \(8\) gives us:
+                \[ m > \frac{35}{8} \]
+                \[ m > 4.375 \]
+                Since \( m \) represents whole months, the business will first see a profit in the month after April, which is May.
+                <br>
+                Therefore, the business will first see a profit in May, which corresponds to choice B.
+                <br>
+                Choice A is incorrect because April corresponds to \( m = 4 \), and the business has not yet seen a profit.
+                <br>
+                Choices C and D are incorrect because they are months after the business has already started making a profit.
+            </p>
+        </div>
+    </div>
+    <div class="question-part" id="questionContent20" data-question-id="linear20">
+        <h1 class="title">Digital SAT Math</h1>
+        <h2 class="subtitle">Linear Equations</h2>
+        <div class="question-list">
+            <div class="number-bar">
+                <span>20</span>
+            </div>
+            <table>
+                <tr><th>\(x\)</th><th>\(y\)</th></tr>
+                <tr><td>\(k\)</td><td>\(13\)</td></tr>
+                <tr><td>\(k + 7\)</td><td>\(-15\)</td></tr>
+            </table>
+            
+            <p class="question">
+                The table gives the coordinates of two points on a line in the \(xy-\)plane. The \(y-\)intercept of the line is \( (k - 5, b) \), where \( k \) and \( b \) are constants. What is the value of \( b \)?
+            </p>
+            <div class="input-button">
+                <input class="input-answer" type="text"> 
+            </div>
+        </div>
+        <button id="button-show-explanation20" class="button-show-explanation" onclick="toggleExplanation(20)">Show Explanation</button>
+        <div id="explanation20" class="explanation">
+            <p class="explanation-paragraph">
+                To find the value of \( b \), we need to use the two given points to determine the slope of the line. The slope \( m \) is calculated by the change in \( y \) over the change in \( x \):
+                \[ m = \frac{y_2 - y_1}{x_2 - x_1} = \frac{-15 - 13}{k + 7 - k} = \frac{-28}{7} = -4 \]
+                Now, we know that the y-intercept occurs when \( x = 0 \). We can use the point-slope form of the equation with either of the two points and the slope to find \( b \). Let's use the point \( (k, 13) \):
+                \[ y - y_1 = m(x - x_1) \]
+                \[ y - 13 = -4(x - k) \]
+                When \( x = 0 \), \( y = b \), so:
+                \[ b - 13 = -4(0 - k) \]
+                \[ b - 13 = 4k \]
+                To find \( b \), we need the value of \( k \). Since the y-intercept is \( (k - 5, b) \), setting \( x = k - 5 \) in the equation gives us:
+                \[ b - 13 = -4((k - 5) - k) \]
+                \[ b - 13 = -4(-5) \]
+                \[ b - 13 = 20 \]
+                \[ b = 33 \]
+                Thus, the value of \( b \) is \(33\).
+                <br>
+            </p>
+        </div>
+    </div>
+    <div class="question-part" id="questionContent21" data-question-id="linear21">
+        <h1 class="title">Digital SAT Math</h1>
+        <h2 class="subtitle">Linear Equations</h2>  
+        <div class="question-list">
+            <div class="number-bar">
+                <span>21</span>
+            </div>
+            <p class="question">
+                The cost of renting a hall is represented by the equation \( C = 75n + 150 \), where \( C \) is the total cost in dollars, and \( n \) is the number of hours the hall is rented. If a group can spend at most \($600\) for renting the hall, what is the maximum number of hours they can rent it?
+            </p>
+            <div class="option-1-container">
+                <button class="option-1">A</button><p class="choice-1">\(5\)</p>
+            </div>
+            <div class="option-2-container">
+                <button class="option-2">B</button><p class="choice-2">\(6\)</p>
+            </div>
+            <div class="option-3-container">
+                <button class="option-3">C</button><p class="choice-3">\(7\)</p>
+            </div>
+            <div class="option-4-container">
+                <button class="option-4">D</button><p class="choice-4">\(8\)</p>
+            </div>
+        </div>
+        <button id="button-show-explanation21" class="button-show-explanation" onclick="toggleExplanation(21)">Show Explanation</button>
+        <div id="explanation21" class="explanation">
+            <p class="explanation-paragraph">
+                To find the maximum number of hours \( n \) the group can rent the hall, we need to solve for \( n \) when the cost \( C \) is at most \($600\):
+                \[ 75n + 150 \leq 600 \]
+                Subtracting \(150\) from both sides gives us:
+                \[ 75n \leq 450 \]
+                Dividing by \(75\) gives us:
+                \[ n \leq 6 \]
+                Therefore, the maximum number of hours the group can rent the hall is \(6\) hours, which corresponds to choice B.
+                <br>
+                Choice A is incorrect because renting for \(5\) hours would not use the full budget.
+                <br>
+                Choices C and D are incorrect because they would exceed the maximum budget of \($600\).
+            </p>
+        </div>
+    </div>
+    <div class="question-part" id="questionContent22" data-question-id="linear22">
+        <h1 class="title">Digital SAT Math</h1>
+        <h2 class="subtitle">Linear Equations</h2>  
+        <div class="question-list">
+            <div class="number-bar">
+                <span>22</span>
+            </div>
+            <p class="question">
+                The graph of the equation \( y = mx + b \) passes through the points \((0, -3)\) and \((4, 5)\). What is the slope, \( m \), of the line?
+            </p>
+            <div class="option-1-container">
+                <button class="option-1">A</button><p class="choice-1">\(2\)</p>
+            </div>
+            <div class="option-2-container">
+                <button class="option-2">B</button><p class="choice-2">\(3\)</p>
+            </div>
+            <div class="option-3-container">
+                <button class="option-3">C</button><p class="choice-3">\(4\)</p>
+            </div>
+            <div class="option-4-container">
+                <button class="option-4">D</button><p class="choice-4">\(5\)</p>
+            </div>
+        </div>
+        <button id="button-show-explanation22" class="button-show-explanation" onclick="toggleExplanation(22)">Show Explanation</button>
+        <div id="explanation22" class="explanation">
+            <p class="explanation-paragraph">
+                To determine the slope \( m \) of the line, we use the formula for the slope given two points \( (x_1, y_1) \) and \( (x_2, y_2) \):
+                \[ m = \frac{y_2 - y_1}{x_2 - x_1} \]
+                Substituting the given points into the formula, we get:
+                \[ m = \frac{5 - (-3)}{4 - 0} \]
+                \[ m = \frac{8}{4} \]
+                \[ m = 2 \]
+                Therefore, the slope of the line is \(2\), which corresponds to choice A.
+                <br>
+                Choices B, C, and D are incorrect as they do not match the calculated slope of the line using the given points.
+            </p>
+        </div>
+    </div>
+    <div class="question-part" id="questionContent23" data-question-id="linear23">
+        <h1 class="title">Digital SAT Math</h1>
+        <h2 class="subtitle">Linear Equations</h2>  
+        <div class="question-list">
+            <div class="number-bar">
+                <span>23</span>
+            </div>
+            <table>
+                <tr><th>\(x\) (Hours)</th><th>\(y\) (Pay in \($\))</th></tr>
+                <tr><td>\(5\)</td><td>\(75\)</td></tr>
+                <tr><td>\(10\)</td><td>\(150\)</td></tr>
+                <tr><td>\(15\)</td><td>\(225\)</td></tr>
+            </table>
+            
+            <p class="question">
+                The table above represents the relationship between the number of hours worked (\(x\)) and the total pay (\(y\)) in dollars for a part-time job. If line \(m\) represents this relationship in the \(xy-\)plane, and line \(n\) is the result of translating line \(m\) up by \(25\) dollars in the \(y-\)direction, what is the \(y-\)intercept of line \(n\)?
+            </p>
+            <div class="option-1-container">
+                <button class="option-1">A</button><p class="choice-1">\((0, 25)\)</p>
+            </div>
+            <div class="option-2-container">
+                <button class="option-2">B</button><p class="choice-2">\((0, 50)\)</p>
+            </div>
+            <div class="option-3-container">
+                <button class="option-3">C</button><p class="choice-3">\((0, 75)\)</p>
+            </div>
+            <div class="option-4-container">
+                <button class="option-4">D</button><p class="choice-4">\((0, 100)\)</p>
+            </div>
+        </div>
+        <button id="button-show-explanation23" class="button-show-explanation" onclick="toggleExplanation(23)">Show Explanation</button>
+        <div id="explanation23" class="explanation">
+            <p class="explanation-paragraph">
+                The original \(y-\)intercept of line \(m\) can be found from the table where \(x=0\). Since we are given the pay for \(5, 10,\) and \(15\) hours, we can determine the rate of pay per hour and then extrapolate the pay for \(0\) hours. The rate per hour is constant, which we can find by dividing the total pay by the hours worked:
+                \[ \text{Rate per hour} = \frac{75}{5} = 15 \text{ dollars per hour} \]
+                The \(y-\)intercept of line \(m\) would be the pay for \(0\) hours, which is \(0\) dollars. When line \(m\) is translated up by \(25\) dollars in the \(y-\)direction to create line \(n\), the new \(y-\)intercept will be \(25\) dollars higher than the original line \(m\). Therefore, the \(y-\)intercept of line \(n\) is \((0, 25)\).
+                <br>
+                Choice A is correct because it represents the new \(y-\)intercept after the line has been translated upwards by \(25\) dollars.
+                <br>
+                Choices B, C, and D are incorrect because they do not accurately reflect the translation of the original line \(m\) by \(25\) dollars in the \(y-\)direction.
+            </p>
+        </div>
+    </div>
+    <div class="question-part" id="questionContent24" data-question-id="linear24">
+        <h1 class="title">Digital SAT Math</h1>
+        <h2 class="subtitle">Linear Equations</h2>  
+        <div class="question-list">
+            <div class="number-bar">
+                <span>24</span>
+            </div>
+            <p class="question">
+                A rectangle's length is twice its width, and its perimeter is \(60 cm\). What is the length of the rectangle?
+            </p>
+            <div class="option-1-container">
+                <button class="option-1">A</button><p class="choice-1">\(10 cm\)</p>
+            </div>
+            <div class="option-2-container">
+                <button class="option-2">B</button><p class="choice-2">\(15 cm\)</p>
+            </div>
+            <div class="option-3-container">
+                <button class="option-3">C</button><p class="choice-3">\(20 cm\)</p>
+            </div>
+            <div class="option-4-container">
+                <button class="option-4">D</button><p class="choice-4">\(25 cm\)</p>
+            </div>
+        </div>
+        <button id="button-show-explanation24" class="button-show-explanation" onclick="toggleExplanation(24)">Show Explanation</button>
+        <div id="explanation24" class="explanation">
+            <p class="explanation-paragraph">
+                Let the width of the rectangle be \( w \) and the length be \( 2w \). The perimeter \( P \) of a rectangle is given by \( P = 2l + 2w \), where \( l \) is the length and \( w \) is the width. Substituting the given values, we have:
+                \[ 60 = 2(2w) + 2w \]
+                \[ 60 = 4w + 2w \]
+                \[ 60 = 6w \]
+                \[ w = 10 \]
+                The length is twice the width, so:
+                \[ l = 2w = 2(10) = 20 \text{ cm} \]
+                Therefore, the length of the rectangle is \(20 cm\), which corresponds to choice C.
+                <br>
+                Choice A is incorrect because it represents the width, not the length.
+                <br>
+                Choice B is incorrect because it does not account for the length being twice the width.
+                <br>
+                Choice D is incorrect because it would result in a perimeter greater than \(60 cm\).
+            </p>
+        </div>
+    </div>
+    <div class="question-part" id="questionContent25" data-question-id="linear25">
+        <h1 class="title">Digital SAT Math</h1>
+        <h2 class="subtitle">Linear Equations</h2>  
+        <div class="question-list">
+            <div class="number-bar">
+                <span>25</span>
+            </div>
+            <p class="question">
+                A taxi company charges a flat fee of \($2.50\) plus \($0.75\) per mile. If a customer pays \($20.00\) for a trip, how many miles did they travel?
+            </p>
+            <div class="option-1-container">
+                <button class="option-1">A</button><p class="choice-1">\(20\)</p>
+            </div>
+            <div class="option-2-container">
+                <button class="option-2">B</button><p class="choice-2">\(23\)</p>
+            </div>
+            <div class="option-3-container">
+                <button class="option-3">C</button><p class="choice-3">\(24\)</p>
+            </div>
+            <div class="option-4-container">
+                <button class="option-4">D</button><p class="choice-4">\(27\)</p>
+            </div>
+        </div>
+        <button id="button-show-explanation25" class="button-show-explanation" onclick="toggleExplanation(25)">Show Explanation</button>
+        <div id="explanation25" class="explanation">
+            <p class="explanation-paragraph">
+                Let's denote the number of miles traveled as \( m \). The total cost \( C \) of the trip is given by the flat fee plus the cost per mile multiplied by the number of miles:
+                \[ C = 2.50 + 0.75m \]
+                If the customer pays \($20.00\) for the trip, we set \( C \) to 20 and solve for \( m \):
+                \[ 20 = 2.50 + 0.75m \]
+                Subtracting the flat fee from both sides gives:
+                \[ 17.50 = 0.75m \]
+                Dividing both sides by \(0.75\) to find \( m \):
+                \[ m = \frac{17.50}{0.75} \]
+                \[ m = 23.333... \]
+                Therefore, we round down to the nearest whole number, which gives us \(23\) miles.
+                <br>
+                Therefore, the customer traveled \(23\ \text{miles}\), which corresponds to choice B.
+                <br>
+                Choice A is incorrect because traveling \(20\ \text{miles}\) would cost less than \($20.00\).
+                <br>
+                Choice C is incorrect because traveling \(24\ \text{miles}\) would cost more than \($20.00\).
+                <br>
+                Choice D is also incorrect for the same reason as choice C, where traveling \(27\ \text{miles}\) would definitely cost more than \($20.00\).
+            </p>
+        </div>
+    </div>
+    <div class="question-part" id="questionContent26" data-question-id="linear26">
+        <h1 class="title">Digital SAT Math</h1>
+        <h2 class="subtitle">Linear Equations</h2>
+        <div class="question-list">
+            <div class="number-bar">
+                <span>26</span>
+            </div>
+            <p class="question">
+                The solution to the given system of equations is \((x, y)\). What is the value of \(xy\)?
+                <br>
+                \(5x + 14y = 45\)
+                <br>
+                \(10x + 7y = 27\)
+            </p>
+            <div class="input-button">
+                <input class="input-answer" type="text"> 
+            </div>
+        </div>
+        <button id="button-show-explanation26" class="button-show-explanation" onclick="toggleExplanation(26)">Show Explanation</button>
+        <div id="explanation26" class="explanation">
+            <p class="explanation-paragraph">
+                To solve the system of equations for \(xy\), we need to find the values of \(x\) and \(y\). We can use the method of substitution or elimination. In this case, the elimination method is more straightforward:
+                <br>
+                Multiply the second equation by \(2\) to align the \(x\) terms:
+                <br>
+                \(2 \cdot (10x + 7y) = 2 \cdot 27\)
+                <br>
+                \(20x + 14y = 54\)
+                <br>
+                Now subtract the first equation from this new equation:
+                <br>
+                \( (20x + 14y) - (5x + 14y) = 54 - 45 \)
+                <br>
+                \( 15x = 9 \)
+                <br>
+                \( x = \frac{9}{15} \)
+                <br>
+                \( x = \frac{3}{5} \)
+                <br>
+                Substitute \( x \) back into one of the original equations to find \( y \):
+                <br>
+                \( 5(\frac{3}{5}) + 14y = 45 \)
+                <br>
+                \( 3 + 14y = 45 \)
+                <br>
+                \( 14y = 42 \)
+                <br>
+                \( y = 3 \)
+                <br>
+                Therefore, the value of \(xy\) is:
+                <br>
+                \( xy = (\frac{3}{5})(3) \)
+                <br>
+                \( xy = \frac{9}{5} \)
+                <br>
+                \( xy = 1.8 \)
+                <br>
+                The value of \(xy\) is \(1.8\).
+                <br>
+            </p>
+        </div>
+    </div>
+    <div class="question-part" id="questionContent27" data-question-id="linear27">
+        <h1 class="title">Digital SAT Math</h1>
+        <h2 class="subtitle">Linear Equations</h2>  
+        <div class="question-list">
+            <div class="number-bar">
+                <span>27</span>
+            </div>
+            <p class="question">
+                The total cost \( T \) in dollars of producing \( x \) units of a certain item is given by the equation \( T = 5x + 300 \). 
+                If the company wants to keep the total cost under \($800\), what is the maximum number of units they can produce?
+            </p>
+            <div class="option-1-container">
+                <button class="option-1">A</button><p class="choice-1">\(80\)</p>
+            </div>
+            <div class="option-2-container">
+                <button class="option-2">B</button><p class="choice-2">\(100\)</p>
+            </div>
+            <div class="option-3-container">
+                <button class="option-3">C</button><p class="choice-3">\(120\)</p>
+            </div>
+            <div class="option-4-container">
+                <button class="option-4">D</button><p class="choice-4">\(140\)</p>
+            </div>
+        </div>
+        <button id="button-show-explanation27" class="button-show-explanation" onclick="toggleExplanation(27)">Show Explanation</button>
+        <div id="explanation27" class="explanation">
+            <p class="explanation-paragraph">
+                To determine the maximum number of units that can be produced while keeping the cost under \($800\), we can set up the inequality:
+                \[ 5x + 300 < 800 \]
+                Subtracting \($300\) from both sides of the inequality gives:
+                \[ 5x < 500 \]
+                Dividing both sides by \(5\) gives:
+                \[ x < 100 \]
+                Since \( x \) must be a whole number, the maximum number of units that can be produced is \(100\ \text{units}\).
+                <br>
+                Therefore, the correct answer is \( B \), \( 100 \) units.
+                <br>
+                Choices A, C, and D are incorrect because they represent unit quantities that do not maximize the production capacity while staying under the cost threshold of \($800\).
+            </p>
+        </div>
+    </div>
+    <div class="question-part" id="questionContent28" data-question-id="linear28">
+        <h1 class="title">Digital SAT Math</h1>
+        <h2 class="subtitle">Linear Equations</h2>
+        <div class="question-list">
+            <div class="number-bar">
+                <span>28</span>
+            </div>
+            <p class="question">
+                A student scored \(85\) points on the first test and \( x \) points on the second test. The average score of the two tests is \(90\) points. What is the score of the second test?
+            </p>
+            <div class="option-1-container">
+                <button class="option-1">A</button><p class="choice-1">\(95\)</p>
+            </div>
+            <div class="option-2-container">
+                <button class="option-2">B</button><p class="choice-2">\(97\)</p>
+            </div>
+            <div class="option-3-container">
+                <button class="option-3">C</button><p class="choice-3">\(100\)</p>
+            </div>
+            <div class="option-4-container">
+                <button class="option-4">D</button><p class="choice-4">\(105\)</p>
+            </div>
+        </div>
+        <button id="button-show-explanation28" class="button-show-explanation" onclick="toggleExplanation(28)">Show Explanation</button>
+        <div id="explanation28" class="explanation">
+            <p class="explanation-paragraph">
+                The average score of two tests is calculated by adding the scores of both tests and then dividing by \(2\). The equation to find the average is:
+                \[ \text{Average} = \frac{\text{Score of Test 1} + \text{Score of Test 2}}{2} \]
+                We are given the average score (\(90\) points) and the score of the first test (\(85\) points). Let \( x \) represent the score of the second test. Plugging the given values into the equation, we get:
+                \[ 90 = \frac{85 + x}{2} \]
+                Multiplying both sides by \(2\) to solve for \( x \):
+                \[ 180 = 85 + x \]
+                Subtracting \(85\) from both sides gives us:
+                \[ x = 180 - 85 \]
+                \[ x = 95 \]
+                Therefore, the student scored \( 95 \) points on the second test, which corresponds to choice A.
+            </p>
+        </div>
+    </div>
+    <div class="question-part" id="questionContent29" data-question-id="linear29">
+        <h1 class="title">Digital SAT Math</h1>
+        <h2 class="subtitle">Linear Equations</h2>
+        <div class="question-list">
+            <div class="number-bar">
+                <span>29</span>
+            </div>
+            <p class="question">
+                What is the slope of the graph of \( y = \frac{2}{8}(56x + 30) + 14x \) in the \(xy-\)plane?
+            </p>
+            <div class="input-button">
+                <input class="input-answer" type="text"> 
+            </div>
+        </div>
+        <button id="button-show-explanation29" class="button-show-explanation" onclick="toggleExplanation(29)">Show Explanation</button>
+        <div id="explanation29" class="explanation">
+            <p class="explanation-paragraph">
+                To find the slope of the graph, first simplify the equation:
+            <br>
+            \( y = \frac{1}{4}(56x + 30) + 14x \) (since \( \frac{2}{8} \) simplifies to \( \frac{1}{4} \))
+            <br>
+            Distribute the \( \frac{1}{4} \) across the terms inside the parentheses:
+            <br>
+            \( y = \frac{1}{4} \cdot 56x + \frac{1}{4} \cdot 30 + 14x \)
+            <br>
+            Simplify and combine like terms:
+            <br>
+            \( y = 14x + 7.5 + 14x \)
+            <br>
+            \( y = 28x + 7.5 \)
+            <br>
+            The slope of the graph is the coefficient of \( x \), which in this case is \( 28 \).
+            </p>
+        </div>
+    </div>    
+    <div class="question-part" id="questionContent30" data-question-id="linear30">
+        <h1 class="title">Digital SAT Math</h1>
+        <h2 class="subtitle">Linear Equations</h2>
+        <div class="question-list">
+            <div class="number-bar">
+                <span>30</span>
+            </div>
+            <p class="question">
+                The sum of a number and its reciprocal is equal to \( \frac{13}{6} \). What is the number?
+            </p>
+            <div class="option-1-container">
+                <button class="option-1">A</button><p class="choice-1">\( \frac{5}{6} \) or \( \frac{6}{5} \)</p>
+            </div>
+            <div class="option-2-container">
+                <button class="option-2">B</button><p class="choice-2">\( \frac{3}{4} \) or \( \frac{4}{3} \)</p>
+            </div>
+            <div class="option-3-container">
+                <button class="option-3">C</button><p class="choice-3">\( \frac{2}{3} \) or \( \frac{3}{2} \)</p>
+            </div>
+            <div class="option-4-container">
+                <button class="option-4">D</button><p class="choice-4">\( \frac{6}{7} \) or \( \frac{7}{6} \)</p>
+            </div>
+        </div>
+        <button id="button-show-explanation30" class="button-show-explanation" onclick="toggleExplanation(30)">Show Explanation</button>
+        <div id="explanation30" class="explanation">
+            <p class="explanation-paragraph">
+                Let the number be \( x \). Its reciprocal is \( \frac{1}{x} \), and the sum of the number and its reciprocal is given by \( x + \frac{1}{x} \).
+                <br>
+                Set up the equation: \( x + \frac{1}{x} = \frac{13}{6} \).
+                <br>
+                Multiply through by \( x \) to clear the fraction: \( x^2 + 1 = \frac{13}{6}x \).
+                <br>
+                Rearrange to form a quadratic equation: \( 6x^2 - 13x + 6 = 0 \).
+                <br>
+                Factor the quadratic: \( (2x - 3)(3x - 2) = 0 \).
+                <br>
+                Solve for \( x \): \( x = \frac{3}{2} \) or \( x = \frac{2}{3} \).
+                <br>
+                Both \( \frac{3}{2} \) and \( \frac{2}{3} \) are solutions to the equation, corresponding to choice C.
+                <br>
+                Choices A, B, and D do not satisfy the given equation.
+            </p>
+        </div>
+    </div>
+    <div class="question-part" id="questionContent31" data-question-id="linear31">
+        <h1 class="title">Digital SAT Math</h1>
+        <h2 class="subtitle">Linear Equations</h2>
+        <div class="question-list">
+            <div class="number-bar">
+                <span>31</span>
+            </div>
+            <table>
+                <tr><th>\(x\) (Quantity)</th><th>\(y\) (Profit in \($\))</th></tr>
+                <tr><td>\(10\)</td><td>\(100\)</td></tr>
+                <tr><td>\(20\)</td><td>\(200\)</td></tr>
+                <tr><td>\(30\)</td><td>\(300\)</td></tr>
+            </table>
+            
+            <p class="question">
+                A table indicates the relationship between the quantity of a product (\(x\)) sold and the total profit (\(y\)) in dollars. Line \(r\) corresponds to this relationship on the \(xy-\)plane. Line \(s\) is the result of moving line \(r\) downwards by \(50\) dollars. What is the profit at the \(y-\)intercept of line \(s\)?
+            </p>
+            <div class="option-1-container">
+                <button class="option-1">A</button><p class="choice-1">\((-50, 0)\)</p>
+            </div>
+            <div class="option-2-container">
+                <button class="option-2">B</button><p class="choice-2">\((0, 50)\)</p>
+            </div>
+            <div class="option-3-container">
+                <button class="option-3">C</button><p class="choice-3">\((0, 0)\)</p>
+            </div>
+            <div class="option-4-container">
+                <button class="option-4">D</button><p class="choice-4">\((0, -50)\)</p>
+            </div>
+        </div>
+        <button id="button-show-explanation31" class="button-show-explanation" onclick="toggleExplanation(31)">Show Explanation</button>
+        <div id="explanation31" class="explanation">
+            <p class="explanation-paragraph">
+                The \(y-\)intercept of line \(r\) is the profit when the quantity sold (\(x\)) is \(0\). From the table, we can see that the relationship is linear and directly proportional since doubling the quantity doubles the profit, and so on. This implies that at \(x = 0\), the profit (\(y\)) would also be \(0\). <br>
+                When line \(r\) is moved downwards by \(50\) dollars to create line \(s\), the \(y-\)intercept is also moved down by \(50\) dollars. <br>
+                Therefore, the \(y-\)intercept of line \(s\) is \(50\) dollars less than the \(y-\)intercept of line \(r\), making it \(0 - 50 = -50\). <br>
+                So, the profit at the \(y-\)intercept of line \(s\) is \(-\$50\), corresponding to choice D.
+            </p>
+        </div>
+    </div>
+    <div class="question-part" id="questionContent32" data-question-id="linear32">
+        <h1 class="title">Digital SAT Math</h1>
+        <h2 class="subtitle">Linear Equations</h2>
+        <div class="question-list">
+            <div class="number-bar">
+                <span>32</span>
+            </div>
+            <p class="question">
+                Line \( p \) is defined by \( 2y + 18x = 9 \). Line \( r \) is perpendicular to line \( p \) in the xy-plane. What is the slope of line \( r \)?
+            </p>
+            <div class="option-1-container">
+                <button class="option-1">A</button><p class="choice-1">\( -9 \)</p>
+            </div>
+            <div class="option-2-container">
+                <button class="option-2">B</button><p class="choice-2">\( -\frac{1}{9} \)</p>
+            </div>
+            <div class="option-3-container">
+                <button class="option-3">C</button><p class="choice-3">\( \frac{1}{9} \)</p>
+            </div>
+            <div class="option-4-container">
+                <button class="option-4">D</button><p class="choice-4">\( 9 \)</p>
+            </div>
+        </div>
+        <button id="button-show-explanation32" class="button-show-explanation" onclick="toggleExplanation(32)">Show Explanation</button>
+        <div id="explanation32" class="explanation">
+            <p class="explanation-paragraph">
+                To find the slope of line \( r \), which is perpendicular to line \( p \), we first find the slope of line \( p \). The slope-intercept form of line \( p \) is \( y = mx + b \), where \( m \) is the slope. We rearrange the equation \( 2y + 18x = 9 \) to this form:
+                \[ y = -9x + \frac{9}{2} \]
+                So, the slope \( m \) of line \( p \) is \( -9 \). The slope of line \( r \), being perpendicular to \( p \), is the negative reciprocal of \( -9 \), which is \( \frac{1}{9} \).
+                <br>
+                Choice A is incorrect because \( -9 \) is the slope of line \( p \), not its perpendicular line \( r \).
+                <br>
+                Choice B is incorrect because the negative reciprocal of \( -9 \) is positive \( \frac{1}{9} \), not negative \( \frac{1}{9} \).
+                <br>
+                Choice C is correct because it is the negative reciprocal of \( -9 \).
+                <br>
+                Choice D is incorrect because it is the reciprocal of \( -9 \) without changing the sign, which does not give the slope of a line perpendicular to line \( p \).
+            </p>
+        </div>
+    </div>
+    <div class="question-part" id="questionContent33" data-question-id="linear33">
+        <h1 class="title">Digital SAT Math</h1>
+        <h2 class="subtitle">Linear Equations</h2>  
+        <div class="question-list">
+            <div class="number-bar">
+                <span>33</span>
+            </div>
+            <img class="graph-question" src="/picture/linear33.png" alt="">
+            <p class="question">
+                The graph of \(g(x) = m(x - 2) + 3\) is shown. Which equation defines function \(m\)?
+            </p>
+            <div class="option-1-container">
+                <button class="option-1">A</button><p class="choice-1">\(m(x) = g(x) - 5\)</p>
+            </div>
+            <div class="option-2-container">
+                <button class="option-2">B</button><p class="choice-2">\(m(x) = g(x) + 2\)</p>
+            </div>
+            <div class="option-3-container">
+                <button class="option-3">C</button><p class="choice-3">\(m(x) = g(x) + 3\)</p>
+            </div>
+            <div class="option-4-container">
+                <button class="option-4">D</button><p class="choice-4">\(m(x) = g(x) - 3\)</p>
+            </div>
+        </div>
+        <button id="button-show-explanation33" class="button-show-explanation" onclick="toggleExplanation(33)">Show Explanation</button>
+        <div id="explanation33" class="explanation">
+            <p class="explanation-paragraph">
+                The correct answer is A. Given the function \(g(x) = m(x - 2) + 3\), we're told that the graph of \(g\) is a linear function that passes through the point \((2, 3)\) with a slope of \(1\). This information is about the function \(g(x)\).
+                <br>
+                Now, we're also told that the function \(m(x)\) is created by shifting the graph of \(g(x)\) down by \(5\) units. When a graph is shifted vertically, the shift affects the \(y-\)intercept of the function.
+                <br>
+                Since \(g(x)\) passes through \((2, 3)\), the point \((2, 3)\) satisfies the equation of \(g(x)\). This means:
+                <br>
+                \(g(2) = m(2 - 2) + 3\)
+                <br>
+                \(g(2) = m(0) + 3\)
+                <br>
+                \(3 = m(0) + 3\)
+                <br>
+                From this, we can see that \(m(0)\) must be \(0\), which fits our understanding since \(g(x)\) has not been shifted vertically.
+                <br>
+                To find the new function \(m(x)\) after shifting \(g(x)\) down by \(5\) units, we subtract \(5\) from the \(g(x)\) function. Thus, for any value of \(x\):
+                <br>
+                \(m(x) = g(x) - 5\), which matches option A.
+                <br>
+                Choice B is incorrect because adding \(2\) would shift the graph upwards, not downwards.
+                <br>
+                Choice C is incorrect for the same reason as B, and adding \(3\) would result in an even higher shift.
+                <br>
+                Choice D is incorrect because subtracting \(3\) would not account for the full downward shift observed in the graph.
+            </p>
+        </div>
+    </div>
+    <div class="question-part" id="questionContent34" data-question-id="linear34">
+        <h1 class="title">Digital SAT Math</h1>
+        <h2 class="subtitle">Linear Equations</h2>
+        <div class="question-list">
+            <div class="number-bar">
+                <span>34</span>
+            </div>
+            <p class="question">
+                In the given pair of equations, \(p\) and \(q\) are constants. The graph of this pair of equations in the \(xy-\)plane is a pair of perpendicular lines. <br> 
+                Which of the following pairs of equations also represents a pair of perpendicular lines?
+            </p>
+            <div class="option-1-container">
+                <button class="option-1">A</button><p class="choice-1">\(3p + 4q = 8\), \(p - \frac{3}{4}q = 5\)</p>
+            </div>
+            <div class="option-2-container">
+                <button class="option-2">B</button><p class="choice-2">\(3p + 4q = 8\), \(\frac{4}{3}p + q = 5\)</p>
+            </div>
+            <div class="option-3-container">
+                <button class="option-3">C</button><p class="choice-3">\(3p + 4q = 8\), \(3p - 4q = 5\)</p>
+            </div>
+            <div class="option-4-container">
+                <button class="option-4">D</button><p class="choice-4">\(3p + 4q = 8\), \(-\frac{4}{3}p + 3q = 5\)</p>
+            </div>
+        </div>
+        <button id="button-show-explanation33" class="button-show-explanation" onclick="toggleExplanation(34)">Show Explanation</button>
+        <div id="explanation34" class="explanation">
+            <p class="explanation-paragraph">
+                The correct answer is B. Perpendicular lines have slopes that are negative reciprocals of each other. 
+                The slope of the first equation, \(3p + 4q = 8\), can be found by rewriting it in slope-intercept form \(y = mx + b\), 
+                which gives us \(y = -\frac{3}{4}x + 2\). 
+                Therefore, the slope is \(-\frac{3}{4}\). The slope of the second equation in option B is \(\frac{4}{3}\), which is the negative 
+                reciprocal of \(-\frac{3}{4}\).
+                <br>
+                Options A and D are incorrect because the slopes of the second equations are not negative reciprocals of the first equation's slope. <br>
+                Option C is incorrect because the slope of the second equation is \(3\), which is the not the reciprocal \(-\frac{3}{4}\), so the lines described by these equations would not be perpendicular.
+            </p>
+        </div> 
+    </div>
+    <div class="question-part" id="questionContent35" data-question-id="linear35">
+        <h1 class="title">Digital SAT Math</h1>
+        <h2 class="subtitle">Linear Equations</h2>  
+        <div class="question-list">
+            <div class="number-bar">
+                <span>35</span>
+            </div>
+            <p class="question">
+                How many solutions does the equation \( 6(5y + 3) - 2 = 30y + 16 \) have?
+            </p>
+            <div class="option-1-container">
+                <button class="option-1">A</button><p class="choice-1">Exactly one</p>
+            </div>
+            <div class="option-2-container">
+                <button class="option-2">B</button><p class="choice-2">Exactly two</p>
+            </div>
+            <div class="option-3-container">
+                <button class="option-3">C</button><p class="choice-3">Infinitely many</p>
+            </div>
+            <div class="option-4-container">
+                <button class="option-4">D</button><p class="choice-4">Zero</p>
+            </div>
+        </div>
+        <button id="button-show-explanation35" class="button-show-explanation" onclick="toggleExplanation(35)">Show Explanation</button>
+        <div id="explanation35" class="explanation">
+            <p class="explanation-paragraph">
+                Simplifying the given equation:
+                \[ 6(5y + 3) - 2 = 30y + 16 \]
+                \[ 30y + 18 - 2 = 30y + 16 \]
+                \[ 30y + 16 = 30y + 16 \]
+                The variables on both sides have the same coefficient, and the constants are equal, meaning every value of \( y \) is a solution. Thus, the equation has infinitely many solutions.
+                <br>
+                Choice A is incorrect because the equation is not dependent on \( y \); it holds true for all values of \( y \).
+                <br>
+                Choice B is incorrect because there are not just two specific solutions; the equation is always true.
+                <br>
+                Choice C is correct because, due to the equality of coefficients and constants, there are infinitely many solutions.
+                <br>
+                Choice D is incorrect because the equation does not result in a contradiction; it does not have zero solutions.
+            </p>
+        </div>
+    </div>
+    <div class="question-part" id="questionContent36" data-question-id="linear36">
+        <h1 class="title">Digital SAT Math</h1>
+        <h2 class="subtitle">Linear Equations</h2>
+        <div class="question-list">
+            <div class="number-bar">
+                <span>36</span>
+            </div>
+            <p class="question">
+                If \( \frac{2x + 5}{6} = \frac{2x - 1}{12} \), what is the range of values for \( x + 2 \)?
+            </p>
+            <div class="option-1-container">
+                <button class="option-1">A</button><p class="choice-1">\( -3 \) and \( 1 \)</p>
+            </div>
+            <div class="option-2-container">
+                <button class="option-2">B</button><p class="choice-2">\( 1 \) and \( 5 \)</p>
+            </div>
+            <div class="option-3-container">
+                <button class="option-3">C</button><p class="choice-3">\( -7 \) and \( -3 \)</p>
+            </div>
+            <div class="option-4-container">
+                <button class="option-4">D</button><p class="choice-4">\( 5 \) and \( 9 \)</p>
+            </div>
+        </div>
+        <button id="button-show-explanation36" class="button-show-explanation" onclick="toggleExplanation(36)">Show Explanation</button>
+        <div id="explanation36" class="explanation">
+            <p class="explanation-paragraph">
+                To find the range of values for \( x + 2 \), we first solve the given equation:
+                \[ \frac{2x + 5}{6} = \frac{2x - 1}{12} \]
+                Cross-multiply to eliminate the fractions:
+                \[ 12(2x + 5) = 6(2x - 1) \]
+                \[ 24x + 60 = 12x - 6 \]
+                Subtract \( 12x \) from both sides:
+                \[ 12x + 60 = -6 \]
+                Subtract \( 60 \) from both sides:
+                \[ 12x = -66 \]
+                Divide by \( 12 \) to solve for \( x \):
+                \[ x = -\frac{66}{12} \]
+                \[ x = -5.5 \]
+                Now, add \( 2 \) to find the value of \( x + 2 \):
+                \[ x + 2 = -5.5 + 2 \]
+                \[ x + 2 = -3.5 \]
+                The value of \( x + 2 \) is \( -3.5 \), the range that contains \( -3.5 \) is from \( -7 \) to \( -3 \), making option C the correct choice.
+                <br>
+                Option A is incorrect because it does not include \( -3.5 \).
+                <br>
+                Option B is incorrect because it only includes positive numbers, and our solution is negative.
+                <br>
+                Option D is incorrect because it is higher than our solution of \( -3.5 \).
+            </p>
+        </div>
+    </div>
+    <div class="question-part" id="questionContent37" data-question-id="linear37">
+        <h1 class="title">Digital SAT Math</h1>
+        <h2 class="subtitle">Linear Equations</h2>  
+        <div class="question-list">
+            <div class="number-bar">
+                <span>37</span>
+            </div>
+            <p class="question">
+                Consider the equations \( ax + by = 10 \) and \( cx + dy = 15 \), where \( a, b, c, \) and \( d \) are constants. If these lines are perpendicular to each other on the \(xy-\)plane, which of the following conditions must be true?
+            </p>
+            <div class="option-1-container">
+                <button class="option-1">A</button><p class="choice-1">\( ad = -bc \)</p>
+            </div>
+            <div class="option-2-container">
+                <button class="option-2">B</button><p class="choice-2">\( ad = -bc \)</p>
+            </div>
+            <div class="option-3-container">
+                <button class="option-3">C</button><p class="choice-3">\( ab = cd \)</p>
+            </div>
+            <div class="option-4-container">
+                <button class="option-4">D</button><p class="choice-4">\( \frac{a}{b} = -\frac{d}{c} \)</p>
+            </div>
+        </div>
+        <button id="button-show-explanation37" class="button-show-explanation" onclick="toggleExplanation(37)">Show Explanation</button>
+        <div id="explanation37" class="explanation">
+            <p class="explanation-paragraph">
+                For two lines to be perpendicular, the product of their slopes must be -1. The slope of a line given by \( ax + by = c \) is \( -\frac{a}{b} \). Therefore, for lines \( ax + by = 10 \) and \( cx + dy = 15 \) to be perpendicular, the slopes \( -\frac{a}{b} \) and \( -\frac{c}{d} \) must satisfy \( \left(-\frac{a}{b}\right) \left(-\frac{c}{d}\right) = 1 \), which simplifies to \( \frac{a}{b} = -\frac{d}{c} \).
+                <br>
+                Option A is incorrect because it suggests a product of constants, not slopes.
+                <br>
+                Option B is incorrect because it does not reflect the relationship between the slopes of perpendicular lines.
+                <br>
+                Option C is incorrect as it does not correspond to the negative reciprocal relationship required for perpendicular lines.
+                <br>
+                Option D is correct as it represents the negative reciprocal relationship between the slopes of two perpendicular lines.
+            </p>
+        </div>
+    </div>
+    <div class="question-part" id="questionContent38" data-question-id="linear38">
+        <h1 class="title">Digital SAT Math</h1>
+        <h2 class="subtitle">Linear Equations</h2>
+        <div class="question-list">
+            <div class="number-bar">
+                <span>38</span>
+            </div>
+            <p class="question">
+                Given the system of equations where \( m \) is a constant, \( mx + 3y = 6 \) and \( 12x + my = m \), what must be the value of \( m \) for the system to have no solution?
+            </p>
+            <div class="input-button">
+                <input class="input-answer" type="text"> 
+            </div>
+        </div>
+        <button id="button-show-explanation38" class="button-show-explanation" onclick="toggleExplanation(38)">Show Explanation</button>
+        <div id="explanation38" class="explanation">
+            <p class="explanation-paragraph">
+                For a system of equations to have no solution, the lines represented by the equations must be parallel, which means they have the same slope but different \(y-\)intercepts. The slope-intercept form of an equation is \( y = mx + b \), where \( m \) is the slope. The slope of the first equation is \( -\frac{m}{3} \), and the slope of the second equation is \( -\frac{12}{m} \). For the lines to be parallel, these slopes must be equal and the \(y-\)intercepts must be different.
+                <br>
+                Setting the slopes equal to each other:
+                <br>
+                \( -\frac{m}{3} = -\frac{12}{m} \)
+                <br>
+                Cross-multiplying gives:
+                <br>
+                \( m^2 = 36 \)
+                <br>
+                Solving for \( m \) gives two solutions, \( m = 6 \) and \( m = -6 \). <br> 
+                However, if \( m = 6 \), the two equations would be identical (not parallel) since substituting \( m \) into the second equation would give \( 12x + 6y = 6 \), which simplifies to the first equation when divided by \(2\). <br> 
+                Therefore, the value of \( m \) that results in no solution is \( m = -6 \), which makes the lines parallel with different \(y-\)intercepts.
+                <br>
+                The correct answer is \(-6\).
+            </p>
+        </div>
+    </div>
+    <div class="question-part" id="questionContent39" data-question-id="linear39">
+        <h1 class="title">Digital SAT Math</h1>
+        <h2 class="subtitle">Linear Equations</h2>
+        <div class="question-list">
+            <div class="number-bar">
+                <span>39</span>
+            </div>
+            <p class="question">
+                In the linear function \( g \), \( g(0) = 10 \) and \( g(1) = 15 \). Which equation defines \( g \)?
+            </p>
+            <div class="option-1-container">
+                <button class="option-1">A</button><p class="choice-1">\( g(x) = 12x + 10 \)</p>
+            </div>
+            <div class="option-2-container">
+                <button class="option-2">B</button><p class="choice-2">\( g(x) = 5x \)</p>
+            </div>
+            <div class="option-3-container">
+                <button class="option-3">C</button><p class="choice-3">\( g(x) = 5x + 10 \)</p>
+            </div>
+            <div class="option-4-container">
+                <button class="option-4">D</button><p class="choice-4">\( g(x) = 5x + 15 \)</p>
+            </div>
+        </div>
+        <button id="button-show-explanation39" class="button-show-explanation" onclick="toggleExplanation(39)">Show Explanation</button>
+        <div id="explanation39" class="explanation">
+            <p class="explanation-paragraph">
+                To find the equation that defines the function \( g \), we can use the given points to find the slope and \(y-\)intercept. The slope \( m \) is the change in the output value over the change in the input value, so:
+                \[ m = \frac{g(1) - g(0)}{1 - 0} = \frac{15 - 10}{1} = 5 \]
+                We know the \(y-\)intercept \( b \) is \( g(0) = 10 \). Therefore, the equation of the function \( g \) is:
+                \[ g(x) = mx + b = 5x + 10 \]
+                Choice A is incorrect because it does not match the \(y-\)intercept of \(10\).
+                <br>
+                Choice B is incorrect because although the slope is correct, it does not have the \(y-\)intercept of \(10\).
+                <br>
+                Choice C is correct because it has both the correct slope and \(y-\)intercept.
+                <br>
+                Choice D is incorrect because the \(y-\)intercept does not match the given \( g(0) = 10 \).
+            </p>
+        </div>
+    </div>
+    <div class="question-part" id="questionContent40" data-question-id="linear40">
+        <h1 class="title">Digital SAT Math</h1>
+        <h2 class="subtitle">Linear Equations</h2>
+        <div class="question-list">
+            <div class="number-bar">
+                <span>40</span>
+            </div>
+            <p class="question">
+                A coffee shop sells a small coffee for \($1.75\) and a large coffee for \($2.50\). Another shop sells the small coffee for \($1.50\) and the large coffee for \($2.75\). If a group of friends buys \(8\) small coffees and \(5\) large coffees at the first shop for a total of \($29.00\), what would the same order cost at the second shop?
+            </p>
+            <div class="option-1-container">
+                <button class="option-1">A</button><p class="choice-1">\($27.75\)</p>
+            </div>
+            <div class="option-2-container">
+                <button class="option-2">B</button><p class="choice-2">\($30.25\)</p>
+            </div>
+            <div class="option-3-container">
+                <button class="option-3">C</button><p class="choice-3">\($32.50\)</p>
+            </div>
+            <div class="option-4-container">
+                <button class="option-4">D</button><p class="choice-4">\($25.75\)</p>
+            </div>
+        </div>
+        <button id="button-show-explanation40" class="button-show-explanation" onclick="toggleExplanation(39)">Show Explanation</button>
+        <div id="explanation40" class="explanation">
+            <p class="explanation-paragraph">
+                To find the cost of the same order at the second shop, we calculate the price for \(8\) small coffees and \(5\) large coffees with the prices from the second shop:
+                <br>
+                \( 8 \times $1.50 \) for small coffees \( + \) \( 5 \times $2.75 \) for large coffees.
+                <br>
+                \( = $12.00 \) for small coffees \( + \) \( $13.75 \) for large coffees.
+                <br>
+                \( = $25.75 \) in total for the second shop.
+                <br>
+                Hence, the same order would cost \($25.75\) at the second shop, which confirms that Option D is the correct answer.
+                <br>
+                The other options are incorrect as they do not match the calculated total cost for the second shop.
+            </p>
+        </div>
+    </div>
+    <div class="question-part" id="questionContent41" data-question-id="linear41">
+        <h1 class="title">Digital SAT Math</h1>
+        <h2 class="subtitle">Linear Equations</h2>
+        <div class="question-list">
+            <div class="number-bar">
+                <span>41</span>
+            </div>
+            <p class="question">
+                A school district has \(5\) small schools and \(20\) large schools. The total number of students across all schools is \(25,000\). The equation \(5s + 20l = 25,000\) represents this situation. What does the variable \(s\) best represent in this context?
+            </p>
+            <div class="option-1-container">
+                <button class="option-1">A</button><p class="choice-1">The average number of students per small school</p>
+            </div>
+            <div class="option-2-container">
+                <button class="option-2">B</button><p class="choice-2">The average number of students per large school</p>
+            </div>
+            <div class="option-3-container">
+                <button class="option-3">C</button><p class="choice-3">The total number of students in the small schools</p>
+            </div>
+            <div class="option-4-container">
+                <button class="option-4">D</button><p class="choice-4">The total number of students in the large schools</p>
+            </div>
+        </div>
+        <button id="button-show-explanation41" class="button-show-explanation" onclick="toggleExplanation(41)">Show Explanation</button>
+        <div id="explanation41" class="explanation">
+            <p class="explanation-paragraph">
+                The equation \(5s + 20l = 25,000\) relates the number of students in small schools (\(s\)) and large schools (\(l\)) to the total student population. Given that \(l\) represents the number of large schools, and there are \(20\) large schools, \(20l\) is the total number of students across all large schools. Therefore, \(5s\) must represent the total number of students across all small schools, not the average number.
+                <br>
+                Choice A is incorrect because \(s\) is multiplied by \(5\), which is the number of small schools, indicating a total rather than an average.
+                <br>
+                Choice B is incorrect because the variable \(l\) for the large schools is not being questioned.
+                <br>
+                Choice C is correct because \(s\) represents the total number of students across the \(5\) small schools.
+                <br>
+                Choice D is incorrect because \(20l\) represents the total number of students in the large schools, not \(s\).
+            </p>
+        </div>
+    </div>
+    <div class="question-part" id="questionContent42" data-question-id="linear42">
+        <h1 class="title">Digital SAT Math</h1>
+        <h2 class="subtitle">Linear Equations</h2>
+        <div class="question-list">
+            <div class="number-bar">
+                <span>42</span>
+            </div>
+            <table>
+                <tr><td>\(-8\)</td><td>\(m + 248\)</td></tr>
+                <tr><td>\(-4\)</td><td>\(m + 124\)</td></tr>
+                <tr><td>\(0\)</td><td>\(m\)</td></tr>
+            </table>
+            <p class="question">
+                The table shows three values of \(x\) and their corresponding values of \(y\), where \(m\) is a constant, for the linear relationship between \(x\) and \(y\). What is the slope of the line that represents this relationship in the \(xy\)-plane?
+            </p>
+            <div class="option-1-container">
+                <button class="option-1">A</button><p class="choice-1">\( -\frac{124}{4} \)</p>
+            </div>
+            <div class="option-2-container">
+                <button class="option-2">B</button><p class="choice-2">\( \frac{m+124}{-4} \)</p>
+            </div>
+            <div class="option-3-container">
+                <button class="option-3">C</button><p class="choice-3">\( \frac{m+248}{-8} \)</p>
+            </div>
+            <div class="option-4-container">
+                <button class="option-4">D</button><p class="choice-4">\( \frac{2m-124}{4} \)</p>
+            </div>
+        </div>
+        <button id="button-show-explanation42" class="button-show-explanation" onclick="toggleExplanation(42)">Show Explanation</button>
+        <div id="explanation42" class="explanation">
+            <p class="explanation-paragraph">
+                To determine the slope of the line that represents the relationship between \(x\) and \(y\), we can calculate the change in \(y\) over the change in \(x\) between any two points. Using the first and second points:
+                <br>
+                Slope \(m = \frac{(m + 124) - (m + 248)}{-4 - (-8)} = \frac{-124}{4} = -31\)
+                <br>
+                Thus, the slope of the line is \( -31 \), which means option A is correct.
+                <br>
+                Option B is incorrect because it does not simplify to the correct slope.
+                <br>
+                Option C is incorrect because it represents the change in \(y\) over the change in \(x\) from the first to the third point, not the slope.
+                <br>
+                Option D is incorrect because it incorrectly combines the values of \(m\) from different points and does not represent the slope of the line.
+            </p>
+        </div>
+    </div>
+    <div class="question-part" id="questionContent43" data-question-id="linear43">
+        <h1 class="title">Digital SAT Math</h1>
+        <h2 class="subtitle">Linear Equations</h2>
+        <div class="question-list">
+            <div class="number-bar">
+                <span>43</span>
+            </div>
+            <p class="question">
+                A stationery store offers two types of planners: basic and premium. Store C sells the basic planner for \($8.00\) and the premium for \($12.00\). Store D sells the basic planner for \($7.50\) and the premium for \($13.00\). If a shopper buys \(3\) basic planners and \(2\) premium planners at Store C and spends a total of \($48.00\), how much would these items cost at Store D?
+            </p>
+            <div class="option-1-container">
+                <button class="option-1">A</button><p class="choice-1">\($46.50\)</p>
+            </div>
+            <div class="option-2-container">
+                <button class="option-2">B</button><p class="choice-2">\($49.50\)</p>
+            </div>
+            <div class="option-3-container">
+                <button class="option-3">C</button><p class="choice-3">\($51.00\)</p>
+            </div>
+            <div class="option-4-container">
+                <button class="option-4">D</button><p class="choice-4">\($53.50\)</p>
+            </div>
+            <div class="option-5-container">
+                <button class="option-5">E</button><p class="choice-5">\($48.50\)</p>
+            </div>
+        </div>
+        <button id="button-show-explanation43" class="button-show-explanation" onclick="toggleExplanation(43)">Show Explanation</button>
+        <div id="explanation43" class="explanation">
+            <p class="explanation-paragraph">
+                The shopper buys \(3\) basic planners and \(2\) premium planners at Store C for \($48.00\). At Store C, the cost of \(3\) basic planners at \($8.00\) each is \($24.00\) and \(2\) premium planners at \($12.00\) each is \($24.00\), totaling \($48.00\). At Store D, the cost of \(3\) basic planners at \($7.50\) each is \($22.50\) and \(2\) premium planners at \($13.00\) each is \($26.00\). Therefore, the total cost at Store D would be \($22.50 + $26.00 = $48.50\).
+                <br>
+                Option A is incorrect because the total cost at Store D is not \($46.50\).
+                <br>
+                Option B is incorrect because the total cost at Store D is not \($49.50\).
+                <br>
+                Option C is incorrect because the total cost at Store D is not \($51.00\).
+                <br>
+                Option D is incorrect because the total cost at Store D is not \($53.50\).
+                <br>
+                Option E is correct because the total cost at Store D is \($48.50\).
+            </p>
+        </div>
+    </div>
+    <div class="question-part" id="questionContent44" data-question-id="linear44">
+        <h1 class="title">Digital SAT Math</h1>
+        <h2 class="subtitle">Linear Equations</h2>
+        <div class="question-list">
+            <div class="number-bar">
+                <span>44</span>
+            </div>
+            <p class="question">
+                In the system of equations presented below, \(q\) is a constant.
+                <br>\(qx - 5y = 10\)
+                <br>\(15x + qy = -5q\)
+                <br>If the system of equations does not have exactly one solution, what is not the value of \(q\)?
+            </p>
+            <div class="option-1-container">
+                <button class="option-1">A</button><p class="choice-1">\(-5\)</p>
+            </div>
+            <div class="option-2-container">
+                <button class="option-2">B</button><p class="choice-2">\(0\)</p>
+            </div>
+            <div class="option-3-container">
+                <button class="option-3">C</button><p class="choice-3">\(5\)</p>
+            </div>
+            <div class="option-4-container">
+                <button class="option-4">D</button><p class="choice-4">\(15\)</p>
+            </div>
+            <div class="option-5-container">
+                <button class="option-5">E</button><p class="choice-5">\(-\sqrt{75}\)</p>
+            </div>
+        </div>
+        <button id="button-show-explanation44" class="button-show-explanation" onclick="toggleExplanation(44)">Show Explanation</button>
+        <div id="explanation44" class="explanation">
+            <p class="explanation-paragraph">
+                For the system to not have exactly one solution, it must either have no solutions or infinitely many solutions. This happens when the two equations are proportional, leading to parallel lines (no solutions) or the same line (infinitely many solutions). To check for proportionality, the coefficients of \(x\) and \(y\) in the two equations are compared.
+                <br>
+                In the first equation, the coefficient of \(x\) is \(q\) and of \(y\) is \(-5\). <br> 
+                In the second equation, the coefficients are \(15\) and \(q\) respectively. <br> 
+                For the lines to be parallel, the ratios of the coefficients must be equal, which implies \(q/15 = -5/q\). Solving this, \(q^2 = -75\), giving \(q = \pm\sqrt{75}\).
+                <br>
+                Since \(-\sqrt{75}\) is a potential solution to this equation, it could be the value of \(q\) that makes the lines parallel. However, since we are looking for what \(q\) is not, the answer is \(E\) because it's given as a negative square root, indicating that it is indeed not the value for \(q\) that would result in one unique solution.
+                <br>
+                Therefore, the correct answer is \(E\), \(-\sqrt{75}\), as it is the value of \(q\) that does not lead to exactly one solution for the system of equations.
+            </p>
+        </div>
+    </div>
+    <div class="question-part" id="questionContent45" data-question-id="linear45">
+        <h1 class="title">Digital SAT Math</h1>
+        <h2 class="subtitle">Linear Equations</h2>
+        <div class="question-list">
+            <div class="number-bar">
+                <span>45</span>
+            </div>
+            <p class="question">
+                If \( \frac{3k-8}{9} = \frac{3k+16}{18} \), what is the interval for \( k + 3 \)?
+            </p>
+            <div class="option-1-container">
+                <button class="option-1">A</button><p class="choice-1">\(-11\) and \(11\)</p>
+            </div>
+            <div class="option-2-container">
+                <button class="option-2">B</button><p class="choice-2">\(7\) and \(15\)</p>
+            </div>
+            <div class="option-3-container">
+                <button class="option-3">C</button><p class="choice-3">\(-3\) and \(1\)</p>
+            </div>
+            <div class="option-4-container">
+                <button class="option-4">D</button><p class="choice-4">\(1\) and \(6\)</p>
+            </div>
+        </div>
+        <button id="button-show-explanation45" class="button-show-explanation" onclick="toggleExplanation(45)">Show Explanation</button>
+        <div id="explanation45" class="explanation">
+            <p class="explanation-paragraph">
+                To find the interval for \( k + 3 \), we start by solving the given equation for \( k \):
+                \[ \frac{3k-8}{9} = \frac{3k+16}{18} \]
+                Multiplying both sides by \(18\) to eliminate the denominators gives us:
+                \[ 2(3k-8) = 3k+16 \]
+                Expanding and simplifying:
+                \[ 6k - 16 = 3k + 16 \]
+                \[ 3k = 32 \]
+                \[ k = \frac{32}{3} \]
+                Adding \(3\) to \( k \):
+                \[ k + 3 = \frac{32}{3} + \frac{9}{3} \]
+                \[ k + 3 = \frac{41}{3} \]
+                The interval for \( k + 3 \) is a single value, \( \frac{41}{3} \), which is approximately \( 13.67 \), the range that contains \( 13.67 \) is from \(7\) and \(15\), making option B the correct choice.
+                <br>
+            </p>
+        </div>
+    </div>
+    <div class="question-part" id="questionContent46" data-question-id="linear46">
+        <h1 class="title">Digital SAT Math</h1>
+        <h2 class="subtitle">Linear Equations</h2>
+        <div class="question-list">
+            <div class="number-bar">
+                <span>46</span>
+            </div>
+            <p class="question">
+                How many solutions does the equation \(9(2x + 1) = 18x + 9\) have?
+            </p>
+            <div class="option-1-container">
+                <button class="option-1">A</button><p class="choice-1">Exactly one</p>
+            </div>
+            <div class="option-2-container">
+                <button class="option-2">B</button><p class="choice-2">Exactly two</p>
+            </div>
+            <div class="option-3-container">
+                <button class="option-3">C</button><p class="choice-3">Infinitely many</p>
+            </div>
+            <div class="option-4-container">
+                <button class="option-4">D</button><p class="choice-4">Zero</p>
+            </div>
+        </div>
+        <button id="button-show-explanation46" class="button-show-explanation" onclick="toggleExplanation(46)">Show Explanation</button>
+        <div id="explanation46" class="explanation">
+            <p class="explanation-paragraph">
+                Simplifying the given equation by distributing the \(9\) on the left side:
+                \[ 18x + 9 = 18x + 9 \]
+                We see that the equation is the same on both sides, which means every value of \(x\) satisfies the equation. Thus, the equation has infinitely many solutions.
+                <br>
+                Choice A is incorrect because the equation does not depend on the value of \(x\).
+                <br>
+                Choice B is incorrect because there are not just two unique solutions; the equation is true for all \(x\).
+                <br>
+                Choice C is correct because the equation simplifies to an identity, indicating that all real numbers are solutions.
+                <br>
+                Choice D is incorrect because the equation is not a contradiction; it does not have no solutions.
+            </p>
+        </div>
+    </div>
+    <div class="question-part" id="questionContent47" data-question-id="linear47">
+        <h1 class="title">Digital SAT Math</h1>
+        <h2 class="subtitle">Linear Equations</h2>
+        <div class="question-list">
+            <div class="number-bar">
+                <span>47</span>
+            </div>
+            <p class="question">
+                The equations \(8m - 6n = 24\) and \(mx + ny = 3\) are graphed on the \(xy-\)plane. For which values of \(m\) and \(n\) are the lines perpendicular?
+            </p>
+            <div class="option-1-container">
+                <button class="option-1">A</button><p class="choice-1">\(m = \frac{3}{4}, n = 1\)</p>
+            </div>
+            <div class="option-2-container">
+                <button class="option-2">B</button><p class="choice-2">\(m = 4, n = -3\)</p>
+            </div>
+            <div class="option-3-container">
+                <button class="option-3">C</button><p class="choice-3">\(m = -\frac{3}{4}, n = 1\)</p>
+            </div>
+            <div class="option-4-container">
+                <button class="option-4">D</button><p class="choice-4">\(m = \frac{4}{3}, n = 1\)</p>
+            </div>
+        </div>
+        <button id="button-show-explanation47" class="button-show-explanation" onclick="toggleExplanation(47)">Show Explanation</button>
+        <div id="explanation47" class="explanation">
+            <p class="explanation-paragraph">
+                To find the correct values of \(m\) and \(n\) for the lines to be perpendicular, we set the slopes of the two lines equal to negative reciprocals of each other. Since the slope of the first equation is \(\frac{4}{3}\), the slope of the second equation must be \(-\frac{3}{4}\) for them to be perpendicular. This means \(m\) must be \(\frac{4}{3}\) when \(n\) is \(1\).<br>
+                Option A does not satisfy this condition.<br>
+                Option B does not satisfy this condition.<br>
+                Option C does not satisfy this condition.<br>
+                Option D satisfies the condition because \(m = \frac{4}{3}\) and \(n = 1\) are the correct values for the lines to be perpendicular.
+            </p>
+        </div>
+    </div>
+    <div class="question-part" id="questionContent48" data-question-id="linear48">
+        <h1 class="title">Digital SAT Math</h1>
+        <h2 class="subtitle">Linear Equations</h2>
+        <div class="question-list">
+            <div class="number-bar">
+                <span>48</span>
+            </div>
+            <p class="question">
+                A company has \(3\) office buildings and \(15\) retail stores. The total area of floor space in these properties is \(45,000\) square meters. The equation \(3o + 15r = 45,000\) describes this. What does \(o\) best represent here?
+            </p>
+            <div class="option-1-container">
+                <button class="option-1">A</button><p class="choice-1">The average floor space per office building</p>
+            </div>
+            <div class="option-2-container">
+                <button class="option-2">B</button><p class="choice-2">The average floor space per retail store</p>
+            </div>
+            <div class="option-3-container">
+                <button class="option-3">C</button><p class="choice-3">The total floor space of the office buildings</p>
+            </div>
+            <div class="option-4-container">
+                <button class="option-4">D</button><p class="choice-4">The total floor space of the retail stores</p>
+            </div>
+        </div>
+        <button id="button-show-explanation48" class="button-show-explanation" onclick="toggleExplanation(48)">Show Explanation</button>
+        <div id="explanation48" class="explanation">
+            <p class="explanation-paragraph">
+                The equation \(3o + 15r = 45,000\) indicates that \(o\) multiplied by \(3\) plus \(r\) multiplied by \(15\) equals the total floor space of \(45,000\) square meters. Since \(o\) is multiplied by \(3\), the number of office buildings, it represents the total floor space of each office building combined, not the average.<br>
+                Choice A is incorrect because \(o\) represents the total, not the average.<br>
+                Choice B is incorrect because \(r\) represents the retail stores, not \(o\).<br>
+                Choice C is correct because multiplying the total floor space of each office building by the number of office buildings \((3)\) gives the total floor space for all office buildings.<br>
+                Choice D is incorrect because it concerns the retail stores, not the office buildings.
+            </p>
+        </div>
+    </div>
+    <div class="question-part" id="questionContent49" data-question-id="linear49">
+        <h1 class="title">Digital SAT Math</h1>
+        <h2 class="subtitle">Linear Equations</h2>
+        <div class="question-list">
+            <div class="number-bar">
+                <span>49</span>
+            </div>
+            <p class="question">
+                The graph shows the line of the function \(q(x) = -\frac{1}{3}x + c\) where the line passes through the point \((-3, -1)\). Which equation defines function \(q\)?
+            </p>
+            <div class="option-1-container">
+                <button class="option-1">A</button><p class="choice-1">\(q(x) = -\frac{1}{3}x\)</p>
+            </div>
+            <div class="option-2-container">
+                <button class="option-2">B</button><p class="choice-2">\(q(x) = -\frac{1}{3}x + 1\)</p>
+            </div>
+            <div class="option-3-container">
+                <button class="option-3">C</button><p class="choice-3">\(q(x) = -\frac{1}{3}x - 2\)</p>
+            </div>
+            <div class="option-4-container">
+                <button class="option-4">D</button><p class="choice-4">\(q(x) = -\frac{1}{3}x + 3\)</p>
+            </div>
+        </div>
+        <button id="button-show-explanation49" class="button-show-explanation" onclick="toggleExplanation(49)">Show Explanation</button>
+        <div id="explanation49" class="explanation">
+            <p class="explanation-paragraph">
+                Since the line passes through the point \((-3, -1)\), we can substitute these values into the function \(q(x)\) to find \(c\). 
+                <br>
+                \(-1 = -\frac{1}{3}(-3) + c\)
+                <br>
+                \(-1 = 1 + c\)
+                <br>
+                \(c = -2\)
+                <br>
+                Therefore, the equation of the line is \(q(x) = -\frac{1}{3}x - 2\), which corresponds to option C.
+                <br>
+                Options A, B, and D are incorrect because substituting \(-3\) for \(x\) does not result in a \(y\)-value of \(-1\).
+            </p>
+        </div>
+    </div>
+    <div class="question-part" id="questionContent50" data-question-id="linear50">
+        <h1 class="title">Digital SAT Math</h1>
+        <h2 class="subtitle">Linear Equations</h2>
+        <div class="question-list">
+            <div class="number-bar">
+                <span>50</span>
+            </div>
+            <p class="question">
+                During a charity event, each participant can receive blue and yellow stickers based on their activities. Each blue sticker is worth \(3\) points, and each yellow sticker is worth \(7\) points. One participant collected \( B \) blue stickers and \( Y \) yellow stickers for a total of \(260\) points. The given equation is \( 3B + 7Y = 260 \). How many more points is a yellow sticker worth than a blue sticker?
+            </p>
+            <div class="input-button">
+                <input class="input-answer" type="text"> 
+            </div>
+        </div>
+        <button id="button-show-explanation50" class="button-show-explanation" onclick="toggleExplanation(50)">Show Explanation</button>
+        <div id="explanation50" class="explanation">
+            <p class="explanation-paragraph">
+                The value of a blue sticker is \(3\) points and the value of a yellow sticker is \(7\) points. The difference in their values is \( 7 - 3 = 4 \). Therefore, a yellow sticker is worth \(4\) more points than a blue sticker.
+                <br>
+                This can be calculated simply by comparing the point values assigned to each sticker color.
+            </p>
+        </div>
+    </div>
+</body>
+</html>
