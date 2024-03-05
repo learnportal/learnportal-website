@@ -1,0 +1,1849 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" 
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <link rel="stylesheet" type="text/css" href="exponential-equations.css">
+    <script src="function.js"></script>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;
+    0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" 
+    rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;
+    1,400;1,700;1,900&family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;
+    1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="question-part" id="questionContent1" data-question-id="exponential1">
+        <h1 class="title">Digital SAT Math</h1>
+        <h2 class="subtitle">Exponential and Linear Growth</h2>  
+        <div class="question-list">
+            <div class="number-bar">
+                <span>1</span>
+            </div>
+            <p class="question">
+                A town's population increases by \(5\%\) every year. If the population was \(10,000\) in the year \(2000\), which function represents the population \( P \) in the year \( t \)?
+            </p>
+            <div class="option-1-container">
+                <button class="option-1">A</button><p class="choice-1">\( P = 10,000 \cdot (1.05)^{t-2000} \)</p>
+            </div>
+            <div class="option-2-container">
+                <button class="option-2">B</button><p class="choice-2">\( P = 10,000 \cdot (0.05)^t \)</p>
+            </div>
+            <div class="option-3-container">
+                <button class="option-3">C</button><p class="choice-3">\( P = 10,000 \cdot 1.05t \)</p>
+            </div>
+            <div class="option-4-container">
+                <button class="option-4">D</button><p class="choice-4">\( P = 10,000 \cdot t^{1.05} \)</p>
+            </div>
+        </div>
+        <button id="button-show-explanation1" class="button-show-explanation" onclick="toggleExplanation(1)">Show Explanation</button>
+        <div id="explanation1" class="explanation">
+            <p class="explanation-paragraph">
+                To solve this, we need to identify the type of growth depicted by the problem. Since the population increases by a percentage each year, this is an example of exponential growth. The formula for exponential growth is \( P(t) = P_0 \cdot (1 + r)^{t} \), where:
+            <ul>
+                <li>\( P_0 \) is the initial amount, here it is \(10,000\).</li>
+                <li>\( r \) is the growth rate, which is \(5\%\) or \(0.05\).</li>
+                <li>\( t \) is the number of years since the start time, which is \( t - 2000 \) because we start counting from the year \(2000\).</li>
+            </ul>
+            Therefore, we plug these values into our formula to get \( P = 10,000 \cdot (1.05)^{t-2000} \).
+            <br>
+            Choice A is correct as it aligns with the exponential growth formula with the correct base and exponent reflecting the start year of \(2000\).
+            <br>
+            Choice B is incorrect because it uses \(0.05\) as the base of the exponent, which does not represent a \(5\%\) growth from a base population.
+            <br>
+            Choice C is incorrect because it represents a linear relationship, which is not suitable for percentage growth per year.
+            <br>
+            Choice D is incorrect because it uses \( t \) as the base and \(1.05\) as the exponent, which does not conform to the exponential growth model.
+            </p>
+        </div>
+    </div>
+    <div class="question-part" id="questionContent2" data-question-id="exponential2">
+        <h1 class="title">Digital SAT Math</h1>
+        <h2 class="subtitle">Exponential and Linear Growth</h2>  
+        <div class="question-list">
+            <div class="number-bar">
+                <span>2</span>
+            </div>
+            <p class="question">
+                The population of a small town is increasing at a rate of \(5\%\) per year. If the population was \(2,000\) in the year \(2020\), which of the following represents the population, \( P \), in the year \( t \)?
+            </p>
+            <div class="option-1-container">
+                <button class="option-1">A</button><p class="choice-1">\( P = 2000 \cdot (1.05)^t \)</p>
+            </div>
+            <div class="option-2-container">
+                <button class="option-2">B</button><p class="choice-2">\( P = 2000 \cdot (0.05)^t \)</p>
+            </div>
+            <div class="option-3-container">
+                <button class="option-3">C</button><p class="choice-3">\( P = 2000 \cdot 1.05t \)</p>
+            </div>
+            <div class="option-4-container">
+                <button class="option-4">D</button><p class="choice-4">\( P = 2000 \cdot (1.05)^{t-2020} \)</p>
+            </div>
+        </div>
+        <button id="button-show-explanation2" class="button-show-explanation" onclick="toggleExplanation(2)">Show Explanation</button>
+        <div id="explanation2" class="explanation">
+            <p class="explanation-paragraph">
+                Exponential growth is described by the formula \( P(t) = P_0 \cdot (1 + r)^{t-t_0} \), where \( P_0 \) is the initial population, \( r \) is the growth rate, and \( t_0 \) is the initial time period.
+                <br>
+                In this scenario:
+                <ul>
+                    <li>\( P_0 = 2000 \) (the population in \(2020\))</li>
+                    <li>\( r = 0.05 \) (\(5\%\) growth rate per year)</li>
+                    <li>\( t_0 = 2020 \) (the year from which we start calculating the growth)</li>
+                </ul>
+                Substituting these values into the formula, we get \( P = 2000 \cdot (1.05)^{t-2020} \).
+                <br>
+                Choice A is incorrect because it does not account for the initial time period \((2020)\).
+                <br>
+                Choice B is incorrect because it uses \(0.05\) as the base of the exponent, which would imply a decrease, not growth.
+                <br>
+                Choice C is incorrect because it implies linear growth, not exponential.
+                <br>
+                Choice D is correct because it correctly adjusts for the initial time period, showing the population's growth rate starting from the year \(2020\).
+            </p>
+        </div>
+    </div>
+    <div class="question-part" id="questionContent3" data-question-id="exponential3">
+        <h1 class="title">Digital SAT Math</h1>
+        <h2 class="subtitle">Exponential and Linear Growth</h2>  
+        <div class="question-list">
+            <div class="number-bar">
+                <span>3</span>
+            </div>
+            <p class="question">
+                A city's population increases by \(20,000\) people each year. Which of the following scenarios represents a linear growth of the population?
+            </p>
+            <div class="option-1-container">
+                <button class="option-1">A</button><p class="choice-1">The population increases by \(1\%\) each year.</p>
+            </div>
+            <div class="option-2-container">
+                <button class="option-2">B</button><p class="choice-2">The population increases by \(1.5\%\) each year.</p>
+            </div>
+            <div class="option-3-container">
+                <button class="option-3">C</button><p class="choice-3">The city annexes a neighboring area, adding \(20,000\) people each year.</p>
+            </div>
+            <div class="option-4-container">
+                <button class="option-4">D</button><p class="choice-4">The population doubles every \(20\) years.</p>
+            </div>
+        </div>
+        <button id="button-show-explanation3" class="button-show-explanation" onclick="toggleExplanation(3)">Show Explanation</button>
+        <div id="explanation3" class="explanation">
+            <p class="explanation-paragraph">
+                Linear growth means the population increases by a constant amount each period, as opposed to exponential growth, which is a percentage increase based on the current population. 
+                <br>
+                Choice A and Choice B represent exponential growth because the increase is a percentage of the current population, which means the actual increase amount changes as the population grows.
+                <br>
+                Choice C represents linear growth because the same number of people, \(20,000\), are added each year, regardless of the current population size.
+                <br>
+                Choice D represents exponential growth because the population is doubling, which is a percentage increase, not a constant amount.
+                <br>
+                Therefore, the correct answer is Option C.
+            </p>
+        </div>
+    </div>
+    <div class="question-part" id="questionContent4" data-question-id="exponential4">
+        <h1 class="title">Digital SAT Math</h1>
+        <h2 class="subtitle">Exponential and Linear Growth</h2>
+        <div class="question-list">
+            <div class="number-bar">
+                <span>4</span>
+            </div>
+            <p class="question">
+                A certain species of algae doubles its mass every \(5\) days when in optimal conditions. If a sample starts with a mass of \(10\) grams, which function represents its mass, \( M \), in grams after \( t \) days?
+            </p>
+            <div class="option-1-container">
+                <button class="option-1">A</button><p class="choice-1">\( M = 10 \cdot 2^{t/5} \)</p>
+            </div>
+            <div class="option-2-container">
+                <button class="option-2">B</button><p class="choice-2">\( M = 10 \cdot 2^{5t} \)</p>
+            </div>
+            <div class="option-3-container">
+                <button class="option-3">C</button><p class="choice-3">\( M = 10 \cdot (1.2)^t \)</p>
+            </div>
+            <div class="option-4-container">
+                <button class="option-4">D</button><p class="choice-4">\( M = 10 \cdot t^2 \)</p>
+            </div>
+        </div>
+        <button id="button-show-explanation4" class="button-show-explanation" onclick="toggleExplanation(4)">Show Explanation</button>
+        <div id="explanation4" class="explanation">
+            <p class="explanation-paragraph">
+                Since the algae mass doubles every \(5\) days, this is an exponential growth situation. The base of the exponent will be \(2\) because the mass doubles. The exponent \( \frac{t}{5} \) represents the number of \(5-\)day periods in \( t \) days. 
+                <br>
+                Choice A is correct because it uses the base \(2\) raised to the power of \( \frac{t}{5} \), accurately reflecting the doubling every \(5\) days.
+                <br>
+                Choice B is incorrect because \( 2^{5t} \) would represent the mass doubling every \( \frac{1}{5} \)th of a day, which is not the case.
+                <br>
+                Choice C is incorrect because a growth factor of \(1.2\) does not reflect a doubling of mass.
+                <br>
+                Choice D is incorrect because \( t^2 \) represents a quadratic relationship, not exponential growth.
+            </p>
+        </div>
+    </div>
+    <div class="question-part" id="questionContent5" data-question-id="exponential5">
+        <h1 class="title">Digital SAT Math</h1>
+        <h2 class="subtitle">Exponential and Linear Growth</h2>
+        <div class="question-list">
+            <div class="number-bar">
+                <span>5</span>
+            </div>
+            <p class="question">
+                Maria has a garden in which she plants \(10\) new flower seeds at the beginning of each month. Which of the following best describes the relationship between time (in months) and the total number of flower seeds planted?
+            </p>
+            <div class="option-1-container">
+                <button class="option-1">A</button><p class="choice-1">Exponential decay</p>
+            </div>
+            <div class="option-2-container">
+                <button class="option-2">B</button><p class="choice-2">Decreasing linear</p>
+            </div>
+            <div class="option-3-container">
+                <button class="option-3">C</button><p class="choice-3">Exponential growth</p>
+            </div>
+            <div class="option-4-container">
+                <button class="option-4">D</button><p class="choice-4">Increasing linear</p>
+            </div>
+        </div>
+        <button id="button-show-explanation5" class="button-show-explanation" onclick="toggleExplanation(5)">Show Explanation</button>
+        <div id="explanation5" class="explanation">
+            <p class="explanation-paragraph">
+                The number of seeds Maria plants grows by a fixed amount each month. This is a characteristic of linear growth, not exponential. Exponential growth would mean the number of seeds grows by a percentage of the previous amount, which isn’t the case here.
+                <br>
+                Choice A is incorrect because there is no decay; the number of seeds is increasing.
+                <br>
+                Choice B is incorrect because the number of seeds is increasing, not decreasing.
+                <br>
+                Choice C is incorrect because the situation does not describe a rate of growth that is proportional to the current amount.
+                <br>
+                Choice D is correct because the total number of seeds planted increases by the same amount each month, indicating a constant rate of change, which is linear.
+            </p>
+        </div>
+    </div>
+    <div class="question-part" id="questionContent6" data-question-id="exponential6">
+        <h1 class="title">Digital SAT Math</h1>
+        <h2 class="subtitle">Exponential and Linear Growth</h2>
+        <div class="question-list">
+            <div class="number-bar">
+                <span>6</span>
+            </div>
+            <p class="question">
+                A parking lot charges \($2\) for the first hour and doubles the charge for each subsequent hour. If Paul parks his car for \(4\) hours, which of the following best describes the relationship between the time parked (in hours) and the total cost?
+            </p>
+            <div class="option-1-container">
+                <button class="option-1">A</button><p class="choice-1">Increasing linear</p>
+            </div>
+            <div class="option-2-container">
+                <button class="option-2">B</button><p class="choice-2">Decreasing linear</p>
+            </div>
+            <div class="option-3-container">
+                <button class="option-3">C</button><p class="choice-3">Exponential growth</p>
+            </div>
+            <div class="option-4-container">
+                <button class="option-4">D</button><p class="choice-4">Exponential decay</p>
+            </div>
+        </div>
+        <button id="button-show-explanation6" class="button-show-explanation" onclick="toggleExplanation(6)">Show Explanation</button>
+        <div id="explanation6" class="explanation">
+            <p class="explanation-paragraph">
+                The parking lot's charging method exhibits exponential growth. The cost for each hour is double the previous hour's cost, which is a common characteristic of exponential functions. The first hour costs \($2\), the second would cost \($4\), the third \($8\), and so forth, growing exponentially.
+                <br>
+                Choice A is incorrect because the cost does not increase by a fixed amount each hour, which would be indicative of linear growth.
+                <br>
+                Choice B is incorrect because the cost is not decreasing; it's increasing.
+                <br>
+                Choice C is correct because the charge doubles each hour, which is exponential growth.
+                <br>
+                Choice D is incorrect because there is no decay in the cost; it's increasing.
+            </p>
+        </div>
+    </div>
+    <div class="question-part" id="questionContent7" data-question-id="exponential7">
+        <h1 class="title">Digital SAT Math</h1>
+        <h2 class="subtitle">Exponential and Linear Growth</h2>
+        <div class="question-list">
+            <div class="number-bar">
+                <span>7</span>
+            </div>
+            <p class="question">
+                A car's value decreases by \(10\) percent each year. If the car's value was \($25,000\) at the beginning of \(2020\), which of the following equations gives the car's value, \( V \), \( t \) years after \(2020\)?
+            </p>
+            <div class="option-1-container">
+                <button class="option-1">A</button><p class="choice-1">\( V = 25,000 \cdot (0.1)^t \)</p>
+            </div>
+            <div class="option-2-container">
+                <button class="option-2">B</button><p class="choice-2">\( V = 25,000 - 2500t \)</p>
+            </div>
+            <div class="option-3-container">
+                <button class="option-3">C</button><p class="choice-3">\( V = 25,000 \cdot (0.9)^t \)</p>
+            </div>
+            <div class="option-4-container">
+                <button class="option-4">D</button><p class="choice-4">\( V = 25,000 \cdot (0.9)^{t/10} \)</p>
+            </div>
+        </div>
+        <button id="button-show-explanation7" class="button-show-explanation" onclick="toggleExplanation(7)">Show Explanation</button>
+        <div id="explanation7" class="explanation">
+            <p class="explanation-paragraph">
+                The value of the car decreases by \(10\%\) each year, which is an exponential decay model. A decrease of \(10\%\) leaves \(90\%\) of the value each year, which can be represented by \( 0.9 \) in the equation.
+                <br>
+                Choice A is incorrect because \( (0.1)^t \) would represent a \(90\%\) decrease each year, not a \(10\%\) decrease.
+                <br>
+                Choice B is incorrect because it represents a linear decrease, not an exponential one.
+                <br>
+                Choice C is correct because \( (0.9)^t \) correctly models a \(10\%\) decrease each year.
+                <br>
+                Choice D is incorrect because the exponent \( \frac{t}{10} \) does not represent the annual decay correctly.
+            </p>
+        </div>
+    </div>
+    <div class="question-part" id="questionContent8" data-question-id="exponential8">
+        <h1 class="title">Digital SAT Math</h1>
+        <h2 class="subtitle">Exponential and Linear Growth</h2>
+        <div class="question-list">
+            <div class="number-bar">
+                <span>8</span>
+            </div>
+            <p class="question">
+                The number of trees in a park was \(500\) and increased by \(50\) each year. Which of the following functions best models the number of trees, \( T \), after \( t \) years?
+            </p>
+            <div class="option-1-container">
+                <button class="option-1">A</button><p class="choice-1">\( T = 50t + 500 \)</p>
+            </div>
+            <div class="option-2-container">
+                <button class="option-2">B</button><p class="choice-2">\( T = 500(1.1)^t \)</p>
+            </div>
+            <div class="option-3-container">
+                <button class="option-3">C</button><p class="choice-3">\( T = 500t \)</p>
+            </div>
+            <div class="option-4-container">
+                <button class="option-4">D</button><p class="choice-4">\( T = 10t^2 + 50t + 500 \)</p>
+            </div>
+        </div>
+        <button id="button-show-explanation8" class="button-show-explanation" onclick="toggleExplanation(8)">Show Explanation</button>
+        <div id="explanation8" class="explanation">
+            <p class="explanation-paragraph">
+                The number of trees increases by a fixed amount each year, indicating linear growth. Therefore, the model will be a linear equation in the form \( T = mt + b \), where \( m \) is the rate of increase and \( b \) is the initial amount.
+                <br>
+                Choice A is correct because it represents the situation accurately: \( T = 50t + 500 \) shows an increase of \(50\) trees each year from an initial count of \(500\).
+                <br>
+                Choice B is incorrect because it represents exponential growth, which does not apply here since the increase is by a fixed amount, not a percentage.
+                <br>
+                Choice C is incorrect because \( 500t \) does not include the initial \(500\) trees in the park.
+                <br>
+                Choice D is incorrect because it includes a quadratic term, suggesting the rate of increase itself increases each year, which is not the case.
+            </p>
+        </div>
+    </div>
+    <div class="question-part" id="questionContent9" data-question-id="exponential9">
+        <h1 class="title">Digital SAT Math</h1>
+        <h2 class="subtitle">Exponential and Linear Growth</h2>  
+        <div class="question-list">
+            <div class="number-bar">
+                <span>9</span>
+            </div>
+            <p class="question">
+                A culture of cells quadruples every day. If the culture started with \(100\) cells, which of the following functions best models the number of cells, \( C \), after \( d \) days?
+            </p>
+            <div class="option-1-container">
+                <button class="option-1">A</button><p class="choice-1">\( C = 100 \cdot 4^d \)</p>
+            </div>
+            <div class="option-2-container">
+                <button class="option-2">B</button><p class="choice-2">\( C = 100 \cdot d^4 \)</p>
+            </div>
+            <div class="option-3-container">
+                <button class="option-3">C</button><p class="choice-3">\( C = 100 \cdot (1 + d)^4 \)</p>
+            </div>
+            <div class="option-4-container">
+                <button class="option-4">D</button><p class="choice-4">\( C = 100 \cdot 4^{d+1} \)</p>
+            </div>
+        </div>
+        <button id="button-show-explanation9" class="button-show-explanation" onclick="toggleExplanation(9)">Show Explanation</button>
+        <div id="explanation9" class="explanation">
+            <p class="explanation-paragraph">
+                In this scenario, the number of cells increases by a factor of four each day, which is exponential growth. The initial amount of cells is \(100\), and this amount is quadrupled each day, so the equation that models this growth is \( C = 100 \cdot 4^d \).
+                <br>
+                Choice A is the correct model because it represents the cells quadrupling each day, starting with \(100\) cells.
+                <br>
+                Choice B incorrectly suggests the days are raised to the fourth power, which does not represent a quadrupling of the cell count.
+                <br>
+                Choice C adds one day to the initial cell count before raising to the fourth power, which is not how exponential growth works.
+                <br>
+                Choice D is incorrect as it applies the growth factor one more time than the number of days passed.
+                <br>
+                Therefore, the correct answer is Choice A.
+            </p>
+        </div>
+    </div>
+    <div class="question-part" id="questionContent10" data-question-id="exponential10">
+        <h1 class="title">Digital SAT Math</h1>
+        <h2 class="subtitle">Exponential and Linear Growth</h2>  
+        <div class="question-list">
+            <div class="number-bar">
+                <span>10</span>
+            </div>
+            <p class="question">
+                A rumor spreads by each person telling three others every day. If one person starts the rumor, which function represents the total number of people, \( R \), who have heard the rumor after \( d \) days?
+            </p>
+            <div class="option-1-container">
+                <button class="option-1">A</button><p class="choice-1">\( R = 1-3^d \)</p>
+            </div>
+            <div class="option-2-container">
+                <button class="option-2">B</button><p class="choice-2">\( R = 1+3^d \)</p>
+            </div>
+            <div class="option-3-container">
+                <button class="option-3">C</button><p class="choice-3">\( R = 1 \cdot 3^d \)</p>
+            </div>
+            <div class="option-4-container">
+                <button class="option-4">D</button><p class="choice-4">\( R = 3 \cdot d \)</p>
+            </div>
+        </div>
+        <button id="button-show-explanation10" class="button-show-explanation" onclick="toggleExplanation(10)">Show Explanation</button>
+        <div id="explanation10" class="explanation">
+            <p class="explanation-paragraph">
+                Choice B is correct. Since the rumor is being spread to three new people by each person who knows the rumor, and it starts with one person, the total number of people who have heard the rumor after \( d \) days can be represented by \( R = 1 + 3^d \). The \('1'\) represents the initial person who started the rumor.
+                <br>
+                Choice A is incorrect because it does not include the person who originally started the rumor. When \( d = 0 \), \( R \) should equal \(1\), not \(0\).
+                <br>
+                Choice C is incorrect because it adds an extra person each day, which is not part of the pattern described.
+                <br>
+                Choice D is incorrect as it represents linear growth, which does not apply to this scenario where the number of people hearing the rumor grows exponentially each day.
+            </p>
+        </div>
+    </div>
+    <div class="question-part" id="questionContent11" data-question-id="exponential11">
+        <h1 class="title">Digital SAT Math</h1>
+        <h2 class="subtitle">Exponential and Linear Growth</h2>  
+        <div class="question-list">
+            <div class="number-bar">
+                <span>11</span>
+            </div>
+            <p class="question">
+                A car dealership sells \(5\) cars from its inventory each week. Which of the following best describes the relationship between time (in weeks) and the total number of cars in the inventory?
+            </p>
+            <div class="option-1-container">
+                <button class="option-1">A</button><p class="choice-1">Increasing linear</p>
+            </div>
+            <div class="option-2-container">
+                <button class="option-2">B</button><p class="choice-2">Decreasing linear</p>
+            </div>
+            <div class="option-3-container">
+                <button class="option-3">C</button><p class="choice-3">Exponential growth</p>
+            </div>
+            <div class="option-4-container">
+                <button class="option-4">D</button><p class="choice-4">Exponential decay</p>
+            </div>
+        </div>
+        <button id="button-show-explanation11" class="button-show-explanation" onclick="toggleExplanation(11)">Show Explanation</button>
+        <div id="explanation11" class="explanation">
+            <p class="explanation-paragraph">
+                Choice B is the correct answer. In a situation where a car dealership sells a constant number of cars, \(5\) in this case, from its inventory each week, the total number of cars decreases by the same amount each week. This constant rate of change over time is the defining characteristic of linear behavior. Since the number of cars is going down, it is specifically linear decay.
+                <br>
+                Choice A describes an increase, which is not happening here as the inventory is depleting by a fixed number each week, not growing.
+                <br>
+                Choice C is incorrect because exponential growth would mean the number of cars sold each week would be increasing at a rate proportional to the current inventory, which is not described in the scenario.
+                <br>
+                Choice D also does not fit the scenario, despite the term 'decay' suggesting a decrease. Exponential decay would mean the number of cars sold is proportional to the remaining inventory, which would result in a different number of cars being sold each week as the inventory dwindles, not a constant \(5\) cars.
+                <br>
+                Therefore, the relationship between time and the number of cars in the inventory in this scenario is best described by decreasing linear growth.
+            </p>
+        </div>
+    </div>
+    <div class="question-part" id="questionContent12" data-question-id="exponential12">
+        <h1 class="title">Digital SAT Math</h1>
+        <h2 class="subtitle">Exponential and Linear Growth</h2>  
+        <div class="question-list">
+            <div class="number-bar">
+                <span>12</span>
+            </div>
+            <p class="question">
+                A computer loses half of its value every year due to depreciation. If the original value was \($800\), which of the following best describes the relationship between time (in years) and the value of the computer?
+            </p>
+            <div class="option-1-container">
+                <button class="option-1">A</button><p class="choice-1">Increasing linear</p>
+            </div>
+            <div class="option-2-container">
+                <button class="option-2">B</button><p class="choice-2">Decreasing linear</p>
+            </div>
+            <div class="option-3-container">
+                <button class="option-3">C</button><p class="choice-3">Exponential growth</p>
+            </div>
+            <div class="option-4-container">
+                <button class="option-4">D</button><p class="choice-4">Exponential decay</p>
+            </div>
+        </div>
+        <button id="button-show-explanation12" class="button-show-explanation" onclick="toggleExplanation(12)">Show Explanation</button>
+        <div id="explanation12" class="explanation">
+            <p class="explanation-paragraph">
+                Choice D is correct. The computer's value decreases by a factor of \(1/2\) each year due to depreciation. This means each year, the computer's value is \(50\%\) of the value of the previous year, which is characteristic of exponential decay. The rate of decrease is not constant in terms of dollars lost per year, but rather is proportional to the computer's value at the beginning of each year.
+                <br>
+                Choice A is incorrect because the value of the computer is not increasing; it is decreasing.
+                <br>
+                Choice B is incorrect because it implies a constant dollar amount decrease each year, which would be a linear model. However, the value decreases by half each year, which is a percentage decrease, not a fixed number decrease.
+                <br>
+                Choice C is incorrect as it indicates an increase in value, which contradicts the depreciation described in the question.
+            </p>
+        </div>
+    </div>
+    <div class="question-part" id="questionContent13" data-question-id="exponential13">
+        <h1 class="title">Digital SAT Math</h1>
+        <h2 class="subtitle">Exponential and Linear Growth</h2>  
+        <div class="question-list">
+            <div class="number-bar">
+                <span>13</span>
+            </div>
+            <p class="question">
+                The amount of a certain radioactive isotope decays by \(2\) percent each month. If the initial mass was \(100\) grams in January \(2021\), which equation gives the remaining mass, \( M \), \( t \) months after January \(2021\)?
+            </p>
+            <div class="option-1-container">
+                <button class="option-1">A</button><p class="choice-1">\( M = 100(0.02)^t \)</p>
+            </div>
+            <div class="option-2-container">
+                <button class="option-2">B</button><p class="choice-2">\( M = 100 - 2t \)</p>
+            </div>
+            <div class="option-3-container">
+                <button class="option-3">C</button><p class="choice-3">\( M = 100(0.98)^t \)</p>
+            </div>
+            <div class="option-4-container">
+                <button class="option-4">D</button><p class="choice-4">\( M = 100(0.98)^{12t} \)</p>
+            </div>
+        </div>
+        <button id="button-show-explanation13" class="button-show-explanation" onclick="toggleExplanation(13)">Show Explanation</button>
+        <div id="explanation13" class="explanation">
+            <p class="explanation-paragraph">
+                Choice C is correct because radioactive decay is an exponential process. Each month, the mass decays by \(2\%\), which means it retains \(98\%\) of its mass from the previous month. This is represented by the equation \( M = 100(0.98)^t \), where \( t \) is the number of months since January \(2021\).
+                <br>
+                Choice A is incorrect because it would imply the mass is only \(2\%\) of its previous value each month, which would be a much faster decay than described.
+                <br>
+                Choice B suggests a linear decay model, decreasing by \(2\) grams each month, which does not fit the given percentage decay.
+                <br>
+                Choice D is incorrect because it represents a decay process that happens \(12\) times faster than the monthly decay rate given.
+                <br>
+                Therefore, the equation that correctly models the exponential decay of the isotope is \( M = 100(0.98)^t \).
+            </p>
+        </div>
+    </div>
+    <div class="question-part" id="questionContent14" data-question-id="exponential14">
+        <h1 class="title">Digital SAT Math</h1>
+        <h2 class="subtitle">Exponential and Linear Growth</h2>  
+        <div class="question-list">
+            <div class="number-bar">
+                <span>14</span>
+            </div>
+            <p class="question">
+                A small business had a profit of \($10,000\) and it increased by \($2,000\) each year. Which function represents the profit, \( P \), after \( t \) years?
+            </p>
+            <div class="option-1-container">
+                <button class="option-1">A</button><p class="choice-1">\( P = 2000t + 10000 \)</p>
+            </div>
+            <div class="option-2-container">
+                <button class="option-2">B</button><p class="choice-2">\( P = 10000(1.2)^t \)</p>
+            </div>
+            <div class="option-3-container">
+                <button class="option-3">C</button><p class="choice-3">\( P = 10000t \)</p>
+            </div>
+            <div class="option-4-container">
+                <button class="option-4">D</button><p class="choice-4">\( P = 100t^2 + 2000t + 10000 \)</p>
+            </div>
+        </div>
+        <button id="button-show-explanation14" class="button-show-explanation" onclick="toggleExplanation(14)">Show Explanation</button>
+        <div id="explanation14" class="explanation">
+            <p class="explanation-paragraph">
+                Choice A is correct. The profit starts at \($10,000\) and increases by \($2,000\) each year. This is a linear relationship because the increase is by a fixed amount each year, so the profit after \( t \) years is represented by the equation \( P = 2000t + 10000 \), where \( t \) is the number of years.
+                <br>
+                Choice B is incorrect as it suggests the profit increases by \(20\) percent each year, which represents exponential growth, not a fixed increase.
+                <br>
+                Choice C is incorrect because it implies that the profit was zero in the first year and increases linearly by \($10,000\) each year, which does not match the initial profit given.
+                <br>
+                Choice D is incorrect as it introduces a quadratic term, suggesting the rate of increase in profit changes each year, which is not consistent with the steady increase described.
+            </p>
+        </div>
+    </div>
+    <div class="question-part" id="questionContent15" data-question-id="exponential15">
+        <h1 class="title">Digital SAT Math</h1>
+        <h2 class="subtitle">Exponential and Linear Growth</h2>  
+        <div class="question-list">
+            <div class="number-bar">
+                <span>15</span>
+            </div>
+            <p class="question">
+                A coffee shop has \(10\) tables and adds \(2\) more tables each month to accommodate more customers. Which scenario best describes the growth of the number of tables in the shop?
+            </p>
+            <div class="option-1-container">
+                <button class="option-1">A</button><p class="choice-1">The owner adds \(10\%\) more tables each month.</p>
+            </div>
+            <div class="option-2-container">
+                <button class="option-2">B</button><p class="choice-2">The owner doubles the number of tables each year.</p>
+            </div>
+            <div class="option-3-container">
+                <button class="option-3">C</button><p class="choice-3">The owner adds \(24\) tables each year.</p>
+            </div>
+            <div class="option-4-container">
+                <button class="option-4">D</button><p class="choice-4">The owner increases the number of tables by \(5\%\) of the total number of tables at the end of each year.</p>
+            </div>
+        </div>
+        <button id="button-show-explanation15" class="button-show-explanation" onclick="toggleExplanation(15)">Show Explanation</button>
+        <div id="explanation15" class="explanation">
+            <p class="explanation-paragraph">
+                Choice C is correct. The coffee shop adds \(2\) more tables each month, which would total \(24\) tables in a year \((2\ \text{tables}/\text{month} × 12\ \text{months}/\text{year})\). This represents a linear growth pattern since the same number of tables is added each month, regardless of how many tables are already in the shop.
+                <br>
+                Choice A is incorrect because it implies a growth rate that is proportional to the current number of tables each month, which would be an exponential growth pattern, not a fixed number of tables added.
+                <br>
+                Choice B is incorrect because doubling the number of tables each year is an exponential growth pattern, whereas the scenario describes a constant increase per month.
+                <br>
+                Choice D is incorrect as it suggests the growth rate is \(5\%\) of the total number of tables at the end of each year, which would again be an exponential growth pattern. The scenario describes a fixed addition each month, which is a linear growth pattern.
+            </p>
+        </div>
+    </div>
+    <div class="question-part" id="questionContent16" data-question-id="exponential16">
+        <h1 class="title">Digital SAT Math</h1>
+        <h2 class="subtitle">Exponential and Linear Growth</h2>  
+        <div class="question-list">
+            <div class="number-bar">
+                <span>16</span>
+            </div>
+            <p class="question">
+                A radioactive substance decays at a rate of \(2\%\) per day. If the initial mass of the substance is \(200\) grams, which function represents the remaining mass, \( M \), after \( d \) days?
+            </p>
+            <div class="option-1-container">
+                <button class="option-1">A</button><p class="choice-1">\( M = 200 \cdot (0.02)^d \)</p>
+            </div>
+            <div class="option-2-container">
+                <button class="option-2">B</button><p class="choice-2">\( M = 200 \cdot (0.98)^d \)</p>
+            </div>
+            <div class="option-3-container">
+                <button class="option-3">C</button><p class="choice-3">\( M = 200 \cdot (1 - 0.02)^d \)</p>
+            </div>
+            <div class="option-4-container">
+                <button class="option-4">D</button><p class="choice-4">\( M = 200 \cdot (1 - 0.02)^{-1} \)</p>
+            </div>
+        </div>
+        <button id="button-show-explanation16" class="button-show-explanation" onclick="toggleExplanation(16)">Show Explanation</button>
+        <div id="explanation16" class="explanation">
+            <p class="explanation-paragraph">
+                Choice B is correct. Radioactive decay is typically an exponential process. A decay rate of \(2\%\) per day means that \(98\%\) of the substance remains each day. The remaining mass after \( d \) days can be modeled by \( M = 200 \cdot (0.98)^d \), where \( 0.98 \) is the decay factor representing the \(98\%\) that remains each day.
+                <br>
+                Choice A is incorrect because it suggests that only \(2\%\) of the initial mass remains each day, which would be a much faster decay rate than described.
+                <br>
+                Choice C is correct mathematically, as \( 1 - 0.02 \) equals \( 0.98 \), but it is a less common way to present the decay factor in exponential decay problems.
+                <br>
+                Choice D is incorrect because the negative exponent would imply growth, not decay, and it would not represent the process on a daily basis.
+            </p>
+        </div>
+    </div>
+    <div class="question-part" id="questionContent17" data-question-id="exponential17">
+        <h1 class="title">Digital SAT Math</h1>
+        <h2 class="subtitle">Exponential and Linear Growth</h2>  
+        <div class="question-list">
+            <div class="number-bar">
+                <span>17</span>
+            </div>
+            <p class="question">
+                A pond's lily pad population triples every week. Starting with \(5\) lily pads, which equation models the population, \( L \), after \( w \) weeks?
+            </p>
+            <div class="option-1-container">
+                <button class="option-1">A</button><p class="choice-1">\( L = 5 \cdot 3^w \)</p>
+            </div>
+            <div class="option-2-container">
+                <button class="option-2">B</button><p class="choice-2">\( L = 5 \cdot (1 + 3w) \)</p>
+            </div>
+            <div class="option-3-container">
+                <button class="option-3">C</button><p class="choice-3">\( L = 5 \cdot w^3 \)</p>
+            </div>
+            <div class="option-4-container">
+                <button class="option-4">D</button><p class="choice-4">\( L = 5 \cdot (3)^{1/w} \)</p>
+            </div>
+        </div>
+        <button id="button-show-explanation17" class="button-show-explanation" onclick="toggleExplanation(17)">Show Explanation</button>
+        <div id="explanation17" class="explanation">
+            <p class="explanation-paragraph">
+                Choice A is correct. The lily pad population is experiencing exponential growth by tripling each week. This is represented mathematically by an initial value (\(5\) lily pads) multiplied by \(3\) raised to the power of the number of weeks, \( w \). Therefore, the model for the population after \( w \) weeks is \( L = 5 \cdot 3^w \).
+                <br>
+                Choice B is incorrect because it represents a linear model with an initial value of \(5\) and an incorrect rate of increase.
+                <br>
+                Choice C is incorrect as it suggests the population grows according to the cube of the number of weeks, which does not align with the given scenario of tripling each week.
+                <br>
+                Choice D is incorrect because the exponent \( 1/w \) would imply the population is taking the \( w \)-th root of \(3\) each week, which is not the case here.
+            </p>
+        </div>
+    </div>
+    <div class="question-part" id="questionContent18" data-question-id="exponential18">
+        <h1 class="title">Digital SAT Math</h1>
+        <h2 class="subtitle">Exponential and Linear Growth</h2>  
+        <div class="question-list">
+            <div class="number-bar">
+                <span>18</span>
+            </div>
+            <p class="question">
+                A town's population increases by \(1,000\) people every year due to new housing developments. Which of the following best describes the relationship between time (in years) and the total population of the town?
+            </p>
+            <div class="option-1-container">
+                <button class="option-1">A</button><p class="choice-1">Decreasing linear</p>
+            </div>
+            <div class="option-2-container">
+                <button class="option-2">B</button><p class="choice-2">Increasing linear</p>
+            </div>
+            <div class="option-3-container">
+                <button class="option-3">C</button><p class="choice-3">Exponential growth</p>
+            </div>
+            <div class="option-4-container">
+                <button class="option-4">D</button><p class="choice-4">Exponential decay</p>
+            </div>
+        </div>
+        <button id="button-show-explanation18" class="button-show-explanation" onclick="toggleExplanation(18)">Show Explanation</button>
+        <div id="explanation18" class="explanation">
+            <p class="explanation-paragraph">
+                Choice B is correct. The town's population is increasing by a fixed amount of people each year, which is characteristic of linear growth. In linear growth, the amount of change over each time period (in this case, one year) is constant. This is represented by a straight line with a positive slope when plotted on a graph.
+                <br>
+                Choice A is incorrect because it suggests the population is decreasing each year, which contradicts the information given.
+                <br>
+                Choices C and D are incorrect because they both refer to exponential changes, where the rate of increase or decrease is proportional to the current amount. Since the population increase is by a constant number, not a percentage, the growth is linear, not exponential.
+            </p>
+        </div>
+    </div>
+    <div class="question-part" id="questionContent19" data-question-id="exponential19">
+        <h1 class="title">Digital SAT Math</h1>
+        <h2 class="subtitle">Exponential and Linear Growth</h2>  
+        <div class="question-list">
+            <div class="number-bar">
+                <span>19</span>
+            </div>
+            <p class="question">
+                A writer is working on a series of articles. On the first day, she writes one article, on the second day two articles, on the third day four articles, and so on, doubling the number of articles each day. Which of the following best describes the relationship between the number of days and the total articles written?
+            </p>
+            <div class="option-1-container">
+                <button class="option-1">A</button><p class="choice-1">Increasing linear</p>
+            </div>
+            <div class="option-2-container">
+                <button class="option-2">B</button><p class="choice-2">Decreasing linear</p>
+            </div>
+            <div class="option-3-container">
+                <button class="option-3">C</button><p class="choice-3">Exponential growth</p>
+            </div>
+            <div class="option-4-container">
+                <button class="option-4">D</button><p class="choice-4">Exponential decay</p>
+            </div>
+        </div>
+        <button id="button-show-explanation19" class="button-show-explanation" onclick="toggleExplanation(19)">Show Explanation</button>
+        <div id="explanation19" class="explanation">
+            <p class="explanation-paragraph">
+                Choice C is correct. The writer's article production is an example of exponential growth. She starts by writing one article and then doubles the number of articles each subsequent day. This pattern of growth is exponential because the number of articles written each day is a constant ratio (in this case, double the previous day) of the quantity present in the preceding period.
+                <br>
+                Choice A is incorrect because linear growth would imply that the writer adds the same, fixed number of articles each day, which is not the case here.
+                <br>
+                Choice B is incorrect because it indicates a decrease in the number of articles written each day, which contradicts the given information.
+                <br>
+                Choice D is incorrect because it suggests that the number of articles is decreasing over time, which is opposite to the scenario described.
+            </p>
+        </div>
+    </div>
+    <div class="question-part" id="questionContent20" data-question-id="exponential20">
+        <h1 class="title">Digital SAT Math</h1>
+        <h2 class="subtitle">Exponential and Linear Growth</h2>  
+        <div class="question-list">
+            <div class="number-bar">
+                <span>20</span>
+            </div>
+            <p class="question">
+                A technology company's product sales decrease by \(20\) percent annually as the product becomes outdated. If sales were \($5\) million in \(2018\), which equation models the sales, \( S \), \( t \) years after \(2018\)?
+            </p>
+            <div class="option-1-container">
+                <button class="option-1">A</button><p class="choice-1">\( S = 5,000,000(0.2)^t \)</p>
+            </div>
+            <div class="option-2-container">
+                <button class="option-2">B</button><p class="choice-2">\( S = 5,000,000 - 1,000,000t \)</p>
+            </div>
+            <div class="option-3-container">
+                <button class="option-3">C</button><p class="choice-3">\( S = 5,000,000(0.8)^t \)</p>
+            </div>
+            <div class="option-4-container">
+                <button class="option-4">D</button><p class="choice-4">\( S = 5,000,000(0.8)^{t/20} \)</p>
+            </div>
+        </div>
+        <button id="button-show-explanation20" class="button-show-explanation" onclick="toggleExplanation(20)">Show Explanation</button>
+        <div id="explanation20" class="explanation">
+            <p class="explanation-paragraph">
+                Choice C is correct. The sales decrease by \(20\) percent annually, which means that \(80\) percent \((100\% - 20\%)\) of the sales remain each year. This can be modeled by the exponential decay equation \( S = 5,000,000(0.8)^t \), where \( t \) is the number of years after \(2018\).
+                <br>
+                Choice A is incorrect because it implies that only \(20\) percent of the sales from the previous year remains, which would be an \(80\) percent decrease, not a \(20\) percent decrease.
+                <br>
+                Choice B is incorrect because it represents a linear decrease, subtracting a constant \($1,000,000\) each year, rather than a percentage of the remaining sales.
+                <br>
+                Choice D is incorrect because the exponent \( \frac{t}{20} \) would suggest the \(20\) percent decrease occurs over a period of \(20\) years, not annually.
+            </p>
+        </div>
+    </div>
+    <div class="question-part" id="questionContent21" data-question-id="exponential21">
+        <h1 class="title">Digital SAT Math</h1>
+        <h2 class="subtitle">Exponential and Linear Growth</h2>  
+        <div class="question-list">
+            <div class="number-bar">
+                <span>21</span>
+            </div>
+            <p class="question">
+                A population of birds was \(800\) and increased by \(100\) each year due to conservation efforts. Which equation models the bird population, \( B \), after \( t \) years?
+            </p>
+            <div class="option-1-container">
+                <button class="option-1">A</button><p class="choice-1">\( B = 100t + 800 \)</p>
+            </div>
+            <div class="option-2-container">
+                <button class="option-2">B</button><p class="choice-2">\( B = 800(1.125)^t \)</p>
+            </div>
+            <div class="option-3-container">
+                <button class="option-3">C</button><p class="choice-3">\( B = 800t \)</p>
+            </div>
+            <div class="option-4-container">
+                <button class="option-4">D</button><p class="choice-4">\( B = 20t^2 + 100t + 800 \)</p>
+            </div>
+        </div>
+        <button id="button-show-explanation21" class="button-show-explanation" onclick="toggleExplanation(21)">Show Explanation</button>
+        <div id="explanation21" class="explanation">
+            <p class="explanation-paragraph">
+                Choice A is correct. Since the bird population increases by a constant amount of \(100\) birds each year, the growth is linear. The equation that represents this linear growth is \( B = 100t + 800 \), where \( t \) is the number of years, and \(800\) represents the initial population.
+                <br>
+                Choice B is incorrect because it suggests an exponential growth rate, which does not match the fixed increase of \(100\) birds per year.
+                <br>
+                Choice C is incorrect as it implies that there were no birds initially (which contradicts the given initial population of \(800\)) and the population grows by \(800\) birds each year.
+                <br>
+                Choice D is incorrect because it introduces a quadratic term, which would represent an accelerating rate of population increase, not a constant increase.
+            </p>
+        </div>
+    </div>
+    <div class="question-part" id="questionContent22" data-question-id="exponential22">
+        <h1 class="title">Digital SAT Math</h1>
+        <h2 class="subtitle">Exponential and Linear Growth</h2>  
+        <div class="question-list">
+            <div class="number-bar">
+                <span>22</span>
+            </div>
+            <p class="question">
+                A savings account has an initial balance of \($1000\) and the owner deposits an additional \($100\) every month. Which scenario best describes the growth of the account balance?
+            </p>
+            <div class="option-1-container">
+                <button class="option-1">A</button><p class="choice-1">The balance increases by \(2\%\) each month.</p>
+            </div>
+            <div class="option-2-container">
+                <button class="option-2">B</button><p class="choice-2">The balance doubles every year.</p>
+            </div>
+            <div class="option-3-container">
+                <button class="option-3">C</button><p class="choice-3">The balance increases by \($1200\) each year.</p>
+            </div>
+            <div class="option-4-container">
+                <button class="option-4">D</button><p class="choice-4">The balance increases by \(5\%\) of the initial balance each year.</p>
+            </div>
+        </div>
+        <button id="button-show-explanation22" class="button-show-explanation" onclick="toggleExplanation(22)">Show Explanation</button>
+        <div id="explanation22" class="explanation">
+            <p class="explanation-paragraph">
+                Choice C is correct. The owner adds \($100\) to the account every month, resulting in an increase of \($1200\) each year \(($100\ / \text{month} \times 12\ \text{months} / \text{year})\). This is a linear growth since the balance grows by a fixed amount each period.
+                <br>
+                Choice A is incorrect because a \(2\%\) monthly increase would result in a different amount being added each month, depending on the previous balance, indicating exponential growth.
+                <br>
+                Choice B is incorrect as it suggests the account balance is doubling each year, which is an exponential growth pattern, not a fixed increase.
+                <br>
+                Choice D is incorrect because it implies the increase is a percentage of the initial balance, which would also be exponential growth, and the increase would remain the same every year, not changing with the balance.
+            </p>
+        </div>
+    </div>
+    <div class="question-part" id="questionContent23" data-question-id="exponential23">
+        <h1 class="title">Digital SAT Math</h1>
+        <h2 class="subtitle">Exponential and Linear Growth</h2>  
+        <div class="question-list">
+            <div class="number-bar">
+                <span>23</span>
+            </div>
+            <p class="question">
+                A certain viral video is viewed \(1,000\) times in its first hour online. If the number of views doubles every hour, which function represents the number of views, \( V \), after \( h \) hours?
+            </p>
+            <div class="option-1-container">
+                <button class="option-1">A</button><p class="choice-1">\( V = 1000 \cdot 2^h \)</p>
+            </div>
+            <div class="option-2-container">
+                <button class="option-2">B</button><p class="choice-2">\( V = 1000 \cdot (1 + 2h) \)</p>
+            </div>
+            <div class="option-3-container">
+                <button class="option-3">C</button><p class="choice-3">\( V = 1000 + 2^h \)</p>
+            </div>
+            <div class="option-4-container">
+                <button class="option-4">D</button><p class="choice-4">\( V = 1000 \cdot h^2 \)</p>
+            </div>
+        </div>
+        <button id="button-show-explanation23" class="button-show-explanation" onclick="toggleExplanation(23)">Show Explanation</button>
+        <div id="explanation23" class="explanation">
+            <p class="explanation-paragraph">
+                Choice A is correct. The number of views is doubling each hour, which is characteristic of exponential growth. The equation that models this scenario is \( V = 1000 \cdot 2^h \), where \( h \) represents the number of hours since the video was first viewed.
+                <br>
+                Choice B is incorrect because it represents a linear model and does not account for the doubling effect.
+                <br>
+                Choice C is incorrect as it suggests the initial number of views \((1000)\) is added to the number of views obtained from doubling, which does not reflect the exponential nature of the growth.
+                <br>
+                Choice D is incorrect because it implies the number of views grows according to the square of the hours, which is not consistent with the doubling described.
+            </p>
+        </div>
+    </div>
+    <div class="question-part" id="questionContent24" data-question-id="exponential24">
+        <h1 class="title">Digital SAT Math</h1>
+        <h2 class="subtitle">Exponential and Linear Growth</h2>  
+        <div class="question-list">
+            <div class="number-bar">
+                <span>24</span>
+            </div>
+            <p class="question">
+                A certain type of fish has a population that increases by \(25\%\) every month. If there are initially \(800\) fish, which equation models the population, \( P \), after \( m \) months?
+            </p>
+            <div class="option-1-container">
+                <button class="option-1">A</button><p class="choice-1">\( P = 800 \cdot (1.25)^m \)</p>
+            </div>
+            <div class="option-2-container">
+                <button class="option-2">B</button><p class="choice-2">\( P = 800 \cdot (0.25)^m \)</p>
+            </div>
+            <div class="option-3-container">
+                <button class="option-3">C</button><p class="choice-3">\( P = 800 \cdot m^{1.25} \)</p>
+            </div>
+            <div class="option-4-container">
+                <button class="option-4">D</button><p class="choice-4">\( P = 800 \cdot (1 + 0.25m) \)</p>
+            </div>
+        </div>
+        <button id="button-show-explanation24" class="button-show-explanation" onclick="toggleExplanation(24)">Show Explanation</button>
+        <div id="explanation24" class="explanation">
+            <p class="explanation-paragraph">
+                Choice A is correct. The fish population is increasing at a rate of \(25\%\) each month. This type of growth is exponential, and the equation modeling exponential growth due to a percentage increase is \( P = 800 \cdot (1.25)^m \), where \( m \) is the number of months.
+                <br>
+                Choice B is incorrect because it implies that only \(25\%\) of the fish population remains after each month, which would represent a decrease, not an increase.
+                <br>
+                Choice C is incorrect as it uses an exponent on the variable \( m \), which does not reflect a percentage increase each month.
+                <br>
+                Choice D is incorrect because it suggests linear growth by adding \(25\%\) of the initial amount each month, rather than growing the current population by \(25\%\) each month.
+            </p>
+        </div>
+    </div>
+    <div class="question-part" id="questionContent25" data-question-id="exponential25">
+        <h1 class="title">Digital SAT Math</h1>
+        <h2 class="subtitle">Exponential and Linear Growth</h2>  
+        <div class="question-list">
+            <div class="number-bar">
+                <span>25</span>
+            </div>
+            <p class="question">
+                A bank account earns \($100\) in interest every year. Which of the following best describes the relationship between time (in years) and the total amount of money in the account?
+            </p>
+            <div class="option-1-container">
+                <button class="option-1">A</button><p class="choice-1">Decreasing linear</p>
+            </div>
+            <div class="option-2-container">
+                <button class="option-2">B</button><p class="choice-2">Increasing linear</p>
+            </div>
+            <div class="option-3-container">
+                <button class="option-3">C</button><p class="choice-3">Exponential growth</p>
+            </div>
+            <div class="option-4-container">
+                <button class="option-4">D</button><p class="choice-4">Exponential decay</p>
+            </div>
+        </div>
+        <button id="button-show-explanation25" class="button-show-explanation" onclick="toggleExplanation(25)">Show Explanation</button>
+        <div id="explanation25" class="explanation">
+            <p class="explanation-paragraph">
+                Choice B is correct. The bank account's interest earnings are a fixed amount every year, which is indicative of a linear growth. The amount of interest does not change based on the balance; instead, it is constant, thereby defining a straight-line increase when graphed over time.
+                <br>
+                Choice A is incorrect as it suggests the total amount of money in the account is decreasing each year, which is not the case when interest is being earned.
+                <br>
+                Choice C is incorrect because exponential growth would mean that the amount of interest earned is based on a percentage of the account balance, increasing at a rate proportional to the current amount each year, which is not described here.
+                <br>
+                Choice D is incorrect as it indicates a decrease in the total amount over time, the opposite of earning interest.
+            </p>
+        </div>
+    </div>
+    <div class="question-part" id="questionContent26" data-question-id="exponential26">
+        <h1 class="title">Digital SAT Math</h1>
+        <h2 class="subtitle">Exponential and Linear Growth</h2>  
+        <div class="question-list">
+            <div class="number-bar">
+                <span>26</span>
+            </div>
+            <p class="question">
+                A runner increases his running distance by \(2\) kilometers every day. If he starts with \(4\) kilometers on the first day, which of the following best describes the relationship between the days he has been running and the total distance run?
+            </p>
+            <div class="option-1-container">
+                <button class="option-1">A</button><p class="choice-1">Decreasing linear</p>
+            </div>
+            <div class="option-2-container">
+                <button class="option-2">B</button><p class="choice-2">Increasing linear</p>
+            </div>
+            <div class="option-3-container">
+                <button class="option-3">C</button><p class="choice-3">Exponential growth</p>
+            </div>
+            <div class="option-4-container">
+                <button class="option-4">D</button><p class="choice-4">Exponential decay</p>
+            </div>
+        </div>
+        <button id="button-show-explanation26" class="button-show-explanation" onclick="toggleExplanation(26)">Show Explanation</button>
+        <div id="explanation26" class="explanation">
+            <p class="explanation-paragraph">
+                Choice B is correct. The runner is adding a constant distance to his run each day, which is indicative of a linear increase. The total distance run each day forms a straight line when graphed against time.
+                <br>
+                Choice A is incorrect because the distance is not decreasing; it is consistently increasing each day.
+                <br>
+                Choices C and D are incorrect as they suggest a rate of change that is proportional to the current distance run, which would be characteristic of exponential change. The distance is increasing by a fixed amount daily, not by a percentage, so the growth is linear.
+            </p>
+        </div>
+    </div>
+    <div class="question-part" id="questionContent27" data-question-id="exponential27">
+        <h1 class="title">Digital SAT Math</h1>
+        <h2 class="subtitle">Exponential and Linear Growth</h2>  
+        <div class="question-list">
+            <div class="number-bar">
+                <span>27</span>
+            </div>
+            <p class="question">
+                The number of subscribers to a magazine is decreasing by \(5\) percent each quarter. If the magazine had \(10,000\) subscribers at the start of \(2017\), which equation describes the number of subscribers, \( S \), \( q \) quarters after the start of \(2017\)?
+            </p>
+            <div class="option-1-container">
+                <button class="option-1">A</button><p class="choice-1">\( S = 10,000(0.05)^q \)</p>
+            </div>
+            <div class="option-2-container">
+                <button class="option-2">B</button><p class="choice-2">\( S = 10,000 - 500q \)</p>
+            </div>
+            <div class="option-3-container">
+                <button class="option-3">C</button><p class="choice-3">\( S = 10,000(0.95)^q \)</p>
+            </div>
+            <div class="option-4-container">
+                <button class="option-4">D</button><p class="choice-4">\( S = 10,000(0.95)^{q/4} \)</p>
+            </div>
+        </div>
+        <button id="button-show-explanation27" class="button-show-explanation" onclick="toggleExplanation(27)">Show Explanation</button>
+        <div id="explanation27" class="explanation">
+            <p class="explanation-paragraph">
+                Choice C is correct. A \(5\) percent decrease each quarter is an exponential decay process. The subscription base is multiplied by \(95\) percent (which is \(100\% - 5\%\) decrease) of its previous amount each quarter. The model for this decay is \( S = 10,000(0.95)^q \), where \( q \) is the number of quarters since the start of \(2017\).
+                <br>
+                Choice A is incorrect because it suggests that only \(5\%\) of the subscribers remain each quarter, which would be a much more significant decrease than the given \(5\%\).
+                <br>
+                Choice B is incorrect as it implies a linear decrease, reducing the subscriber count by a fixed number each quarter, rather than by a percentage of the remaining subscribers.
+                <br>
+                Choice D is incorrect because the exponent \( q/4 \) would suggest a yearly decay rate applied quarterly, which does not align with the given quarterly decay rate.
+            </p>
+        </div>
+    </div>
+    <div class="question-part" id="questionContent28" data-question-id="exponential28">
+        <h1 class="title">Digital SAT Math</h1>
+        <h2 class="subtitle">Exponential and Linear Growth</h2>  
+        <div class="question-list">
+            <div class="number-bar">
+                <span>28</span>
+            </div>
+            <p class="question">
+                The number of members in a club was \(300\) and increased by \(20\) each month. Which function models the number of members, \( M \), after \( m \) months?
+            </p>
+            <div class="option-1-container">
+                <button class="option-1">A</button><p class="choice-1">\( M = 20m + 300 \)</p>
+            </div>
+            <div class="option-2-container">
+                <button class="option-2">B</button><p class="choice-2">\( M = 300(1.0667)^m \)</p>
+            </div>
+            <div class="option-3-container">
+                <button class="option-3">C</button><p class="choice-3">\( M = 300m \)</p>
+            </div>
+            <div class="option-4-container">
+                <button class="option-4">D</button><p class="choice-4">\( M = 5m^2 + 20m + 300 \)</p>
+            </div>
+        </div>
+        <button id="button-show-explanation28" class="button-show-explanation" onclick="toggleExplanation(28)">Show Explanation</button>
+        <div id="explanation28" class="explanation">
+            <p class="explanation-paragraph">
+                Choice A is correct. The club's membership increases by a constant amount each month, which is indicative of a linear relationship. Therefore, the model for the membership after \( m \) months is \( M = 20m + 300 \), where \( m \) is the number of months and \(300\) is the initial number of members.
+                <br>
+                Choice B is incorrect because it suggests that the membership is growing by a fixed percentage each month, which would be an exponential growth model, not linear.
+                <br>
+                Choice C is incorrect as it implies that the club started with no members, which contradicts the initial membership of \(300\).
+                <br>
+                Choice D is incorrect because it includes a quadratic term, suggesting that the rate of increase in membership is accelerating, which is not consistent with the constant increase described.
+            </p>
+        </div>
+    </div>
+    <div class="question-part" id="questionContent29" data-question-id="exponential29">
+        <h1 class="title">Digital SAT Math</h1>
+        <h2 class="subtitle">Exponential and Linear Growth</h2>  
+        <div class="question-list">
+            <div class="number-bar">
+                <span>29</span>
+            </div>
+            <p class="question">
+                A city plants \(50\) new trees along the streets every year. Which scenario best describes the increase in the number of trees planted by the city?
+            </p>
+            <div class="option-1-container">
+                <button class="option-1">A</button><p class="choice-1">The city increases the number of trees by \(3\%\) each year.</p>
+            </div>
+            <div class="option-2-container">
+                <button class="option-2">B</button><p class="choice-2">The city triples the number of trees planted every year.</p>
+            </div>
+            <div class="option-3-container">
+                <button class="option-3">C</button><p class="choice-3">The city plants an additional \(50\) trees each year.</p>
+            </div>
+            <div class="option-4-container">
+                <button class="option-4">D</button><p class="choice-4">The city plants \(5\%\) more trees than the previous year.</p>
+            </div>
+        </div>
+        <button id="button-show-explanation29" class="button-show-explanation" onclick="toggleExplanation(29)">Show Explanation</button>
+        <div id="explanation29" class="explanation">
+            <p class="explanation-paragraph">
+                Choice C is correct. Planting an additional \(50\) trees each year is indicative of linear growth, as it represents a constant increase in the number of trees planted annually.
+                <br>
+                Choice A is incorrect because it suggests a percentage increase, which would be characteristic of exponential growth.
+                <br>
+                Choice B is incorrect because it implies an exponential growth where the number of trees planted would be three times the number planted the previous year, which is not the case.
+                <br>
+                Choice D is incorrect as it also suggests a percentage increase from the previous year's number, indicating exponential growth rather than a linear increase.
+            </p>
+        </div>
+    </div>
+    <div class="question-part" id="questionContent30" data-question-id="exponential30">
+        <h1 class="title">Digital SAT Math</h1>
+        <h2 class="subtitle">Exponential and Linear Growth</h2>  
+        <div class="question-list">
+            <div class="number-bar">
+                <span>30</span>
+            </div>
+            <p class="question">
+                A type of fluorescent light bulb loses about \(10\%\) of its luminosity every year. If a bulb initially emits \(800\) lumens, which function models its luminosity, \( L \), after \( y \) years?
+            </p>
+            <div class="option-1-container">
+                <button class="option-1">A</button><p class="choice-1">\( L = 800 \cdot (0.9)^y \)</p>
+            </div>
+            <div class="option-2-container">
+                <button class="option-2">B</button><p class="choice-2">\( L = 800 \cdot (10)^y \)</p>
+            </div>
+            <div class="option-3-container">
+                <button class="option-3">C</button><p class="choice-3">\( L = 800 \cdot (1 - 0.1y) \)</p>
+            </div>
+            <div class="option-4-container">
+                <button class="option-4">D</button><p class="choice-4">\( L = 800 - (0.1)^y \)</p>
+            </div>
+        </div>
+        <button id="button-show-explanation30" class="button-show-explanation" onclick="toggleExplanation(30)">Show Explanation</button>
+        <div id="explanation30" class="explanation">
+            <p class="explanation-paragraph">
+                Choice A is correct. The luminosity of the bulb decreases exponentially because each year it retains \(90\%(100\% - 10\%)\) loss of its luminosity from the previous year. <br> 
+                Thus, the function \( L = 800 \cdot (0.9)^y \) accurately models this decay.
+                <br>
+                Choice B is incorrect because it would imply the luminosity increases tenfold each year, which is not consistent with a loss of brightness.
+                <br>
+                Choice C is incorrect as it suggests a linear decline in luminosity, which does not account for the compound effect of the \(10\%\) loss each year.
+                <br>
+                Choice D is incorrect because it subtracts an exponentially decreasing amount from the initial luminosity, which does not correspond to a consistent \(10\%\) annual decrease.
+            </p>
+        </div>
+    </div>
+    <div class="question-part" id="questionContent31" data-question-id="exponential31">
+        <h1 class="title">Digital SAT Math</h1>
+        <h2 class="subtitle">Exponential and Linear Growth</h2>  
+        <div class="question-list">
+            <div class="number-bar">
+                <span>31</span>
+            </div>
+            <p class="question">
+                A culture of yeast grows by \(10\%\) every hour. If the culture starts with \(50\) grams, which function models its mass, \( M \), after \( h \) hours?
+            </p>
+            <div class="option-1-container">
+                <button class="option-1">A</button><p class="choice-1">\( M = 50 \cdot (10)^h \)</p>
+            </div>
+            <div class="option-2-container">
+                <button class="option-2">B</button><p class="choice-2">\( M = 50 \cdot (0.9)^h \)</p>
+            </div>
+            <div class="option-3-container">
+                <button class="option-3">C</button><p class="choice-3">\( M = 50 \cdot h^{1.1} \)</p>
+            </div>
+            <div class="option-4-container">
+                <button class="option-4">D</button><p class="choice-4">\( M = 50 \cdot (1.1)^h \)</p>
+            </div>
+        </div>
+        <button id="button-show-explanation31" class="button-show-explanation" onclick="toggleExplanation(31)">Show Explanation</button>
+        <div id="explanation31" class="explanation">
+            <p class="explanation-paragraph">
+                Choice D is correct. The yeast culture's mass increases exponentially because each hour it grows by \(10\%\) of the mass it had at the end of the previous hour. This type of growth is modeled by the function \( M = 50 \cdot (1.1)^h \), where \( h \) is the number of hours.
+                <br>
+                Choice A is incorrect because it implies that the mass of the culture increases by a factor of \(10\) each hour, which is not supported by the information provided.
+                <br>
+                Choice B is incorrect because it suggests the mass is decreasing by \(10\%\) each hour, which is the opposite of growth.
+                <br>
+                Choice C is incorrect as it implies that the growth rate is proportional to the \( h \) raised to the power of \(1.1\), which does not reflect a consistent \(10\%\) increase per hour.
+            </p>
+        </div>
+    </div>
+    <div class="question-part" id="questionContent32" data-question-id="exponential32">
+        <h1 class="title">Digital SAT Math</h1>
+        <h2 class="subtitle">Exponential and Linear Growth</h2>  
+        <div class="question-list">
+            <div class="number-bar">
+                <span>32</span>
+            </div>
+            <p class="question">
+                A student learns \(20\) new vocabulary words every week. Which of the following best describes the relationship between time (in weeks) and the total number of vocabulary words learned?
+            </p>
+            <div class="option-1-container">
+                <button class="option-1">A</button><p class="choice-1">Increasing linear</p>
+            </div>
+            <div class="option-2-container">
+                <button class="option-2">B</button><p class="choice-2">Decreasing linear</p>
+            </div>
+            <div class="option-3-container">
+                <button class="option-3">C</button><p class="choice-3">Exponential growth</p>
+            </div>
+            <div class="option-4-container">
+                <button class="option-4">D</button><p class="choice-4">Exponential decay</p>
+            </div>
+        </div>
+        <button id="button-show-explanation32" class="button-show-explanation" onclick="toggleExplanation(32)">Show Explanation</button>
+        <div id="explanation32" class="explanation">
+            <p class="explanation-paragraph">
+                Choice A is correct. The student learns a constant number of new words each week, which is a characteristic of linear growth. Therefore, the total number of words learned as time progresses increases at a constant rate, which can be graphed as a straight line with a positive slope, hence the term 'increasing linear'.
+                <br>
+                Choice B is incorrect because it suggests that the number of words the student learns is decreasing each week, which is not the case.
+                <br>
+                Choice C and D are incorrect because they both imply a rate of increase or decrease that is proportional to the number of words already learned, which would be characteristic of exponential change. Since the number of words learned each week is constant, the increase is linear, not exponential.
+            </p>
+        </div>
+    </div>
+    <div class="question-part" id="questionContent33" data-question-id="exponential33">
+        <h1 class="title">Digital SAT Math</h1>
+        <h2 class="subtitle">Exponential and Linear Growth</h2>  
+        <div class="question-list">
+            <div class="number-bar">
+                <span>33</span>
+            </div>
+            <p class="question">
+                A musician is practicing scales. On the first day, he practices for \(15\) minutes, on the second day for \(30\) minutes, on the third day for an hour, and so on, doubling his practice time each day. Which of the following best describes the relationship between the number of days and the total practice time?
+            </p>
+            <div class="option-1-container">
+                <button class="option-1">A</button><p class="choice-1">Increasing linear</p>
+            </div>
+            <div class="option-2-container">
+                <button class="option-2">B</button><p class="choice-2">Decreasing linear</p>
+            </div>
+            <div class="option-3-container">
+                <button class="option-3">C</button><p class="choice-3">Exponential growth</p>
+            </div>
+            <div class="option-4-container">
+                <button class="option-4">D</button><p class="choice-4">Exponential decay</p>
+            </div>
+        </div>
+        <button id="button-show-explanation33" class="button-show-explanation" onclick="toggleExplanation(33)">Show Explanation</button>
+        <div id="explanation33" class="explanation">
+            <p class="explanation-paragraph">
+                Choice C is correct. The musician’s practice time is doubling each day, which is indicative of exponential growth. This pattern of growth occurs when the quantity increases by a consistent rate (in this case, \(100\%\) each day) relative to its size at each step or period.
+                <br>
+                Choices A and B are incorrect because they suggest a linear pattern of change, where the increase or decrease would be by a constant amount each day, which does not apply in this scenario.
+                <br>
+                Choice D is incorrect because it implies the practice time is decreasing over time, which is the opposite of what is described.
+            </p>
+        </div>
+    </div>
+    <div class="question-part" id="questionContent34" data-question-id="exponential34">
+        <h1 class="title">Digital SAT Math</h1>
+        <h2 class="subtitle">Exponential and Linear Growth</h2>  
+        <div class="question-list">
+            <div class="number-bar">
+                <span>34</span>
+            </div>
+            <p class="question">
+                A lake is losing its water volume by \(3\) percent each year due to evaporation and reduced rainfall. The volume of the lake was \(10\) billion cubic meters in \(2015\). Which of the following equations represents the volume, \( V \), \( t \) years after \(2015\)?
+            </p>
+            <div class="option-1-container">
+                <button class="option-1">A</button><p class="choice-1">\( V = 10(0.03)^t \)</p>
+            </div>
+            <div class="option-2-container">
+                <button class="option-2">B</button><p class="choice-2">\( V = 10 - 0.3t \)</p>
+            </div>
+            <div class="option-3-container">
+                <button class="option-3">C</button><p class="choice-3">\( V = 10(0.97)^t \)</p>
+            </div>
+            <div class="option-4-container">
+                <button class="option-4">D</button><p class="choice-4">\( V = 10(0.97)^{t/3} \)</p>
+            </div>
+        </div>
+        <button id="button-show-explanation34" class="button-show-explanation" onclick="toggleExplanation(34)">Show Explanation</button>
+        <div id="explanation34" class="explanation">
+            <p class="explanation-paragraph">
+                Choice C is correct. The lake's volume decreases by \(3\%\) each year, so each year it retains \(97\% (100\% - 3\%)\) of its volume from the previous year, which is characteristic of exponential decay. <br> 
+                The equation \( V = 10(0.97)^t \) accurately models this situation.
+                <br>
+                Choice A is incorrect because it suggests that the lake's volume is only \(3\%\) of the previous year's volume each year, which would be an extreme reduction.
+                <br>
+                Choice B is incorrect as it represents a linear decrease, which doesn't account for the annual percentage decrease.
+                <br>
+                Choice D is incorrect because the exponent \( t/3 \) would not correctly apply the annual rate of decrease.
+            </p>
+        </div>
+    </div>
+    <div class="question-part" id="questionContent35" data-question-id="exponential35">
+        <h1 class="title">Digital SAT Math</h1>
+        <h2 class="subtitle">Exponential and Linear Growth</h2>  
+        <div class="question-list">
+            <div class="number-bar">
+                <span>35</span>
+            </div>
+            <p class="question">
+                A car park had \(50\) spaces and expanded by \(5\) spaces each year to accommodate more vehicles. Which function represents the number of spaces, \( S \), after \( t \) years?
+            </p>
+            <div class="option-1-container">
+                <button class="option-1">A</button><p class="choice-1">\( S = 5t + 50 \)</p>
+            </div>
+            <div class="option-2-container">
+                <button class="option-2">B</button><p class="choice-2">\( S = 50(1.1)^t \)</p>
+            </div>
+            <div class="option-3-container">
+                <button class="option-3">C</button><p class="choice-3">\( S = 50t \)</p>
+            </div>
+            <div class="option-4-container">
+                <button class="option-4">D</button><p class="choice-4">\( S = 50 + \frac{5}{12}t \)</p>
+            </div>
+        </div>
+        <button id="button-show-explanation35" class="button-show-explanation" onclick="toggleExplanation(35)">Show Explanation</button>
+        <div id="explanation35" class="explanation">
+            <p class="explanation-paragraph">
+                Choice A is correct. The car park adds a fixed number of spaces each year, indicating a linear increase in the number of spaces. Therefore, the equation \( S = 5t + 50 \) models the linear relationship between the number of years, \( t \), and the total number of spaces, \( S \), with \(50\) being the initial number of spaces.
+                <br>
+                Choices B, C, and D are incorrect because they either represent exponential growth or an incorrect linear model. 
+                Choice B implies a percentage increase each year, Choice C suggests the car park started with no spaces, and Choice D incorrectly calculates the yearly increase.
+            </p>
+        </div>
+    </div>
+    <div class="question-part" id="questionContent36" data-question-id="exponential36">
+        <h1 class="title">Digital SAT Math</h1>
+        <h2 class="subtitle">Exponential and Linear Growth</h2>  
+        <div class="question-list">
+            <div class="number-bar">
+                <span>36</span>
+            </div>
+            <p class="question">
+                A social media influencer gains a steady number of followers, adding \(1,000\) new followers each month. Which scenario best describes this type of growth?
+            </p>
+            <div class="option-1-container">
+                <button class="option-1">A</button><p class="choice-1">The influencer's follower count doubles every six months.</p>
+            </div>
+            <div class="option-2-container">
+                <button class="option-2">B</button><p class="choice-2">The influencer's follower count increases by \(10\%\) each month.</p>
+            </div>
+            <div class="option-3-container">
+                <button class="option-3">C</button><p class="choice-3">The influencer adds \(12,000\) new followers each year.</p>
+            </div>
+            <div class="option-4-container">
+                <button class="option-4">D</button><p class="choice-4">The influencer's follower count increases by \(2\%\) of the current total each month.</p>
+            </div>
+        </div>
+        <button id="button-show-explanation36" class="button-show-explanation" onclick="toggleExplanation(36)">Show Explanation</button>
+        <div id="explanation36" class="explanation">
+            <p class="explanation-paragraph">
+                Choice C is correct. If the influencer is adding \(1,000\) new followers consistently every month, then over the course of a year, they will have added \(12,000\) new followers \((1,000\ \text{followers}/\text{month} \times 12\ \text{months}/\text{year})\). This represents a linear growth in the number of followers.
+                <br>
+                Choices A and B are incorrect because they both suggest a form of exponential growth, which depends on the percentage of the current amount rather than a fixed number added regularly.
+                <br>
+                Choice D is also incorrect for similar reasons as A and B, since it describes growth based on a percentage increase of the current total, which would not be a steady number each month unless the total number of followers remains the same.
+            </p>
+        </div>
+    </div>
+    <div class="question-part" id="questionContent37" data-question-id="exponential37">
+        <h1 class="title">Digital SAT Math</h1>
+        <h2 class="subtitle">Exponential and Linear Growth</h2>  
+        <div class="question-list">
+            <div class="number-bar">
+                <span>37</span>
+            </div>
+            <p class="question">
+                An invasive plant species covers an area of a lake and doubles its coverage area every week. If the plant initially covers \(0.5\) square kilometers, which function models the area covered, \( A \), after \( w \) weeks?
+            </p>
+            <div class="option-1-container">
+                <button class="option-1">A</button><p class="choice-1">\( A = 0.5 \cdot 2^w \)</p>
+            </div>
+            <div class="option-2-container">
+                <button class="option-2">B</button><p class="choice-2">\( A = 0.5 \cdot (1 + w)^2 \)</p>
+            </div>
+            <div class="option-3-container">
+                <button class="option-3">C</button><p class="choice-3">\( A = 0.5 \cdot (2w) \)</p>
+            </div>
+            <div class="option-4-container">
+                <button class="option-4">D</button><p class="choice-4">\( A = 0.5 + 2^w \)</p>
+            </div>
+        </div>
+        <button id="button-show-explanation37" class="button-show-explanation" onclick="toggleExplanation(37)">Show Explanation</button>
+        <div id="explanation37" class="explanation">
+            <p class="explanation-paragraph">
+                Choice A is correct. The area covered by the invasive plant doubles each week, indicating exponential growth. The correct function to model this growth is \( A = 0.5 \cdot 2^w \), where \( w \) is the number of weeks.
+                <br>
+                Choice B is incorrect because it suggests a quadratic relationship between the weeks and the area covered, which does not fit the pattern of doubling each week.
+                <br>
+                Choice C is incorrect as it represents linear growth, which does not apply here since the area is not increasing by a fixed amount each week.
+                <br>
+                Choice D is incorrect because it incorrectly combines a constant with an exponential term, which does not accurately describe the doubling process.
+            </p>
+        </div>
+    </div>
+    <div class="question-part" id="questionContent38" data-question-id="exponential38">
+        <h1 class="title">Digital SAT Math</h1>
+        <h2 class="subtitle">Exponential and Linear Growth</h2>  
+        <div class="question-list">
+            <div class="number-bar">
+                <span>38</span>
+            </div>
+            <p class="question">
+                A cell phone's value decreases each year due to depreciation. In the first year, it loses \($50\) of its value. Each subsequent year, the depreciation rate increases by \(5\%\) of the previous year's remaining value. Which of the following best describes the relationship between time (in years) and the cell phone's value?
+            </p>
+            <div class="option-1-container">
+                <button class="option-1">A</button><p class="choice-1">Increasing linear</p>
+            </div>
+            <div class="option-2-container">
+                <button class="option-2">B</button><p class="choice-2">Decreasing linear</p>
+            </div>
+            <div class="option-3-container">
+                <button class="option-3">C</button><p class="choice-3">Exponential growth</p>
+            </div>
+            <div class="option-4-container">
+                <button class="option-4">D</button><p class="choice-4">Exponential decay</p>
+            </div>
+        </div>
+        <button id="button-show-explanation38" class="button-show-explanation" onclick="toggleExplanation(38)">Show Explanation</button>
+        <div id="explanation38" class="explanation">
+            <p class="explanation-paragraph">
+                Choice D is correct. The value of the cell phone decreases by an increasing percentage each year, which is characteristic of exponential decay. The first year's loss is a fixed amount, but the subsequent increase in the depreciation rate by \(5\%\) of the remaining value each year indicates the value is declining exponentially, not at a constant rate.
+                <br>
+                Choice A is incorrect as the value is not increasing; it is decreasing.
+                <br>
+                Choice B is incorrect because a linear decrease would imply a constant amount of depreciation each year, not an increasing percentage.
+                <br>
+                Choice C is incorrect as the value of the phone is decreasing, not growing.
+            </p>
+        </div>
+    </div>
+    <div class="question-part" id="questionContent39" data-question-id="exponential39">
+        <h1 class="title">Digital SAT Math</h1>
+        <h2 class="subtitle">Exponential and Linear Growth</h2>  
+        <div class="question-list">
+            <div class="number-bar">
+                <span>39</span>
+            </div>
+            <p class="question">
+                A series of lights on a modem flash in a pattern that doubles the number of flashes each second, but every third second, the modem pauses for a second before resuming the pattern. If it starts with one flash, which of the following best describes the relationship between the number of seconds and the total number of flashes up to that second?
+            </p>
+            <div class="option-1-container">
+                <button class="option-1">A</button><p class="choice-1">Increasing linear</p>
+            </div>
+            <div class="option-2-container">
+                <button class="option-2">B</button><p class="choice-2">Decreasing linear</p>
+            </div>
+            <div class="option-3-container">
+                <button class="option-3">C</button><p class="choice-3">Exponential growth</p>
+            </div>
+            <div class="option-4-container">
+                <button class="option-4">D</button><p class="choice-4">Exponential decay</p>
+            </div>
+        </div>
+        <button id="button-show-explanation39" class="button-show-explanation" onclick="toggleExplanation(39)">Show Explanation</button>
+        <div id="explanation39" class="explanation">
+            <p class="explanation-paragraph">
+                Choice C is the best fit. The pattern described indicates that the number of flashes doubles each second, which is characteristic of exponential growth. 
+                However, because there is a pause every third second, the actual pattern would be a modified exponential growth that includes a steady sequence of pauses.
+                <br>
+                Choices A and B are incorrect because there is no constant rate of increase or decrease in the number of flashes — the rate changes exponentially.
+                <br>
+                Choice D is incorrect because the number of flashes is increasing, not decreasing.
+            </p>
+        </div>
+    </div>
+    <div class="question-part" id="questionContent40" data-question-id="exponential40">
+        <h1 class="title">Digital SAT Math</h1>
+        <h2 class="subtitle">Exponential and Linear Growth</h2>  
+        <div class="question-list">
+            <div class="number-bar">
+                <span>40</span>
+            </div>
+            <p class="question">
+                A species of fish in a lake is being overfished and its population decreases by \(12\) percent every \(6\) months. Starting with a population of \(5,000\) fish, which equation gives the population, \( P \), \( m \) months after the overfishing began?
+            </p>
+            <div class="option-1-container">
+                <button class="option-1">A</button><p class="choice-1">\( P = 5,000(0.12)^{m/6} \)</p>
+            </div>
+            <div class="option-2-container">
+                <button class="option-2">B</button><p class="choice-2">\( P = 5,000 - 600m \)</p>
+            </div>
+            <div class="option-3-container">
+                <button class="option-3">C</button><p class="choice-3">\( P = 5,000(0.88)^{m/6} \)</p>
+            </div>
+            <div class="option-4-container">
+                <button class="option-4">D</button><p class="choice-4">\( P = 5,000(0.88)^m \)</p>
+            </div>
+        </div>
+        <button id="button-show-explanation40" class="button-show-explanation" onclick="toggleExplanation(40)">Show Explanation</button>
+        <div id="explanation40" class="explanation">
+            <p class="explanation-paragraph">
+                Choice C is correct. The population decreases by \(12\%\) every \(6\) months, which means it retains \(88\%\) of its population every \(6\) months. This type of decline is exponential decay because the population decrease is proportional to its current size. The equation \( P = 5,000(0.88)^{m/6} \) models the exponential decay, where \( m \) is the number of months since overfishing began and the exponent \( m/6 \) accounts for the biannual rate of decline.
+                <br>
+                Choice A is incorrect because \(0.12\) represents a \(12\%\) value, not the remaining \(88\%\) of the population after each \(6-\)month period.
+                <br>
+                Choice B is incorrect as it suggests a linear decrease of \(600\) fish per month, which does not take into account the compound effect of the percentage decrease.
+                <br>
+                Choice D is incorrect because the exponent should be \( m/6 \) to reflect the \(6-\)month periods, not \( m \) which would imply a monthly rate.
+            </p>
+        </div>
+    </div>
+    <div class="question-part" id="questionContent41" data-question-id="exponential41">
+        <h1 class="title">Digital SAT Math</h1>
+        <h2 class="subtitle">Exponential and Linear Growth</h2>  
+        <div class="question-list">
+            <div class="number-bar">
+                <span>41</span>
+            </div>
+            <p class="question">
+                The annual production of a factory was \(10,000\) units and increased by \(500\) units each year. Which equation models the production, \( P \), after \( t \) years?
+            </p>
+            <div class="option-1-container">
+                <button class="option-1">A</button><p class="choice-1">\( P = 500t + 10000 \)</p>
+            </div>
+            <div class="option-2-container">
+                <button class="option-2">B</button><p class="choice-2">\( P = 10000(1.05)^t \)</p>
+            </div>
+            <div class="option-3-container">
+                <button class="option-3">C</button><p class="choice-3">\( P = 10000t \)</p>
+            </div>
+            <div class="option-4-container">
+                <button class="option-4">D</button><p class="choice-4">\( P = 10t^2 + 500t + 10000 \)</p>
+            </div>
+        </div>
+        <button id="button-show-explanation41" class="button-show-explanation" onclick="toggleExplanation(41)">Show Explanation</button>
+        <div id="explanation41" class="explanation">
+            <p class="explanation-paragraph">
+                Choice A is correct. The production increase by a fixed amount each year indicates a linear growth model. The equation \( P = 500t + 10000 \) reflects this linear relationship, where \( t \) is the number of years since the initial measurement, and \(10,000\) units is the production amount at the start.
+                <br>
+                Choice B is incorrect because it suggests an exponential growth model with a \(5\%\) increase each year, which does not match the fixed increase of \(500\) units.
+                <br>
+                Choice C is incorrect as it would imply that the factory had no production at the start, which contradicts the given information.
+                <br>
+                Choice D is incorrect because it introduces a quadratic term, which would indicate that the rate of increase is accelerating each year, not increasing by a constant amount.
+            </p>
+        </div>
+    </div>
+    <div class="question-part" id="questionContent42" data-question-id="exponential42">
+        <h1 class="title">Digital SAT Math</h1>
+        <h2 class="subtitle">Exponential and Linear Growth</h2>  
+        <div class="question-list">
+            <div class="number-bar">
+                <span>42</span>
+            </div>
+            <p class="question">
+                A software company releases \(4\) new software updates each year. Which scenario best describes the release schedule of the company's software updates?
+            </p>
+            <div class="option-1-container">
+                <button class="option-1">A</button><p class="choice-1">The company doubles the number of updates every year.</p>
+            </div>
+            <div class="option-2-container">
+                <button class="option-2">B</button><p class="choice-2">The company increases the number of updates by \(25\%\) each year.</p>
+            </div>
+            <div class="option-3-container">
+                <button class="option-3">C</button><p class="choice-3">The company releases \(4\) new updates every year, without fail.</p>
+            </div>
+            <div class="option-4-container">
+                <button class="option-4">D</button><p class="choice-4">The company increases the number of updates based on the number of users, which grows by \(5\%\) each year.</p>
+            </div>
+        </div>
+        <button id="button-show-explanation42" class="button-show-explanation" onclick="toggleExplanation(42)">Show Explanation</button>
+        <div id="explanation42" class="explanation">
+            <p class="explanation-paragraph">
+                Choice C is correct. The scenario described indicates that the company has a fixed release schedule, releasing exactly \(4\) updates each year. This represents a linear model as the number of updates does not change from year to year, showing a consistent release pattern.
+                <br>
+                Choice A is incorrect because doubling the number of updates annually would indicate an exponential growth model, which does not fit the scenario of a fixed number of releases.
+                <br>
+                Choice B is also incorrect as it suggests a percentage increase each year, indicative of exponential growth.
+                <br>
+                Choice D is incorrect because it ties the number of updates to the growth in the number of users, which is not mentioned as a factor in the release schedule.
+            </p>
+        </div>
+    </div>
+    <div class="question-part" id="questionContent43" data-question-id="exponential43">
+        <h1 class="title">Digital SAT Math</h1>
+        <h2 class="subtitle">Exponential and Linear Growth</h2>  
+        <div class="question-list">
+            <div class="number-bar">
+                <span>43</span>
+            </div>
+            <p class="question">
+                A company commits to reduce its \(CO_2\) emissions by \(100\) tons in the first year and plans to increase the reduction by an additional \(10\%\) of the previous year's reduction amount each subsequent year. However, if new environmental regulations are introduced, the company will double the planned reduction for that year. Which of the following best describes the relationship between time (in years) and the total emissions reduced, assuming that new environmental regulations are introduced every fourth year?
+            </p>
+            <div class="option-1-container">
+                <button class="option-1">A</button><p class="choice-1">Increasing linear</p>
+            </div>
+            <div class="option-2-container">
+                <button class="option-2">B</button><p class="choice-2">Decreasing linear</p>
+            </div>
+            <div class="option-3-container">
+                <button class="option-3">C</button><p class="choice-3">Exponential growth</p>
+            </div>
+            <div class="option-4-container">
+                <button class="option-4">D</button><p class="choice-4">Exponential decay</p>
+            </div>
+        </div>
+        <button id="button-show-explanation43" class="button-show-explanation" onclick="toggleExplanation(43)">Show Explanation</button>
+        <div id="explanation43" class="explanation">
+            <p class="explanation-paragraph">
+                Choice C is the most suitable answer. The company's reduction in emissions grows each year by an additional \(10\%\) of the previous year's reduction, which is characteristic of exponential growth. The doubling of the reduction every fourth year adds a periodic exponential boost, further emphasizing the exponential nature of the growth pattern.
+                <br>
+                Choice A is incorrect because it suggests a constant rate of increase, which does not apply to the compounded growth with periodic doubling.
+                <br>
+                Choice B is incorrect as it implies a constant rate of decrease.
+                <br>
+                Choice D is incorrect because the emissions are being reduced, which does indeed decrease the total emissions, but the reduction rate is increasing, not decaying.
+            </p>
+        </div>
+    </div>
+    <div class="question-part" id="questionContent44" data-question-id="exponential44">
+        <h1 class="title">Digital SAT Math</h1>
+        <h2 class="subtitle">Exponential and Linear Growth</h2>  
+        <div class="question-list">
+            <div class="number-bar">
+                <span>44</span>
+            </div>
+            <p class="question">
+                A writer completes \(5\) pages of her novel each day. Which of the following best describes the relationship between time (in days) and the total number of pages written?
+            </p>
+            <div class="option-1-container">
+                <button class="option-1">A</button><p class="choice-1">Increasing linear</p>
+            </div>
+            <div class="option-2-container">
+                <button class="option-2">B</button><p class="choice-2">Decreasing linear</p>
+            </div>
+            <div class="option-3-container">
+                <button class="option-3">C</button><p class="choice-3">Exponential growth</p>
+            </div>
+            <div class="option-4-container">
+                <button class="option-4">D</button><p class="choice-4">Exponential decay</p>
+            </div>
+        </div>
+        <button id="button-show-explanation44" class="button-show-explanation" onclick="toggleExplanation(44)">Show Explanation</button>
+        <div id="explanation44" class="explanation">
+            <p class="explanation-paragraph">
+                Choice A is correct. The writer's daily progress of completing \(5\) pages each day represents a constant rate of work, which is defined as linear growth. Over time, the total number of pages will increase in equal increments, making the relationship between time and pages written linear.
+                <br>
+                Choice B is incorrect because the total number of pages written is not decreasing.
+                <br>
+                Choice C is incorrect as exponential growth would mean the number of pages would increase by a percentage of the current total, which is not the case here.
+                <br>
+                Choice D is incorrect because exponential decay would imply that the number of pages written decreases over time, which is also not applicable.
+            </p>
+        </div>
+    </div>
+    <div class="question-part" id="questionContent45" data-question-id="exponential45">
+        <h1 class="title">Digital SAT Math</h1>
+        <h2 class="subtitle">Exponential and Linear Growth</h2>  
+        <div class="question-list">
+            <div class="number-bar">
+                <span>45</span>
+            </div>
+            <p class="question">
+                A charity event raises \($100\) on the first day, and each subsequent day it raises double the amount of the previous day. Which of the following best describes the relationship between the number of days and the total amount raised?
+            </p>
+            <div class="option-1-container">
+                <button class="option-1">A</button><p class="choice-1">Increasing linear</p>
+            </div>
+            <div class="option-2-container">
+                <button class="option-2">B</button><p class="choice-2">Decreasing linear</p>
+            </div>
+            <div class="option-3-container">
+                <button class="option-3">C</button><p class="choice-3">Exponential growth</p>
+            </div>
+            <div class="option-4-container">
+                <button class="option-4">D</button><p class="choice-4">Exponential decay</p>
+            </div>
+        </div>
+        <button id="button-show-explanation45" class="button-show-explanation" onclick="toggleExplanation(45)">Show Explanation</button>
+        <div id="explanation45" class="explanation">
+            <p class="explanation-paragraph">
+                Choice C is correct. The amount raised each day is double that of the previous day, which is a classic example of exponential growth. The growth rate is proportional to the current amount, meaning as the amount increases, the rate of increase grows exponentially.
+                <br>
+                Choices A and B are incorrect because they suggest a constant rate of change, which does not apply to this scenario where the amount raised is doubling each day.
+                <br>
+                Choice D is incorrect because it suggests that the total amount raised is decreasing over time, which contradicts the given information about the event's fundraising success.
+            </p>
+        </div>
+    </div>
+    <div class="question-part" id="questionContent46" data-question-id="exponential46">
+        <h1 class="title">Digital SAT Math</h1>
+        <h2 class="subtitle">Exponential and Linear Growth</h2>  
+        <div class="question-list">
+            <div class="number-bar">
+                <span>46</span>
+            </div>
+            <p class="question">
+                A piece of machinery in a factory depreciates in value by \(25\) percent every \(4\) years. If it was purchased for \($20,000\) in \(2010\), which of the following gives its value, \( V \), \( t \) years after \(2010\)?
+            </p>
+            <div class="option-1-container">
+                <button class="option-1">A</button><p class="choice-1">\( V = 20,000(0.25)^{t/4} \)</p>
+            </div>
+            <div class="option-2-container">
+                <button class="option-2">B</button><p class="choice-2">\( V = 20,000 - 5,000t \)</p>
+            </div>
+            <div class="option-3-container">
+                <button class="option-3">C</button><p class="choice-3">\( V = 20,000(0.75)^{t/4} \)</p>
+            </div>
+            <div class="option-4-container">
+                <button class="option-4">D</button><p class="choice-4">\( V = 20,000(0.75)^t \)</p>
+            </div>
+        </div>
+        <button id="button-show-explanation46" class="button-show-explanation" onclick="toggleExplanation(46)">Show Explanation</button>
+        <div id="explanation46" class="explanation">
+            <p class="explanation-paragraph">
+                Choice C is correct. The machinery depreciates by \(25\%\) or retains \(75\%\) of its value every \(4\) years. Therefore, the value after \( t \) years is given by the formula \( V = 20,000(0.75)^{t/4} \), where \( t \) is the number of years since \(2010\). The exponent \( t/4 \) is used to account for the depreciation occurring every \(4\) years.
+                <br>
+                Choice A is incorrect because \( 0.25 \) would represent a \(75\%\) loss, not the \(25\%\) loss specified.
+                <br>
+                Choice B is incorrect as it suggests a linear decrease, which does not reflect the percentage-based depreciation.
+                <br>
+                Choice D is incorrect because it applies the depreciation rate as if it occurred annually rather than every four years.
+            </p>
+        </div>
+    </div>
+    <div class="question-part" id="questionContent47" data-question-id="exponential47">
+        <h1 class="title">Digital SAT Math</h1>
+        <h2 class="subtitle">Exponential and Linear Growth</h2>  
+        <div class="question-list">
+            <div class="number-bar">
+                <span>47</span>
+            </div>
+            <p class="question">
+                A certain type of fish in an aquarium was \(200\) and the number increased by \(40\) each year due to breeding. Which function models the fish population, \( F \), after \( t \) years?
+            </p>
+            <div class="option-1-container">
+                <button class="option-1">A</button><p class="choice-1">\( F = 200(1.2)^t \)</p>
+            </div>
+            <div class="option-2-container">
+                <button class="option-2">B</button><p class="choice-2">\( F = 40t + 200 \)</p>
+            </div>
+            <div class="option-3-container">
+                <button class="option-3">C</button><p class="choice-3">\( F = 200t \)</p>
+            </div>
+            <div class="option-4-container">
+                <button class="option-4">D</button><p class="choice-4">\( F = 2t^2 + 40t + 200 \)</p>
+            </div>
+        </div>
+        <button id="button-show-explanation47" class="button-show-explanation" onclick="toggleExplanation(47)">Show Explanation</button>
+        <div id="explanation47" class="explanation">
+            <p class="explanation-paragraph">
+                Choice B is correct. The fish population increases by a constant number of \(40\) fish each year, which represents a linear relationship between time and population. The equation \( F = 40t + 200 \) accurately models this, with \( t \) being the number of years, and \(200\) representing the initial fish population.
+                <br>
+                Choice A is incorrect because it represents exponential growth, which would not reflect the constant increase of \(40\) fish per year.
+                <br>
+                Choice C is incorrect as it would imply that the aquarium started with no fish, which is contrary to the given information.
+                <br>
+                Choice D is incorrect because it includes a quadratic term, which would suggest the rate of increase in population changes over time, not a constant increase.
+            </p>
+        </div>
+    </div>
+    <div class="question-part" id="questionContent48" data-question-id="exponential48">
+        <h1 class="title">Digital SAT Math</h1>
+        <h2 class="subtitle">Exponential and Linear Growth</h2>  
+        <div class="question-list">
+            <div class="number-bar">
+                <span>48</span>
+            </div>
+            <p class="question">
+                A charity receives donations and each year adds \($10,000\) to its fund. Which scenario best describes the growth of the charity's fund?
+            </p>
+            <div class="option-1-container">
+                <button class="option-1">A</button><p class="choice-1">The charity fund doubles due to matching donors each year.</p>
+            </div>
+            <div class="option-2-container">
+                <button class="option-2">B</button><p class="choice-2">The charity fund grows by \(10\%\) each year thanks to recurring donors.</p>
+            </div>
+            <div class="option-3-container">
+                <button class="option-3">C</button><p class="choice-3">The charity adds a flat \($10,000\) to its fund each year.</p>
+            </div>
+            <div class="option-4-container">
+                <button class="option-4">D</button><p class="choice-4">The charity's fund increases by \(5\%\) of the current fund total each year.</p>
+            </div>
+        </div>
+        <button id="button-show-explanation48" class="button-show-explanation" onclick="toggleExplanation(48)">Show Explanation</button>
+        <div id="explanation48" class="explanation">
+            <p class="explanation-paragraph">
+                Choice C is correct. The statement describes a scenario where the charity's fund increases by a fixed amount each year, which is a characteristic of linear growth. Thus, the charity's fund is not doubling nor growing by a percentage of the total, but rather by a consistent, flat amount annually.
+                <br>
+                Choice A is incorrect because doubling the fund would indicate an exponential increase, not a flat rate.
+                <br>
+                Choice B is also incorrect because a \(10\%\) growth rate would imply exponential growth based on the current total, which differs from the scenario described.
+                <br>
+                Choice D is incorrect because it suggests a smaller percentage growth, which still constitutes exponential growth, not a linear one.
+            </p>
+        </div>
+    </div>
+    <div class="question-part" id="questionContent49" data-question-id="exponential49">
+        <h1 class="title">Digital SAT Math</h1>
+        <h2 class="subtitle">Exponential and Linear Growth</h2>  
+        <div class="question-list">
+            <div class="number-bar">
+                <span>49</span>
+            </div>
+            <p class="question">
+                A coffee shop owner buys \(5\) new coffee cups every day to replace broken ones. Which of the following best describes the relationship between the number of days and the total number of cups purchased?
+            </p>
+            <div class="option-1-container">
+                <button class="option-1">A</button><p class="choice-1">Increasing linear</p>
+            </div>
+            <div class="option-2-container">
+                <button class="option-2">B</button><p class="choice-2">Decreasing linear</p>
+            </div>
+            <div class="option-3-container">
+                <button class="option-3">C</button><p class="choice-3">Exponential growth</p>
+            </div>
+            <div class="option-4-container">
+                <button class="option-4">D</button><p class="choice-4">Exponential decay</p>
+            </div>
+        </div>
+        <button id="button-show-explanation49" class="button-show-explanation" onclick="toggleExplanation(49)">Show Explanation</button>
+        <div id="explanation49" class="explanation">
+            <p class="explanation-paragraph">
+                Choice A is correct. The coffee shop's purchasing pattern is consistent, buying \(5\) cups each day, which indicates a linear relationship. The total number of cups purchased increases by the same amount every day, making the growth linear.
+                <br>
+                Choice B is incorrect because the total number of cups purchased is not decreasing.
+                <br>
+                Choice C and Choice D are incorrect as they suggest the number of cups purchased grows by a rate proportional to the current amount (C) or decreases over time (D), which does not apply to the constant daily purchase.
+            </p>
+        </div>
+    </div>
+    <div class="question-part" id="questionContent50" data-question-id="exponential50">
+        <h1 class="title">Digital SAT Math</h1>
+        <h2 class="subtitle">Exponential and Linear Growth</h2>  
+        <div class="question-list">
+            <div class="number-bar">
+                <span>50</span>
+            </div>
+            <p class="question">
+                A YouTuber gains \(100\) followers on the first day, \(200\) on the second day, \(400\) on the third day, and so on, doubling the number of new followers each day. Which of the following best describes the relationship between the number of days and the total followers gained?
+            </p>
+            <div class="option-1-container">
+                <button class="option-1">A</button><p class="choice-1">Increasing linear</p>
+            </div>
+            <div class="option-2-container">
+                <button class="option-2">B</button><p class="choice-2">Decreasing linear</p>
+            </div>
+            <div class="option-3-container">
+                <button class="option-3">C</button><p class="choice-3">Exponential decay</p>
+            </div>
+            <div class="option-4-container">
+                <button class="option-4">D</button><p class="choice-4">Exponential growth</p>
+            </div>
+        </div>
+        <button id="button-show-explanation50" class="button-show-explanation" onclick="toggleExplanation(50)">Show Explanation</button>
+        <div id="explanation50" class="explanation">
+            <p class="explanation-paragraph">
+                Choice D is correct. The YouTuber's followers are doubling each day, which is characteristic of exponential growth. The number of followers is not increasing by a fixed amount each day (which would be linear), but instead is growing by a factor of two, which is a clear indication of an exponential growth pattern.
+                <br>
+                Choice A is incorrect because an increasing linear pattern would suggest the YouTuber gains a constant number of followers every day.
+                <br>
+                Choice B is incorrect as it suggests the number of followers is decreasing each day, which is the opposite of what is described.
+                <br>
+                Choice C is incorrect because it suggests the number of followers is decreasing in a manner proportional to its current total, which is not the case here.
+            </p>
+        </div>
+    </div>
+</body>
+</html>
