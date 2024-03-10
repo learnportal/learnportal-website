@@ -299,56 +299,56 @@ const correctAnswers = {
     'expressions48': 'A',
     'expressions49': 'B',
     'expressions50': 'A',
-    'exponential1': '',
-    'exponential2': '',
-    'exponential3': '',
-    'exponential4': '',
-    'exponential5': '',
-    'exponential6': '',
-    'exponential7': '',
-    'exponential8': '',
-    'exponential9': '',
-    'exponential10': '',
-    'exponential11': '',
-    'exponential12': '',
-    'exponential13': '',
-    'exponential14': '',
-    'exponential15': '',
-    'exponential16': '',
-    'exponential17': '',
-    'exponential18': '',
-    'exponential19': '',
-    'exponential20': '',
-    'exponential21': '',
-    'exponential22': '',
-    'exponential23': '',
-    'exponential24': '',
-    'exponential25': '',
-    'exponential26': '',
-    'exponential27': '',
-    'exponential28': '',
-    'exponential29': '',
-    'exponential30': '',
-    'exponential31': '',
-    'exponential32': '',
-    'exponential33': '',
-    'exponential34': '',
-    'exponential35': '',
-    'exponential36': '',
-    'exponential37': '',
-    'exponential38': '',
-    'exponential39': '',
-    'exponential40': '',
-    'exponential41': '',
-    'exponential42': '',
-    'exponential43': '',
-    'exponential44': '',
-    'exponential45': '',
-    'exponential46': '',
-    'exponential47': '',
-    'exponential48': '',
-    'exponential49': '',
-    'exponential50': '',
+    'exponential1': 'A',
+    'exponential2': 'D',
+    'exponential3': 'C',
+    'exponential4': 'A',
+    'exponential5': 'D',
+    'exponential6': 'C',
+    'exponential7': 'C',
+    'exponential8': 'A',
+    'exponential9': 'A',
+    'exponential10': 'B',
+    'exponential11': 'B',
+    'exponential12': 'D',
+    'exponential13': 'C',
+    'exponential14': 'A',
+    'exponential15': 'C',
+    'exponential16': 'B',
+    'exponential17': 'A',
+    'exponential18': 'B',
+    'exponential19': 'C',
+    'exponential20': 'C',
+    'exponential21': 'A',
+    'exponential22': 'C',
+    'exponential23': 'A',
+    'exponential24': 'A',
+    'exponential25': 'B',
+    'exponential26': 'B',
+    'exponential27': 'C',
+    'exponential28': 'A',
+    'exponential29': 'C',
+    'exponential30': 'A',
+    'exponential31': 'D',
+    'exponential32': 'A',
+    'exponential33': 'C',
+    'exponential34': 'C',
+    'exponential35': 'A',
+    'exponential36': 'C',
+    'exponential37': 'A',
+    'exponential38': 'D',
+    'exponential39': 'C',
+    'exponential40': 'C',
+    'exponential41': 'A',
+    'exponential42': 'C',
+    'exponential43': 'C',
+    'exponential44': 'A',
+    'exponential45': 'C',
+    'exponential46': 'C',
+    'exponential47': 'B',
+    'exponential48': 'C',
+    'exponential49': 'A',
+    'exponential50': 'D',
     'linear1': 'A',
     'linear2': '18',
     'linear3': 'A',
@@ -401,10 +401,10 @@ const correctAnswers = {
     'linear50': '4',
     };
 
-let currentTopicIndex = 0; // Reset to first topic or handle as desired.
-let currentQuestionIndex = 1; // Start with the first question
-const numberOfQuestions = 50; // Set the total number of questions
-let isAnswerChecked = false; // False means no answer has been checked yet for the current question
+let currentTopicIndex = 0; 
+let currentQuestionIndex = 1; 
+const numberOfQuestions = 50; 
+let isAnswerChecked = false; 
 let topics = [
     { slug: 'exponents-and-radicals', title: 'Exponents and Radicals' },
     { slug: 'absolute-value', title: 'Absolute Values' },
@@ -412,18 +412,18 @@ let topics = [
     { slug: 'percent', title: 'Percent' },
     { slug: 'unit-conversions', title: 'Unit Conversions' },
     { slug: 'expressions', title: 'Expressions' },
-    { slug: 'exponential-equations', title: 'Exponential Equations'},
+    { slug: 'exponential-and-linear-growth', title: 'Exponential and Linear Growth'},
     { slug: 'linear-equations', title: 'Linear Equations'},
 ];
 
 document.addEventListener("DOMContentLoaded", function () {
 
     document.body.addEventListener('click', handleSelection);
-    document.body.addEventListener('focusin', handleSelection, true); // Using focusin for event delegation on dynamic content
+    document.body.addEventListener('focusin', handleSelection, true);
 
 function handleSelection(e) {
     var optionContainer = e.target.closest('.option-1-container, .option-2-container, .option-3-container, .option-4-container, .option-5-container');
-    var inputAnswer = e.target.closest('.input-answer'); // Check if an input-answer is focused or clicked
+    var inputAnswer = e.target.closest('.input-answer'); 
     if (isAnswerChecked) return;
 
     if (optionContainer || inputAnswer) {

@@ -333,7 +333,7 @@
     line-height: 55px;
 }
 
-table {
+.table {
     border-spacing: 0;
     overflow: hidden; 
     font-family: lato, noto sans, sans-serif;
@@ -348,21 +348,21 @@ table {
     margin-top: 25px !important;
 }
 
-th, td {
+.th, td {
     padding: 10px 15px;
     border: 1px solid #555; 
 }
 
-th {
+.th {
     background-color: #03396c; 
     border-color: #555; 
     color: white;
 }
 
-tr {
+.tr {
     background-color: transparent; 
 }
 
-tr:nth-child(even) {
+.tr:nth-child(even) {
     background-color: transparent; 
 }
