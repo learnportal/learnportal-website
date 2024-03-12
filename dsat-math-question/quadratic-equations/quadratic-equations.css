@@ -49,24 +49,6 @@
     padding: 0;
 }
 
-.graph-question{
-    width: 50%;
-    padding-left: 40px !important;
-    padding-top: 25px !important;
-}
-
-.graph-question-linear20{
-    width: 25%;
-    padding-left: 40px !important;
-    padding-top: 25px !important;
-}
-
-.graph-question-linear23{
-    width: 40%;
-    padding-left: 40px !important;
-    padding-top: 25px !important;
-}
-
 .question{
     font-family: lato, noto sans, sans-serif;
     font-size: 21px !important;
@@ -331,38 +313,4 @@
     font-size: 20px;
     letter-spacing: .5px;
     line-height: 55px;
-}
-
-table {
-    border-spacing: 0;
-    overflow: hidden; 
-    font-family: lato, noto sans, sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    text-align: center;
-    border-collapse: collapse;
-    width: fit-content;
-    margin: 0;
-    padding: 0;
-    margin-left: 40px !important;
-    margin-top: 25px !important;
-}
-
-th, td {
-    padding: 10px 15px;
-    border: 1px solid #555; 
-}
-
-th {
-    background-color: #03396c; 
-    border-color: #555; 
-    color: white;
-}
-
-tr {
-    background-color: transparent; 
-}
-
-tr:nth-child(even) {
-    background-color: transparent; 
 }

@@ -398,7 +398,7 @@ const correctAnswers = {
     'linear47': 'D',
     'linear48': 'C',
     'linear49': 'C',
-    'linear50': '4',
+    'linear50': '4'
     };
 
 let currentTopicIndex = 0; 
@@ -414,6 +414,7 @@ let topics = [
     { slug: 'expressions', title: 'Expressions' },
     { slug: 'exponential-and-linear-growth', title: 'Exponential and Linear Growth'},
     { slug: 'linear-equations', title: 'Linear Equations'},
+    { slug: 'quadratic-equations', title: 'Quadratic Equations'},
 ];
 
 document.addEventListener("DOMContentLoaded", function () {
